@@ -1,0 +1,58 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+
+env:
+  REGISTRY: ${{ secrets.GCP_REGION }}-docker.pkg.dev
+  IMAGE: ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/stocks-earnings/app
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up gcloud CLI
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ env.REGISTRY }} --quiet
+
+      - name: Build and push Docker image
+        run: |
+          docker build \
+            -t ${{ env.IMAGE }}:${{ github.sha }} \
+            -t ${{ env.IMAGE }}:latest \
+            .
+          docker push ${{ env.IMAGE }}:${{ github.sha }}
+          docker push ${{ env.IMAGE }}:latest
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy stocks-earnings \
+            --image "${{ env.IMAGE }}:${{ github.sha }}" \
+            --region "${{ secrets.GCP_REGION }}" \
+            --platform managed \
+            --allow-unauthenticated \
+            --max-instances 2 \
+            --min-instances 0 \
+            --memory 512Mi \
+            --cpu 1 \
+            --port 3000 \
+            --service-account "${{ secrets.GCP_RUN_SA_EMAIL }}" \
+            --set-secrets "TASTYTRADE_USERNAME=tastytrade-username:latest" \
+            --set-secrets "TASTYTRADE_PASSWORD=tastytrade-password:latest" \
+            --set-secrets "TWITTERAPI_IO_KEY=twitterapi-io-key:latest" \
+            --set-secrets "ANTHROPIC_API_KEY=anthropic-api-key:latest" \
+            --set-env-vars "NODE_ENV=production"

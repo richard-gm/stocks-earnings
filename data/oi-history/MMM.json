@@ -1,0 +1,1261 @@
+{
+  "ticker": "MMM",
+  "updatedAt": "2026-04-25T15:37:36.896Z",
+  "data": {
+    "2026-04-24": {
+      "callOI": 5129,
+      "putOI": 4736,
+      "stockPrice": 145.99
+    },
+    "2026-04-23": {
+      "callOI": 5011,
+      "putOI": 4729,
+      "stockPrice": 144.84
+    },
+    "2026-04-22": {
+      "callOI": 4935,
+      "putOI": 4984,
+      "stockPrice": 145.78
+    },
+    "2026-04-21": {
+      "callOI": 4330,
+      "putOI": 4712,
+      "stockPrice": 148.47
+    },
+    "2026-04-20": {
+      "callOI": 4259,
+      "putOI": 4338,
+      "stockPrice": 151.4
+    },
+    "2026-04-17": {
+      "callOI": 12515,
+      "putOI": 5993,
+      "stockPrice": 154.55
+    },
+    "2026-04-16": {
+      "callOI": 12524,
+      "putOI": 6023,
+      "stockPrice": 150.55
+    },
+    "2026-04-15": {
+      "callOI": 12493,
+      "putOI": 6134,
+      "stockPrice": 151.24
+    },
+    "2026-04-14": {
+      "callOI": 12542,
+      "putOI": 6045,
+      "stockPrice": 152.55
+    },
+    "2026-04-13": {
+      "callOI": 12469,
+      "putOI": 6098,
+      "stockPrice": 152.79
+    },
+    "2026-04-10": {
+      "callOI": 12210,
+      "putOI": 5901,
+      "stockPrice": 150.32
+    },
+    "2026-04-09": {
+      "callOI": 12164,
+      "putOI": 5834,
+      "stockPrice": 150.5
+    },
+    "2026-04-08": {
+      "callOI": 12345,
+      "putOI": 5852,
+      "stockPrice": 149.17
+    },
+    "2026-04-07": {
+      "callOI": 12363,
+      "putOI": 5803,
+      "stockPrice": 144.35
+    },
+    "2026-04-06": {
+      "callOI": 12477,
+      "putOI": 6324,
+      "stockPrice": 144.5
+    },
+    "2026-04-02": {
+      "callOI": 12474,
+      "putOI": 6291,
+      "stockPrice": 144.47
+    },
+    "2026-04-01": {
+      "callOI": 12423,
+      "putOI": 6279,
+      "stockPrice": 145.25
+    },
+    "2026-03-31": {
+      "callOI": 11842,
+      "putOI": 6156,
+      "stockPrice": 145.23
+    },
+    "2026-03-30": {
+      "callOI": 11871,
+      "putOI": 6206,
+      "stockPrice": 142.52
+    },
+    "2026-03-27": {
+      "callOI": 11680,
+      "putOI": 6124,
+      "stockPrice": 143.04
+    },
+    "2026-03-26": {
+      "callOI": 11591,
+      "putOI": 6152,
+      "stockPrice": 143.99
+    },
+    "2026-03-25": {
+      "callOI": 11384,
+      "putOI": 5541,
+      "stockPrice": 148.05
+    },
+    "2026-03-24": {
+      "callOI": 8183,
+      "putOI": 5500,
+      "stockPrice": 146.67
+    },
+    "2026-03-23": {
+      "callOI": 7920,
+      "putOI": 4958,
+      "stockPrice": 146.56
+    },
+    "2026-03-20": {
+      "callOI": 43578,
+      "putOI": 6832,
+      "stockPrice": 141.2
+    },
+    "2026-03-19": {
+      "callOI": 43620,
+      "putOI": 8894,
+      "stockPrice": 142.71
+    },
+    "2026-03-18": {
+      "callOI": 42000,
+      "putOI": 10253,
+      "stockPrice": 145.08
+    },
+    "2026-03-17": {
+      "callOI": 42540,
+      "putOI": 10694,
+      "stockPrice": 149.06
+    },
+    "2026-03-16": {
+      "callOI": 42203,
+      "putOI": 10791,
+      "stockPrice": 149.95
+    },
+    "2026-03-13": {
+      "callOI": 41897,
+      "putOI": 10346,
+      "stockPrice": 150.96
+    },
+    "2026-03-12": {
+      "callOI": 41631,
+      "putOI": 10660,
+      "stockPrice": 149.1
+    },
+    "2026-03-11": {
+      "callOI": 41348,
+      "putOI": 10618,
+      "stockPrice": 155.17
+    },
+    "2026-03-10": {
+      "callOI": 41319,
+      "putOI": 10540,
+      "stockPrice": 155.25
+    },
+    "2026-03-09": {
+      "callOI": 41698,
+      "putOI": 10940,
+      "stockPrice": 151.63
+    },
+    "2026-03-06": {
+      "callOI": 41518,
+      "putOI": 10047,
+      "stockPrice": 153.41
+    },
+    "2026-03-05": {
+      "callOI": 41415,
+      "putOI": 10288,
+      "stockPrice": 156.21
+    },
+    "2026-03-04": {
+      "callOI": 41051,
+      "putOI": 10223,
+      "stockPrice": 160.89
+    },
+    "2026-03-03": {
+      "callOI": 41041,
+      "putOI": 9478,
+      "stockPrice": 158.48
+    },
+    "2026-03-02": {
+      "callOI": 41059,
+      "putOI": 9613,
+      "stockPrice": 161.46
+    },
+    "2026-02-27": {
+      "callOI": 41017,
+      "putOI": 9615,
+      "stockPrice": 165.32
+    },
+    "2026-02-26": {
+      "callOI": 40981,
+      "putOI": 9527,
+      "stockPrice": 166.17
+    },
+    "2026-02-25": {
+      "callOI": 40985,
+      "putOI": 9432,
+      "stockPrice": 165.54
+    },
+    "2026-02-24": {
+      "callOI": 40877,
+      "putOI": 9409,
+      "stockPrice": 166.46
+    },
+    "2026-02-23": {
+      "callOI": 40749,
+      "putOI": 9330,
+      "stockPrice": 166.34
+    },
+    "2026-02-20": {
+      "callOI": 4779,
+      "putOI": 6677,
+      "stockPrice": 167.06
+    },
+    "2026-02-19": {
+      "callOI": 4853,
+      "putOI": 6736,
+      "stockPrice": 165.05
+    },
+    "2026-02-18": {
+      "callOI": 4755,
+      "putOI": 6749,
+      "stockPrice": 164.17
+    },
+    "2026-02-17": {
+      "callOI": 4840,
+      "putOI": 6518,
+      "stockPrice": 167.62
+    },
+    "2026-02-13": {
+      "callOI": 4766,
+      "putOI": 6429,
+      "stockPrice": 171.82
+    },
+    "2026-02-12": {
+      "callOI": 6764,
+      "putOI": 6347,
+      "stockPrice": 174.61
+    },
+    "2026-02-11": {
+      "callOI": 7015,
+      "putOI": 6221,
+      "stockPrice": 172.85
+    },
+    "2026-02-10": {
+      "callOI": 7181,
+      "putOI": 6157,
+      "stockPrice": 173.43
+    },
+    "2026-02-09": {
+      "callOI": 7117,
+      "putOI": 6197,
+      "stockPrice": 170.28
+    },
+    "2026-02-06": {
+      "callOI": 7792,
+      "putOI": 6129,
+      "stockPrice": 172.65
+    },
+    "2026-02-05": {
+      "callOI": 8566,
+      "putOI": 6017,
+      "stockPrice": 165.08
+    },
+    "2026-02-04": {
+      "callOI": 8319,
+      "putOI": 5707,
+      "stockPrice": 163.79
+    },
+    "2026-02-03": {
+      "callOI": 8440,
+      "putOI": 5440,
+      "stockPrice": 155.68
+    },
+    "2026-02-02": {
+      "callOI": 7803,
+      "putOI": 5363,
+      "stockPrice": 153.43
+    },
+    "2026-01-30": {
+      "callOI": 7731,
+      "putOI": 5286,
+      "stockPrice": 153.16
+    },
+    "2026-01-29": {
+      "callOI": 7794,
+      "putOI": 5308,
+      "stockPrice": 156.38
+    },
+    "2026-01-28": {
+      "callOI": 7725,
+      "putOI": 5261,
+      "stockPrice": 155.94
+    },
+    "2026-01-27": {
+      "callOI": 7772,
+      "putOI": 5221,
+      "stockPrice": 158.05
+    },
+    "2026-01-26": {
+      "callOI": 7804,
+      "putOI": 5194,
+      "stockPrice": 159.52
+    },
+    "2026-01-23": {
+      "callOI": 7656,
+      "putOI": 4126,
+      "stockPrice": 162.68
+    },
+    "2026-01-22": {
+      "callOI": 7373,
+      "putOI": 3817,
+      "stockPrice": 160.63
+    },
+    "2026-01-21": {
+      "callOI": 6887,
+      "putOI": 3496,
+      "stockPrice": 155.88
+    },
+    "2026-01-20": {
+      "callOI": 6365,
+      "putOI": 3040,
+      "stockPrice": 156.12
+    },
+    "2026-01-16": {
+      "callOI": 25302,
+      "putOI": 21590,
+      "stockPrice": 167.8
+    },
+    "2026-01-15": {
+      "callOI": 25968,
+      "putOI": 21478,
+      "stockPrice": 171.1
+    },
+    "2026-01-14": {
+      "callOI": 26124,
+      "putOI": 21439,
+      "stockPrice": 169.99
+    },
+    "2026-01-13": {
+      "callOI": 26134,
+      "putOI": 21338,
+      "stockPrice": 169.42
+    },
+    "2026-01-12": {
+      "callOI": 26220,
+      "putOI": 21285,
+      "stockPrice": 167.94
+    },
+    "2026-01-09": {
+      "callOI": 26160,
+      "putOI": 21467,
+      "stockPrice": 165.24
+    },
+    "2026-01-08": {
+      "callOI": 26237,
+      "putOI": 21471,
+      "stockPrice": 165.24
+    },
+    "2026-01-07": {
+      "callOI": 27149,
+      "putOI": 21786,
+      "stockPrice": 162.91
+    },
+    "2026-01-06": {
+      "callOI": 27502,
+      "putOI": 21064,
+      "stockPrice": 166.21
+    },
+    "2026-01-05": {
+      "callOI": 27684,
+      "putOI": 21032,
+      "stockPrice": 163.55
+    },
+    "2026-01-02": {
+      "callOI": 27510,
+      "putOI": 20175,
+      "stockPrice": 161.82
+    },
+    "2025-12-31": {
+      "callOI": 27532,
+      "putOI": 20171,
+      "stockPrice": 160.1
+    },
+    "2025-12-30": {
+      "callOI": 27267,
+      "putOI": 20110,
+      "stockPrice": 161.17
+    },
+    "2025-12-29": {
+      "callOI": 27100,
+      "putOI": 20052,
+      "stockPrice": 161.72
+    },
+    "2025-12-26": {
+      "callOI": 27072,
+      "putOI": 19883,
+      "stockPrice": 162.08
+    },
+    "2025-12-24": {
+      "callOI": 26811,
+      "putOI": 19811,
+      "stockPrice": 160.34
+    },
+    "2025-12-23": {
+      "callOI": 26671,
+      "putOI": 19217,
+      "stockPrice": 160.15
+    },
+    "2025-12-22": {
+      "callOI": 26263,
+      "putOI": 19212,
+      "stockPrice": 160
+    },
+    "2025-12-19": {
+      "callOI": 20569,
+      "putOI": 9505,
+      "stockPrice": 161.96
+    },
+    "2025-12-18": {
+      "callOI": 20337,
+      "putOI": 10596,
+      "stockPrice": 161.76
+    },
+    "2025-12-17": {
+      "callOI": 20551,
+      "putOI": 10759,
+      "stockPrice": 162.17
+    },
+    "2025-12-16": {
+      "callOI": 20692,
+      "putOI": 11043,
+      "stockPrice": 163.2
+    },
+    "2025-12-15": {
+      "callOI": 20741,
+      "putOI": 11123,
+      "stockPrice": 165.7
+    },
+    "2025-12-12": {
+      "callOI": 20589,
+      "putOI": 11732,
+      "stockPrice": 168.9
+    },
+    "2025-12-11": {
+      "callOI": 20996,
+      "putOI": 11896,
+      "stockPrice": 168.6
+    },
+    "2025-12-10": {
+      "callOI": 20749,
+      "putOI": 11118,
+      "stockPrice": 165.66
+    },
+    "2025-12-09": {
+      "callOI": 20476,
+      "putOI": 11196,
+      "stockPrice": 165.09
+    },
+    "2025-12-08": {
+      "callOI": 16898,
+      "putOI": 11288,
+      "stockPrice": 163.96
+    },
+    "2025-12-05": {
+      "callOI": 16851,
+      "putOI": 11374,
+      "stockPrice": 167.48
+    },
+    "2025-12-04": {
+      "callOI": 16901,
+      "putOI": 11303,
+      "stockPrice": 169.27
+    },
+    "2025-12-03": {
+      "callOI": 16838,
+      "putOI": 11266,
+      "stockPrice": 173.09
+    },
+    "2025-12-02": {
+      "callOI": 16875,
+      "putOI": 11235,
+      "stockPrice": 171.56
+    },
+    "2025-12-01": {
+      "callOI": 16879,
+      "putOI": 10885,
+      "stockPrice": 170.48
+    },
+    "2025-11-28": {
+      "callOI": 16778,
+      "putOI": 10886,
+      "stockPrice": 172.05
+    },
+    "2025-11-26": {
+      "callOI": 16201,
+      "putOI": 10895,
+      "stockPrice": 170.8
+    },
+    "2025-11-25": {
+      "callOI": 15159,
+      "putOI": 10548,
+      "stockPrice": 171.54
+    },
+    "2025-11-24": {
+      "callOI": 14866,
+      "putOI": 10073,
+      "stockPrice": 169.56
+    },
+    "2025-11-21": {
+      "callOI": 11370,
+      "putOI": 11991,
+      "stockPrice": 168.09
+    },
+    "2025-11-20": {
+      "callOI": 11528,
+      "putOI": 12085,
+      "stockPrice": 164.61
+    },
+    "2025-11-19": {
+      "callOI": 11553,
+      "putOI": 12198,
+      "stockPrice": 166.58
+    },
+    "2025-11-18": {
+      "callOI": 10994,
+      "putOI": 13185,
+      "stockPrice": 165.79
+    },
+    "2025-11-17": {
+      "callOI": 11036,
+      "putOI": 13109,
+      "stockPrice": 165.39
+    },
+    "2025-11-14": {
+      "callOI": 10840,
+      "putOI": 13025,
+      "stockPrice": 167.58
+    },
+    "2025-11-13": {
+      "callOI": 20177,
+      "putOI": 12905,
+      "stockPrice": 170.62
+    },
+    "2025-11-12": {
+      "callOI": 20315,
+      "putOI": 12941,
+      "stockPrice": 171.08
+    },
+    "2025-11-11": {
+      "callOI": 20128,
+      "putOI": 12964,
+      "stockPrice": 168.67
+    },
+    "2025-11-10": {
+      "callOI": 20176,
+      "putOI": 12862,
+      "stockPrice": 167.67
+    },
+    "2025-11-07": {
+      "callOI": 20145,
+      "putOI": 12504,
+      "stockPrice": 164.84
+    },
+    "2025-11-06": {
+      "callOI": 20158,
+      "putOI": 12470,
+      "stockPrice": 163.85
+    },
+    "2025-11-05": {
+      "callOI": 20203,
+      "putOI": 12383,
+      "stockPrice": 164.32
+    },
+    "2025-11-04": {
+      "callOI": 20159,
+      "putOI": 12340,
+      "stockPrice": 160.59
+    },
+    "2025-11-03": {
+      "callOI": 20183,
+      "putOI": 12141,
+      "stockPrice": 162.19
+    },
+    "2025-10-31": {
+      "callOI": 20176,
+      "putOI": 12077,
+      "stockPrice": 166.5
+    },
+    "2025-10-30": {
+      "callOI": 20126,
+      "putOI": 11427,
+      "stockPrice": 166.45
+    },
+    "2025-10-29": {
+      "callOI": 20050,
+      "putOI": 11345,
+      "stockPrice": 164.63
+    },
+    "2025-10-28": {
+      "callOI": 20139,
+      "putOI": 11317,
+      "stockPrice": 166.83
+    },
+    "2025-10-27": {
+      "callOI": 20184,
+      "putOI": 11386,
+      "stockPrice": 168.4
+    },
+    "2025-10-24": {
+      "callOI": 19715,
+      "putOI": 10265,
+      "stockPrice": 168.5
+    },
+    "2025-10-23": {
+      "callOI": 16496,
+      "putOI": 10052,
+      "stockPrice": 171.6
+    },
+    "2025-10-22": {
+      "callOI": 15861,
+      "putOI": 9628,
+      "stockPrice": 167.23
+    },
+    "2025-10-21": {
+      "callOI": 32175,
+      "putOI": 9683,
+      "stockPrice": 166.64
+    },
+    "2025-10-20": {
+      "callOI": 31313,
+      "putOI": 9278,
+      "stockPrice": 154.78
+    },
+    "2025-10-17": {
+      "callOI": 16734,
+      "putOI": 11358,
+      "stockPrice": 152.64
+    },
+    "2025-10-16": {
+      "callOI": 16862,
+      "putOI": 11692,
+      "stockPrice": 151.41
+    },
+    "2025-10-15": {
+      "callOI": 16728,
+      "putOI": 11610,
+      "stockPrice": 153.47
+    },
+    "2025-10-14": {
+      "callOI": 18802,
+      "putOI": 11427,
+      "stockPrice": 152.53
+    },
+    "2025-10-13": {
+      "callOI": 21767,
+      "putOI": 11295,
+      "stockPrice": 151.1
+    },
+    "2025-10-10": {
+      "callOI": 18998,
+      "putOI": 10742,
+      "stockPrice": 148.75
+    },
+    "2025-10-09": {
+      "callOI": 17013,
+      "putOI": 10570,
+      "stockPrice": 152.88
+    },
+    "2025-10-08": {
+      "callOI": 16624,
+      "putOI": 10537,
+      "stockPrice": 156
+    },
+    "2025-10-07": {
+      "callOI": 16136,
+      "putOI": 10370,
+      "stockPrice": 155.33
+    },
+    "2025-10-06": {
+      "callOI": 15859,
+      "putOI": 10320,
+      "stockPrice": 155.93
+    },
+    "2025-10-03": {
+      "callOI": 15808,
+      "putOI": 10523,
+      "stockPrice": 158.66
+    },
+    "2025-10-02": {
+      "callOI": 15746,
+      "putOI": 10604,
+      "stockPrice": 158.8
+    },
+    "2025-10-01": {
+      "callOI": 15665,
+      "putOI": 10379,
+      "stockPrice": 156
+    },
+    "2025-09-30": {
+      "callOI": 15747,
+      "putOI": 10356,
+      "stockPrice": 155.18
+    },
+    "2025-09-29": {
+      "callOI": 14514,
+      "putOI": 10330,
+      "stockPrice": 154.08
+    },
+    "2025-09-26": {
+      "callOI": 14480,
+      "putOI": 9728,
+      "stockPrice": 152.81
+    },
+    "2025-09-25": {
+      "callOI": 14497,
+      "putOI": 9647,
+      "stockPrice": 153.03
+    },
+    "2025-09-24": {
+      "callOI": 14339,
+      "putOI": 9562,
+      "stockPrice": 154.6
+    },
+    "2025-09-23": {
+      "callOI": 14068,
+      "putOI": 9520,
+      "stockPrice": 156.29
+    },
+    "2025-09-22": {
+      "callOI": 12471,
+      "putOI": 8966,
+      "stockPrice": 153.86
+    },
+    "2025-09-19": {
+      "callOI": 33373,
+      "putOI": 14007,
+      "stockPrice": 156.6
+    },
+    "2025-09-18": {
+      "callOI": 33695,
+      "putOI": 14335,
+      "stockPrice": 155.4
+    },
+    "2025-09-17": {
+      "callOI": 34244,
+      "putOI": 14367,
+      "stockPrice": 155.16
+    },
+    "2025-09-16": {
+      "callOI": 34329,
+      "putOI": 14364,
+      "stockPrice": 156.5
+    },
+    "2025-09-15": {
+      "callOI": 34270,
+      "putOI": 14221,
+      "stockPrice": 156.66
+    },
+    "2025-09-12": {
+      "callOI": 34054,
+      "putOI": 14069,
+      "stockPrice": 157.87
+    },
+    "2025-09-11": {
+      "callOI": 34362,
+      "putOI": 13473,
+      "stockPrice": 159.47
+    },
+    "2025-09-10": {
+      "callOI": 34425,
+      "putOI": 13468,
+      "stockPrice": 153.57
+    },
+    "2025-09-09": {
+      "callOI": 34523,
+      "putOI": 13442,
+      "stockPrice": 153.08
+    },
+    "2025-09-08": {
+      "callOI": 34510,
+      "putOI": 13370,
+      "stockPrice": 154
+    },
+    "2025-09-05": {
+      "callOI": 34126,
+      "putOI": 13301,
+      "stockPrice": 155.3
+    },
+    "2025-09-04": {
+      "callOI": 34153,
+      "putOI": 13088,
+      "stockPrice": 155.52
+    },
+    "2025-09-03": {
+      "callOI": 34401,
+      "putOI": 12460,
+      "stockPrice": 152
+    },
+    "2025-09-02": {
+      "callOI": 34425,
+      "putOI": 12601,
+      "stockPrice": 154.27
+    },
+    "2025-08-29": {
+      "callOI": 35147,
+      "putOI": 12440,
+      "stockPrice": 155.53
+    },
+    "2025-08-28": {
+      "callOI": 35197,
+      "putOI": 12464,
+      "stockPrice": 157.56
+    },
+    "2025-08-27": {
+      "callOI": 35476,
+      "putOI": 12053,
+      "stockPrice": 156.53
+    },
+    "2025-08-26": {
+      "callOI": 35412,
+      "putOI": 11971,
+      "stockPrice": 156.57
+    },
+    "2025-08-25": {
+      "callOI": 35376,
+      "putOI": 12164,
+      "stockPrice": 155.85
+    },
+    "2025-08-22": {
+      "callOI": 51560,
+      "putOI": 11760,
+      "stockPrice": 158.72
+    },
+    "2025-08-21": {
+      "callOI": 51247,
+      "putOI": 11745,
+      "stockPrice": 154.38
+    },
+    "2025-08-20": {
+      "callOI": 46111,
+      "putOI": 11461,
+      "stockPrice": 154.75
+    },
+    "2025-08-19": {
+      "callOI": 45094,
+      "putOI": 11309,
+      "stockPrice": 154.34
+    },
+    "2025-08-18": {
+      "callOI": 44636,
+      "putOI": 11215,
+      "stockPrice": 152.86
+    },
+    "2025-08-15": {
+      "callOI": 21969,
+      "putOI": 11888,
+      "stockPrice": 152.39
+    },
+    "2025-08-14": {
+      "callOI": 22022,
+      "putOI": 11914,
+      "stockPrice": 156.65
+    },
+    "2025-08-13": {
+      "callOI": 22015,
+      "putOI": 11732,
+      "stockPrice": 160.2
+    },
+    "2025-08-12": {
+      "callOI": 21936,
+      "putOI": 11694,
+      "stockPrice": 157.85
+    },
+    "2025-08-11": {
+      "callOI": 21429,
+      "putOI": 11924,
+      "stockPrice": 155.31
+    },
+    "2025-08-08": {
+      "callOI": 20851,
+      "putOI": 10872,
+      "stockPrice": 153.3
+    },
+    "2025-08-07": {
+      "callOI": 20856,
+      "putOI": 10789,
+      "stockPrice": 151.74
+    },
+    "2025-08-06": {
+      "callOI": 20455,
+      "putOI": 10735,
+      "stockPrice": 150.82
+    },
+    "2025-08-05": {
+      "callOI": 20798,
+      "putOI": 10671,
+      "stockPrice": 150.09
+    },
+    "2025-08-04": {
+      "callOI": 20443,
+      "putOI": 10683,
+      "stockPrice": 147.87
+    },
+    "2025-08-01": {
+      "callOI": 19837,
+      "putOI": 10479,
+      "stockPrice": 144.41
+    },
+    "2025-07-31": {
+      "callOI": 19781,
+      "putOI": 10438,
+      "stockPrice": 149.22
+    },
+    "2025-07-30": {
+      "callOI": 20018,
+      "putOI": 9669,
+      "stockPrice": 146.62
+    },
+    "2025-07-29": {
+      "callOI": 20010,
+      "putOI": 9610,
+      "stockPrice": 151.79
+    },
+    "2025-07-28": {
+      "callOI": 19555,
+      "putOI": 9730,
+      "stockPrice": 152.05
+    },
+    "2025-07-25": {
+      "callOI": 19370,
+      "putOI": 9710,
+      "stockPrice": 151.27
+    },
+    "2025-07-24": {
+      "callOI": 19295,
+      "putOI": 9442,
+      "stockPrice": 149.3
+    },
+    "2025-07-23": {
+      "callOI": 16054,
+      "putOI": 9133,
+      "stockPrice": 150.82
+    },
+    "2025-07-22": {
+      "callOI": 15495,
+      "putOI": 8865,
+      "stockPrice": 151.2
+    },
+    "2025-07-21": {
+      "callOI": 14652,
+      "putOI": 8084,
+      "stockPrice": 152.82
+    },
+    "2025-07-18": {
+      "callOI": 31459,
+      "putOI": 23584,
+      "stockPrice": 153.23
+    },
+    "2025-07-17": {
+      "callOI": 28527,
+      "putOI": 17481,
+      "stockPrice": 159.04
+    },
+    "2025-07-16": {
+      "callOI": 27244,
+      "putOI": 16270,
+      "stockPrice": 157.56
+    },
+    "2025-07-15": {
+      "callOI": 26954,
+      "putOI": 15159,
+      "stockPrice": 156.59
+    },
+    "2025-07-14": {
+      "callOI": 25705,
+      "putOI": 14464,
+      "stockPrice": 157.91
+    },
+    "2025-07-11": {
+      "callOI": 25618,
+      "putOI": 14252,
+      "stockPrice": 155.84
+    },
+    "2025-07-10": {
+      "callOI": 25484,
+      "putOI": 13915,
+      "stockPrice": 157.32
+    },
+    "2025-07-09": {
+      "callOI": 25360,
+      "putOI": 13585,
+      "stockPrice": 155.98
+    },
+    "2025-07-08": {
+      "callOI": 26552,
+      "putOI": 13460,
+      "stockPrice": 153.74
+    },
+    "2025-07-07": {
+      "callOI": 22361,
+      "putOI": 12875,
+      "stockPrice": 151.84
+    },
+    "2025-07-03": {
+      "callOI": 12979,
+      "putOI": 13351,
+      "stockPrice": 152.94
+    },
+    "2025-07-02": {
+      "callOI": 13033,
+      "putOI": 13063,
+      "stockPrice": 153.97
+    },
+    "2025-07-01": {
+      "callOI": 13202,
+      "putOI": 11577,
+      "stockPrice": 153.81
+    },
+    "2025-06-30": {
+      "callOI": 12924,
+      "putOI": 10717,
+      "stockPrice": 152.24
+    },
+    "2025-06-27": {
+      "callOI": 12646,
+      "putOI": 10320,
+      "stockPrice": 152.02
+    },
+    "2025-06-26": {
+      "callOI": 12306,
+      "putOI": 10232,
+      "stockPrice": 150.76
+    },
+    "2025-06-25": {
+      "callOI": 11893,
+      "putOI": 9454,
+      "stockPrice": 147.75
+    },
+    "2025-06-24": {
+      "callOI": 12311,
+      "putOI": 9109,
+      "stockPrice": 149.87
+    },
+    "2025-06-23": {
+      "callOI": 10757,
+      "putOI": 8908,
+      "stockPrice": 147.6
+    },
+    "2025-06-20": {
+      "callOI": 25924,
+      "putOI": 22640,
+      "stockPrice": 144.03
+    },
+    "2025-06-18": {
+      "callOI": 26134,
+      "putOI": 23533,
+      "stockPrice": 142.51
+    },
+    "2025-06-17": {
+      "callOI": 25938,
+      "putOI": 23753,
+      "stockPrice": 142.21
+    },
+    "2025-06-16": {
+      "callOI": 25771,
+      "putOI": 23805,
+      "stockPrice": 145.07
+    },
+    "2025-06-13": {
+      "callOI": 25825,
+      "putOI": 23887,
+      "stockPrice": 142.32
+    },
+    "2025-06-12": {
+      "callOI": 25787,
+      "putOI": 24074,
+      "stockPrice": 144.77
+    },
+    "2025-06-11": {
+      "callOI": 27220,
+      "putOI": 23974,
+      "stockPrice": 147.18
+    },
+    "2025-06-10": {
+      "callOI": 27773,
+      "putOI": 23914,
+      "stockPrice": 145.06
+    },
+    "2025-06-09": {
+      "callOI": 27621,
+      "putOI": 23951,
+      "stockPrice": 144.23
+    },
+    "2025-06-06": {
+      "callOI": 27578,
+      "putOI": 23845,
+      "stockPrice": 145.5
+    },
+    "2025-06-05": {
+      "callOI": 27549,
+      "putOI": 23828,
+      "stockPrice": 146.26
+    },
+    "2025-06-04": {
+      "callOI": 27383,
+      "putOI": 23754,
+      "stockPrice": 146.81
+    },
+    "2025-06-03": {
+      "callOI": 27374,
+      "putOI": 23793,
+      "stockPrice": 148.13
+    },
+    "2025-06-02": {
+      "callOI": 27498,
+      "putOI": 23693,
+      "stockPrice": 146.4
+    },
+    "2025-05-30": {
+      "callOI": 27494,
+      "putOI": 23604,
+      "stockPrice": 148.35
+    },
+    "2025-05-29": {
+      "callOI": 27558,
+      "putOI": 23425,
+      "stockPrice": 149.63
+    },
+    "2025-05-28": {
+      "callOI": 27286,
+      "putOI": 23377,
+      "stockPrice": 148.66
+    },
+    "2025-05-27": {
+      "callOI": 27151,
+      "putOI": 23284,
+      "stockPrice": 149.49
+    },
+    "2025-05-23": {
+      "callOI": 27157,
+      "putOI": 23265,
+      "stockPrice": 147.62
+    },
+    "2025-05-22": {
+      "callOI": 34466,
+      "putOI": 23061,
+      "stockPrice": 149.78
+    },
+    "2025-05-21": {
+      "callOI": 33928,
+      "putOI": 23110,
+      "stockPrice": 149.4
+    },
+    "2025-05-20": {
+      "callOI": 33874,
+      "putOI": 22260,
+      "stockPrice": 154.15
+    },
+    "2025-05-19": {
+      "callOI": 33700,
+      "putOI": 22000,
+      "stockPrice": 154.14
+    },
+    "2025-05-16": {
+      "callOI": 25434,
+      "putOI": 18006,
+      "stockPrice": 153.11
+    },
+    "2025-05-15": {
+      "callOI": 26184,
+      "putOI": 18293,
+      "stockPrice": 148.74
+    },
+    "2025-05-14": {
+      "callOI": 26503,
+      "putOI": 18622,
+      "stockPrice": 147.88
+    },
+    "2025-05-13": {
+      "callOI": 26578,
+      "putOI": 18481,
+      "stockPrice": 150.74
+    },
+    "2025-05-12": {
+      "callOI": 26635,
+      "putOI": 17994,
+      "stockPrice": 150.33
+    },
+    "2025-05-09": {
+      "callOI": 26444,
+      "putOI": 17927,
+      "stockPrice": 142.6
+    },
+    "2025-05-08": {
+      "callOI": 26151,
+      "putOI": 17362,
+      "stockPrice": 141.12
+    },
+    "2025-05-07": {
+      "callOI": 26087,
+      "putOI": 17055,
+      "stockPrice": 138.64
+    },
+    "2025-05-06": {
+      "callOI": 26022,
+      "putOI": 16985,
+      "stockPrice": 138.02
+    },
+    "2025-05-05": {
+      "callOI": 25819,
+      "putOI": 17253,
+      "stockPrice": 140.8
+    },
+    "2025-05-02": {
+      "callOI": 25647,
+      "putOI": 17331,
+      "stockPrice": 142.08
+    },
+    "2025-05-01": {
+      "callOI": 25665,
+      "putOI": 17048,
+      "stockPrice": 137.9
+    },
+    "2025-04-30": {
+      "callOI": 25653,
+      "putOI": 16769,
+      "stockPrice": 138.91
+    },
+    "2025-04-29": {
+      "callOI": 25638,
+      "putOI": 16561,
+      "stockPrice": 138.38
+    },
+    "2025-04-28": {
+      "callOI": 25610,
+      "putOI": 16709,
+      "stockPrice": 137.93
+    },
+    "2025-04-25": {
+      "callOI": 25631,
+      "putOI": 17084,
+      "stockPrice": 137.32
+    }
+  }
+}

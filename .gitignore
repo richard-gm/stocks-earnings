@@ -20,9 +20,10 @@
 # production
 /build
 
-# misc
+# macOS metadata
 .DS_Store
-*.pem
+._.DS_Store
+._*
 
 # debug
 npm-debug.log*
@@ -39,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# runtime cache data (twitter analyses are regenerated on demand)
+data/twitter-cache/
+
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json
