@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { logger } from "@/lib/logger";
 import type { TwitterAccountAnalysis, TweetPost } from "@/types";
 
 const CACHE_DIR = path.join(process.cwd(), "data", "twitter-cache");
@@ -38,6 +39,6 @@ export function writeFileCache(
       JSON.stringify({ analysis, rawTweets }, null, 2)
     );
   } catch {
-    console.warn("[twitter] failed to write file cache:", username, range);
+    logger.warn("[twitter] failed to write file cache:", username, range);
   }
 }

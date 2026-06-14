@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { env } from "@/lib/env";
+import { logger } from "@/lib/logger";
 import { cacheGet, cacheSet, TTL } from "@/lib/cache";
 import { getMockResponse } from "@/lib/mockData";
 import { getEarningsWithPrices } from "@/lib/yahoo/client";
@@ -98,7 +99,7 @@ export async function GET(
     cacheSet(cacheKey, response, TTL.EARNINGS_HISTORY);
     return NextResponse.json(response);
   } catch (err) {
-    console.error(`[earnings/${symbol}]`, err);
+    logger.error(`[earnings/${symbol}]`, err);
     const message = err instanceof Error ? err.message : "Failed to fetch earnings data";
     const isRateLimit = message.toLowerCase().includes("rate limit");
     return NextResponse.json(

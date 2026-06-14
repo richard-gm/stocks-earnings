@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import YahooFinance from "yahoo-finance2";
+import { logger } from "@/lib/logger";
 import type { EarningsHistoryEntry } from "@/types";
 import { computeActualMovePercent } from "@/lib/calculations/actualMove";
 import { ivProxyExpectedMove } from "@/lib/calculations/expectedMove";
@@ -76,6 +77,6 @@ export async function getEarningsWithPrices(symbol: string): Promise<EarningsHis
     }
   }
 
-  console.log(`[yahoo] ${symbol} returning ${results.length} valid entries`);
+  logger.info(`[yahoo] ${symbol} returning ${results.length} valid entries`);
   return results;
 }

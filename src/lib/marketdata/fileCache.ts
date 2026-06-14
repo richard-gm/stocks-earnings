@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { logger } from "@/lib/logger";
 
 const CACHE_DIR = path.join(process.cwd(), "data", "oi-history");
 
@@ -39,6 +40,6 @@ export function saveOICache(ticker: string, data: Record<string, DayRecord>): vo
     };
     fs.writeFileSync(cachePath(ticker), JSON.stringify(file, null, 2));
   } catch {
-    console.warn("[oi-cache] failed to write cache for", ticker);
+    logger.warn("[oi-cache] failed to write cache for", ticker);
   }
 }

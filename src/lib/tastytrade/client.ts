@@ -1,4 +1,5 @@
 import { env } from "@/lib/env";
+import { logger } from "@/lib/logger";
 import type { TTAuthResponse } from "./types";
 
 let sessionToken: string | null = null;
@@ -13,7 +14,7 @@ export async function getToken(): Promise<string> {
     throw new Error("TastyTrade credentials not configured");
   }
 
-  console.log(`[tastytrade] authenticating as ${env.tastytrade.username} → ${env.tastytrade.baseUrl}`);
+  logger.info(`[tastytrade] authenticating as ${env.tastytrade.username} → ${env.tastytrade.baseUrl}`);
 
   const res = await fetch(`${env.tastytrade.baseUrl}/sessions`, {
     method: "POST",
@@ -26,14 +27,14 @@ export async function getToken(): Promise<string> {
 
   if (!res.ok) {
     const body = await res.text();
-    console.error(`[tastytrade] auth failed: ${res.status} ${body}`);
+    logger.error(`[tastytrade] auth failed: ${res.status} ${body}`);
     throw new Error(`TastyTrade auth failed: ${res.status} ${body}`);
   }
 
   const data = (await res.json()) as TTAuthResponse;
   sessionToken = data.data["session-token"];
   tokenExpiresAt = Date.now() + 24 * 60 * 60 * 1000;
-  console.log(`[tastytrade] authenticated OK — token valid for 24h`);
+  logger.info(`[tastytrade] authenticated OK — token valid for 24h`);
   return sessionToken;
 }
 

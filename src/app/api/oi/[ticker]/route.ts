@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { logger } from "@/lib/logger";
 import { cacheGet, cacheSet, TTL } from "@/lib/cache";
 import { getMockOiResponse } from "@/lib/mockOiData";
 import { fetchMarketDataOI } from "@/lib/marketdata/client";
@@ -105,7 +106,7 @@ export async function GET(
       cacheSet(cacheKey, response, TTL.EARNINGS_HISTORY);
       return NextResponse.json(response);
     } catch (err) {
-      console.error(`[oi/${symbol}] live fetch failed, falling back to mock:`, err);
+      logger.error(`[oi/${symbol}] live fetch failed, falling back to mock:`, err);
     }
   }
 

@@ -120,8 +120,8 @@ export async function GET(
   // Layer 2: file cache — loaded here for incremental merging in live mode below
   const fileCached = readFileCache(handle, range);
 
-  // Mock mode: no twitterapi.io key configured
-  if (!process.env.TWITTERAPI_IO_KEY) {
+  // Mock mode: no cookie session configured
+  if (!process.env.TWITTER_COOKIES_FILE) {
     const mock = MOCK_ANALYSES[handle];
     if (!mock) {
       return NextResponse.json(

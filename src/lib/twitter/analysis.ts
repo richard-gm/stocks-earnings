@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { env } from "@/lib/env";
+import { logger } from "@/lib/logger";
 import type { TweetPost, TwitterAccountAnalysis, TickerMention } from "@/types";
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
@@ -87,16 +88,16 @@ export async function analyzeTweets(
     });
 
     const content = response.content[0];
-    console.log("[analysis] content type:", content.type);
+    logger.info("[analysis] content type:", content.type);
     if (content.type === "text") {
-      console.log("[analysis] raw response:", content.text.slice(0, 500));
+      logger.info("[analysis] raw response:", content.text.slice(0, 500));
       const raw = content.text.replace(/^```(?:json)?\n?/, "").replace(/\n?```$/, "").trim();
       const json = JSON.parse(raw) as ClaudeAnalysisResult;
-      console.log("[analysis] parsed tickers:", json.tickers?.length, "summary:", !!json.summary);
+      logger.info("[analysis] parsed tickers:", json.tickers?.length, "summary:", !!json.summary);
       if (json.tickers && json.summary) parsed = json;
     }
   } catch (err) {
-    console.error("[analysis] Claude call failed:", err);
+    logger.error("[analysis] Claude call failed:", err);
   }
 
   return {

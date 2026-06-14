@@ -1,4 +1,5 @@
 import { env } from "@/lib/env";
+import { logger } from "@/lib/logger";
 
 export interface EarningsItem {
   date: string;
@@ -21,7 +22,7 @@ export async function getEarningsDates(symbol: string): Promise<EarningsItem[]> 
   }
 
   const url = `https://www.alphavantage.co/query?function=EARNINGS&symbol=${symbol}&apikey=${env.alphaVantageApiKey}`;
-  console.log(`[alphavantage] fetching earnings for ${symbol}`);
+  logger.info(`[alphavantage] fetching earnings for ${symbol}`);
 
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Alpha Vantage earnings failed: ${res.status}`);
@@ -49,7 +50,7 @@ export async function getEarningsDates(symbol: string): Promise<EarningsItem[]> 
 
   const today = new Date().toISOString().split("T")[0];
   const quarters = data.quarterlyEarnings ?? [];
-  if (quarters.length > 0) console.log(`[alphavantage] sample:`, JSON.stringify(quarters[0]));
+  if (quarters.length > 0) logger.info(`[alphavantage] sample:`, JSON.stringify(quarters[0]));
 
   const items = quarters
     .filter((q) => q.reportedDate && q.reportedDate !== "0000-00-00" && q.reportedDate <= today)
@@ -62,6 +63,6 @@ export async function getEarningsDates(symbol: string): Promise<EarningsItem[]> 
       time: "unknown" as const,
     }));
 
-  console.log(`[alphavantage] ${symbol} returned ${items.length} past earnings dates`);
+  logger.info(`[alphavantage] ${symbol} returned ${items.length} past earnings dates`);
   return items;
 }
