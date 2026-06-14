@@ -62,9 +62,9 @@ User enters ticker → /flow page
 User selects/adds account → /twitter page
   → TwitterDashboard (client component)
   → GET /api/twitter/[username]?range=3m|6m
-  → mock mode (no TWITTERAPI_IO_KEY): returns hardcoded chamath/elonmusk analyses
+  → mock mode (no TWITTER_COOKIES_FILE): returns hardcoded chamath/elonmusk analyses
   → live mode:
-      twitterapi.io → fetchUserTweets() [incremental — only since last cached fetch]
+      Twitter v1.1 REST API (cookie auth) → fetchUserTweets() [incremental — only since last cached fetch]
       → Claude API (claude-sonnet-4-6) → analyzeTweets() → structured ticker JSON
       → file cache written to data/twitter-cache/{username}-{range}.json
   → TwitterDashboard sets tickerInfo state via GET /api/ticker-info?symbols=...
@@ -89,7 +89,8 @@ User selects/adds account → /twitter page
 | `src/lib/tastytrade/client.ts` | TastyTrade JWT auth (module-level token, refreshed 30min before 24h expiry) |
 | `src/lib/tastytrade/endpoints.ts` | getOptionChain, getMarketMetrics, getCurrentAtmStraddle |
 | `src/lib/tastytrade/types.ts` | TastyTrade API response types |
-| `src/lib/twitter/client.ts` | twitterapi.io wrapper — fetchUserTweets() with incremental pagination |
+| `src/lib/twitter/client.ts` | Cookie-based Twitter v1.1 REST API wrapper — fetchUserTweets() with incremental pagination |
+| `src/lib/logger.ts` | Centralised logger — writes timestamped entries to `/logs/logs.txt` and mirrors to stdout/stderr |
 | `src/lib/twitter/analysis.ts` | Claude API call — analyzeTweets() → structured TickerMention[] + summary |
 | `src/lib/twitter/fileCache.ts` | Persistent JSON cache in data/twitter-cache/ for raw tweets + analyses |
 | `src/lib/calculations/actualMove.ts` | (priceAfter - priceBefore) / priceBefore |
@@ -115,9 +116,10 @@ User selects/adds account → /twitter page
 
 ## Key Design Decisions
 
-- **Mock mode**: When `TASTYTRADE_USERNAME` is unset, earnings API returns pre-built mock data. Twitter mock mode triggers when `TWITTERAPI_IO_KEY` is unset (returns hardcoded chamath/elonmusk).
+- **Mock mode**: When `TASTYTRADE_USERNAME` is unset, earnings API returns pre-built mock data. Twitter mock mode triggers when `TWITTER_COOKIES_FILE` is unset (returns hardcoded chamath/elonmusk).
 - **Caching layers**: In-memory Map (process lifetime) + file-based JSON (persistent across restarts, used for Twitter only). No Redis needed — Cloud Run single-instance deployment.
-- **Twitter incremental fetch**: On each request, only tweets since `cachedAt` are fetched from twitterapi.io. New tweets are merged with stored ones before sending to Claude. Claude re-analysis only triggers when ≥20 new tweets arrive.
+- **Twitter cookie auth**: `src/lib/twitter/client.ts` reads browser session cookies from the JSON file at `TWITTER_COOKIES_FILE`, injects them into requests to Twitter's v1.1 REST API. No paid service required. Cookies expire when the browser session does — re-export and redeploy when you get 401/403.
+- **Twitter incremental fetch**: On each request, only tweets since `cachedAt` are fetched. New tweets are merged with stored ones before sending to Claude. Claude re-analysis only triggers when ≥20 new tweets arrive.
 - **Claude prompt caching**: System prompt and user tweet block both tagged `cache_control: ephemeral` — saves ~400 tokens on repeat calls within Anthropic's 5-min TTL window.
 - **Ticker info non-blocking**: `/api/ticker-info` is fetched client-side after analysis renders, so the UI never blocks on FMP. Cards show without price data then populate in a second pass.
 - **Rate limiting**: 10 req/min per IP enforced at the API route level with an in-memory Map. Alpha Vantage 25/day limit: module-level `rateLimitedUntil` timestamp blocks re-attempts for 5 min after a limit hit.
@@ -141,7 +143,7 @@ ALPHA_VANTAGE_API_KEY=       # free tier: 25 req/day — actual earnings announc
 FMP_API_KEY=                 # Financial Modeling Prep — used for quote + price-change
 
 # Twitter Intelligence
-TWITTERAPI_IO_KEY=           # twitterapi.io — free tier: 1 req/5s
+TWITTER_COOKIES_FILE=./config/twitter-cookies.json  # exported x.com browser cookies (JSON)
 ANTHROPIC_API_KEY=           # Claude API for tweet analysis
 ANTHROPIC_MODEL=claude-sonnet-4-6  # override if needed
 ```
@@ -152,7 +154,7 @@ ANTHROPIC_MODEL=claude-sonnet-4-6  # override if needed
 
 - **Service**: Cloud Run (`stocks-earnings`)
 - **Registry**: Google Artifact Registry (`{REGION}-docker.pkg.dev/{PROJECT}/stocks-earnings/app`)
-- **Secrets**: GCP Secret Manager injects `tastytrade-username`, `tastytrade-password`, `twitterapi-io-key`, `anthropic-api-key` at runtime
+- **Secrets**: GCP Secret Manager injects `tastytrade-username`, `tastytrade-password`, `anthropic-api-key` as env vars; `twitter-cookies` is mounted as a file at `/secrets/twitter-cookies.json` (referenced via `TWITTER_COOKIES_FILE`)
 - **CI/CD**: Push to `main` → `.github/workflows/deploy.yml` → Docker build → Cloud Run deploy
 - **GitHub Secrets required**: `GCP_SA_KEY`, `GCP_PROJECT_ID`, `GCP_REGION`, `GCP_RUN_SA_EMAIL`
 - **Limits**: `--max-instances 2`, `--memory 512Mi`, `--min-instances 0` (cold start on first request)
@@ -167,5 +169,5 @@ ANTHROPIC_MODEL=claude-sonnet-4-6  # override if needed
 | Options flow | `/flow` page shows static "requires paid Polygon plan" message — no live data source wired. |
 | Open interest | `/api/oi/[ticker]` only serves mock data for GOOG/AAPL/MSFT/NVDA. Live provider not wired. |
 | Earnings depth | FMP earnings-surprises returns ~20 quarters; calendar fallback fetches up to 80. |
-| Twitter rate limit | twitterapi.io free tier: 1 req/5s. Client sleeps 5.5s between paginated pages. |
+| Twitter session expiry | Cookie-based auth expires when your browser session does. Re-export cookies from x.com and redeploy when you get 401/403 errors. |
 | yahoo-finance2 | Requires Node ≥22 but app runs on Node 20. Works with warnings — not tested on Node 22. |

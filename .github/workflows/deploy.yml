@@ -53,6 +53,6 @@ jobs:
             --service-account "${{ secrets.GCP_RUN_SA_EMAIL }}" \
             --set-secrets "TASTYTRADE_USERNAME=tastytrade-username:latest" \
             --set-secrets "TASTYTRADE_PASSWORD=tastytrade-password:latest" \
-            --set-secrets "TWITTERAPI_IO_KEY=twitterapi-io-key:latest" \
             --set-secrets "ANTHROPIC_API_KEY=anthropic-api-key:latest" \
-            --set-env-vars "NODE_ENV=production"
+            --update-secrets "/secrets/twitter-cookies.json=twitter-cookies:latest" \
+            --set-env-vars "NODE_ENV=production,TWITTER_COOKIES_FILE=/secrets/twitter-cookies.json"

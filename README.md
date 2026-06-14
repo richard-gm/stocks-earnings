@@ -14,7 +14,7 @@ A fullstack Next.js tool for retail options traders. Three integrated features:
 
 - Node.js 20 (via nvm)
 - A Financial Modeling Prep API key (free tier — ticker price/returns)
-- Optional: TastyTrade credentials, Alpha Vantage key (earnings live mode), twitterapi.io key, Anthropic key
+- Optional: TastyTrade credentials, Alpha Vantage key (earnings live mode), Twitter session cookies (JSON), Anthropic key
 
 ### Local development
 
@@ -34,7 +34,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-**Mock mode**: if `TASTYTRADE_USERNAME` is not set, the earnings page works with pre-built data for GOOG, AAPL, MSFT, NVDA. If `TWITTERAPI_IO_KEY` is not set, the Twitter page shows hardcoded analyses for `chamath` and `elonmusk`.
+**Mock mode**: if `TASTYTRADE_USERNAME` is not set, the earnings page works with pre-built data for GOOG, AAPL, MSFT, NVDA. If `TWITTER_COOKIES_FILE` is not set, the Twitter page shows hardcoded analyses for `chamath` and `elonmusk`.
 
 ### Type check
 
@@ -72,7 +72,9 @@ ALPHA_VANTAGE_API_KEY=        # https://www.alphavantage.co/support/#api-key
 FMP_API_KEY=                  # https://financialmodelingprep.com/developer/docs
 
 # Twitter Intelligence — live mode
-TWITTERAPI_IO_KEY=            # https://twitterapi.io — free tier: 1 req/5s
+# Export your x.com browser session cookies as JSON using the "Cookie-Editor"
+# browser extension (Export → JSON), then save the file locally.
+TWITTER_COOKIES_FILE=./config/twitter-cookies.json   # path to exported cookie JSON
 ANTHROPIC_API_KEY=            # https://console.anthropic.com
 ANTHROPIC_MODEL=claude-sonnet-4-6   # optional override
 ```
@@ -122,8 +124,22 @@ These are injected at runtime by Cloud Run:
 
 - `tastytrade-username`
 - `tastytrade-password`
-- `twitterapi-io-key`
+- `twitter-cookies` — full JSON content of your exported x.com browser cookies (see **Twitter cookies** below)
 - `anthropic-api-key`
+
+### Twitter cookies
+
+The Twitter Intelligence feature authenticates using your personal x.com browser session rather than a paid API. To set this up:
+
+1. Install the [Cookie-Editor](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) browser extension
+2. Log in to [x.com](https://x.com) in your browser
+3. Open Cookie-Editor, click **Export → Export as JSON**, and copy the result
+4. **Local dev**: save the JSON to `config/twitter-cookies.json` and set `TWITTER_COOKIES_FILE=./config/twitter-cookies.json` in `.env.local`
+5. **Cloud Run**: create a GCP Secret Manager secret named `twitter-cookies` with the JSON as its value; the deploy workflow mounts it to `/secrets/twitter-cookies.json` and sets `TWITTER_COOKIES_FILE` automatically
+
+> **Note**: Browser sessions expire. If Twitter returns a 401/403, re-export your cookies and redeploy.
+
+The cookie file is gitignored — never commit it.
 
 ### Manual deploy
 

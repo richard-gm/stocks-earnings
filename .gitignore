@@ -46,3 +46,6 @@ data/twitter-cache/
 
 # Claude Code local settings (machine-specific)
 .claude/settings.local.json
+
+# Twitter session cookies — never commit, contains auth tokens
+config/twitter-cookies.json
