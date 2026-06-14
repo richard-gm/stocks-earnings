@@ -1,0 +1,170 @@
+{
+  "ticker": "TSEM",
+  "company": "Tower Semiconductor Ltd",
+  "sector": "Semiconductors / Specialty Foundry (SiGe, Silicon Photonics, RFCMOS, Power)",
+  "analysisDate": "2026-05-13",
+  "priceAtAnalysis": 264.22,
+  "analystTarget": 189.00,
+  "rating": "BULLISH",
+  "strategy": "Tower Semiconductor just reported a blowout Q1 2026 (revenue $414M +15% YoY, EPS $0.65 beat) and issued record Q2 guidance of $455M, driven by $1.3B in newly signed silicon photonics customer contracts for 2027. The stock has surged 451% over 12 months and trades ~40% above the median analyst target of $189 — analysts have not kept pace with the fundamental step-change from AI silicon photonics. With IV at 100%+ post-earnings, premium selling via cash-secured puts is the ideal entry: collect elevated premium, set a 30-delta strike at $245 with breakeven near strong technical support, and participate in upside through potential assignment. Close all positions by July 22, 2026 (5 days before estimated Q2 earnings) — do not hold naked puts through a quarterly earnings event at this IV.",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": "ELEVATED IV POST-EARNINGS (100%+ annualised) = PREMIUM-SELLING WINDOW. Optimum CSP entry: days 1–7 post-May 13 earnings while IV is still rich before crush. Stock at $264 is 40% above median analyst target ($189) — valuation extended but momentum and fundamental revision cycle strongly support continued outperformance. Key risk: geopolitical disruptions (Israel-based operations) and Q2 earnings binary (estimated late July). Mandatory position close July 22.",
+    "vixNote": "Sector IV broadly elevated ~35–40% (above 25% historical average for foundry sector). TSEM IV at 100%+ annualised (97th percentile) immediately post-May 13 earnings beat. IV crush typically occurs within 7–14 days post-earnings — act early or pay 30–40% less premium. At 100% IV, the $245 30-delta put generates ~$14.75 in premium for 129 DTE.",
+    "bollingerEntry": "Stock broke to new all-time highs above the prior 52-week high of $232.67 on May 13 earnings + $1.3B SiPho contract announcement. Upper Bollinger Band estimated $270–$280 post-breakout. 20-day SMA ~$200; 50-day SMA ~$180. The wheel is best initiated on a 5–10% pullback from the $264 high toward the $240–$250 range — these levels represent post-breakout consolidation and the first technical support below the gap.",
+    "csp": {
+      "strike": "$245.00",
+      "delta": "0.30",
+      "dte": "60–70 days (targeting close by July 22 before Q2 earnings)",
+      "estimatedPremium": "$14.75 per share ($1,475 per 100-share contract)",
+      "annualisedYield": "~18% annualised on $24,500 cash secured (based on 60-day hold to 50% target)",
+      "exitRule": "Close at 50% profit ($7.38 credit in account). Hard stop if underlying closes below $235. Mandatory close ALL positions by July 22, 2026 — 5 days before estimated Q2 earnings. No exceptions.",
+      "note": "30-delta strike at $245 implies ~70% probability of expiring worthless. Breakeven at $230.25 sits near the prior 52-week high ($232.67) — strong technical support. If assigned at $245 (net basis $230.25), you own TSEM at a price with excellent fundamental support."
+    },
+    "coveredCall": {
+      "strike": "$285.00",
+      "delta": "0.20",
+      "dte": "30–45 days",
+      "estimatedPremium": "$6.50 per share ($650 per 100-share contract)",
+      "exitRule": "Close at 50% profit ($3.25) or hold through expiration if underlying remains below $285. Do not hold past July 22 earnings hard stop.",
+      "note": "Sell $285 call against shares acquired via CSP assignment ($230.25 net basis). At $285 call-away, total return = $54.75 appreciation + $6.50 CC premium = $61.25 per share on $230.25 invested (26.6% total, ~73% annualised over 129 days if cycle completes)."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 245.0,
+    "underlyingPrice": 264.22,
+    "iv": "~100%+ (97th percentile post-earnings; IV crush expected within 7–14 days)",
+    "earningsDate": "~Late July 2026 (Q2 2026; Q1 2026 reported May 13, 2026)",
+    "closeDeadline": "July 22, 2026 (5 days before estimated Q2 earnings ~July 27)",
+    "exitRules": {
+      "entryTrigger": "Enter CSP days 1–7 post-May 13 earnings while IV remains elevated. Preferred entry on a 5–10% pullback toward $240–$250 support. Do not enter CSP if stock breaks below $240 on a closing basis before entry.",
+      "profitExit": "Close position when premium shrinks to 50% of received value ($7.38 for a $14.75 collected premium). Typically achieved in 20–30 days with IV crush helping accelerate decay.",
+      "timeStop": "If DTE drops to 5 days remaining and premium has not reached 50% profit, close at market. Do not hold to expiration on a short put.",
+      "lossStop": "Close if underlying closes below $235 support (2.3% below $245 strike). This signals the technical breakout is reversing. Maximum acceptable loss: 200% of premium received (~$29.50 per share).",
+      "earningsHardStop": "MANDATORY: Close ALL positions by July 22, 2026 — 5 days before estimated Q2 earnings. At 100%+ IV, Q2 earnings-week options carry explosive move risk. Tower reported a +13.6% move on May 13 alone. Holding a naked put through earnings is unacceptable risk at these IV levels."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 94,
+        "daysLeftAtClose": 24,
+        "premiumEst": "$11.50 ($245 CSP at 30-delta; close by July 22 captures ~$8–9 of theta)",
+        "flatScenario": "Stock stays at $264 — CSP expires worthless at July 22 close; residual put value ~$3–4. Net gain ~$8–9 per contract on $24,500 cash secured (~3.3% in 70 days; ~17% annualised).",
+        "atTarget": "Stock rises to $285 by July 22 — put deep OTM, residual <$1. Max capture ~$10–11 per contract. Close efficiently.",
+        "bestFor": "Shorter-hold traders; lower total premium but higher efficiency as a % of DTE worked. Only 24 days remain after close deadline — unused theta is minimal.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 129,
+        "daysLeftAtClose": 59,
+        "premiumEst": "$14.75 ($245 CSP at 30-delta; close by July 22 captures largest portion of theta in high-IV period)",
+        "flatScenario": "Stock stays at $264 — close by July 22, residual put value ~$7–8. Net premium captured ~$7–8 per contract (50%+ profit target achieved in ~70 days; ~14–16% annualised on $24,500).",
+        "atTarget": "Stock rises to $285 by July 22 — put deep OTM, residual ~$3. Close for ~$12 net profit per contract. Efficient premium capture.",
+        "bestFor": "Recommended for most income traders: highest upfront premium with meaningful DTE remaining after the July 22 close, providing the best per-day theta capture in the pre-earnings window.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 192,
+        "daysLeftAtClose": 122,
+        "premiumEst": "$18.50 ($245 CSP at 30-delta; close by July 22 captures first 70 days of 192 total — ~36% of max premium)",
+        "flatScenario": "Stock stays at $264 — close by July 22, residual put value ~$11–12. Net premium captured ~$6–8 per contract (only ~33–43% of max; paying for unused post-July theta).",
+        "atTarget": "Stock rises to $285 — similar residual, similar capture efficiency. Sep 19 is strictly superior for the pre-earnings hold.",
+        "bestFor": "Best if planning TWO wheel cycles: close the Nov 21 put by July 22, then re-enter a new CSP for the Nov expiry in August (post-Q2 earnings). Combined total premium over both cycles would exceed single Sep 19 entry.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Cash-Secured Put — $245 Sep 19, 2026 (close by July 22)",
+    "strike": 245.0,
+    "expiry": "Sep 19, 2026",
+    "type": "Short Put (30-delta) — premium-rich post-earnings IV environment; close by July 22, 2026",
+    "estimatedPremium": "~$14.75 per share ($1,475 per 100-share contract) collected upfront",
+    "contractCost": "$24,500 cash secured per contract; $49,000 for 2 contracts",
+    "delta": 0.30,
+    "breakeven": "~$230.25 (strike $245 minus $14.75 premium)",
+    "entryNote": "Tower Semiconductor just reported a transformational Q1 2026: $414M revenue (+15% YoY), $65M net profit (+62% YoY), and $0.65 EPS vs. $0.57 consensus. Q2 guidance of $455M implies a record quarter. The $1.3B silicon photonics customer contracts for 2027 — announced the same day — represent a step-change in Tower's strategic positioning in the AI data center supply chain. Tower's specialty foundry processes (SiGe, SiPho, RFCMOS) are not commoditised — they cannot be substituted by TSMC or Samsung in the near term. The $245 CSP at 30-delta achieves three things simultaneously: (1) it captures the 100%+ IV premium window before it crushes over the next 14 days; (2) it sets up a potential TSEM stock acquisition at $230.25 net basis — near the prior 52-week high and a level supported by strong fundamentals; (3) it imposes a July 22 hard stop that avoids the Q2 earnings binary. Note: the stock at $264 trades 40% above the median analyst target of $189 — this is not a fundamental undervaluation. It is an IV-rich momentum environment where selling premium into elevated expectations is structurally advantaged over directional long calls.",
+    "exitPlan": [
+      { "label": "50% profit target (primary exit)", "trigger": "Premium value falls to ~$7.38 (50% of $14.75 collected). Typically reached day 20–30 with IV crush assisting.", "optionGain": "~$738 per contract profit on $24,500 cash secured (~3% in ~25 days; ~44% annualised)" },
+      { "label": "Earnings hard stop (mandatory)", "trigger": "July 22, 2026 — close regardless of P&L. At stock flat ($264), residual ~$7–8; net gain ~$7–8 per contract. Accept outcome.", "optionGain": "~$700–750 per contract if stock flat at July 22. Less if stock has moved lower." }
+    ]
+  },
+
+  "companyOverview": "Tower Semiconductor Ltd is an Israeli specialty semiconductor foundry headquartered in Migdal Ha'Emek, Israel, operating since 1993. It manufactures analog and mixed-signal integrated circuits for over 300 customers using differentiated specialty process technologies: Silicon Germanium (SiGe) for RF and mmWave, silicon photonics (SiPho) for optical interconnects, BiCMOS, RFCMOS, CMOS image sensors, silicon-on-insulator (SOI), and non-volatile memory (NVM). Tower serves mission-critical, high-margin applications in mobile infrastructure, automotive, medical imaging, aerospace and defense, data center optical interconnect, and wireless communications — markets where process specialisation, not volume scale, is the competitive moat.\n\nTower's most significant strategic pivot is into silicon photonics for AI data centers. On May 13, 2026, the company announced $1.3 billion in signed customer contracts for silicon photonics revenue in 2027 alone, accompanied by $290 million in upfront cash prepayments from customers. This transforms the company from a specialty analog foundry into a critical enabler of the AI optical interconnect market — a market being driven by exponentially growing intra-data-center bandwidth demand from LLM training and inference workloads. CEO Russell Ellwanger has guided investors to $2.8 billion in annual revenue and $750 million in net profit by 2028, implying a ~58% net margin at maturity.\n\nQ1 2026 demonstrated accelerating execution momentum: $413.6M revenue (+15% YoY), $111M gross profit (+52% YoY — gross margin expanding materially), and $65M net profit (+62% YoY). EPS of $0.65 beat the $0.57 Wall Street consensus by 14%. Q2 2026 guidance of $455M (record) represents +22% YoY and +10% sequential growth. Tower also secured a significant defense win with Axiro Semiconductor, manufacturing Ku- and X-band radar beamforming ICs using Tower's SiGe process — positioning the company as a critical US defense semiconductor supplier with strategic protection.\n\nHistorically, Intel attempted to acquire Tower for $5.4 billion in 2022 — a deal terminated in August 2023 when Chinese regulators declined to approve it on geopolitical grounds. Paradoxically, Tower's independent market capitalisation has since grown to approximately $30 billion — nearly 6x the proposed acquisition price — as AI-driven demand validated the strategic value of Tower's specialty processes. Post-termination, Intel committed $300 million to a foundry partnership with Tower, confirming the strategic relationship despite the failed transaction.\n\nGeopolitical risk is real but manageable: Tower's Migdal Ha'Emek facility is in northern Israel, and regional disruptions periodically affect logistics. The company has also navigated US-China technology competition, maintaining diversified customer relationships while expanding its US defense presence. Long-term customer contracts, strategic prepayments, and government-adjacent defense relationships provide significant revenue visibility and operational buffer.",
+
+  "technicalSetup": {
+    "pattern": "Breakout continuation above prior 52-week high — momentum trend",
+    "description": "TSEM broke above its prior 52-week high of $232.67 on May 13, 2026, on a combination of Q1 earnings beat and the $1.3B silicon photonics contract announcement, printing a new all-time high at $264.22. The stock is now in price discovery with no meaningful overhead resistance in the immediate term. The 20-day SMA is estimated near $200, the 50-day near $180 — the stock is extended above both. Bollinger Band upper limit estimated $270–$280 at current volatility. The ideal wheel entry is a 5–10% post-gap consolidation toward the $240–$250 range (the prior resistance-turned-support zone at the 52-week high). A close below $230 would signal the breakout is failing and would trigger hard stops on wheel positions. The technical setup is bullish but extended — do not chase the open on May 13; wait for intraday or day-2 stabilisation before selling puts.",
+    "keyLevels": [
+      { "level": "$230.00–$232.67", "type": "Support", "note": "Prior 52-week high, now support. Also near the 20-day SMA. Hard stop zone for wheel positions — break below triggers close." },
+      { "level": "$240.00–$250.00", "type": "Support", "note": "Post-breakout consolidation zone. Ideal CSP entry range. First technical support above prior resistance." },
+      { "level": "$264.22", "type": "Current Price / Reference", "note": "All-time high set May 13 on Q1 earnings + SiPho contracts. Extended from moving averages." },
+      { "level": "$280.00–$300.00", "type": "Resistance", "note": "Next major target zone; above all current analyst targets. Momentum continuation target if AI SiPho contracts accelerate estimates." }
+    ]
+  },
+
+  "financials": [
+    { "metric": "Stock Price (May 13)", "value": "$264.22", "note": "New 52-week high; 52-week range $36.42–$264.22. Up ~451% over 12 months. Up ~13.6% on May 13 earnings day alone." },
+    { "metric": "Market Cap (Est.)", "value": "~$30.1B", "note": "At $264.22 × ~114M diluted shares. Represents ~5.6× Intel's 2022 acquisition offer of $5.4B." },
+    { "metric": "Q1 2026 Revenue", "value": "$413.6M (+15% YoY)", "note": "Beat consensus. Gross profit $111M (+52% YoY) — gross margin expanding materially." },
+    { "metric": "Q1 2026 EPS (Diluted)", "value": "$0.65 (beat $0.57 consensus by $0.08)", "note": "Net profit $65M (+62% YoY vs. $40M in Q1 2025). Net margin 16% (up from ~11%)." },
+    { "metric": "Q2 2026 Revenue Guidance", "value": "$455M (record; +22% YoY)", "note": "Management expects continued margin expansion through 2026. $290M customer prepayments received." },
+    { "metric": "Silicon Photonics Contracts (2027)", "value": "$1.3B customer commitments", "note": "Signed May 13, 2026. $290M in upfront prepayments received. SiPho capacity to triple by end of 2026." },
+    { "metric": "2028 Revenue Target (Management)", "value": "$2.8B revenue, $750M net profit", "note": "CEO guidance implying 58% net margin at maturity. Requires 6.8× revenue growth from 2025 base — ambitious but supported by contract visibility." },
+    { "metric": "Analyst Target (Median — 9 analysts)", "value": "$189.00", "note": "Range: $140–$253. GF Securities: $253 (highest). Stock at $264 is 40% above median — analysts meaningfully lagging the fundamental revision cycle." },
+    { "metric": "Implied Volatility (Post-Earnings)", "value": "~100%+ annualised (97th percentile)", "note": "Premium-rich environment for CSP/CC strategies. IV crush expected within 7–14 days — enter puts days 1–5 post-earnings." },
+    { "metric": "Defense Win (Axiro Semiconductor)", "value": "Ku/X-band radar beamforming ICs", "note": "US defense chips via Tower's SiGe process. Positions TSEM as critical US defense semiconductor supplier — strategic moat." }
+  ],
+
+  "insiderFlow": {
+    "summary": "No open-market insider buying or selling activity detected in the trailing 12 months. All insider activity is equity compensation grants and routine tax-withholding sales at vesting — mechanically required, not discretionary. Absence of insider selling at the current $264 level (near the all-time high) is a quiet positive — insiders are not rushing to liquidate despite a 451% 12-month gain.",
+    "transactions": [],
+    "signal": "NEUTRAL — No discretionary insider transactions at current levels. Absence of selling by management and directors at all-time highs implies insiders view further upside as plausible, or are in regulatory blackout periods around the May 13 earnings and SiPho contract announcement. Either way, no red flags. For wheel strategy, trade on technicals and option premiums, not insider flow."
+  },
+
+  "catalysts": [
+    "Q2 2026 Earnings (Est. Late July 2026) — Management guided record $455M; beat expectations would extend rally and provide re-entry for second wheel cycle",
+    "$1.3B Silicon Photonics Customer Contracts (May 13, 2026) — 2027 revenue visibility locked in; quarterly capacity utilisation updates will be key data points",
+    "SiPho Capacity Tripling (by end of 2026) — Execution milestone that would confirm 2027 revenue conversion; meaningful updates expected at each earnings",
+    "Defense Sector Wins — Axiro partnership (Ku/X-band radar) as first disclosed win; additional US defense design wins expected through H2 2026",
+    "AI Data Center Cycle Continuation — Every new AI chip from NVIDIA, AMD, Google, or Amazon drives optical interconnect demand at Tower",
+    "Geopolitical De-escalation — Any easing of Israel-Middle East tensions or US-China trade relations removes the geopolitical discount from the stock",
+    "Analyst Target Upgrades — With stock at $264 vs. median $189, institutional analysts are lagging; upgrades (esp. from firms with <$200 targets) would drive institutional buying",
+    "Q3 2026 Earnings (Est. Oct/Nov) — Third consecutive strong quarter would complete the fundamental re-rating cycle"
+  ],
+
+  "risks": [
+    "Valuation extension: at $264, stock is 40% above median analyst target ($189). P/E on trailing earnings is 404×. Any guidance miss or macro headwind could trigger 15–25% pullback",
+    "Q2 earnings binary (estimated late July): $455M guidance is ambitious; gross margin miss or H2 outlook moderation could reverse the May 13 breakout — mandatory close July 22 is non-negotiable",
+    "Geopolitical disruption: Tower's Migdal Ha'Emek operations are in northern Israel; ongoing Middle East tensions periodically affect logistics, customer site visits, and supply chain reliability",
+    "IV crush risk: 100%+ IV collapses to 40–50% within 7–14 days post-earnings — enter CSP trades early in this window or collect 30–40% less premium",
+    "US-China technology competition: Chinese regulatory restrictions or export controls on SiGe/SiPho technologies could reduce Tower's addressable market or supply chain access by 5–15%",
+    "Intel foundry competition: if Intel ramps older-node analog capacity, it could create pricing pressure in non-photonics specialty segments",
+    "Capital intensity: tripling SiPho capacity requires significant CapEx — if capex overruns or debt financing costs rise, FCF and shareholder returns compress",
+    "Customer concentration: largest customers (likely 3–5 names) probably represent 40–50%+ of revenue; loss of a major SiPho commitment would be material",
+    "Macro/rate risk: semiconductor stocks compress 20–30% multiples in hawkish environments; TSEM's elevated multiple makes it vulnerable to multiple contraction"
+  ],
+
+  "dilution": {
+    "summary": "Tower has approximately 113–114M diluted shares outstanding, with dilution from employee RSUs/options running at roughly 1–2% annually — standard for a NASDAQ-listed semiconductor company. No material equity raises, convertible bonds, or warrants outstanding. Strong cash generation ($65M net profit Q1 alone, $290M prepayments) makes further dilution unlikely near-term. Wheel strategy is unaffected by dilution — CSP and CC premiums price it in via market cap.",
+    "items": [
+      { "label": "Diluted Shares Outstanding (Q1 2026)", "detail": "~114M diluted vs. ~113M basic. ~1M shares dilution from employee stock options and RSUs." },
+      { "label": "Annual RSU / Option Dilution Run-rate", "detail": "Estimated 1–2% annually from employee equity compensation. Offset partially by any buyback or operational cash flow." },
+      { "label": "Share Buyback", "detail": "No active buyback announced as of May 2026. Company is growth-focused — reinvesting in SiPho capacity expansion." },
+      { "label": "Convertible / Warrant Overhang", "detail": "None outstanding. Tower finances growth via operating cash flow, prepayments from customers, and investment-grade debt." }
+    ]
+  },
+
+  "strikeTable": [
+    { "strike": "$230 CSP", "type": "Cash-Secured Put (40-delta, aggressive)", "isRecommended": false, "premium": "~$18.50 (Sep 19, 2026)", "delta": 0.40, "contracts2Cost": "$23,000 (100-share contract)", "breakeven": "$211.50", "atTarget": "If assigned at $230 net $211.50, strong support at prior 52-week high. Higher premium but 40% assignment probability — only for high-conviction bulls." },
+    { "strike": "$245 CSP", "type": "Cash-Secured Put (30-delta, recommended)", "isRecommended": true, "premium": "~$14.75 (Sep 19, 2026)", "delta": 0.30, "contracts2Cost": "$24,500 (100-share contract)", "breakeven": "$230.25", "atTarget": "Breakeven at $230.25 — near prior 52-week high support. 30% assignment probability. If assigned, own TSEM at institutional-quality entry." },
+    { "strike": "$260 CSP", "type": "Cash-Secured Put (25-delta, conservative)", "isRecommended": false, "premium": "~$10.25 (Sep 19, 2026)", "delta": 0.25, "contracts2Cost": "$25,400 (100-share contract)", "breakeven": "$249.75", "atTarget": "Lower premium, lower assignment risk. Suitable for those wanting stock near current price if assigned. Sep 19 is still the preferred expiry." },
+    { "strike": "$285 CC", "type": "Covered Call (20-delta, post-assignment)", "isRecommended": true, "premium": "~$6.50 (Sep 19, 2026)", "delta": 0.20, "contracts2Cost": "Requires 100 shares from CSP assignment", "breakeven": "$278.50 (if called away)", "atTarget": "If stock reaches $285: total wheel return = $14.75 CSP + $6.50 CC + $14.75 appreciation ($230.25 → $245) = $36 per share on $230.25 invested in ~129 days (~57% annualised)." }
+  ]
+}

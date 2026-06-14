@@ -1,0 +1,146 @@
+{
+  "ticker": "NOK",
+  "company": "Nokia Corporation",
+  "sector": "Telecommunications Infrastructure / AI Networks",
+  "analysisDate": "2026-05-08",
+  "priceAtAnalysis": 12.53,
+  "analystTarget": 15.00,
+  "rating": "BULLISH",
+  "strategy": "Long Call $13 Aug 2026 — ride AI network infrastructure re-rating; today's 5% pullback is the entry",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": null,
+    "vixNote": "VIX elevated ~20+; telecom/infra premiums modest but adequate at the $12–13 level. Wheel generates 13–15% annualised yield at current IV.",
+    "bollingerEntry": "Lower Bollinger Band estimated ~$10.50–$11.00. Today's 5% pullback to $12.53 brings the stock meaningfully closer to the lower band — this is the opportunistic entry window.",
+    "csp": {
+      "strike": "$11",
+      "delta": "0.22",
+      "dte": "21–30 days",
+      "estimatedPremium": "$0.35–0.45 per contract",
+      "annualisedYield": "~13–15% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured (target $0.18–0.22). Hard stop before July 18 (5 days before est. July 23 earnings).",
+      "note": "Conservative entry at $11 provides a 12% downside buffer from current price. Nokia ADR liquidity is adequate but spreads can widen — check bid/ask before entry."
+    },
+    "coveredCall": {
+      "strike": "$12",
+      "delta": "0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "$0.28–0.35 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through earnings.",
+      "note": "If assigned at $11 CSP, sell $12 CC to reduce cost basis to ~$10.35–$10.45. Rinse and repeat."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 13,
+    "underlyingPrice": 12.53,
+    "iv": "~35% (stable telecom/infra; elevated by recent rally volatility)",
+    "earningsDate": "~July 23, 2026 (estimated Q2 reporting date)",
+    "closeDeadline": "July 18, 2026 (5 days before est. earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter today or on any intraday dip below $12.40. Today's 5% pullback on no fundamental news is the entry trigger the methodology targets.",
+      "profitExit": "Close Contract 1 when stock hits $13.80 (+10%). Let Contract 2 run to $15.00 analyst target. Partial exit locks gains and reduces risk.",
+      "timeStop": "If stock has not cleared $13.00 by June 20 (50% of DTE), close position. Theta accelerates significantly past the 50% time mark.",
+      "lossStop": "Close at 40–50% loss on premium paid (close at $0.45–0.55 loss on ~$0.90 paid). Do not average down into a declining position.",
+      "earningsHardStop": "Close ALL positions by July 18, 2026 — 5 days before estimated July 23 earnings. No exceptions for long premium positions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 98,
+        "daysLeftAtClose": 71,
+        "premiumEst": "~$0.85–0.95 ($13 call)",
+        "flatScenario": "Stock stays at $12.53 — call expires worthless. Loss: ~$90 per contract.",
+        "atTarget": "Stock at $15.00 by July 18 close — call worth ~$2.00–2.10. Gain: +$110–120 per contract (~125% return).",
+        "bestFor": "Optimal: cheapest premium, 71 days of working time before earnings hard stop.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 133,
+        "daysLeftAtClose": 71,
+        "premiumEst": "~$1.05–1.15 ($13 call)",
+        "flatScenario": "Same close deadline as Aug — paying $0.20 extra per contract for 35 days of time you cannot use.",
+        "atTarget": "Identical outcome at July 18 close. +$0.20/contract wasted premium.",
+        "bestFor": "Only if Nokia delays earnings past July 23 — then Sept expiry avoids the event risk.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 196,
+        "daysLeftAtClose": 71,
+        "premiumEst": "~$1.30–1.45 ($13 call)",
+        "flatScenario": "Paying $0.45+ extra for time that is entirely cut off by the earnings hard stop. Not justified.",
+        "atTarget": "Same close outcome — $0.45+ per contract wasted. Aug is strictly optimal.",
+        "bestFor": "Not recommended — overkill for a thesis that resolves before August.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Long Call — $13 Aug 15, 2026",
+    "strike": 13,
+    "expiry": "Aug 15, 2026",
+    "type": "Single-Leg Long Call (IV ~35% — selling $15 short leg saves only ~$0.35; single leg preferred per IV rule)",
+    "estimatedPremium": "~$0.90 per contract",
+    "contractCost": "~$90 per contract (2 contracts = $180)",
+    "delta": 0.42,
+    "breakeven": "$13.90",
+    "entryNote": "IV at ~35% falls below the 40% threshold where a short leg becomes meaningful — selling the $15 call saves only ~$0.35 while capping upside exactly at the analyst target. Single-leg call is the right structure here. Today's 5% pullback on no fundamental news (stock down from ~$13.20) is the entry signal. Strong Buy consensus from CFRA ($16), JPMorgan (€12), Morgan Stanley (€11), and Argus ($15) — all raised after Q1 earnings.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock reaches $13.80 (+10%)", "optionGain": "~$50–60 per contract (~60% gain)" },
+      { "label": "Contract 2", "trigger": "Stock reaches $15.00 — analyst consensus", "optionGain": "~$110–120 per contract (~125% gain)" }
+    ]
+  },
+
+  "companyOverview": "Nokia is a Finnish telecommunications infrastructure leader, best known for 5G network equipment and AI-driven network solutions. After years of restructuring, the company is executing on a compelling AI network densification story: Q1 2026 saw revenue of €4.5B (+4% YoY) and EPS of €0.06 (+67% YoY). Nokia's AI network infrastructure positioning — providing hardware and software for the next wave of AI model training data center connectivity — has driven a 147% 12-month return and attracted a wave of analyst upgrades. The Q1 revenue miss (€4.5B vs €4.86B est.) was offset by strong profitability improvement and bullish Q2 guidance of +5–9% QoQ growth.",
+
+  "financials": [
+    { "metric": "Stock Price (May 8)", "value": "$12.53", "note": "Down 5% today; 12-month return: +147%" },
+    { "metric": "Market Cap", "value": "~$70B", "note": "Mature large-cap infra company" },
+    { "metric": "Q1 2026 Revenue", "value": "€4.5B ($5.26B)", "note": "+4% YoY; missed €4.86B estimate" },
+    { "metric": "Q1 2026 EPS", "value": "€0.06", "note": "+67% YoY; missed estimate by 3%" },
+    { "metric": "2026 Op. Profit Guidance", "value": "€2.0B–€2.5B", "note": "Reiterated; FY outlook maintained" },
+    { "metric": "Q2 2026 Revenue Guidance", "value": "+5–9% QoQ", "note": "Seasonally strong H2 expected" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (majority)", "note": "CFRA $16, JPMorgan €12, MS €11, Argus $15" }
+  ],
+
+  "insiderFlow": {
+    "summary": "Nokia is a foreign private issuer (FPI) listed as an ADR — US Form 4 insider disclosures are not required. Insider data is limited for ADR holders.",
+    "transactions": [
+      { "insider": "Nokia Board / Management", "action": "No US Form 4 required", "shares": 0, "price": "N/A", "date": "2026-05-08", "value": "N/A", "note": "As a Finnish company with ADR listing, Nokia is exempt from SEC Form 4 insider filing requirements. Check Helsinki exchange filings for Finnish insider data." }
+    ],
+    "signal": "NEUTRAL — insufficient US insider data available. Analyst upgrade cycle provides an alternative conviction signal."
+  },
+
+  "catalysts": [
+    "Analyst upgrade wave: CFRA doubled target to $16, JPMorgan doubled euro target to €12, Argus initiated Buy at $15, Morgan Stanley raised to €11",
+    "AI network densification: data center operators upgrading backbone for AI workloads — Nokia's optical and IP routing portfolio is a key beneficiary",
+    "Q2 2026 guidance of +5–9% QoQ revenue growth; H2 historically stronger for Nokia",
+    "EPS +67% YoY in Q1 2026 despite modest revenue growth — margin expansion story is intact",
+    "12-month gain of 147% reflects genuine re-rating; today's 5% pullback on no news is an entry opportunity",
+    "Network Infrastructure and Cloud & Network Services both expected to grow in 2026 per management guidance"
+  ],
+
+  "risks": [
+    "Missed Q1 2026 revenue estimate (€4.5B vs €4.86B) — top-line miss may signal demand timing issues",
+    "Today's 5% pullback could extend if broader tech/infra sell-off continues",
+    "High expectations priced in after 147% 12-month rally — any guidance cut would hit hard",
+    "Competition from Ericsson and Huawei in network equipment; pricing pressure in competitive bids",
+    "Currency risk: Nokia reports in euros; USD/EUR fluctuations affect ADR pricing",
+    "AI capex cycle could pause if cloud giants pull back on data center spending"
+  ],
+
+  "dilution": "Nokia is a mature Finnish corporation with a stable share count. The ADR program (1 ADR = 1 ordinary share) introduces no additional dilution. Share count has been declining through buybacks. No significant dilution risk.",
+
+  "strikeTable": [
+    { "strike": "$11 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$0.40", "delta": 0.22, "contracts2Cost": "$2,120 cash secured (2 contracts)", "breakeven": "$10.60", "atTarget": "N/A (income strategy)" },
+    { "strike": "$12", "type": "Call (ITM)", "isRecommended": false, "premium": "~$1.25", "delta": 0.54, "contracts2Cost": "~$250 (2 contracts)", "breakeven": "$13.25", "atTarget": "+$350 at $15 — high premium, less leverage" },
+    { "strike": "$13", "type": "Call (slight OTM)", "isRecommended": true, "premium": "~$0.90", "delta": 0.42, "contracts2Cost": "~$180 (2 contracts)", "breakeven": "$13.90", "atTarget": "+$220 at $15 (~125% return)" },
+    { "strike": "$14", "type": "Call (OTM)", "isRecommended": false, "premium": "~$0.58", "delta": 0.30, "contracts2Cost": "~$116 (2 contracts)", "breakeven": "$14.58", "atTarget": "+$84 at $15 — poor leverage given proximity to target" },
+    { "strike": "$15", "type": "Call (OTM at target)", "isRecommended": false, "premium": "~$0.35", "delta": 0.21, "contracts2Cost": "~$70 (2 contracts)", "breakeven": "$15.35", "atTarget": "Barely in the money at target — low probability" }
+  ]
+}

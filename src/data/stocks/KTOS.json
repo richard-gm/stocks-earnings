@@ -1,0 +1,162 @@
+{
+  "ticker": "KTOS",
+  "company": "Kratos Defense & Security Solutions Inc.",
+  "sector": "Aerospace & Defense / Unmanned Systems",
+  "analysisDate": "2026-05-08",
+  "priceAtAnalysis": 56.92,
+  "analystTarget": 85.00,
+  "rating": "BULLISH",
+  "strategy": "Bull Call Spread $60/$85 Aug 2026 — drone and hypersonics leader at 57% discount to 52-week high; IV ~50% leans spread; Strong Buy consensus with $96 avg target",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": "INSIDER SELLING NOTE: Multiple executives sold shares under pre-arranged 10b5-1 plans at $61–$77 in April–May 2026 — just above/around current price. 10b5-1 plans are pre-scheduled and not discretionary, but the concentration of sales in the $60–77 range is worth noting as a near-term sentiment signal.",
+    "vixNote": "VIX elevated ~20+; defense sector IV runs elevated given geopolitical uncertainty and earnings volatility. KTOS moved 5.3% down on Q1 despite a beat — options chain reflects this two-way risk.",
+    "bollingerEntry": "Lower Bollinger Band estimated ~$51–$53. Stock at $56.92 is near the lower band after the 57% pullback from its $134 52-week high. This is the Bollinger entry zone the methodology looks for.",
+    "csp": {
+      "strike": "$52.50",
+      "delta": "0.22",
+      "dte": "21–30 days",
+      "estimatedPremium": "$2.00–2.40 per contract",
+      "annualisedYield": "~15–17% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured. Hard stop before ~July 24 (5 days before est. Q2 2026 earnings in late July).",
+      "note": "The $52.50 CSP is 7.8% below current price — modest buffer given high beta. Enter only if stock confirms support above $54; do not enter into falling momentum."
+    },
+    "coveredCall": {
+      "strike": "$60",
+      "delta": "0.28",
+      "dte": "21–30 days",
+      "estimatedPremium": "$2.80–3.20 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through earnings.",
+      "note": "If assigned at $52.50, sell $60 CC to reduce cost basis to ~$50. Strong premium at current IV level."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 60,
+    "underlyingPrice": 56.92,
+    "iv": "~50% (defense sector; elevated post-earnings volatility on large 52-week range stock)",
+    "earningsDate": "~July 29, 2026 (Q2 2026, estimated — Q1 reported May 6)",
+    "closeDeadline": "July 24, 2026 (5 days before est. Q2 earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter after stock stabilises above $56.00 on a closing basis. The 5.3% post-earnings drop despite a beat suggests sentiment is cautious — wait for the dust to settle before entering. Do not buy into falling momentum.",
+      "profitExit": "Close Contract 1 when spread reaches 50% of max gain (~$625 on $60/$85). Let Contract 2 run to $85 target if stock momentum supports. Consider partial exit at $70.",
+      "timeStop": "If stock has not broken above $63.00 by June 15 (50% of DTE), close the position. Defense stocks can drift sideways for extended periods; theta erodes quickly past mid-life.",
+      "lossStop": "Close at 40–50% loss on net debit paid (close at ~$1.50–$1.75 loss on $3.50 net paid). Budget uncertainty or a production setback could reprice sharply.",
+      "earningsHardStop": "Close ALL positions by July 24, 2026 — 5 days before estimated Q2 2026 earnings. KTOS moved 5.3% on Q1 and has a 52-week range of $32–$134. Q2 is volatile. No exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 98,
+        "daysLeftAtClose": 77,
+        "premiumEst": "~$6.00 ($60 call) / ~$2.50 ($85 call) → $3.50 net spread",
+        "flatScenario": "Stock stays at $56.92 — spread expires worthless at close deadline. Loss: ~$350 per spread.",
+        "atTarget": "Stock at $85.00 by July 24 — spread worth ~$22.00–25.00. Gain: ~$1,850–$2,150 per spread (~540% return on $350).",
+        "bestFor": "Optimal: 77 days working time, cheapest premium, best risk/reward at 5-6x max.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 133,
+        "daysLeftAtClose": 77,
+        "premiumEst": "~$7.00 ($60 call) / ~$3.00 ($85 call) → $4.00 net spread",
+        "flatScenario": "Same close deadline — paying $0.50 extra per spread for unused post-earnings time.",
+        "atTarget": "Identical outcome at July 24 close. +$50/spread extra cost with no benefit.",
+        "bestFor": "Only if Q2 earnings are pushed past August — date slippage insurance.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 196,
+        "daysLeftAtClose": 77,
+        "premiumEst": "~$8.50 ($60 call) / ~$3.80 ($85 call) → $4.70 net spread",
+        "flatScenario": "Paying $1.20 extra for time entirely cut off by the July 24 earnings hard stop.",
+        "atTarget": "Same close outcome — Aug is strictly cheaper.",
+        "bestFor": "Not recommended — thesis resolves at Q2 or before. Aug is optimal.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Bull Call Spread — $60/$85 Aug 15, 2026",
+    "strike": 60,
+    "expiry": "Aug 15, 2026",
+    "type": "Bull Call Spread (IV ~50% — 'either, lean spread' zone; $85 short leg saves $2.50 vs single call; defined risk sensible given cash flow and sentiment risk)",
+    "estimatedPremium": "~$3.50 net debit per spread",
+    "contractCost": "~$350 per spread (2 spreads = $700)",
+    "delta": 0.44,
+    "breakeven": "$63.50",
+    "entryNote": "IV at ~50% puts us in the 'either — lean spread' zone per methodology. Selling the $85 call saves $2.50/contract and caps the position at the conservative $85 target (vs $96.71 analyst consensus). Max gain $2,150 per spread at $85+. The setup: KTOS is 57% below its $134 52-week high despite raising FY2026 guidance and reporting +22.6% revenue growth in Q1. Record $2B backlog, 1.6x book-to-bill, $447M Space Force contract, and hypersonics revenue growing from $400M (2026) toward $700M (2027). Stock fell 5.3% on the Q1 beat — investor concerns about negative operating cash flow ($-27.4M) and high capex are creating the entry. Enter on stabilisation above $56.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock reaches $72.00 (+26%)", "optionGain": "~$600–650 per spread (~175% gain on $350 cost)" },
+      { "label": "Contract 2", "trigger": "Stock reaches $85.00 — conservative analyst target", "optionGain": "~$2,100–$2,150 per spread (~$600% gain, near max)" }
+    ]
+  },
+
+  "companyOverview": "Kratos Defense & Security Solutions is a pure-play advanced defense technology company with three key franchises: (1) Unmanned Aerial Systems — the XQ-58A Valkyrie tactical drone is the crown jewel, a low-cost attritable jet drone designed for air-to-air combat alongside F-35s; production ramping to 40 units/year by 2028. (2) Hypersonic and satellite propulsion systems — $400M revenue expected in 2026, growing to $700M in 2027. (3) Space and satellite ground systems — a $447M prime Space Force contract (Resilient Missile Warning & Tracking) anchors this segment. Q1 2026 revenue hit $371M (+22.6% YoY) and FY2026 guidance was raised to $1.70–$1.76B (15–19% organic growth). Record $2.0B backlog and 1.6x book-to-bill confirm demand well above supply. The stock trades at $56.92 — 57% below its $134 52-week high — despite a strong fundamental setup, creating an asymmetric opportunity relative to the $96.71 analyst consensus target.",
+
+  "financials": [
+    { "metric": "Stock Price (May 8)", "value": "$56.92", "note": "52-week range: $32.85–$134.00; 57% below 52-week high" },
+    { "metric": "Market Cap", "value": "~$7.3B", "note": "~4.3x FY2026 revenue guidance midpoint" },
+    { "metric": "Q1 2026 Revenue", "value": "$371.0M", "note": "+22.6% YoY; +15.8% organic; beat consensus" },
+    { "metric": "Unmanned Systems Revenue", "value": "$82.6M", "note": "+30.9% organic YoY — fastest growing segment" },
+    { "metric": "Government Solutions Revenue", "value": "$288.4M", "note": "+11.8% organic YoY — steady base" },
+    { "metric": "FY2026 Revenue Guidance", "value": "$1.70B–$1.76B", "note": "Raised after Q1; 15–19% organic growth" },
+    { "metric": "Q1 2026 Operating Cash Flow", "value": "-$27.4M", "note": "Working capital build; receivables +$28.7M, inventory +$14.7M — a risk to watch" },
+    { "metric": "Backlog", "value": "$2.0B (record)", "note": "Book-to-bill 1.6x — demand accelerating ahead of supply" },
+    { "metric": "Hypersonics Revenue (2026E)", "value": "~$400M", "note": "Growing to ~$700M in 2027; key margin driver" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (17 analysts)", "note": "Avg target $96.71; max $150; min $80" }
+  ],
+
+  "insiderFlow": {
+    "summary": "Multiple executives selling under pre-arranged 10b5-1 plans at $61–$77 — above current price but plans were set up when stock was much higher. Automated execution, not discretionary conviction sells.",
+    "transactions": [
+      { "insider": "Deanna H. Lund (CFO)", "action": "Sell (10b5-1)", "shares": 5000, "price": "~$62.10", "date": "2026-05-01", "value": "~$310,478", "note": "Pre-arranged plan adopted May 20, 2025 (when stock was higher). Automated execution — not a conviction sell at current prices." },
+      { "insider": "David M. Carter (President, DRSS Division)", "action": "Sell (10b5-1)", "shares": 4000, "price": "~$74.97 avg", "date": "2026-04-08", "value": "~$299,880", "note": "Sold at $72.67–$77.26 under a pre-arranged plan from June 2025. Stock has since fallen 23% from his sale price." },
+      { "insider": "Stacey G. Rock", "action": "Sell (10b5-1)", "shares": 4000, "price": "~$61.00", "date": "2026-04-01", "value": "~$244,000", "note": "Pre-arranged plan. Sold near current levels — modest in size, not a material signal." }
+    ],
+    "signal": "NEUTRAL-CAUTIOUS — all sales are under pre-arranged 10b5-1 plans (non-discretionary). However, the concentration of plan executions in the $61–$77 range, just above current price, is worth monitoring. No open-market discretionary purchases to offset. Watch for any fresh 10b5-1 plan filings at lower prices — that would be a positive signal."
+  },
+
+  "catalysts": [
+    "Valkyrie XQ-58A drone: the US Air Force's primary low-cost attritable tactical drone — production ramping to 40 units/year by 2028; international export demand building",
+    "Hypersonics: revenue growing from $400M (2026E) to $700M (2027E) — propulsion systems for next-generation missiles are a multi-year government priority",
+    "$447M Space Force prime contract (Resilient Missile Warning & Tracking) — new anchor contract for the space/satellite segment",
+    "Record $2.0B backlog + 1.6x book-to-bill: demand is running well ahead of capacity — revenue acceleration is structural",
+    "FY2026 guidance raised to $1.70–$1.76B after a strong Q1 beat — management has conservative track record",
+    "EBITDA margin guided +100bps YoY in both 2026 and 2027 — operating leverage kicking in as production scales",
+    "Stock at 57% discount to 52-week high despite fundamentals improving — sentiment vs. reality divergence"
+  ],
+
+  "risks": [
+    "Negative operating cash flow: Q1 FCF -$43.1M due to working capital build — if this pattern continues, liquidity risk emerges at scale",
+    "Stock fell 5.3% on a Q1 earnings beat — market pricing in budget uncertainty and execution risk, not the fundamental story",
+    "US defense budget risk: Congressional continuing resolutions or sequestration could delay contract awards and stretch timelines",
+    "Multiple 10b5-1 insider sales executing near current price ($61–$77 range) — psychological ceiling effect",
+    "Valkyrie production ramp execution: transitioning from low-rate to 40 units/year is a manufacturing scale challenge",
+    "52-week range $32.85–$134.00 shows extreme volatility — this stock can move 50%+ in either direction"
+  ],
+
+  "dilution": "Kratos has issued shares for acquisitions and compensation over its history. Current share count ~127M. Stock-based compensation is moderate relative to revenue scale. The company does not pay dividends and reinvests cash into growth — dilution risk is manageable but present as the company funds its production ramp.",
+
+  "technicalSetup": {
+    "pattern": "Deep pullback from 52-week high finding support",
+    "description": "KTOS fell 57% from $134 to $56.92 over several months while fundamentals improved. The stock is now testing the 2026 lower support zone near $54–$57. If this level holds, the setup mirrors a classic 'high-growth pullback to prior breakout' pattern with the recovery target near $75–$85.",
+    "keyLevels": [
+      { "level": "$54.00–$56.00", "type": "Support", "note": "Multi-month lows and lower Bollinger Band — must hold for bullish thesis" },
+      { "level": "$72–$77", "type": "Resistance", "note": "Zone where insiders sold under 10b5-1 plans — first major supply level" },
+      { "level": "$85.00", "type": "Target", "note": "Conservative analyst target; spread max gain level" }
+    ]
+  },
+
+  "strikeTable": [
+    { "strike": "$52.50 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$2.20", "delta": 0.22, "contracts2Cost": "$10,080 cash secured (2 contracts)", "breakeven": "$50.30", "atTarget": "N/A (income strategy)" },
+    { "strike": "$57.50", "type": "Call (ATM)", "isRecommended": false, "premium": "~$6.50", "delta": 0.50, "contracts2Cost": "~$1,300 (2 contracts)", "breakeven": "$64.00", "atTarget": "+$2,100 at $85 — overpays premium" },
+    { "strike": "$60/$85 Spread", "type": "Bull Call Spread", "isRecommended": true, "premium": "~$3.50 net", "delta": 0.44, "contracts2Cost": "~$700 (2 spreads)", "breakeven": "$63.50", "atTarget": "+$4,300 max at $85+ (per 2 spreads)" },
+    { "strike": "$70", "type": "Call (OTM)", "isRecommended": false, "premium": "~$3.80", "delta": 0.30, "contracts2Cost": "~$760 (2 contracts)", "breakeven": "$73.80", "atTarget": "+$2,240 at $85 — lower leverage than spread" },
+    { "strike": "$85", "type": "Call (at target)", "isRecommended": false, "premium": "~$2.20", "delta": 0.20, "contracts2Cost": "~$440 (2 contracts)", "breakeven": "$87.20", "atTarget": "OTM at analyst target" }
+  ]
+}

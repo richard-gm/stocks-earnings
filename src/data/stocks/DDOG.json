@@ -1,0 +1,67 @@
+{
+  "ticker": "DDOG",
+  "company": "Datadog",
+  "sector": "Technology / Cloud Observability",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 140.53,
+  "analystTarget": 181.37,
+  "rating": "BULLISH",
+  "strategy": "Buy $145 Call — Aug 2026 (enter after May 7 earnings)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $140.53 — 1 CSP contract requires ~$14,100 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "Single-Leg Call — Slight OTM, Enter Post-Earnings",
+    "strike": 145,
+    "expiry": "Aug 2026 (~90 days)",
+    "type": "Call",
+    "estimatedPremium": "~$14–18/share",
+    "contractCost": "~$1,400–1,800 (1 contract)",
+    "delta": 0.47,
+    "breakeven": "$159–163",
+    "entryNote": "⚠️ Q1 2026 earnings May 7 — IV RANK is 90.58 (near extreme). IV at 97%, extremely elevated. ENTER AFTER May 7 to avoid severe IV crush. Post-earnings IV likely drops to 55–65%. Bull thesis: GPU Monitoring launch (April 22) addresses key AI cost pain point; 650 AI-native customers; AIP observability platform as 'must-have.' Strong Q4 2025 beat and in-line Q1 guidance.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $160 (+14%)", "optionGain": "~60–80% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $180 (+28%)", "optionGain": "~190–220% on premium" }
+    ]
+  },
+  "companyOverview": "Cloud observability and monitoring platform. GPU Monitoring tool launched April 22 — directly addresses AI infrastructure cost optimization, the #1 pain point for enterprises running AI workloads. 650 AI-native customers; 19 spending $1M+/year. Q4 2025: revenue $953.2M (beat $916.5M), EPS $0.59 (beat $0.55). FY2025 revenue +29% YoY. Q1 2026 guidance: $951–961M, EPS $0.49–0.51. Stock down 19% YTD despite strong AI platform positioning.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$140.53", "note": "52-week range: $98.01–$201.69 (-19% YTD)" },
+    { "metric": "Market Cap", "value": "~$42.93B", "note": "" },
+    { "metric": "Q1 2026 Revenue Guidance", "value": "$951–961M", "note": "+25–26% YoY" },
+    { "metric": "Q1 2026 EPS Guidance", "value": "$0.49–0.51", "note": "vs. $0.35 consensus" },
+    { "metric": "FY2026 Revenue Guidance", "value": "$4.06–4.10B", "note": "+18–20% YoY" },
+    { "metric": "AI-Native Customers", "value": "650", "note": "19 spending $1M+ annually" },
+    { "metric": "30-day IV", "value": "~97%", "note": "IV Rank 90.58 — near extreme, avoid pre-earnings" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (43B/4H/1S)", "note": "Avg $181.37, +29% upside" }
+  ],
+  "catalysts": [
+    "GPU Monitoring (April 22) — first-mover in AI compute cost observability",
+    "650 AI-native customers growing 50%+ YoY — core AI monetization vector",
+    "FY2026 EPS guidance $2.08–2.16 vs. $0.35 consensus (suggests guidance raise coming)",
+    "Q1 2026 earnings May 7 — high bar but strong pipeline signals",
+    "Strong Buy consensus: 43 of 48 analysts bullish at $181 avg target",
+    "Stock down 30% from 52-week high — entry at significant discount"
+  ],
+  "risks": [
+    "IV Rank 90.58 — entering before May 7 means severe IV crush even if stock rises",
+    "Extreme valuation: 355x trailing P/E — zero margin for error",
+    "FY2026 growth decelerating from 29% to guided 18–20%",
+    "Q1 guidance miss vs. elevated expectations could cause sharp reversal",
+    "Mizuho trimmed price target citing Q1 delivery questions",
+    "Competitive threats from Dynatrace, New Relic, and cloud-native monitoring"
+  ],
+  "dilution": "Standard SBC dilution for growth-stage software company. No concerning capital structure issues. Moderate share count growth from employee programs.",
+  "strikeTable": [
+    { "strike": "$130", "type": "ITM", "isRecommended": false, "premium": "~$20–25", "delta": 0.62, "contracts2Cost": "~$4,000–5,000", "breakeven": "~$150–155", "atTarget": "+130%" },
+    { "strike": "$140", "type": "ATM", "isRecommended": false, "premium": "~$15–19", "delta": 0.51, "contracts2Cost": "~$3,000–3,800", "breakeven": "~$155–159", "atTarget": "+170%" },
+    { "strike": "$145", "type": "Slight OTM", "isRecommended": true, "premium": "~$14–18", "delta": 0.47, "contracts2Cost": "~$2,800–3,600", "breakeven": "~$159–163", "atTarget": "+167%" },
+    { "strike": "$160", "type": "OTM", "isRecommended": false, "premium": "~$9–12", "delta": 0.34, "contracts2Cost": "~$1,800–2,400", "breakeven": "~$169–172", "atTarget": "+178%" },
+    { "strike": "$190", "type": "Far OTM", "isRecommended": false, "premium": "~$3–5", "delta": 0.14, "contracts2Cost": "~$600–1,000", "breakeven": "~$193–195", "atTarget": "-12%" }
+  ]
+}

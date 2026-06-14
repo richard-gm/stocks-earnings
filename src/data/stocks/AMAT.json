@@ -1,0 +1,77 @@
+{
+  "ticker": "AMAT",
+  "company": "Applied Materials, Inc.",
+  "sector": "Semiconductor Equipment",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 389.26,
+  "analystTarget": 430.00,
+  "rating": "BULLISH",
+  "strategy": "Buy $395/$425 Call Spread — Aug 2026 (enter AFTER May 14 earnings)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $389.26 — 1 CSP contract requires ~$38,926 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — Enter POST-Earnings, Stock Pulled Back from ATH",
+    "strike": 395,
+    "expiry": "Aug 2026 (~103 days)",
+    "type": "Call Spread ($395 buy / $425 sell)",
+    "estimatedPremium": "~$8–11 net debit (spread)",
+    "contractCost": "~$800–1,100 (1 spread)",
+    "delta": 0.47,
+    "breakeven": "~$403–406",
+    "entryNote": "⚠️ EARNINGS MAY 14 — enter AFTER to avoid IV crush. Stock is at $389, down ~7% from ATH of $420.50 (April 24). Analyst consensus is firmly Strong Buy (41 Buy / 1 Hold) with targets $338–$500. IV estimated 45–55% heading into earnings — use spread to cap cost. UBS and Citi both recently raised targets to $420–$430. The structural bull case: AI-driven surge in DRAM, advanced logic, and advanced packaging capex; AMAT is the dominant equipment supplier and benefits from every advanced node transition. Budget note: at $389 stock price, options are inherently expensive. 1 spread is the recommended size (~$800–1,100) given the $700 guideline — adjust to 1 contract only. Director buying in March at $337 is a minor bullish signal.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $415–420 (+7%) on earnings beat + equipment order acceleration", "optionGain": "~80–120% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $425+ (+9%) on new ATH push + target upgrades to $450+", "optionGain": "~150–200% on spread cost (near max gain)" }
+    ]
+  },
+  "companyOverview": "Applied Materials is the world's largest semiconductor equipment company by revenue, supplying deposition, etch, inspection, and CMP tools to every major chipmaker. The AI infrastructure buildout is driving an unprecedented capex cycle: advanced logic (TSMC N2/N3 and beyond), HBM DRAM for AI accelerators, and advanced packaging (CoWoS, SoIC) all require AMAT's tools in disproportionate volume vs. prior cycles. FY2025 revenue of $28.4B grew 4.4% YoY, but the growth rate understates the mix shift toward AI-specific segments which carry higher ASPs. The stock hit ATH of $420.50 on April 24, 2026 and has pulled back modestly to $389 — a cleaner entry point than the recent peak. Industry constraints in advanced equipment supply are expected to persist into 2027.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$389.26", "note": "52-week range: $151.51–$420.50; ATH $420.50 April 24, 2026" },
+    { "metric": "All-Time High", "value": "$420.50", "note": "-7.4% from ATH — moderate pullback from recent peak" },
+    { "metric": "FY2025 Revenue", "value": "$28.4B", "note": "+4.4% YoY from $27.2B; AI mix shift driving higher ASPs" },
+    { "metric": "Market Cap", "value": "~$309B", "note": "Premium valuation reflecting AI equipment supercycle thesis" },
+    { "metric": "Next Earnings", "value": "May 14, 2026", "note": "Q2 FY2026 — wait to enter; Q est EPS $2.67 ($2.63–$2.80 range)" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (41B/1H/0S)", "note": "Avg target: ~$430; UBS $430, Citi $420 — 10% upside from current" },
+    { "metric": "IV Estimate", "value": "~45–55%", "note": "Moderate-high; spread recommended over naked call" },
+    { "metric": "Dividend", "value": "$0.53/share", "note": "Ex-date May 21, 2026" }
+  ],
+  "insiderFlow": {
+    "summary": "Mixed — minor director buying in March, tax-withholding sales by CAO. No significant open-market selling by senior executives. Neutral-to-slightly-positive signal.",
+    "transactions": [
+      { "insider": "Director Aart De Geus", "action": "BUY", "shares": 741, "price": "$337.27", "date": "March 12, 2026", "value": "$250K", "note": "Open-market purchase. Small but voluntary — directors paying their own money at $337 is a mild bullish signal." },
+      { "insider": "Director Alexander Karsner", "action": "BUY", "shares": 741, "price": "$337.27", "date": "March 12, 2026", "value": "$250K", "note": "Same date as De Geus. Coordinated board-level purchases on same day — suggests alignment." },
+      { "insider": "Director Judy Bruner", "action": "BUY", "shares": 741, "price": "$337.27", "date": "March 12, 2026", "value": "$250K", "note": "Third director purchase on same date. Pattern of board conviction at $337." },
+      { "insider": "CAO Adam Sanders", "action": "TAX WITHHOLD", "shares": 125, "price": "$353.80", "date": "April 2026", "value": "$44K", "note": "Routine RSU vesting tax withholding — not a discretionary sale." }
+    ],
+    "signal": "POSITIVE — three directors bought simultaneously at $337. Stock now at $389 — buying is already 15% in the money. No discretionary senior executive selling in 90 days."
+  },
+  "catalysts": [
+    "May 14 Q2 FY2026 earnings — potential re-rating if DRAM and advanced logic order trends confirm 2027 equipment supercycle",
+    "HBM DRAM demand: every next-generation AI accelerator requires HBM — AMAT etch/deposition tools are critical bottleneck",
+    "Advanced packaging ramp (CoWoS, SoIC): TSMC capacity expansions require significant AMAT tool sets — high-margin segment",
+    "Gate-all-around transistor transition (GAA): N2 and A14 nodes require new process flows with >30% more AMAT tool steps than FinFET",
+    "CHIPS Act domestic fab buildout: Intel, TSMC Arizona, Samsung Texas all represent multi-year equipment procurement cycles",
+    "Director buying at $337 in March — insiders bought 15% below current price; current holders sitting on gain"
+  ],
+  "risks": [
+    "Earnings May 14 — IV crush: enter AFTER. Q2 EPS range $2.63–$2.80; any guidance cut on DRAM cycle timing would pressure the stock",
+    "Stock at 7% off ATH $420 — limited margin of safety vs. prior-cycle equipment crashes (AMAT fell 50%+ in 2022 downturn)",
+    "China export controls escalation: ~30% of AMAT revenue historically from China; any incremental restrictions = near-term revenue headwind",
+    "DRAM upcycle timing uncertainty: HBM demand is clear but commodity DRAM timing is cyclical; any oversupply signal in 2H 2026 pressures capex",
+    "Options are expensive: 1 spread at $389 stock costs $800–1,100. This is at the top of a ~$700–1,100 position budget. Size to 1 spread only.",
+    "Samsung, SK Hynix production ramp delays would slow equipment pull-in timelines"
+  ],
+  "dilution": "No dilution risk. $309B market cap, investment-grade balance sheet. Share buybacks ongoing. Dividend growth supported by FCF.",
+  "strikeTable": [
+    { "strike": "$380", "type": "Slight ITM", "isRecommended": false, "premium": "~$22–26", "delta": 0.57, "contracts2Cost": "~$4,400–5,200", "breakeven": "~$402–406", "atTarget": "+65%" },
+    { "strike": "$390", "type": "Near ATM", "isRecommended": false, "premium": "~$17–20", "delta": 0.50, "contracts2Cost": "~$3,400–4,000", "breakeven": "~$407–410", "atTarget": "+50%" },
+    { "strike": "$395", "type": "Slight OTM (spread buy-leg)", "isRecommended": true, "premium": "~$13–16 / ~$8–11 net as spread", "delta": 0.46, "contracts2Cost": "~$1,300–1,600 naked / ~$800–1,100 as $395/$425 spread", "breakeven": "~$403–406", "atTarget": "+100–180% (at $425)" },
+    { "strike": "$410", "type": "OTM", "isRecommended": false, "premium": "~$9–12", "delta": 0.36, "contracts2Cost": "~$1,800–2,400", "breakeven": "~$419–422", "atTarget": "+15%" },
+    { "strike": "$425", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$5–7", "delta": 0.24, "contracts2Cost": "~$1,000–1,400", "breakeven": "~$430–432", "atTarget": "-5%" }
+  ]
+}

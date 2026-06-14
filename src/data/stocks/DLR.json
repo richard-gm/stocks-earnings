@@ -1,0 +1,122 @@
+{
+  "ticker": "DLR",
+  "company": "Digital Realty Trust, Inc.",
+  "sector": "Data Centre REIT",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 200.70,
+  "analystTarget": 207.95,
+  "rating": "BULLISH",
+  "strategy": "Buy $200/$215 Call Spread — Aug 2026 (clean entry, earnings July 23)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $200.70 — 1 CSP contract requires ~$20,070 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "expiryComparison": {
+    "strike": 200,
+    "underlyingPrice": 195.31,
+    "iv": "~48%",
+    "earningsDate": "July 23, 2026",
+    "closeDeadline": "July 18, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter now or on any dip to $192–194 (lower support). IV at 48% is moderate — spread structure ($200/$215) keeps net debit manageable. Q1 2026 beat already in. Clean window until July earnings.",
+      "profitExit": "Close at 60–80% of max spread gain. First target: stock at $210–212 for ~$10 spread intrinsic. Second target: $215+ for full $15 spread value (~200% max gain).",
+      "timeStop": "If stock has not cleared $205+ by ~June 15 (50% of time elapsed on Sep position), close. Spread decays toward zero as both legs approach worthlessness.",
+      "lossStop": "Close at 50% loss on net debit paid. Spread's limited risk reduces urgency but do not hold past 50% loss.",
+      "earningsHardStop": "Close by July 18 (5 days before July 23 Q2 earnings) — IV crush will compress spread value rapidly."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 28,
+        "premiumEst": "~$4–5 net debit",
+        "flatScenario": "~-65%",
+        "atTarget": "~+120%",
+        "bestFor": "Marginal — 28 days at July 18 exit is below the 30-day green threshold. Workable but theta accelerates sharply in the final month.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 63,
+        "premiumEst": "~$5–7 net debit",
+        "flatScenario": "~-50%",
+        "atTarget": "~+85%",
+        "bestFor": "Recommended — 63 days of time value at the July 18 exit. Gives DLR room to grind toward $210 on Asia-Pacific expansion news. Low IV (48%) keeps spread cost fair.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 126,
+        "premiumEst": "~$7–9 net debit",
+        "flatScenario": "~-35%",
+        "atTarget": "~+55%",
+        "bestFor": "Too much time for a stock with modest 7% upside to analyst target. Spread is expensive relative to the potential reward.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — Clean Entry Window, Low IV, Earnings 81 Days Away",
+    "strike": 200,
+    "expiry": "Aug 2026 (~81 days to earnings July 23)",
+    "type": "Call Spread ($200 buy / $215 sell)",
+    "estimatedPremium": "~$4–6 net debit (spread)",
+    "contractCost": "~$400–600 (2 spreads ~$800–1,200)",
+    "delta": 0.50,
+    "breakeven": "~$204–206",
+    "entryNote": "Clean entry window: earnings are July 23 (81 days away), so Aug expiry gives full pre-earnings exposure without IV crush risk. Low IV environment (~22–26%) for a REIT makes premiums fair — no spread required by the IV rule, but spread used to fit $700 budget. Q1 2026 beat: $2.04 EPS vs. $1.94 estimated (+5.1%); revenue grew 16% YoY. Stock near 52-week high ($208.14). Limited upside to average analyst target (~$208) means this is more of a moderate trade — 1–2 spreads max. Asia expansion (Japan, Singapore) is the differentiated growth driver vs. peers.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $210–212 (+5%) on continued data centre demand strength", "optionGain": "~100–140% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $215+ (+7%) on new ATH push or Asia contract announcements", "optionGain": "~170–220% on spread cost (near max gain)" }
+    ]
+  },
+  "companyOverview": "Digital Realty Trust is a global data centre REIT specializing in wholesale/hyperscale colocation — large-footprint facilities for hyperscalers and enterprises requiring dedicated power and space. It operates across North America, Europe, and Asia Pacific. The AI buildout is its primary tailwind: hyperscalers need more data centre capacity and are signing long-term leases. Q1 2026 results were a beat: EPS $2.04 vs. $1.94 expected, revenue and adjusted EBITDA grew 16%. The 2026 guidance calls for 8% Core FFO growth with a $10B+ development pipeline. Key differentiator: aggressive expansion in Asia Pacific — new campus in Japan, significant growth in Singapore — where data centre demand is outstripping local supply. Stock is trading near its 52-week high of $208.14, suggesting the market is already pricing in near-term fundamentals. Vanguard holds 7.33% stake.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$200.70", "note": "52-week range: $146.23–$208.14; near 52-week high" },
+    { "metric": "52-Week High", "value": "$208.14", "note": "-3.6% from 52-week high — modest pullback from recent peak" },
+    { "metric": "Q1 2026 EPS", "value": "$2.04", "note": "Beat $1.94 estimate by 5.1%; revenue +16% YoY — strong quarter" },
+    { "metric": "FY2026 Core FFO Guidance", "value": "+8% growth", "note": "$10B+ development pipeline; 8% FFO CAGR guidance" },
+    { "metric": "Next Earnings", "value": "July 23, 2026", "note": "Q2 2026 — 81 days away; no near-term IV crush risk" },
+    { "metric": "Analyst Consensus", "value": "Buy (22 analysts)", "note": "Avg target: ~$208; current price $200.70 — only 3.6% to consensus" },
+    { "metric": "IV Estimate", "value": "~22–26%", "note": "Low IV REIT — premium fair; spread used for budget management" },
+    { "metric": "Institutional Ownership", "value": "Vanguard 7.33% stake", "note": "High institutional ownership = stable, less speculative float" }
+  ],
+  "insiderFlow": {
+    "summary": "Minimal activity — director grants (non-cash) and one older sell in December 2025 at lower price. No recent open-market buying. Neutral signal.",
+    "transactions": [
+      { "insider": "Director Susan Swanezy", "action": "GRANT", "shares": 152, "price": "$0.00", "date": "2026 (grant date)", "value": "$0 (LTI grant)", "note": "Long-Term Incentive Unit grant — not open-market activity." },
+      { "insider": "Director VeraLinn Jamieson", "action": "GRANT", "shares": 152, "price": "$0.00", "date": "2026 (grant date)", "value": "$0 (LTI grant)", "note": "Standard board compensation." },
+      { "insider": "Director Mary Hogan Preusse", "action": "SELL", "shares": 4166, "price": "$157.42", "date": "December 1, 2025", "value": "$656K", "note": "Sold at $157 when stock was much lower. Has since appreciated 27% — not a negative recent signal." }
+    ],
+    "signal": "NEUTRAL — no open-market buying. Director sold at $157 in December (stock now $201). Grant activity only in 2026. Insiders own ~0.17% — low conviction stake."
+  },
+  "catalysts": [
+    "Q1 2026 beat (+5.1% EPS) shows fundamental momentum — consecutive beats set up a re-rating toward $220+",
+    "Asia Pacific expansion: new Japan data centre + Singapore pipeline taps into AI infrastructure demand in undersupplied markets",
+    "$10B+ development pipeline provides multi-year revenue visibility and AFFO growth runway",
+    "8% Core FFO growth guidance for 2026 — sustainable, not cyclical",
+    "Hyperscaler demand: MSFT, GOOG, AMZN all expanding data centre footprints; DLR is a primary wholesale landlord",
+    "Vanguard 7.33% institutional stake provides stable ownership base; limited speculative float"
+  ],
+  "risks": [
+    "Limited upside to consensus: avg analyst target is $208, only 3.6% from current price. Modest potential return unless targets revise upward",
+    "Stock near 52-week high ($208) — not a 'discount' play; little margin of safety in current setup",
+    "No recent insider buying: 0.17% insider ownership signals executives don't view this as a high-conviction personal investment",
+    "Rising interest rates: REITs are rate-sensitive — any Fed hawkishness reprices DLR on valuation",
+    "July 23 earnings: Q2 guidance miss or FFO guidance reduction could reverse the Q1 momentum",
+    "Customer concentration: top hyperscaler tenants represent large % of revenue; any large tenant decision to in-source could impact occupancy"
+  ],
+  "dilution": "Typical REIT equity structure. Periodic equity issuance for development pipeline funding. $10B+ pipeline is capital-intensive — watch for new equity offerings. No acute near-term dilution concern.",
+  "strikeTable": [
+    { "strike": "$195", "type": "Slight ITM", "isRecommended": false, "premium": "~$10–13", "delta": 0.58, "contracts2Cost": "~$2,000–2,600", "breakeven": "~$205–208", "atTarget": "+45%" },
+    { "strike": "$200", "type": "Near ATM (spread buy-leg)", "isRecommended": true, "premium": "~$7–9 / ~$4–6 net as spread", "delta": 0.50, "contracts2Cost": "~$700–900 naked / ~$400–600 as $200/$215 spread", "breakeven": "~$204–206", "atTarget": "+100–170% (at $215)" },
+    { "strike": "$205", "type": "Slight OTM", "isRecommended": false, "premium": "~$5–7", "delta": 0.42, "contracts2Cost": "~$1,000–1,400", "breakeven": "~$210–212", "atTarget": "+55%" },
+    { "strike": "$215", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$2.50–3.50", "delta": 0.27, "contracts2Cost": "~$500–700", "breakeven": "~$217–218", "atTarget": "-3%" },
+    { "strike": "$220", "type": "OTM", "isRecommended": false, "premium": "~$1.50–2.50", "delta": 0.19, "contracts2Cost": "~$300–500", "breakeven": "~$221–222", "atTarget": "-10%" }
+  ]
+}

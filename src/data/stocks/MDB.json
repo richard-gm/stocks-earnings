@@ -1,0 +1,112 @@
+{
+  "ticker": "MDB",
+  "company": "MongoDB",
+  "sector": "Technology / Database",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 263.45,
+  "analystTarget": 368.67,
+  "rating": "BULLISH",
+  "strategy": "Buy $265 Call — Sep 2026 (deep dip buy, 40% upside)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $263.45 — 1 CSP contract requires ~$26,300 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "expiryComparison": {
+    "strike": 265,
+    "underlyingPrice": 294.46,
+    "iv": "~67%",
+    "earningsDate": "August 26, 2026",
+    "closeDeadline": "August 21, 2026",
+    "exitRules": {
+      "entryTrigger": "Stock at $294.46 — call is $29.46 in-the-money (+12% since analysis). Enter on any pullback toward $278–285 for better risk/reward. Reassess position sizing given the move.",
+      "profitExit": "Close at 50–70% gain on premium. First target: stock at $330 (+12% from current) for ~$65 call value. Second target: $368+ analyst consensus for full upside.",
+      "timeStop": "If stock has not maintained above $285 by ~July 10 (60% of time elapsed on Nov position), reduce or close. Do not hold a degrading ITM call past support breakdown.",
+      "lossStop": "Close at 35–40% loss on premium. Deep ITM calls carry significant dollar risk on stock drops.",
+      "earningsHardStop": "Close by August 21 (5 days before August 26 Q3 earnings). IV crush at 67% is severe — no exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 0,
+        "premiumEst": "N/A",
+        "flatScenario": "N/A",
+        "atTarget": "N/A",
+        "bestFor": "Not applicable — Aug 15 expiry (Day 96) is 6 days BEFORE the Aug 21 mandatory earnings close deadline. Option expires before you can cleanly exit ahead of earnings.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 29,
+        "premiumEst": "~$48–56",
+        "flatScenario": "~-47%",
+        "atTarget": "~+105%",
+        "bestFor": "Marginal — only 29 days left at the Aug 21 close. Most time value will have decayed leaving essentially intrinsic only. Avoid unless entering very close to earnings.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 92,
+        "premiumEst": "~$58–68",
+        "flatScenario": "~-55%",
+        "atTarget": "~+75%",
+        "bestFor": "Recommended — 92 days of time value at the Aug 21 exit. Deep ITM call with meaningful time premium. Gives MDB the full Q2 and pre-Q3 catalyst window. High cost reflects the stock's +12% move since analysis.",
+        "recommended": true
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Single-Leg Call — ATM Dip Buy",
+    "strike": 265,
+    "expiry": "Sep 2026 (~120 days)",
+    "type": "Call",
+    "estimatedPremium": "~$26–32/share",
+    "contractCost": "~$2,600–3,200 (1 contract)",
+    "delta": 0.50,
+    "breakeven": "$291–297",
+    "entryNote": "Stock down 47% from $444.72 52-week high — significant dip buy opportunity. Q1 FY2026 already reported: revenue $549M (+22% YoY, beat), Atlas 26% growth. No immediate earnings catalyst. IV ~50%. Vector database and agentic AI positioning gives long-term optionality. 33 analysts with Buy consensus at $368.67 avg target (+40% upside).",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $310 (+18%)", "optionGain": "~70–90% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $360 (+37%)", "optionGain": "~200–250% on premium" }
+    ]
+  },
+  "companyOverview": "Leading NoSQL database platform with Atlas cloud service growing 26% YoY (72% of total revenue). Q1 FY2026: revenue $549M (+22%), EPS -$0.46 (beat -$0.85 est), FCF $105.9M. Expanding into agentic AI through Voyage AI integration and vector database capabilities. 8,000+ enterprises in MAAP program. Stock down 47% from peak despite fundamentals holding.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$263.45", "note": "52-week range: $169.26–$444.72 (-47% from peak)" },
+    { "metric": "Market Cap", "value": "~$29.98B", "note": "" },
+    { "metric": "Q1 FY2026 Revenue", "value": "$549.0M", "note": "+22% YoY (beat $528M est)" },
+    { "metric": "Atlas Revenue Growth", "value": "+26% YoY", "note": "72% of total revenue" },
+    { "metric": "Q1 Free Cash Flow", "value": "$105.9M", "note": "Up from $61.0M prior year" },
+    { "metric": "30-day IV", "value": "~50%", "note": "Elevated given recent volatility" },
+    { "metric": "Analyst Consensus", "value": "Buy (33)", "note": "Avg $368.67, high $495" }
+  ],
+  "catalysts": [
+    "Stock down 47% from peak — asymmetric dip buy with 40% upside to consensus",
+    "Atlas cloud platform growing 26% YoY — recurring revenue engine",
+    "Vector database integration with Voyage AI for agentic AI workloads",
+    "FCF positive and growing ($105.9M vs $61.0M prior year)",
+    "74% of enterprises planning integrated vector databases — MDB well-positioned",
+    "33 analysts with Buy consensus at $368 average target"
+  ],
+  "risks": [
+    "Growth decelerating from 30%+ to low-20s — narrative shift from 'hyper-growth' to 'growth'",
+    "Competition from Pinecone, Weaviate, and native vector database capabilities in other platforms",
+    "High R&D spend ($600M annually) vs. operating cash flow — not yet GAAP profitable",
+    "Stock down 47% already signals institutional concern about growth trajectory",
+    "Potential activist investor interest cited due to underperformance vs. peers",
+    "Enterprise budget caution if tech spending slows"
+  ],
+  "dilution": "Moderate SBC dilution typical for growth-stage software. No concerning capital raises. FCF positive and improving reduces need for equity financing.",
+  "strikeTable": [
+    { "strike": "$250", "type": "ITM", "isRecommended": false, "premium": "~$34–40", "delta": 0.60, "contracts2Cost": "~$6,800–8,000", "breakeven": "~$284–290", "atTarget": "+210%" },
+    { "strike": "$263", "type": "ATM", "isRecommended": false, "premium": "~$26–32", "delta": 0.51, "contracts2Cost": "~$5,200–6,400", "breakeven": "~$289–295", "atTarget": "+260%" },
+    { "strike": "$265", "type": "Slight OTM", "isRecommended": true, "premium": "~$26–32", "delta": 0.50, "contracts2Cost": "~$5,200–6,400", "breakeven": "~$291–297", "atTarget": "+250%" },
+    { "strike": "$290", "type": "OTM", "isRecommended": false, "premium": "~$16–20", "delta": 0.37, "contracts2Cost": "~$3,200–4,000", "breakeven": "~$306–310", "atTarget": "+280%" },
+    { "strike": "$350", "type": "Far OTM", "isRecommended": false, "premium": "~$7–10", "delta": 0.19, "contracts2Cost": "~$1,400–2,000", "breakeven": "~$357–360", "atTarget": "+65%" }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "ticker": "OKLO",
+  "company": "Oklo Inc.",
+  "sector": "Nuclear Energy / Small Modular Reactors",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 70.35,
+  "analystTarget": 90.77,
+  "rating": "BULLISH",
+  "strategy": "Buy $75 Call — Sep 2026 (enter AFTER May 12 earnings)",
+  "wheelStrategy": {
+    "eligible": true,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering new CSP positions.",
+    "bollingerEntry": "Daily chart, 20-period 2σ Bollinger Bands. Lower BB estimated ~$58–65 given elevated volatility. Wait for price to tag or breach lower band. Current price $70.35 is mid-band.",
+    "csp": {
+      "strike": "~$55–65",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$3.00–6.00/share (~$300–600 per contract)",
+      "annualisedYield": "~45–80% annualised on capital at risk (high IV nuclear startup)",
+      "exitRule": "Close at 50% premium captured. CRITICAL: Close before May 12 earnings — IV crush risk. Re-enter after.",
+      "note": "High-growth nuclear microreactor startup. IV likely ~90–130%. Capital at risk $5,500–$6,500/contract — fits a standard retail portfolio at 1–2 contracts. ⚠️ Earnings May 12 — do NOT hold CSP through earnings. Sam Altman-backed, high institutional interest."
+    },
+    "coveredCall": {
+      "strike": "~$72–78",
+      "delta": "0.20–0.28",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$3.00–5.00/share (~$300–500 per contract)",
+      "exitRule": "Close at 50% premium. Re-sell monthly. Close before earnings.",
+      "note": "If assigned (cost basis ~$55–65), sell CC at $72–78 for strong premium given high IV. Target recovery toward analyst consensus ~$85."
+    }
+  },
+  "expiryComparison": {
+    "strike": 75,
+    "underlyingPrice": 72.70,
+    "iv": "~72%",
+    "earningsDate": "August 12, 2026",
+    "closeDeadline": "August 7, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter after May 12 earnings IV crush settles. Stock at $72.70 — $2.30 below $75 strike. Best entry on post-earnings dip to $62–68 (lower Bollinger Band).",
+      "profitExit": "Close at 50–70% gain on premium. First target: stock at $85–88 (+17–21%), approaching analyst consensus. Second target: $90+ for full analyst target capture.",
+      "timeStop": "If stock has not cleared $80 by ~July 1 (60% of time elapsed on Sep position), close. Theta is brutal at 72% IV — time decay is rapid.",
+      "lossStop": "Close at 40–50% loss. High IV means the option bleeds fast on a flat or declining stock. Capital preservation is critical in pre-revenue nuclear startups.",
+      "earningsHardStop": "Close by August 7 (5 days before ~August 12 Q2 earnings). IV crush at 72% will be severe — exit before earnings regardless of position size."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 8,
+        "premiumEst": "~$15–19",
+        "flatScenario": "~-85%",
+        "atTarget": "~+90%",
+        "bestFor": "Avoid — only 8 days left at the August 7 close. Essentially unusable. Option expires with almost no remaining value after the mandatory close.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 43,
+        "premiumEst": "~$20–25",
+        "flatScenario": "~-70%",
+        "atTarget": "~+80%",
+        "bestFor": "Best available — 43 days of time value at close, in the amber zone but workable. High IV (72%) means expensive premium; size conservatively (1 contract max). This is the recommended expiry despite the amber rating.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 106,
+        "premiumEst": "~$28–35",
+        "flatScenario": "~-50%",
+        "atTarget": "~+55%",
+        "bestFor": "Extremely expensive in a 72% IV environment. Two earnings cycles with a pre-revenue company. The premium cost means you need a massive move to profit — Sep 19 is better value.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Near-ATM Call — Enter POST-Earnings (May 12)",
+    "strike": 75,
+    "expiry": "Sep 2026 (~130 days)",
+    "type": "Call",
+    "estimatedPremium": "~$10–11/share",
+    "contractCost": "~$2,000–2,200 (2 contracts)",
+    "delta": 0.47,
+    "breakeven": "~$85–86",
+    "entryNote": "WAIT until after May 12 Q1 earnings — IV will crush post-announcement regardless of outcome. Consider the $75/$90 bull call spread instead of a naked call to cap cost in a high-IV environment. ⚠️ Heavy insider selling — $50.9M in 90 days from co-founders and directors — is a yellow flag. Size small (1–2% of portfolio max). The long-term thesis lives or dies on NRC design approval (expected late 2026/early 2027), which would make Aurora the only second NRC-certified SMR design in existence.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $80–85 (+14–21%)", "optionGain": "~40–65% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $92–100 (+31–42%)", "optionGain": "~120–175% on premium" }
+    ]
+  },
+  "companyOverview": "Oklo builds and OPERATES advanced fission reactors under long-term power purchase agreements — it's not a reactor vendor, it's a utility model. The Aurora powerhouse is a sodium-cooled fast reactor (75 MWe) based on proven EBR-II technology with a 10+ year refueling interval. Uniquely, the reactor has negative reactivity feedback (it self-limits power spikes without operator intervention). The stock peaked at $193.84 in October 2025 driven by AI data center power demand euphoria, Sam Altman's chairman role, ARK Invest endorsements, and nonbinding LOIs from Meta (1.2 GW Ohio campus) and Equinix. It then crashed 87% to $24.53 as execution reality arrived: no NRC design certification yet (unlike NuScale which is already certified), zero commercial revenue, $480–500M/year total cash burn, and a $1.26B secondary dilution in January 2026. The stock has recovered to $70.35 on board overhaul news and continued AI power demand narrative, but remains 63.7% below ATH. Key thesis: NRC approval in late 2026/early 2027 would trigger a re-rating — Aurora would be the only second NRC-certified SMR design globally.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$70.35", "note": "52-week range: $24.53–$193.84; ATH Oct 15, 2025" },
+    { "metric": "All-Time High", "value": "$193.84", "note": "-63.7% from ATH; +186% from 52-week low" },
+    { "metric": "Cash & Equivalents (est.)", "value": "~$2.5B", "note": "$1.4B (Q4 2025) + $1.182B offering (Jan 2026)" },
+    { "metric": "Annual Cash Burn", "value": "~$480–500M", "note": "$80–100M ops + ~$400M capex for Aurora" },
+    { "metric": "Cash Runway", "value": "~5 years", "note": "At current ops + capex trajectory" },
+    { "metric": "Operating Loss (FY2025)", "value": "$(139.3)M", "note": "Full-year; accelerating" },
+    { "metric": "Commercial Revenue", "value": "$0", "note": "Pre-revenue; Atomic Alchemy isotopes are early/modest" },
+    { "metric": "Short Interest", "value": "18.84% of float", "note": "28.61M shares short; elevated, not extreme" },
+    { "metric": "Next Earnings", "value": "May 12, 2026", "note": "Expected 15–20% move — wait to enter" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy", "note": "14–21 analysts; avg target $90.77–$101.37" }
+  ],
+  "catalysts": [
+    "NRC design approval (expected late 2026/early 2027) — would make Aurora the only second NRC-certified SMR globally; potentially +20–30% on approval day",
+    "Meta 1.2 GW Ohio campus agreement (nonbinding) — largest announced SMR deployment commitment; proves hyperscaler demand is real",
+    "July 4, 2026 Aurora criticality target — CEO's stated goal for prototype; successful test would re-rate the stock",
+    "AI data center power demand secular trend — hyperscalers need 24/7 carbon-free baseload; SMRs uniquely positioned vs. solar/wind",
+    "Board overhaul (April 2026) triggered a 23% rally — new governance improving investor confidence",
+    "Sam Altman chairman role — credibility connector between AI industry and nuclear power; potential additional hyperscaler customer announcements",
+    "Equinix and Diamondback Energy LOIs — beyond Meta, multiple customer categories validating diverse demand",
+    "Institutional ownership at 40–45% of float — significant institutional interest vs. early-stage peers"
+  ],
+  "risks": [
+    "May 12 earnings: enter AFTER — IV crush incoming regardless of beat or miss; Q1 results will likely show continued $25–35M quarterly loss",
+    "No NRC design certification yet — unlike NuScale (which is already certified); approval is the #1 binary event",
+    "Heavy insider selling: $50.9M sold in 90 days by co-founders and directors — most significant red flag for near-term holders",
+    "All customer LOIs are NONBINDING — Meta, Equinix, Diamondback agreements have no legal obligation; any cancellation would be catastrophic",
+    "Aurora criticality by July 4, 2026 is ambitious — SMR developers routinely slip timelines; missed target = -15% stock reaction",
+    "Valuation: stock at $70 with $0 commercial revenue, no NRC approval, and $480–500M/year burn rate is still speculative",
+    "NRC approval delays are common — any NRC critique or extended review could push timeline to 2028+",
+    "Competition intensifying: X-energy (Amazon-backed) IPO'd in 2026; Kairos (Google), TerraPower (Bill Gates) all racing for NRC certification"
+  ],
+  "dilution": {
+    "summary": "Dilution already happened. The $1.26B offering in Jan 2026 was the primary event. Monitor future capital needs given $480–500M/year burn.",
+    "items": [
+      { "label": "Jan 2026 $1.182B offering (done)", "detail": "Large secondary offering raised total cash to ~$2.5B. Significant dilution, but now provides ~5-year runway. Priced and absorbed — overhang resolved." },
+      { "label": "Insider selling: $50.9M (Jan–Mar 2026)", "detail": "Co-founder sold 100K shares at $90.29; directors sold additional $9M+. Zero insider buying reported. Programmatic (10b5-1) selling plans underway — ongoing supply pressure." },
+      { "label": "Sam Altman — no Form 4 activity", "detail": "Neither buying nor selling disclosed in 2026. Absence of buying is a mild negative (no vote of confidence). Absence of selling is a mild positive (not distributing)." },
+      { "label": "Future equity raises", "detail": "$2.5B cash at $480–500M/year burn = ~5 years. If NRC approval or commercial agreements materialize by 2027, dilution is manageable. If execution slips beyond 2028, another capital raise at a lower price becomes likely." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$65", "type": "ITM", "isRecommended": false, "premium": "~$14–15", "delta": 0.63, "contracts2Cost": "~$2,900", "breakeven": "~$79–80", "atTarget": "+85%" },
+    { "strike": "$70", "type": "Near ATM", "isRecommended": false, "premium": "~$12–13", "delta": 0.55, "contracts2Cost": "~$2,500", "breakeven": "~$82–83", "atTarget": "+72%" },
+    { "strike": "$75", "type": "Slight OTM", "isRecommended": true, "premium": "~$10–11", "delta": 0.47, "contracts2Cost": "~$2,100", "breakeven": "~$85–86", "atTarget": "+62%" },
+    { "strike": "$80", "type": "OTM", "isRecommended": false, "premium": "~$8–9", "delta": 0.40, "contracts2Cost": "~$1,700", "breakeven": "~$88–89", "atTarget": "+53%" },
+    { "strike": "$100", "type": "Far OTM", "isRecommended": false, "premium": "~$3–4", "delta": 0.17, "contracts2Cost": "~$700", "breakeven": "~$103–104", "atTarget": "-57%" }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "ticker": "FLNC",
+  "company": "Fluence Energy Inc.",
+  "sector": "Clean Energy / Battery Energy Storage Systems",
+  "analysisDate": "2026-05-08",
+  "priceAtAnalysis": 17.17,
+  "analystTarget": 22.00,
+  "rating": "BULLISH",
+  "strategy": "Bull Call Spread $18/$22 Aug 2026 — energy storage re-rating; guidance reaffirmation + record $5.6B backlog; IV at 70%+ makes spread the right structure",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": "HIGH IV WARNING: Post-earnings IV elevated at ~70%. Wheel premiums are attractive but FLNC is pre-profitability with a $91.8M H1 net loss and heavy H2 revenue loading. CSP assignment risk is real if H2 execution disappoints. Use minimum size (1 contract) and tighter loss stops than usual.",
+    "vixNote": "VIX elevated ~20+; FLNC-specific IV running ~70% post-earnings surge. Wheel premiums are exceptional at this level but reflect genuine execution uncertainty around H2 revenue recognition.",
+    "bollingerEntry": "Lower Bollinger Band estimated ~$14.50–$15.50 post-earnings. Stock closed $17.17 after intraday high of $20.28 — has pulled back materially from the intraday surge. Near-term support at $16.00 (pre-earnings base). CSP entry is optimal on a retest of $15.50–$16.00.",
+    "csp": {
+      "strike": "$15",
+      "delta": "0.23",
+      "dte": "21–30 days",
+      "estimatedPremium": "$1.10–1.30 per contract",
+      "annualisedYield": "~28–32% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured (target $0.55–0.65). Hard stop before ~August 1 (5 days before est. Q3 FY2026 earnings in early August 2026).",
+      "note": "Exceptional yield from elevated post-earnings IV. $15 strike is 12.6% below current price — meaningful buffer. Only enter on pullback toward $16; do not chase at $17+."
+    },
+    "coveredCall": {
+      "strike": "$18",
+      "delta": "0.44",
+      "dte": "21–30 days",
+      "estimatedPremium": "$1.50–1.80 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through earnings.",
+      "note": "If assigned at $15 CSP, sell $18 CC to reduce cost basis to ~$13.50. Strong premium due to elevated IV."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 18,
+    "underlyingPrice": 17.17,
+    "iv": "~70% (post-earnings; elevated due to high-beta pre-profit growth stock)",
+    "earningsDate": "~August 5–7, 2026 (Q3 FY2026, estimated — fiscal year ends September 30)",
+    "closeDeadline": "August 1, 2026 (5 days before est. Q3 earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter after stock stabilises above $16.50 post-earnings gap. Intraday high of $20.28 on May 7 shows demand; wait for a calm day to enter rather than chasing the gap-up momentum.",
+      "profitExit": "Close Contract 1 when spread reaches 50% of max gain (~$155 on $18/$22 spread). Let Contract 2 ride toward the $22 analyst target.",
+      "timeStop": "If stock has not moved above $19.00 by July 1 (50% of DTE), close the position. At $17 with theta accelerating, waiting for the second half of the option life erodes value quickly.",
+      "lossStop": "Close at 40–50% loss on net debit paid (close at ~$0.45–0.50 loss on $0.90 net paid). H2 revenue recognition risk means a disappointing update could reprice sharply.",
+      "earningsHardStop": "Close ALL positions by August 1, 2026 — 5 days before estimated Q3 FY2026 earnings. FLNC moved 26%+ on Q2 earnings. Q3 is the key quarter (70% of FY revenue in H2). No exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 98,
+        "daysLeftAtClose": 84,
+        "premiumEst": "~$2.25 ($18 call) / ~$1.35 ($22 call) → $0.90 net spread",
+        "flatScenario": "Stock stays at $17.17 — spread expires near worthless at close deadline. Loss: ~$90 per spread.",
+        "atTarget": "Stock at $22.00 by August 1 — spread worth ~$3.50–4.00. Gain: ~$260–310 per spread (~290–345% return on $90).",
+        "bestFor": "Optimal: cheapest premium, 84 days of working time before earnings hard stop. Strong risk/reward at 3.4x max.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 133,
+        "daysLeftAtClose": 84,
+        "premiumEst": "~$2.60 ($18 call) / ~$1.60 ($22 call) → $1.00 net spread",
+        "flatScenario": "Same close deadline (Aug 1) — paying $0.10 extra per spread for 35 days of unusable post-earnings time.",
+        "atTarget": "Identical outcome at August 1 close. Extra $10/spread cost with no benefit before the hard stop.",
+        "bestFor": "Only if Q3 earnings are pushed past August — provides date-slippage insurance.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 196,
+        "daysLeftAtClose": 84,
+        "premiumEst": "~$3.10 ($18 call) / ~$2.00 ($22 call) → $1.10 net spread",
+        "flatScenario": "Paying $0.20 extra per spread for time entirely cut off by the earnings hard stop.",
+        "atTarget": "Same close-deadline outcome. Aug is strictly cheaper for the same risk window.",
+        "bestFor": "Not recommended — overkill. The thesis resolves before August expiry regardless.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Bull Call Spread — $18/$22 Aug 15, 2026",
+    "strike": 18,
+    "expiry": "Aug 15, 2026",
+    "type": "Bull Call Spread (IV ~70% — AGENT.md rule: IV >60% → spread. Short $22 leg saves ~$1.35 vs single call; mandatory spread structure at this IV)",
+    "estimatedPremium": "~$0.90 net debit per spread",
+    "contractCost": "~$90 per spread (2 spreads = $180)",
+    "delta": 0.44,
+    "breakeven": "$18.90",
+    "entryNote": "IV at ~70% triggers the spread rule — selling the $22 leg saves $1.35 per contract, cutting cost from $2.25 to $0.90 per spread. Max gain = $310 per spread at $22+ (3.4x on $90). The thesis: Q2 guidance reaffirmation ($3.2–3.6B FY2026) despite an EPS miss tells the market that the back-half revenue story is intact. Record $5.6B backlog and orders doubling YoY confirm demand. Hyperscaler MSAs (AI data center battery storage) are the next-leg catalyst. Enter on stabilisation above $16.50.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock reaches $20.00 (+16%)", "optionGain": "~$120–140 per spread (~135% gain on cost)" },
+      { "label": "Contract 2", "trigger": "Stock reaches $22.00 — analyst target", "optionGain": "~$300–310 per spread (~340% gain, near max)" }
+    ]
+  },
+
+  "companyOverview": "Fluence Energy (formerly a Siemens/AES joint venture, IPO'd November 2021) is a global leader in battery energy storage systems (BESS) and AI-driven energy management software. Its Fluence IQ platform provides AI-optimised dispatch and trading for energy storage and renewables. The company operates across 50+ countries. Q2 FY2026 (ended March 31) was characterised by a revenue and EPS miss — but management reaffirmed full-year guidance of $3.2–3.6B, triggering a 26% single-day stock surge to $17.17. The miss was expected given ~70% of FY revenue is back-half loaded. The structural story is compelling: AI data centers need reliable battery backup power, grid operators need storage to balance renewable intermittency, and Fluence sits at the intersection of both megatrends with a record $5.6B backlog.",
+
+  "financials": [
+    { "metric": "Stock Price (May 8)", "value": "$17.17", "note": "Post-earnings close; intraday high $20.28 on May 7; up 26.6% on earnings day from $13.56" },
+    { "metric": "Market Cap", "value": "~$3.5B", "note": "~1x FY2026 revenue guidance midpoint" },
+    { "metric": "Q2 FY2026 Revenue", "value": "$464.9M", "note": "+7.7% YoY; ~$80M deferred to Q3 due to resolved shipping issues" },
+    { "metric": "Q2 FY2026 EPS", "value": "-$0.16", "note": "Missed +$0.18 estimate — miss driven by H2 revenue loading" },
+    { "metric": "Adj. Gross Margin", "value": "11.1%", "note": "Improved from 10.4% prior year; expanding margins key to profitability path" },
+    { "metric": "FY2026 Revenue Guidance", "value": "$3.2B–$3.6B", "note": "Reaffirmed May 6; consensus $3.36B; ~50% revenue growth YoY" },
+    { "metric": "FY2026 Adj. EBITDA Guidance", "value": "$40M–$60M", "note": "First meaningful positive EBITDA year — inflection point" },
+    { "metric": "Backlog", "value": "$5.6B (record)", "note": "Provides multi-year revenue visibility; orders doubled YoY in H1 FY2026" },
+    { "metric": "ARR Target (YE FY2026)", "value": "$180M", "note": "Fluence IQ software — high-margin recurring revenue growing rapidly" },
+    { "metric": "Analyst Consensus", "value": "Hold (4B / 14H / 3S)", "note": "Targets: median $18.50, high $28.00, low $9.00" }
+  ],
+
+  "insiderFlow": {
+    "summary": "Routine compensation-related activity only. One small directional sale by a director — not a concern at this size.",
+    "transactions": [
+      { "insider": "Harald von Heynitz (Director)", "action": "Sell", "shares": 10000, "price": "~$16.50", "date": "2026-03-18", "value": "~$165,000", "note": "Sold 10,000 shares (13.6% of his direct holdings) after the stock had surged ~200% from its lows. Routine position management — not a macro conviction sell." },
+      { "insider": "Elizabeth Anne Fessenden (Director)", "action": "RSU Vest", "shares": 32348, "price": "N/A", "date": "2026-03-17", "value": "~$533,000 at vest", "note": "Standard RSU vesting — routine compensation settlement, not a discretionary transaction." },
+      { "insider": "Jeffrey Richard Monday (SVP, Chief Growth Officer)", "action": "Options Grant", "shares": 17453, "price": "$0.00 exercise", "date": "2026-02-01", "value": "N/A", "note": "New option grant vesting over 3 years. Positive alignment signal — CGO is heavily incentivised on growth." }
+    ],
+    "signal": "NEUTRAL — routine compensation activity. Director sale is small (13% of holding, $165K) after a 200% rally. No major open-market sells by senior executives. CGO's new 3-year option grant signals retention and growth conviction."
+  },
+
+  "catalysts": [
+    "Guidance reaffirmation: FY2026 $3.2–3.6B revenue backed despite Q2 EPS miss — drove 26% single-day surge; shows management confidence in H2 execution",
+    "Record $5.6B backlog provides multi-year revenue visibility — orders doubling YoY with hyperscaler (AI data center) MSAs as a new demand vertical",
+    "AI data center battery storage: hyperscalers need reliable on-site power for GPU clusters — Fluence's BESS systems are a critical infrastructure layer",
+    "~$80M of Q2 revenue pushed into Q3 (resolved shipping issues) — one-time tailwind to Q3 results",
+    "FY2026 first positive adj. EBITDA year ($40–60M guidance) — profitability inflection is a re-rating catalyst for institutional buyers",
+    "Fluence IQ software ARR reaching $180M by year-end — high-margin recurring revenue transforming the business model"
+  ],
+
+  "risks": [
+    "EPS miss: -$0.16 vs +$0.18 estimate — management credibility gap; market will have little patience for H2 misses",
+    "Not GAAP profitable: $91.8M net loss H1 FY2026; positive adj. EBITDA guidance relies on margin expansion through H2",
+    "H2 revenue concentration: ~70% of FY revenue in H2 creates binary execution risk — a Q3 miss would reprice sharply",
+    "Hold consensus with 3 Sell ratings; only 4 Buy ratings — limited institutional buying pressure",
+    "Tariff and supply chain exposure: battery cells primarily sourced from Asia; US tariff uncertainty creates hardware cost risk",
+    "High beta (1.47): amplified moves in both directions; $17.17 entry is only one bad earnings away from retesting $13-14"
+  ],
+
+  "dilution": "Fluence has multiple share classes (Class A and Class B) with AES and Siemens still holding significant stakes. RSU and option grants are ongoing as the company scales its team. The company is not yet generating free cash flow and may need working capital facilities as the backlog executes. Dilution from share-based compensation is a factor but the magnitude is moderate relative to the growth profile.",
+
+  "technicalSetup": {
+    "pattern": "Post-earnings gap-up with partial gap fill",
+    "description": "Stock gapped from $13.56 to $20.28 intraday on May 7 before settling at $17.17 — a classic gap-up that partially filled. The $16.00–$16.50 zone (pre-earnings base + the level where the director sold in March) is now key support. A hold above $16.50 confirms buyers are absorbing the gap fill and sets up a second leg toward $20+.",
+    "keyLevels": [
+      { "level": "$16.00–$16.50", "type": "Support", "note": "Pre-earnings base; director sold here in March; must hold for bullish thesis to remain intact" },
+      { "level": "$20.28", "type": "Resistance", "note": "May 7 intraday high — first breakout target" },
+      { "level": "$22.00", "type": "Target", "note": "Analyst consensus target; spread max gain level" }
+    ]
+  },
+
+  "strikeTable": [
+    { "strike": "$15 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$1.20", "delta": 0.23, "contracts2Cost": "$2,870 cash secured (2 contracts)", "breakeven": "$13.80", "atTarget": "N/A (income strategy)" },
+    { "strike": "$17", "type": "Call (ATM)", "isRecommended": false, "premium": "~$2.55", "delta": 0.50, "contracts2Cost": "~$510 (2 contracts)", "breakeven": "$19.55", "atTarget": "+$490 at $22 — overpays for ATM premium" },
+    { "strike": "$18/$22 Spread", "type": "Bull Call Spread", "isRecommended": true, "premium": "~$0.90 net", "delta": 0.44, "contracts2Cost": "~$180 (2 spreads)", "breakeven": "$18.90", "atTarget": "+$620 max at $22+ (per 2 spreads)" },
+    { "strike": "$20", "type": "Call (OTM)", "isRecommended": false, "premium": "~$1.70", "delta": 0.35, "contracts2Cost": "~$340 (2 contracts)", "breakeven": "$21.70", "atTarget": "+$60 at $22 — poor risk/reward near target" },
+    { "strike": "$22", "type": "Call (at target)", "isRecommended": false, "premium": "~$1.10", "delta": 0.25, "contracts2Cost": "~$220 (2 contracts)", "breakeven": "$23.10", "atTarget": "OTM at analyst target — very low probability at current momentum" }
+  ]
+}

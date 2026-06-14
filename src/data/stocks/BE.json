@@ -1,0 +1,68 @@
+{
+  "ticker": "BE",
+  "company": "Bloom Energy",
+  "sector": "Clean Energy / Fuel Cells",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 290.52,
+  "analystTarget": 194.95,
+  "rating": "NEUTRAL",
+  "strategy": "OBSERVE — Stock trading above analyst targets; wait for target revisions",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $290.52 — 1 CSP contract requires ~$29,100 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "High-Risk Speculative — Options Too Expensive at Current IV",
+    "strike": 300,
+    "expiry": "Aug 2026 (~90 days)",
+    "type": "Call (Speculative Only)",
+    "estimatedPremium": "~$50–60/share",
+    "contractCost": "~$5,000–6,000 (1 contract) — VERY EXPENSIVE",
+    "delta": 0.48,
+    "breakeven": "$350–360",
+    "entryNote": "⚠️ NOT RECOMMENDED at current levels. IV is ~117% — options cost 20% of stock price. More critically: the stock at $290 is ABOVE the average analyst target of $195. Most analyst targets predate the Oracle 2.8GW deal (April 27) and have not been updated. Wait for analyst target revisions before entering options.",
+    "exitPlan": [
+      { "label": "If entering", "trigger": "Stock at $330 (high analyst target)", "optionGain": "Uncertain — IV collapse risk" },
+      { "label": "Preferred", "trigger": "Wait for post-Oracle analyst updates", "optionGain": "Re-evaluate when IV drops and targets update" }
+    ]
+  },
+  "companyOverview": "Fuel cell maker turned AI data center power partner. Q1 2026 revenue $751M (+130% YoY) with non-GAAP EPS $0.44 (beat by 340%). Oracle partnership expanded to 2.8GW (Project Jupiter) — a 10-year contract worth potentially billions. AEP 1GW agreement also signed. 2026 guidance raised to $3.4–3.8B revenue (+80% YoY). Manufacturing capacity expanding to 2GW. Stock up 134% YTD — largely priced in the Oracle deal at current levels.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$290.52", "note": "52-week range: $16.05–$296.50" },
+    { "metric": "Market Cap", "value": "~$82.7B", "note": "Stock up 134% YTD" },
+    { "metric": "Q1 2026 Revenue", "value": "$751.1M", "note": "+130% YoY" },
+    { "metric": "Q1 Non-GAAP EPS", "value": "$0.44", "note": "Beat $0.10 estimate by 340%" },
+    { "metric": "2026 Revenue Guidance", "value": "$3.4–3.8B", "note": "+80% YoY" },
+    { "metric": "Oracle Partnership", "value": "2.8GW contracted", "note": "Project Jupiter — multi-billion value" },
+    { "metric": "30-day IV", "value": "~117%", "note": "Extremely elevated — ATM call costs ~20% of stock" },
+    { "metric": "Analyst Avg Target", "value": "$194.95", "note": "BELOW current price — most targets pre-Oracle deal" }
+  ],
+  "catalysts": [
+    "Oracle 2.8GW fuel cell partnership — 10-year multi-billion contract (Project Jupiter)",
+    "AEP 1GW capacity agreement",
+    "Q1 2026 results: 130% revenue growth, first Q1 positive operating cash flow",
+    "2026 guidance raised to $3.4–3.8B (mid-point $3.6B, +80% YoY)",
+    "Manufacturing scale-up to 2GW supporting demand surge",
+    "Expected analyst target revisions post-Oracle deal announcement"
+  ],
+  "risks": [
+    "Stock at $290 trades ABOVE average analyst target of $195 — most targets pre-date Oracle deal",
+    "IV at 117% makes options extremely expensive (~20% of stock price per contract)",
+    "Manufacturing scale-up to 2GW is unproven at this speed",
+    "City of Hilliard (OH) legal opposition to large fuel cell installations",
+    "Hyperscaler capex pullback would directly impact key customers",
+    "Concentration risk: Oracle represents huge portion of backlog",
+    "Natural gas price volatility impacts fuel cell economics"
+  ],
+  "dilution": "Rapid expansion funded by equity raises and debt. Watch for potential capital raise to fund 2GW manufacturing capacity expansion. Stock-based compensation elevated relative to earnings.",
+  "strikeTable": [
+    { "strike": "$270", "type": "ITM", "isRecommended": false, "premium": "~$55–65", "delta": 0.62, "contracts2Cost": "~$11,000–13,000", "breakeven": "~$325–335", "atTarget": "-40%" },
+    { "strike": "$290", "type": "ATM", "isRecommended": false, "premium": "~$50–60", "delta": 0.50, "contracts2Cost": "~$10,000–12,000", "breakeven": "~$340–350", "atTarget": "-43%" },
+    { "strike": "$300", "type": "Slight OTM", "isRecommended": false, "premium": "~$45–55", "delta": 0.44, "contracts2Cost": "~$9,000–11,000", "breakeven": "~$345–355", "atTarget": "-46%" },
+    { "strike": "$330", "type": "OTM", "isRecommended": false, "premium": "~$32–40", "delta": 0.32, "contracts2Cost": "~$6,400–8,000", "breakeven": "~$362–370", "atTarget": "-52%" },
+    { "strike": "$335", "type": "High Bull Target", "isRecommended": false, "premium": "~$30–37", "delta": 0.30, "contracts2Cost": "~$6,000–7,400", "breakeven": "~$365–372", "atTarget": "-47%" }
+  ]
+}

@@ -3,6 +3,7 @@ import { env } from "@/lib/env";
 import { logger } from "@/lib/logger";
 import { cacheGet, cacheSet, TTL } from "@/lib/cache";
 import { getMockResponse } from "@/lib/mockData";
+import { earningsGet, earningsSet } from "@/lib/supabase-cache";
 import { getEarningsWithPrices } from "@/lib/yahoo/client";
 import { computeAllStrategies } from "@/lib/calculations/strategyPnl";
 import type { EarningsApiResponse, PostEarningsSummary } from "@/types";
@@ -63,6 +64,8 @@ export async function GET(
   }
 
   const cacheKey = `earnings:${symbol}`;
+
+  // L1: in-memory cache
   const cached = cacheGet<EarningsApiResponse>(cacheKey);
   if (cached) return NextResponse.json(cached);
 
@@ -76,6 +79,13 @@ export async function GET(
     }
     cacheSet(cacheKey, mock, TTL.EARNINGS_HISTORY);
     return NextResponse.json(mock);
+  }
+
+  // L2: Supabase cache
+  const sbCached = await earningsGet(symbol);
+  if (sbCached) {
+    cacheSet(cacheKey, sbCached, TTL.EARNINGS_HISTORY);
+    return NextResponse.json(sbCached);
   }
 
   try {
@@ -97,6 +107,7 @@ export async function GET(
     };
 
     cacheSet(cacheKey, response, TTL.EARNINGS_HISTORY);
+    await earningsSet(symbol, response);
     return NextResponse.json(response);
   } catch (err) {
     logger.error(`[earnings/${symbol}]`, err);

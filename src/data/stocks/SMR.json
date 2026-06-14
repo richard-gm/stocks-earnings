@@ -1,0 +1,144 @@
+{
+  "ticker": "SMR",
+  "company": "NuScale Power Corporation",
+  "sector": "Nuclear Energy / Small Modular Reactors",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 12.11,
+  "analystTarget": 20.42,
+  "rating": "BULLISH",
+  "strategy": "Buy $13 Call — Sep 2026 (enter AFTER May 7 earnings)",
+  "wheelStrategy": {
+    "eligible": true,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering new CSP positions.",
+    "bollingerEntry": "Daily chart, 20-period 2σ Bollinger Bands. Lower BB estimated ~$9.50–11.00 given elevated volatility. Wait for price to tag or breach lower band. Current price $12.11 is mid-to-upper band.",
+    "csp": {
+      "strike": "~$9.00–11.00",
+      "delta": "0.20–0.35",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.50–1.00/share (~$50–100 per contract)",
+      "annualisedYield": "~40–75% annualised on capital at risk (high IV small cap)",
+      "exitRule": "Close at 50% premium captured. CRITICAL: Close before May 7 earnings — IV crush risk. Re-enter after.",
+      "note": "Small cap nuclear modular reactor. IV likely ~80–110%. Low capital at risk ($900–$1,100/contract). Size to 3–5 contracts. ⚠️ Earnings May 7 — do NOT hold CSP through earnings."
+    },
+    "coveredCall": {
+      "strike": "~$13.00–14.00",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.50–1.00/share (~$50–100 per contract)",
+      "exitRule": "Close at 50% premium. Re-sell monthly. Close before earnings.",
+      "note": "If assigned (cost basis ~$9–11), sell CC at $13–14 to earn premium while stock recovers toward analyst targets."
+    }
+  },
+  "expiryComparison": {
+    "strike": 13,
+    "underlyingPrice": 13.29,
+    "iv": "~62%",
+    "earningsDate": "August 7, 2026",
+    "closeDeadline": "August 2, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter after May 7 earnings IV crush settles. Stock at $13.29 — slightly above $13 strike (near-ATM). Best entry on a post-earnings dip toward $11.50–12.50.",
+      "profitExit": "Close at 50–70% gain on premium. Target $16–17 for first exit (~25–30% upside), ride toward $20+ analyst target for 100%+ gain.",
+      "timeStop": "If stock has not cleared $15 by ~June 25 (50% of time elapsed on Sep position), take profits or close. Do not hold a decaying near-ATM call past mid-point.",
+      "lossStop": "Close at 40–50% loss. SMR is a volatile small-cap — gaps are common in either direction.",
+      "earningsHardStop": "Close by August 2 (5 days before ~August 7 Q2 earnings). High IV at 62% means IV crush will be severe if held through earnings."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 13,
+        "premiumEst": "~$2.50–3.50",
+        "flatScenario": "~-75%",
+        "atTarget": "~+150%",
+        "bestFor": "Avoid — only 13 days left at the August 2 close. Theta destroys most value in the final 2 weeks. Almost no time to benefit from any move.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 48,
+        "premiumEst": "~$3.00–4.50",
+        "flatScenario": "~-60%",
+        "atTarget": "~+130%",
+        "bestFor": "Recommended — 48 days of remaining time value at the August 2 close. Covers the full pre-earnings window with enough time for the SMR bull thesis to develop. IV at 62% warrants monitoring for spread entry if premium exceeds $4.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 111,
+        "premiumEst": "~$4.50–6.00",
+        "flatScenario": "~-40%",
+        "atTarget": "~+110%",
+        "bestFor": "Provides two earnings cycles of coverage. Better suited for a long-term LEAPS approach — overkill for a near-term catalyst play. Sep 19 is better value.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Near-ATM Call — Enter POST-Earnings (May 7)",
+    "strike": 13,
+    "expiry": "Sep 2026 (~130 days)",
+    "type": "Call",
+    "estimatedPremium": "~$2.80/share",
+    "contractCost": "~$560 (2 contracts)",
+    "delta": 0.50,
+    "breakeven": "~$15.80",
+    "entryNote": "WAIT until after May 7 earnings — IV is extremely elevated and will crush post-announcement regardless of direction. The day after earnings is ideal entry. High short interest (23.9% monthly increase) creates violent squeeze potential on any positive catalyst. Target the $13 strike: deep OTM pays poorly at $20 target, ITM gives you less leverage per dollar.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $15–16 (+24–32%)", "optionGain": "~75–100% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $18–20 (+49–65%)", "optionGain": "~175–225% on premium" }
+    ]
+  },
+  "companyOverview": "NuScale Power is the only company with an NRC-certified Small Modular Reactor (SMR) design — a regulatory moat that took 9 years and $1B+ to achieve. Their SMR is 12x smaller than a conventional nuclear plant, designed for modular deployment with dramatically lower upfront capital costs. Despite the unique technology position, NuScale has no signed commercial customers and is pre-revenue at scale. The stock crashed from $57 (mid-2025) to $8.85 (late 2025) on a cascade of bad news: the Carbon-Free Power Project (CFPP) anchor deal collapsed in November 2023 after cost estimates ballooned from $58/MWh to $89+/MWh, strategic backer Fluor sold its entire ~126M share position ($2.43B in proceeds) over Oct 2025–Apr 2026, and cash burn accelerated 323% YoY. The stock has since rebounded to $12.11 on the February 2026 Romania Doicesti Final Investment Decision and the White House space nuclear initiative — but remains 79% below peak. Key thesis: NuScale is the only NRC-certified SMR vendor. If AI-driven power demand forces data center operators to commit to SMR deployments in 2026–2027, NuScale is the only game in town. First commercial customer signing would be a watershed event.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$12.11", "note": "52-week range: $8.85–$57.42" },
+    { "metric": "Market Cap", "value": "~$2.5B", "note": "~206M diluted shares" },
+    { "metric": "Cash Position", "value": "$1.3B", "note": "Runway into 2027 at current burn" },
+    { "metric": "2026 Guided OpEx", "value": "$170–200M", "note": "Down from $459.6M burn in 2025" },
+    { "metric": "2025 Net Loss (Q3)", "value": "$273M", "note": "On ~$8M revenue — pre-commercial scale" },
+    { "metric": "Cash Burn Acceleration", "value": "$459.6M (2025)", "note": "+323% vs $108.7M in 2024" },
+    { "metric": "Short Interest", "value": "23.9% monthly increase", "note": "High float short — squeeze risk" },
+    { "metric": "Next Earnings", "value": "May 7, 2026", "note": "Expected 8–12% move — wait to enter" },
+    { "metric": "Analyst Consensus", "value": "HOLD", "note": "5 Buy / 9 Hold / 2 Sell — avg target $20.42" }
+  ],
+  "catalysts": [
+    "Romania Doicești FID (Feb 2026) — $4.9B first commercial SMR deployment approved, commercial operation 2030–2032; proof-of-concept for the business model",
+    "Only NRC-certified SMR — 9-year, $1B+ regulatory moat; X-energy, Oklo, Kairos, TerraPower still years from certification",
+    "White House space nuclear initiative — government contracts targeted specifically at NRC-certified designs",
+    "ENTRA1 Energy $25B partnership framework — largest SMR offtake framework ever announced (still non-binding)",
+    "Amazon SMR industry validation — tech hyperscalers buying nuclear power drives mainstream customer awareness",
+    "AI data center power demand — cloud giants need 24/7 carbon-free baseload that solar/wind cannot provide; SMRs are structurally positioned",
+    "Fluor exit complete — ~126M shares overhang now gone; forced seller removed, float normalizing",
+    "Short squeeze potential — 23.9% monthly short interest increase; first customer contract could trigger violent covering",
+    "DOE loan guarantee support — federal backing reduces financing risk for first-mover customers",
+    "First commercial customer signing is the watershed event — would re-rate the stock by 40–80% in one day"
+  ],
+  "risks": [
+    "May 7 earnings: enter AFTER — IV crush will happen regardless of beat/miss; enter the day after",
+    "No signed commercial customers — multiple missed internal deadlines; 'hard contracts by end-2025' guidance was missed",
+    "Cash burn: $459.6M in 2025 vs $108.7M in 2024 (323% increase) — equity raise likely if revenue misses 2027 targets",
+    "Revenue ramp is distant — Romania Doicești commercial operation not until 2030–2032; investors wait 4–6 years",
+    "Securities class action filed April 2026 — alleges misleading statements about CFPP viability; legal overhang and costs",
+    "CFPP collapse history — cost estimates ballooned from $58/MWh to $89+/MWh; cost discipline track record is poor",
+    "Competition intensifying: X-energy (Amazon-backed), Oklo (Sam Altman-backed), Kairos (Google), TerraPower (Bill Gates) — all racing for NRC certification",
+    "Technology risk — no full-scale commercial SMR has ever been built; engineering surprises are possible",
+    "Regulatory approval in new markets requires country-by-country NRC equivalent certification — long tail"
+  ],
+  "dilution": {
+    "summary": "The Fluor overhang is gone. Future dilution depends on whether revenue materializes before 2027 cash cliff.",
+    "items": [
+      { "label": "Fluor exit — COMPLETE (Oct 2025–Apr 2026)", "detail": "Strategic backer sold entire ~126M share stake for $2.43B in proceeds. This was the primary driver of the $57→$8.85 crash. Overhang is now fully removed — a meaningful positive going forward." },
+      { "label": "Current cash runway (through 2027)", "detail": "$1.3B cash with $170–200M guided 2026 OpEx. If Romania milestones slip and no revenue materializes, equity raise at depressed prices becomes likely in late 2027." },
+      { "label": "2025 burn acceleration risk", "detail": "$459.6M burned in 2025 vs $108.7M in 2024 (+323%). Company guided lower 2026 OpEx but has missed cost targets before. Watch quarterly cash burn updates closely." },
+      { "label": "Securities class action (Apr 2026)", "detail": "Class action filed alleging misleading statements about CFPP commercial viability. Settlement or judgment could require additional cash outlay; risk to capital position." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$10", "type": "Deep ITM", "isRecommended": false, "premium": "~$4.50", "delta": 0.70, "contracts2Cost": "~$900", "breakeven": "~$14.50", "atTarget": "+90%" },
+    { "strike": "$12", "type": "ATM", "isRecommended": false, "premium": "~$3.20", "delta": 0.55, "contracts2Cost": "~$640", "breakeven": "~$15.20", "atTarget": "+147%" },
+    { "strike": "$13", "type": "Slight OTM", "isRecommended": true, "premium": "~$2.80", "delta": 0.50, "contracts2Cost": "~$560", "breakeven": "~$15.80", "atTarget": "+157%" },
+    { "strike": "$15", "type": "OTM", "isRecommended": false, "premium": "~$2.00", "delta": 0.38, "contracts2Cost": "~$400", "breakeven": "~$17.00", "atTarget": "+155%" },
+    { "strike": "$20", "type": "Far OTM", "isRecommended": false, "premium": "~$0.90", "delta": 0.18, "contracts2Cost": "~$180", "breakeven": "~$20.90", "atTarget": "+67%" }
+  ]
+}

@@ -115,3 +115,166 @@ export interface TickerInfo {
   exchange: string;
   tvUrl: string;
 }
+
+// ─── Stock Analysis types (migrated from options-tracker) ─────────────────────
+
+export type Rating = "BULLISH" | "NEUTRAL" | "BEARISH";
+
+export interface ExitStep {
+  label: string;
+  trigger: string;
+  optionGain: string;
+}
+
+export interface Recommendation {
+  title: string;
+  strike: number;
+  expiry: string;
+  type: string;
+  estimatedPremium: string;
+  contractCost: string;
+  delta: number;
+  breakeven: string;
+  entryNote: string;
+  exitPlan: ExitStep[];
+}
+
+export interface Financial {
+  metric: string;
+  value: string;
+  note: string;
+}
+
+export interface StrikeRow {
+  strike: string;
+  type: string;
+  isRecommended: boolean;
+  premium: string;
+  delta: number;
+  contracts2Cost: string;
+  breakeven: string;
+  atTarget: string;
+}
+
+export interface DilutionItem {
+  label: string;
+  detail: string;
+}
+
+export interface DilutionInfo {
+  summary: string;
+  items: DilutionItem[];
+}
+
+export interface WheelLeg {
+  strike: string;
+  delta: string;
+  dte: string;
+  estimatedPremium: string;
+  annualisedYield?: string;
+  exitRule?: string;
+  note?: string;
+}
+
+export interface WheelStrategy {
+  eligible: boolean;
+  ineligibleReason?: string;
+  wheelFlag?: string;
+  vixNote: string;
+  bollingerEntry: string;
+  csp?: WheelLeg;
+  coveredCall?: WheelLeg;
+}
+
+export interface InsiderTransaction {
+  insider: string;
+  action: string;
+  shares: number;
+  price: string;
+  date: string;
+  value: string;
+  note: string;
+}
+
+export interface InsiderFlow {
+  summary: string;
+  transactions: InsiderTransaction[];
+  signal: string;
+}
+
+export interface ExpiryOption {
+  expiry: string;
+  daysTotal: number;
+  daysLeftAtClose: number;
+  premiumEst: string;
+  flatScenario: string;
+  atTarget: string;
+  bestFor: string;
+  recommended: boolean;
+}
+
+export interface ExpiryComparison {
+  strike: number;
+  underlyingPrice: number;
+  iv: string;
+  earningsDate: string;
+  closeDeadline: string;
+  exitRules: {
+    entryTrigger: string;
+    profitExit: string;
+    timeStop: string;
+    lossStop: string;
+    earningsHardStop: string;
+  };
+  options: ExpiryOption[];
+}
+
+export interface CustomTicker {
+  ticker: string;
+  added_at: string;
+}
+
+export interface TechnicalSetupLevel {
+  level: string;
+  type: string;
+  note: string;
+}
+
+export interface TechnicalSetup {
+  pattern: string;
+  description: string;
+  keyLevels: TechnicalSetupLevel[];
+}
+
+export interface StockAnalysis {
+  ticker: string;
+  company: string;
+  sector: string;
+  analysisDate: string;
+  priceAtAnalysis: number;
+  analystTarget: number;
+  rating: Rating;
+  strategy: string;
+  wheelStrategy?: WheelStrategy;
+  expiryComparison?: ExpiryComparison;
+  recommendation: Recommendation;
+  companyOverview: string;
+  technicalSetup?: TechnicalSetup;
+  financials: Financial[];
+  insiderFlow?: InsiderFlow;
+  catalysts: string[];
+  risks: string[];
+  dilution: DilutionInfo | string;
+  strikeTable: StrikeRow[];
+}
+
+// ─── Kronos ML signals ────────────────────────────────────────────────────────
+
+export interface KronosScore {
+  ticker: string;
+  signal: "STRONG_BUY" | "BUY" | "HOLD" | "SELL" | "STRONG_SELL";
+  score: number;
+  confidence: number;
+  updatedAt: string;
+  factors?: Record<string, number>;
+}

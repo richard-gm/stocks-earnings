@@ -1,0 +1,171 @@
+{
+  "ticker": "SIVEF",
+  "company": "Sivers Semiconductors AB (publ)",
+  "sector": "Technology / Semiconductors — mmWave, Silicon Photonics & Optical",
+  "analysisDate": "2026-05-13",
+  "priceAtAnalysis": 4.82,
+  "analystTarget": 8.00,
+  "rating": "BULLISH",
+  "strategy": "Sivers Semiconductors is a high-risk, high-conviction growth play on AI data center optical interconnects, 5G/6G wireless infrastructure, and SATCOM markets. The April 2026 Jabil partnership validates the photonics IP for 1.6T optical transceivers at hyperscale scale. Despite OTC liquidity constraints and an ongoing insider-trading probe (related to the Nasdaq listing announcement), the fundamental momentum is real: opportunity pipeline +64% to $453M, photonics achieved its first profitable year in 2025, and Northland Capital Markets rates the stock Outperform with a target of ~$8.00 USD equivalent. With Q1 2026 earnings on May 20 and Nasdaq uplisting in progress, this is a directional equity play for risk-tolerant investors with a 12–24 month horizon — no wheel strategy is available due to OTC status.",
+
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "SIVEF trades on OTC pink sheets (OTCPK) and does not have standardised listed options on any major exchange (CBOE, CME, etc.). OTC pink-sheet securities rarely support liquid options chains. Additionally, the stock's $4.82 price and 52-week range of $0.70–$6.40 (+228% YTD) make wheel strategy premiums unreliable even in theory.",
+    "wheelFlag": "Ongoing Sweden Economic Crime Authority investigation into an alleged insider trading leak related to the April 2026 Nasdaq listing announcement. Recent 125M SEK directed share issue (~2.5% dilution). Negative profit margin (-51.69%). Q1 2026 earnings May 20 — hard catalyst binary. Nasdaq listing timing uncertain. Long-only equity or Stockholm-exchange covered warrants are the only viable structures.",
+    "vixNote": "N/A — No listed options. Estimated implied volatility for comparable micro-cap semiconductors is 70–85% (elevated). Wide bid-ask spreads and low liquidity would make any options trading impractical. VIX baseline ~14–16 (May 2026).",
+    "bollingerEntry": "N/A — No standardised options. On an equity basis: SIVEF is trading near its $6.40 April 30 peak and ~10% below it. RSI likely overbought after the +228% YTD surge. Ideal equity accumulation zone on pullbacks to $4.50–$5.00 support. Do not chase the peak.",
+    "csp": {
+      "strike": "N/A",
+      "delta": "N/A",
+      "dte": "N/A",
+      "estimatedPremium": "N/A",
+      "annualisedYield": "N/A",
+      "exitRule": "N/A — No listed puts available",
+      "note": "OTC securities do not support standardised option chains. Cash-secured put strategy is not feasible for SIVEF."
+    },
+    "coveredCall": {
+      "strike": "N/A",
+      "delta": "N/A",
+      "dte": "N/A",
+      "estimatedPremium": "N/A",
+      "exitRule": "N/A — No listed calls available",
+      "note": "Covered calls are not available for OTC pink-sheet securities. For Stockholm-listed holders: covered warrants via Nasdaq Stockholm (SIVE.ST) may be available through Swedish brokers."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 4.82,
+    "underlyingPrice": 4.82,
+    "iv": "~70–85% estimated (micro-cap semiconductor profile, elevated by pending catalysts)",
+    "earningsDate": "~May 20, 2026 (Q1 2026)",
+    "closeDeadline": "May 15, 2026 (5 days before earnings — virtually immediate; this window has effectively passed for new entries)",
+    "exitRules": {
+      "entryTrigger": "N/A for options (unavailable). Equity entry: limit buy $4.50–$5.00 on weakness. Wait for post-earnings clarity before adding size — a miss on May 20 could take stock to $3.50 support rapidly.",
+      "profitExit": "Scale out 50% of equity position at $6.50–$7.00 (approaching Northland target). Hold remaining 50% for $8.00+ if Nasdaq listing is confirmed and revenue trajectory holds.",
+      "timeStop": "Reduce position by 50% if no Nasdaq listing decision by September 30, 2026, or if Q2 2026 revenue growth falls below 15% YoY.",
+      "lossStop": "Hard stop at $3.50 (~27% loss from current). Trailing stop: 15% below peak price if stock breaks and holds above $6.00.",
+      "earningsHardStop": "Reduce position to maximum 50% of current size before market close May 15. Do NOT hold a full speculative position through a binary earnings event at these IV levels. Re-build after May 20 if results are positive."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 94,
+        "daysLeftAtClose": 0,
+        "premiumEst": "N/A — No listed options on OTC securities",
+        "flatScenario": "N/A",
+        "atTarget": "Equity: stock flat at $4.82 — no options gain. At $8.00 analyst target, ~+66% equity return.",
+        "bestFor": "N/A for options. Equity: medium-term hold through Q2 earnings and Nasdaq listing decision.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 129,
+        "daysLeftAtClose": 0,
+        "premiumEst": "N/A — No listed options on OTC securities",
+        "flatScenario": "N/A",
+        "atTarget": "Equity: horizon captures Nasdaq listing decision and Q2/Q3 revenue ramp visibility. At $8.00, +66% return.",
+        "bestFor": "N/A for options. Equity: hold if Nasdaq listing confirmed; reassess Q3 revenue growth trend.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 192,
+        "daysLeftAtClose": 0,
+        "premiumEst": "N/A — No listed options on OTC securities",
+        "flatScenario": "N/A",
+        "atTarget": "Equity: six-month horizon captures Jabil revenue ramp, multiple customer wins, and 2027 profitability confirmation. At $8–$12, +66–+149% return.",
+        "bestFor": "N/A for options. Equity: suitable for patient capital comfortable with regulatory and earnings uncertainty.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Long Equity — Accumulate on Weakness (Directional Growth Play)",
+    "strike": 4.82,
+    "expiry": "Open-ended (12–24 month thesis)",
+    "type": "Stock ownership — 100+ shares. Also tradeable as SIVE.ST on Nasdaq Stockholm (SEK-denominated) for EU investors.",
+    "estimatedPremium": "N/A (equity position, not options)",
+    "contractCost": "~$482 per 100 shares at $4.82; preferred entry $4.50 or below on weakness",
+    "delta": 1.0,
+    "breakeven": "$4.82 (current); lower at $4.50 on pullbacks",
+    "entryNote": "SIVEF presents a high-conviction bullish case for small-cap growth investors willing to accept regulatory and liquidity risk. Five reasons: (1) Jabil partnership announced April 2026 validates photonics IP for AI data center 1.6T optical transceivers — a multi-billion dollar TAM with 3–5 year revenue ramps; (2) Northland Capital Markets: Outperform, target 8 SEK (~$8 USD), implying 66% upside; (3) Opportunity pipeline surged 64% to $453M in 2025 with product pipeline +90% — strong customer engagement; (4) Photonics segment achieved first profitable year in 2025 (SEK +1.5M AEBITDA), validating margin expansion; (5) Management guides to $50–55M revenue for cash-flow breakeven within 2 years, with consensus forecasting breakeven 2026 and profit 2027. Key risk: Sweden Economic Crime Authority investigating insider trading related to the Nasdaq listing announcement (April 2026) — resolution could delay the uplisting catalyst. Secondary risk: Q1 2026 earnings May 20 are binary; a miss could take stock to $3.50 rapidly. Position sizing: treat as a 2–5% portfolio allocation, not a core holding.",
+    "exitPlan": [
+      { "label": "50% scale-out at $7.00 (+45%)", "trigger": "Stock reaches $7.00–$7.50 and Nasdaq listing is progressing", "optionGain": "~+$218 per 100 shares (45% equity gain on $482 invested)" },
+      { "label": "Full target at $8.00 (+66%)", "trigger": "Nasdaq listing confirmed, Q2 2026 revenue growth >15% YoY, Q1 guidance beat", "optionGain": "+$318 per 100 shares if full position held to analyst target" },
+      { "label": "Hard stop at $3.50 (-27%)", "trigger": "Nasdaq listing denied, earnings miss consensus by >10%, or criminal probe escalates to company-level action", "optionGain": "-$132 per 100 shares loss. Acceptable given risk/reward asymmetry." }
+    ]
+  },
+
+  "companyOverview": "Sivers Semiconductors AB (publ) is a Swedish semiconductor company designing and manufacturing integrated circuits, modules, and subsystems for next-generation wireless and optical connectivity. It operates through two segments: Wireless (mmWave beamforming ICs, transceivers, and antenna modules for 5G, 6G, SATCOM, and Fixed Wireless Access) and Photonics (high-power distributed feedback lasers and laser arrays for AI data center optical interconnects, LiDAR, and sensing). With proprietary expertise in microwave, millimeter-wave, and optical semiconductor process technologies, Sivers addresses fast-growing markets driven by AI infrastructure buildout, satellite communication expansion, and 5G/6G global rollout.\n\nIn 2025, Sivers delivered record revenues of SEK 304.1M (~$33M USD), up 25% year-over-year (33% at constant FX). Product revenue grew 13% at constant FX to SEK 85.7M, while NRE revenue (non-recurring engineering) grew 40% to SEK 218.4M, signalling that near-term product revenue acceleration is funded and contracted. The Photonics segment delivered its first profitable full year in 2025 (SEK +1.5M AEBITDA), demonstrating the business model's viability. Management guides to cash-flow breakeven at $50–55M annual revenue, estimated in 2026–2027.\n\nThe most significant strategic development of 2026 is the April collaboration with Jabil Corporation to develop a 1.6T linear receive optical transceiver module using Sivers' high-performance DFB lasers. This is the first clear commercial validation of Sivers' photonics technology for hyperscale AI datacenter deployment — a market being driven by NVIDIA, Meta, Google, and Amazon's insatiable bandwidth demand. The company's opportunity pipeline surged 64% to $453M in 2025 (product pipeline +90%), signalling strong customer engagement that should convert to revenue over the next 2–3 years.\n\nA notable governance event: Sweden's Economic Crime Authority launched an investigation in April 2026 into a suspected insider trading leak related to Sivers' announced intention to list on Nasdaq New York. The probe appears focused on pre-announcement information leakage rather than ongoing executive misconduct, but it introduces regulatory uncertainty and could delay the Nasdaq uplisting. Concurrent with the probe announcement, Sivers raised SEK 125M through a directed share issue at 14.50 SEK per share to institutional investors (DNB Disruptive Opportunities, Storebrand Sverigefond), resulting in ~2.5% dilution — acceptable given the strategic importance of the capital.\n\nSivers is not a near-term income vehicle — it is a technology development-stage company converting from NRE-heavy early revenue into product commercialisation. The investment thesis is straightforward: the AI optical interconnect market is real and growing fast, Sivers has the IP and the Jabil validation to win, and the Nasdaq listing will unlock a far larger institutional shareholder base than the current Stockholm-only listing provides.",
+
+  "technicalSetup": {
+    "pattern": "Post-euphoria consolidation after parabolic surge",
+    "description": "SIVEF surged approximately 1,200% from late 2024 through April 30, 2026, peaking near $5.20 USD (44.70 SEK equivalent) on the Jabil announcement and capital raise catalyst cluster. The April 23 insider trading investigation announcement triggered a pullback. As of May 13, the stock trades at $4.82 — approximately 10% below the April high but still +228% YTD from $1.47 start-of-year equivalent. The 52-week range ($0.70–$6.40) reflects extreme micro-cap volatility typical of OTC-listed Swedish tech companies. Technical support has established around $4.50–$5.00 (accumulation zone post-surge). Resistance sits at $6.00–$6.40 (recent highs). The immediate catalyst on May 20 (Q1 earnings) is the primary near-term technical event — a beat would test $6.00 resistance; a miss would likely retest $3.50 support. Volume spikes accompany major news events (Jabil announcement, capital raise, criminal probe) indicating institutional and hedge fund participation alongside retail.",
+    "keyLevels": [
+      { "level": "$3.50", "type": "Support", "note": "Hard stop level — 27% below current. Technical support from prior consolidation. Break below signals thesis failure." },
+      { "level": "$4.50–$5.00", "type": "Support", "note": "Recent accumulation zone and preferred equity entry range on pullbacks. Represents rational re-entry after post-earnings noise." },
+      { "level": "$6.00–$6.40", "type": "Resistance", "note": "April 30 peak and 52-week high. Break above on strong earnings would target $7.00–$8.00 (Northland analyst target)." },
+      { "level": "$8.00", "type": "Resistance / Target", "note": "Northland Capital Markets Outperform target (8 SEK equivalent, ~$8 USD). 66% upside. Requires positive Nasdaq progress + sustained revenue growth." }
+    ]
+  },
+
+  "financials": [
+    { "metric": "Stock Price (May 13)", "value": "$4.82 (OTC: SIVEF)", "note": "Also tradeable as SIVE.ST at ~43.14 SEK on Nasdaq Stockholm. 52-week range: $0.70–$6.40. +228% YTD." },
+    { "metric": "Market Cap", "value": "~$1.0–1.4B USD", "note": "Based on ~296.5M shares outstanding. Premium to revenue reflects AI/5G optionality, not current profitability." },
+    { "metric": "FY 2025 Revenue", "value": "SEK 304.1M (~$33M USD)", "note": "+25% YoY (+33% constant FX). Product revenue SEK 85.7M (+13% cFX); NRE revenue SEK 218.4M (+40% cFX)." },
+    { "metric": "FY 2025 Adj. EBITDA", "value": "Improving; Q4 AEBITDA SEK 10.8M", "note": "Photonics segment: first profitable year (SEK +1.5M AEBITDA). Wireless still loss-making but narrowing. Company-wide profitability targeted 2027." },
+    { "metric": "Profit Margin (FY 2025)", "value": "-51.69%", "note": "Loss-making but rapidly improving. Consensus: breakeven 2026, first GAAP profit 2027." },
+    { "metric": "Opportunity Pipeline (2025)", "value": "$453M (+64% YoY)", "note": "Product pipeline +90%. Conversion to revenue over 2–4 years would transform the revenue trajectory." },
+    { "metric": "April 2026 Capital Raise", "value": "SEK 125M (~$13M USD)", "note": "8.62M new shares at 14.50 SEK. ~2.5% dilution. Investors: DNB Disruptive Opportunities, Storebrand Sverigefond. Lock-up: 180 days." },
+    { "metric": "Analyst Target", "value": "~$8.00 USD (Northland Capital Markets, Outperform)", "note": "+66% upside from $4.82. Limited coverage — Northland is primary visible analyst. Additional coverage expected post-Nasdaq listing." },
+    { "metric": "Cash / Runway", "value": "~18–24 months post-raise", "note": "125M SEK raise funds photonics product development and commercial ops through estimated cash-flow breakeven." }
+  ],
+
+  "insiderFlow": {
+    "summary": "No discretionary open-market buying or selling by insiders at current price levels. All recent activity is either institutional (directed share issue to DNB/Storebrand) or administrative. CEO Vickram Vathulya and CFO Heine Thorsgaard are subject to 90-day no-sale lock-up and 180-day restriction on further share issuance — interpreting as management confidence in near-term execution. The insider trading investigation relates to a suspected pre-announcement information leak, not active insider selling.",
+    "transactions": [
+      { "insider": "Institutional investors (DNB Disruptive Opportunities, DNB Nordic Small Cap, Storebrand Sverigefond)", "action": "Purchase (directed share issue)", "shares": 8620000, "price": "14.50 SEK (~$1.55 USD per share at time of issue)", "date": "2026-04-16", "value": "~SEK 125M (~$13M USD)", "note": "Oversubscribed institutional raise. Quality institutional backing is a positive signal for the thesis." },
+      { "insider": "CEO Vickram Vathulya, CFO Heine Thorsgaard", "action": "Lock-up commitment", "shares": 0, "price": "N/A", "date": "2026-04-16", "value": "N/A", "note": "90-day no-sale; 180-day restriction on further issuance. Strong alignment signal." }
+    ],
+    "signal": "NEUTRAL — No discretionary insider buying at current elevated prices ($4.82 vs. historical lows near $0.70). The institutional capital raise at 14.50 SEK is the most substantive signal: quality Nordic institutions backed the raise. Management lock-ups indicate confidence. Criminal probe (leaked info) introduces noise but is not a signal of insider selling pressure."
+  },
+
+  "catalysts": [
+    "Q1 2026 Earnings (May 20, 2026) — Revenue growth trajectory and path to profitability confirmation. Binary catalyst: beat = re-test $6.00+ highs; miss = retest $3.50 support.",
+    "Nasdaq New York Listing Decision (Summer 2026) — Approval unlocks institutional access, analyst coverage, and removes OTC friction. Denial would pressure stock 25–35%.",
+    "SATCOM Contract Wins (H2 2026) — New satellite communication customer announcements (Iridium, Kuiper, Viasat) validate wireless segment and expand TAM.",
+    "Jabil Partnership Revenue Ramp (2026–2027) — Commencement of 1.6T optical transceiver production validates AI datacenter photonics thesis commercially.",
+    "Insider Trading Probe Resolution (Q2 2026) — Clearance removes regulatory overhang and accelerates Nasdaq timeline.",
+    "Gross Margin Expansion (2026–2027) — Photonics segment already profitable in 2025; wireless margin improvement from volume scale.",
+    "2027 Profitability Confirmation — First GAAP profit year would validate the multi-year thesis and attract a wider institutional shareholder base."
+  ],
+
+  "risks": [
+    "Insider trading probe (Sweden Economic Crime Authority) could delay or block Nasdaq listing — the primary near-term catalyst and stock re-rating event",
+    "Q1 2026 earnings (May 20) are binary — a miss on guidance or margins could take the stock to $3.50 support rapidly given the +228% YTD run-up",
+    "OTC liquidity: wide bid-ask spreads and low volume make it difficult to exit large positions without material market impact",
+    "Further dilution risk: 180-day lock-up expires late 2026; follow-on raises possible if cash burn accelerates before profitability",
+    "Jabil partnership execution delay: if 1.6T transceiver design wins are limited or delayed, the photonics upside thesis weakens significantly",
+    "SATCOM market risk: satellite deployment slowdowns (regulatory, competitive) would impact the wireless segment revenue timeline",
+    "Competitive pressure in mmWave and photonics from Broadcom, Marvell, Analog Devices, and Infineon with 10x+ R&D budgets",
+    "Currency risk: SEK/USD fluctuations affect reported USD revenue materially",
+    "Valuation extended: ~42x sales on $33M FY2025 revenue assumes aggressive growth execution over 2–3 years — any disappointment triggers a multi-year high retracement toward $2–$3",
+    "Short interest: 6%+ disclosed short position (Voleon, Two Sigma) signals institutional skepticism; sustained price weakness could trigger additional short selling"
+  ],
+
+  "dilution": {
+    "summary": "Sivers raised SEK 125M via directed share issue in April 2026 (~2.5% dilution). Management is locked for 180 days from further issuance. However, the company's path to profitability (2027 target) suggests additional capital may be required if cash burn accelerates. Long-term dilution risk is material in a capital-intensive semiconductor environment. The quality institutional backing of the April raise (DNB, Storebrand) is a mitigating factor.",
+    "items": [
+      { "label": "April 2026 Directed Share Issue", "detail": "8.62M new shares at 14.50 SEK (~$1.55 USD), raising SEK 125M (~$13M). ~2.5% dilution on fully diluted basis. CEO/CFO locked 90 days; company locked 180 days." },
+      { "label": "Future Dilution Risk (2026–2027)", "detail": "If cash burn accelerates or customer ramps delay, additional capital raises likely. Conservative estimate: 5–10% additional dilution possible before achieving profitability." },
+      { "label": "Nasdaq Listing Impact", "detail": "Successful Nasdaq uplisting may trigger secondary offering (3–5% dilution) and implementation of broader equity incentive plans for US-based hires." }
+    ]
+  },
+
+  "strikeTable": [
+    { "strike": "$3.50 Equity Stop", "type": "Hard Stop (Equity Position)", "isRecommended": false, "premium": "N/A", "delta": 1.0, "contracts2Cost": "N/A", "breakeven": "$4.82 (entry)", "atTarget": "Stop at $3.50 = -27% from entry. Acceptable risk/reward given 66%+ upside to analyst target." },
+    { "strike": "$4.50 Equity Add", "type": "Accumulation Level (Equity)", "isRecommended": true, "premium": "N/A", "delta": 1.0, "contracts2Cost": "$450 per 100 shares", "breakeven": "$4.50", "atTarget": "At $8.00 analyst target, +78% return from $4.50 entry. Preferred entry level on pullbacks." },
+    { "strike": "$5.00 Equity Current", "type": "Starter Position (Equity at market)", "isRecommended": false, "premium": "N/A", "delta": 1.0, "contracts2Cost": "$482 per 100 shares", "breakeven": "$4.82", "atTarget": "At $8.00 analyst target, +66% return from $4.82 entry. Only enter pre-earnings with reduced size." }
+  ]
+}

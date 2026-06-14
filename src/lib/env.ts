@@ -14,6 +14,10 @@ export const env = {
   anthropicApiKey: process.env.ANTHROPIC_API_KEY ?? null,
   // Explicit model pin — override in .env.local only if you intentionally want a different model
   anthropicModel: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
+  supabaseUrl: process.env.SUPABASE_URL ?? null,
+  supabaseAnonKey: process.env.SUPABASE_ANON_KEY ?? null,
+  kronosApiUrl: process.env.KRONOS_API_URL ?? null,
+  kronosApiKey: process.env.KRONOS_API_KEY ?? null,
 };
 
 if (typeof window === "undefined") {

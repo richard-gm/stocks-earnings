@@ -1,0 +1,148 @@
+{
+  "ticker": "FCX",
+  "company": "Freeport-McMoRan Inc.",
+  "sector": "Materials / Copper Mining",
+  "analysisDate": "2026-05-08",
+  "priceAtAnalysis": 60.83,
+  "analystTarget": 70.00,
+  "rating": "BULLISH",
+  "strategy": "Bull Call Spread $62.50/$70 Aug 2026 — copper demand thesis with defined risk given significant insider selling",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": "INSIDER SELLING WARNING: Chairman Richard Adkerson sold 400,991 shares (~$25.4M) and 9 total insider sales occurred in the past 6 months with 0 purchases. Wheel strategy is technically eligible but insider selling is a meaningful directional headwind — use reduced position sizes (1 contract max) and tighter stops.",
+    "vixNote": "VIX elevated ~20+; commodity stocks carry elevated volatility — FCX options premiums are attractive. However, insider selling is a risk flag that warrants caution on large CSP positions.",
+    "bollingerEntry": "Lower Bollinger Band estimated ~$54–$56. Current price $60.83 is above the lower band — wait for a pullback toward $55–56 before initiating CSP. Do not chase at current levels given insider selling.",
+    "csp": {
+      "strike": "$55",
+      "delta": "0.21",
+      "dte": "21–30 days",
+      "estimatedPremium": "$1.85–2.10 per contract",
+      "annualisedYield": "~14–15% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured (target $0.93–1.05). Hard stop before July 16 (5 days before est. July 21 earnings).",
+      "note": "The $55 strike is 9.6% below current price — a meaningful buffer given the insider selling risk. Only enter on a pullback toward lower Bollinger Band."
+    },
+    "coveredCall": {
+      "strike": "$60",
+      "delta": "0.25",
+      "dte": "21–30 days",
+      "estimatedPremium": "$1.75–2.00 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through earnings.",
+      "note": "If assigned at $55 CSP, sell $60 CC to reduce cost basis to ~$53. Continue wheel only if insider selling abates."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 62,
+    "underlyingPrice": 60.83,
+    "iv": "~42% (commodity cycle volatility; elevated post-Grasberg disruption news)",
+    "earningsDate": "July 21, 2026 (estimated Q2 reporting)",
+    "closeDeadline": "July 16, 2026 (5 days before est. earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter spread when copper spot holds above $4.50/lb and stock confirms support at $59.00. Do not enter into momentum down days — wait for stabilization.",
+      "profitExit": "Close Contract 1 when spread reaches 50% of max gain (~$375 on $62.50/$70). Let Contract 2 ride to full $70 target if stock momentum supports it.",
+      "timeStop": "If stock has not moved above $65 by June 15 (50% of DTE), close the spread. Theta on the long leg accelerates into the final 30 days.",
+      "lossStop": "Close at 40–50% loss on net debit paid (close at ~$1.15–1.30 loss on $2.30 net paid). Insider selling makes averaging down particularly risky.",
+      "earningsHardStop": "Close ALL positions by July 16, 2026 — 5 days before estimated July 21 earnings. Copper stocks are extremely volatile into quarterly results. No exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 98,
+        "daysLeftAtClose": 69,
+        "premiumEst": "~$4.80 ($62.50 call) / ~$2.50 ($70 call) → $2.30 net spread",
+        "flatScenario": "Stock stays at $60.83 — spread expires near worthless. Loss: ~$230 per spread.",
+        "atTarget": "Stock at $70.00 by July 16 close — spread worth ~$6.50–7.00. Gain: ~$420–470 per spread (~180% return).",
+        "bestFor": "Optimal — cheapest premium for the identical close-deadline window.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 133,
+        "daysLeftAtClose": 69,
+        "premiumEst": "~$5.40 ($62.50 call) / ~$3.00 ($70 call) → $2.40 net spread",
+        "flatScenario": "Same close deadline — paying $0.10 extra per spread for 35 days of post-earnings time that is unusable.",
+        "atTarget": "Identical outcome at July 16 close. Marginal extra cost, no extra benefit.",
+        "bestFor": "Only if earnings is pushed past July — provides insurance against date slippage.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 196,
+        "daysLeftAtClose": 69,
+        "premiumEst": "~$6.20 ($62.50 call) / ~$3.70 ($70 call) → $2.50 net spread",
+        "flatScenario": "Paying $0.20 extra per spread for time entirely cut off by earnings hard stop.",
+        "atTarget": "Same close-deadline outcome. Aug strictly cheaper for identical risk exposure.",
+        "bestFor": "Not recommended — overkill. Thesis resolves before Aug expiry anyway.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Bull Call Spread — $62.50/$70 Aug 15, 2026",
+    "strike": 62,
+    "expiry": "Aug 15, 2026",
+    "type": "Bull Call Spread (IV ~42% — short $70 leg saves ~$2.50 vs. single call; spread strongly preferred and limits downside given insider selling)",
+    "estimatedPremium": "~$2.30 net debit per spread",
+    "contractCost": "~$230 per spread (2 spreads = $460)",
+    "delta": 0.47,
+    "breakeven": "$64.80",
+    "entryNote": "IV at ~42% makes the $70 short leg save a meaningful $2.50 per contract — spread structure is clearly superior to a single call. More importantly, the 9 insider sales and 0 purchases over 6 months (including the Chairman's $25.4M sale) demand defined-risk positioning. Max loss is $230/spread vs. $480/contract on a naked call. Copper macro thesis is intact: AI data centers and energy transition drive structural demand. Enter only after confirming copper spot >$4.50/lb and stock holds $59 support.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock reaches $67.00 (+10%)", "optionGain": "~$200–230 per spread (close at 50% of max gain)" },
+      { "label": "Contract 2", "trigger": "Stock reaches $70.00 — analyst median target", "optionGain": "~$470–500 per spread (max gain on spread)" }
+    ]
+  },
+
+  "companyOverview": "Freeport-McMoRan is the world's largest publicly traded copper company, operating major mines in the US (Arizona, New Mexico), South America (Peru, Chile), and Indonesia (Grasberg). Q1 2026 revenue of $6.23B beat estimates by 9%, driven by elevated copper prices and operational improvements. The structural bull case is clear: copper is essential for AI data centers (power infrastructure), EV batteries, and renewable energy. However, two significant headwinds complicate the near-term picture: (1) the 2025 Grasberg mine mud-rush fatality and subsequent restart ramp creates execution risk, and (2) coordinated insider selling of $30M+ in the past six months signals insiders see limited near-term upside. Long-term copper demand is not in question — the question is timing and Grasberg execution.",
+
+  "financials": [
+    { "metric": "Stock Price (May 8)", "value": "$60.83", "note": "52-week range: $35.15–$70.97; down 7.4% past week" },
+    { "metric": "Market Cap", "value": "~$87.5B", "note": "Largest publicly traded pure-play copper company" },
+    { "metric": "Q1 2026 Revenue", "value": "$6.23B", "note": "Beat $5.73B estimate by 9%" },
+    { "metric": "Q1 2026 Net Income", "value": "$881M", "note": "Strong profitability despite Grasberg disruption" },
+    { "metric": "EBITDA (TTM)", "value": "$8.37B", "note": "32% EBITDA margin" },
+    { "metric": "Q2 2026 Revenue Est.", "value": "$6.46B", "note": "+3.7% QoQ expected" },
+    { "metric": "Quarterly Dividend", "value": "$0.15/share", "note": "Base + variable; $0.15 payable May 1, 2026" },
+    { "metric": "Analyst Consensus", "value": "Buy majority", "note": "UBS $74, JPMorgan bullish; MS downgraded to Equal Weight $66" }
+  ],
+
+  "insiderFlow": {
+    "summary": "Heavy and sustained insider selling over 6 months with zero purchases — the single most important risk signal for this trade.",
+    "transactions": [
+      { "insider": "Richard C. Adkerson (Chairman)", "action": "Sell", "shares": 400991, "price": "~$63.50 avg", "date": "2025-12-01 to 2026-04-30", "value": "~$25,463,000", "note": "Chairman sold 401K shares across multiple transactions. No corresponding purchase. Most significant insider signal." },
+      { "insider": "Douglas N. Currault II (EVP & General Counsel)", "action": "Sell", "shares": 75000, "price": "~$64.50 avg", "date": "2025-12-01 to 2026-04-30", "value": "~$4,837,500", "note": "EVP legal counsel sale. Combined with Chairman sale: coordinated distribution." }
+    ],
+    "signal": "BEARISH — 9 insider sales, 0 purchases over 6 months totaling $30M+. Insiders are reducing exposure at prices ~$63–65, just above current $60.83. Use defined-risk spread structure only."
+  },
+
+  "catalysts": [
+    "Copper structural demand: AI data center buildout requires massive copper wiring — each MW of data center capacity uses 10–15 tons of copper",
+    "Energy transition: EV batteries, solar panels, and wind turbines all copper-intensive; long-term demand floor rising",
+    "Q1 2026 revenue beat 9% above estimates ($6.23B vs $5.73B) — operational execution improving",
+    "UBS raised target to $74 on copper macro optimism; JPMorgan remains bullish",
+    "Grasberg restart ramp scheduled for 2026 — successful execution would unlock significant volume upside",
+    "$0.15 quarterly dividend (base + variable component) provides some downside cushion"
+  ],
+
+  "risks": [
+    "Sustained insider selling: 9 sales, 0 purchases, $30M+ in 6 months — insiders exiting near current prices is a serious red flag",
+    "Grasberg mine disruption: 2025 fatal mud-rush; restart ramp execution risk; Morgan Stanley downgraded on production concerns",
+    "Copper price sensitivity: a macro slowdown or China demand weakness would crush FCX earnings quickly",
+    "Morgan Stanley downgraded to Equal Weight with $66 target — institutional conviction is splitting",
+    "Stock down 7.4% in the past week; near-term momentum is negative",
+    "Tariff risk: US trade policy uncertainty could impact global copper trade flows and pricing"
+  ],
+
+  "dilution": "FCX is a mature mining corporation with a stable share count. No significant dilution risk from equity issuance. The company returns capital through dividends (base + variable) rather than buybacks. Debt levels are manageable relative to EBITDA.",
+
+  "strikeTable": [
+    { "strike": "$55 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$1.95", "delta": 0.21, "contracts2Cost": "$10,610 cash secured (2 contracts)", "breakeven": "$53.05", "atTarget": "N/A (income strategy)" },
+    { "strike": "$60", "type": "Call (ATM)", "isRecommended": false, "premium": "~$5.50", "delta": 0.52, "contracts2Cost": "~$1,100 (2 contracts)", "breakeven": "$65.50", "atTarget": "+$900 at $70 — high premium reduces leverage" },
+    { "strike": "$62.50/$70 Spread", "type": "Bull Call Spread", "isRecommended": true, "premium": "~$2.30 net", "delta": 0.47, "contracts2Cost": "~$460 (2 spreads)", "breakeven": "$64.80", "atTarget": "+$940 max at $70+ (per 2 spreads)" },
+    { "strike": "$65", "type": "Call (OTM)", "isRecommended": false, "premium": "~$3.80", "delta": 0.37, "contracts2Cost": "~$760 (2 contracts)", "breakeven": "$68.80", "atTarget": "+$240 at $70 — poor leverage close to target" },
+    { "strike": "$70", "type": "Call (at target)", "isRecommended": false, "premium": "~$2.40", "delta": 0.27, "contracts2Cost": "~$480 (2 contracts)", "breakeven": "$72.40", "atTarget": "Barely ITM at analyst target — low probability payoff" }
+  ]
+}

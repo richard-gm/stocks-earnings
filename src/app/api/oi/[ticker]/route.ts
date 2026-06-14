@@ -3,7 +3,7 @@ import { logger } from "@/lib/logger";
 import { cacheGet, cacheSet, TTL } from "@/lib/cache";
 import { getMockOiResponse } from "@/lib/mockOiData";
 import { fetchMarketDataOI } from "@/lib/marketdata/client";
-import { loadOICache, saveOICache } from "@/lib/marketdata/fileCache";
+import { oiLoadCache, oiSaveCache } from "@/lib/supabase-cache";
 import { detectAllCrossovers } from "@/lib/calculations/detectCrossovers";
 import { env } from "@/lib/env";
 import type { OpenInterestApiResponse, OIDataPoint } from "@/types";
@@ -47,9 +47,9 @@ export async function GET(
 
   if (env.marketDataApiKey !== null) {
     try {
-      // Load what we already have on disk
-      const fileCache = loadOICache(symbol);
-      const existingDates = new Set(Object.keys(fileCache.data));
+      // L2: load existing OI history from Supabase
+      const existingData = await oiLoadCache(symbol);
+      const existingDates = new Set(Object.keys(existingData));
 
       // Fetch only the dates we're missing
       const newPoints = await fetchMarketDataOI(
@@ -59,9 +59,10 @@ export async function GET(
         365
       );
 
-      // Merge new points into the file cache
+      // Merge new points into the existing data
+      const mergedData = { ...existingData };
       for (const p of newPoints) {
-        fileCache.data[p.date] = {
+        mergedData[p.date] = {
           callOI: p.callOI,
           putOI: p.putOI,
           stockPrice: p.stockPrice,
@@ -69,10 +70,10 @@ export async function GET(
       }
 
       if (newPoints.length > 0) {
-        saveOICache(symbol, fileCache.data);
+        await oiSaveCache(symbol, mergedData);
       }
 
-      if (Object.keys(fileCache.data).length === 0) {
+      if (Object.keys(mergedData).length === 0) {
         throw new Error("No OI data returned from MarketData.app");
       }
 
@@ -81,7 +82,7 @@ export async function GET(
       cutoff.setFullYear(cutoff.getFullYear() - 1);
       const cutoffStr = cutoff.toISOString().slice(0, 10);
 
-      const data: OIDataPoint[] = Object.entries(fileCache.data)
+      const data: OIDataPoint[] = Object.entries(mergedData)
         .filter(([date]) => date >= cutoffStr)
         .sort(([a], [b]) => a.localeCompare(b))
         .map(([date, { callOI, putOI, stockPrice }]) => ({

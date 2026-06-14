@@ -1,0 +1,67 @@
+{
+  "ticker": "VRT",
+  "company": "Vertiv Holdings",
+  "sector": "Technology / Data Center Infrastructure",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 329.14,
+  "analystTarget": 335.59,
+  "rating": "BULLISH",
+  "strategy": "Buy $335 Call — Nov 2026 (LEAPS, high analyst target $370)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $329.14 — 1 CSP contract requires ~$32,900 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "LEAPS Call — Bet on High-End Analyst Target",
+    "strike": 335,
+    "expiry": "Nov 2026 (~180 days)",
+    "type": "Call (LEAPS)",
+    "estimatedPremium": "~$32–38/share",
+    "contractCost": "~$3,200–3,800 (1 contract)",
+    "delta": 0.48,
+    "breakeven": "$367–373",
+    "entryNote": "Stock at all-time high ($331.97) with consensus target barely above current price ($335.59 avg, +2%). High analyst target is $370 (+12%). Use LEAPS to benefit from continued AI infrastructure demand without overpaying for short-term premium. Q1 beat was strong: EPS $1.17 vs. $1.01 est (+16%); guidance raised to $13.75B revenue (+34% YoY) and EPS $6.35 (+51%).",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $355 (+8%)", "optionGain": "~40–60% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $370 (+12%)", "optionGain": "~80–110% on premium" }
+    ]
+  },
+  "companyOverview": "Leading provider of power management, thermal management, and IT infrastructure for AI data centers. Q1 2026: revenue $2.65B (+30%), EPS $1.17 (+83% YoY), FCF $653M (+147%). Raised FY2026 guidance to $13.75B revenue and $6.35 EPS. Acquired Strategic Thermal Labs (April 27) for advanced liquid cooling. $15B+ order backlog. Americas revenue +53% driven by hyperscaler AI capex.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$329.14", "note": "All-time high: $331.97 (May 1)" },
+    { "metric": "Market Cap", "value": "~$112–126B", "note": "Stock +84% YTD, +255% over 12 months" },
+    { "metric": "Q1 2026 Revenue", "value": "$2.65B", "note": "+30% YoY (+23% organic)" },
+    { "metric": "Q1 2026 Adj. EPS", "value": "$1.17", "note": "+83% YoY, beat $1.01 est by 16%" },
+    { "metric": "FY2026 Revenue Guidance", "value": "$13.75B", "note": "+34% YoY (raised)" },
+    { "metric": "FY2026 EPS Guidance", "value": "$6.35 midpoint", "note": "+51% YoY (raised)" },
+    { "metric": "Order Backlog", "value": "$15B+", "note": "Strong revenue visibility" },
+    { "metric": "Analyst Consensus", "value": "Buy (18)", "note": "Avg $335.59, high $370" }
+  ],
+  "catalysts": [
+    "AI infrastructure demand driving data center power/cooling requirements",
+    "Liquid cooling becoming mandatory as AI racks reach 120–150kW density",
+    "Q1 EPS beat of 16% with FY guidance raised — execution is strong",
+    "Strategic Thermal Labs acquisition adding advanced liquid cooling IP",
+    "Americas revenue +53% driven by hyperscaler expansion",
+    "FCF +147% YoY ($653M) — strong cash conversion"
+  ],
+  "risks": [
+    "Stock at all-time high — consensus target barely above current price (+2%)",
+    "Competition from Eaton, Schneider Electric, nVent in power/thermal management",
+    "Risk hyperscalers internalize cooling solutions (reducing third-party demand)",
+    "Customer concentration with a few large hyperscalers",
+    "Integration risk from Strategic Thermal Labs acquisition",
+    "Premium valuation: limited margin of safety if AI capex cycle slows"
+  ],
+  "dilution": "Standard large-cap dilution from stock-based compensation. No concerning dilution events. Acquisition of Strategic Thermal Labs was cash-funded.",
+  "strikeTable": [
+    { "strike": "$320", "type": "ITM", "isRecommended": false, "premium": "~$40–46", "delta": 0.58, "contracts2Cost": "~$8,000–9,200", "breakeven": "~$360–366", "atTarget": "+22%" },
+    { "strike": "$330", "type": "ATM", "isRecommended": false, "premium": "~$34–40", "delta": 0.50, "contracts2Cost": "~$6,800–8,000", "breakeven": "~$364–370", "atTarget": "+39%" },
+    { "strike": "$335", "type": "Slight OTM", "isRecommended": true, "premium": "~$32–38", "delta": 0.47, "contracts2Cost": "~$6,400–7,600", "breakeven": "~$367–373", "atTarget": "+47%" },
+    { "strike": "$350", "type": "OTM", "isRecommended": false, "premium": "~$24–30", "delta": 0.37, "contracts2Cost": "~$4,800–6,000", "breakeven": "~$374–380", "atTarget": "+43%" },
+    { "strike": "$370", "type": "High Target", "isRecommended": false, "premium": "~$16–21", "delta": 0.26, "contracts2Cost": "~$3,200–4,200", "breakeven": "~$386–391", "atTarget": "+5%" }
+  ]
+}

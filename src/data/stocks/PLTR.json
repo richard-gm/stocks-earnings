@@ -1,0 +1,111 @@
+{
+  "ticker": "PLTR",
+  "company": "Palantir Technologies",
+  "sector": "Technology / AI Software",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 144.08,
+  "analystTarget": 191.28,
+  "rating": "BULLISH",
+  "strategy": "Buy $145 Call — Aug 2026 (enter after May 4 earnings)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $144.08 — 1 CSP contract requires ~$14,400 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "expiryComparison": {
+    "strike": 145,
+    "underlyingPrice": 134.70,
+    "iv": "~57%",
+    "earningsDate": "July 29, 2026",
+    "closeDeadline": "July 24, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter now (post May 5 earnings, IV crush has settled to ~55–60%). Stock at $134.70 — bought the post-earnings dip. Target $145 call.",
+      "profitExit": "Close at 60–90% gain on premium, OR when stock hits $165 (Contract 1 target). Let 1 contract ride toward $190 for 180–220% gain.",
+      "timeStop": "If stock has not cleared $150+ by ~June 20 (50% of time elapsed on Sep position), close. Do not fight accelerating theta in the final 30 days.",
+      "lossStop": "Close at 40–50% loss on premium paid. Do not hold a decaying OTM position.",
+      "earningsHardStop": "Close by July 24 (5 days before July 29 Q2 earnings) — no exceptions for long premium positions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 22,
+        "premiumEst": "~$10–14",
+        "flatScenario": "~-90%",
+        "atTarget": "~+240%",
+        "bestFor": "Only if expecting a swift move within 4–5 weeks. 22 days left at close makes theta brutal — almost no time value when you must exit.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 57,
+        "premiumEst": "~$14–18",
+        "flatScenario": "~-75%",
+        "atTarget": "~+200%",
+        "bestFor": "Sweet spot — 57 days of time value at the July 24 exit window. Enough runway for the bull thesis to play out. IV at 57% makes single-leg feasible.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 120,
+        "premiumEst": "~$20–26",
+        "flatScenario": "~-55%",
+        "atTarget": "~+150%",
+        "bestFor": "Two earnings cycles of coverage. Expensive for a name with a clear near-term catalyst window — overpaying for time you likely won't use.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Single-Leg Call — ATM, Enter Post-Earnings",
+    "strike": 145,
+    "expiry": "Aug 2026 (~90 days)",
+    "type": "Call",
+    "estimatedPremium": "~$16–20/share",
+    "contractCost": "~$1,600–2,000 (1 contract)",
+    "delta": 0.50,
+    "breakeven": "$161–165",
+    "entryNote": "⚠️ Q1 earnings May 4 after close — IV at 80–87%, options pricing ~10.55% expected move. ENTER AFTER earnings to avoid IV crush. Post-earnings IV likely drops to 55–65%. Bull thesis: AIP commercial acceleration, $300M USDA deal, government reacceleration. Consensus expects +115% EPS YoY and $1.54B revenue (+74% YoY).",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $165 (+14%)", "optionGain": "~70–90% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $190 (+32%)", "optionGain": "~180–220% on premium" }
+    ]
+  },
+  "companyOverview": "Leading AI data analytics platform for government and enterprise. AIP (Artificial Intelligence Platform) driving explosive commercial adoption. Q1 2026 earnings on May 4: consensus expects revenue $1.54B (+74% YoY), EPS $0.28 (+115% YoY). $300M USDA deal (April 22) expanding into civilian government. Stock near 52-week low ($105.32) despite strong fundamentals — 33% upside to analyst consensus.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$144.08", "note": "52-week range: $105.32–$207.52" },
+    { "metric": "Market Cap", "value": "~$344B", "note": "" },
+    { "metric": "Q1 2026 Rev Est.", "value": "$1.54B", "note": "+74% YoY — earnings May 4" },
+    { "metric": "Q1 2026 EPS Est.", "value": "$0.28", "note": "+115% YoY" },
+    { "metric": "2026 Revenue Guidance", "value": "~$7.19B", "note": "Upward revision likely" },
+    { "metric": "Pre-earnings IV", "value": "80–87%", "note": "Expected move ~10.55%" },
+    { "metric": "Analyst Consensus", "value": "Buy (14B/5H/2S)", "note": "Avg $191.28, high $255" }
+  ],
+  "catalysts": [
+    "$300M USDA 5-year deal (April 22) — 'One Farmer, One File' civilian government expansion",
+    "AIP commercial segment: expected +94% YoY — the key growth driver",
+    "Government segment reacceleration: +57% YoY expected",
+    "Citi upgraded to Buy with $235 target; Oppenheimer initiated Buy at $200",
+    "Stock near 52-week low vs. strong fundamental momentum — asymmetric setup",
+    "Full-year guidance raise expected after Q1 beat"
+  ],
+  "risks": [
+    "IV crush risk if entering before May 4 earnings — IV 80–87% drops to 55–65% post-event",
+    "Valuation concerns at $344B market cap — requires sustained 74%+ revenue growth",
+    "Dependence on AIP commercial acceleration continuing at record pace",
+    "Government contract concentration risk — changes in administration policy",
+    "Stock down ~31% from $207.52 52-week high — sentiment fragile"
+  ],
+  "dilution": "Palantir has significant SBC (stock-based compensation) as % of revenue. Management and employee dilution is ongoing but well-understood and priced in by market.",
+  "strikeTable": [
+    { "strike": "$135", "type": "ITM", "isRecommended": false, "premium": "~$22–26", "delta": 0.62, "contracts2Cost": "~$4,400–5,200", "breakeven": "~$157–161", "atTarget": "+120%" },
+    { "strike": "$144", "type": "ATM", "isRecommended": false, "premium": "~$16–20", "delta": 0.51, "contracts2Cost": "~$3,200–4,000", "breakeven": "~$160–164", "atTarget": "+162%" },
+    { "strike": "$145", "type": "Slight OTM", "isRecommended": true, "premium": "~$16–20", "delta": 0.50, "contracts2Cost": "~$3,200–4,000", "breakeven": "~$161–165", "atTarget": "+155%" },
+    { "strike": "$160", "type": "OTM", "isRecommended": false, "premium": "~$10–13", "delta": 0.36, "contracts2Cost": "~$2,000–2,600", "breakeven": "~$170–173", "atTarget": "+175%" },
+    { "strike": "$200", "type": "Far OTM", "isRecommended": false, "premium": "~$3–5", "delta": 0.15, "contracts2Cost": "~$600–1,000", "breakeven": "~$203–205", "atTarget": "-6%" }
+  ]
+}

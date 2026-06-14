@@ -1,0 +1,64 @@
+{
+  "ticker": "ANET",
+  "company": "Arista Networks",
+  "sector": "Technology / AI Networking",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 172.70,
+  "analystTarget": 196.47,
+  "rating": "BULLISH",
+  "strategy": "Buy $175 Call — Aug 2026 (enter post May 5 earnings)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $172.70 — 1 CSP contract requires ~$17,300 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "Single-Leg Call — Slight OTM, Enter Post-Earnings",
+    "strike": 175,
+    "expiry": "Aug 2026 (~90 days)",
+    "type": "Call",
+    "estimatedPremium": "~$10–12/share",
+    "contractCost": "~$1,000–1,200 (1 contract)",
+    "delta": 0.47,
+    "breakeven": "$185–187",
+    "entryNote": "⚠️ Earnings May 5 after close — enter AFTER to avoid IV crush. IV ~35%, expected to compress post-event. Watch for: Q1 AI revenue update vs. $3.25B full-year target, hyperscaler commentary.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $190 (+10%)", "optionGain": "~60–80% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $210 (+22%)", "optionGain": "~150–180% on premium" }
+    ]
+  },
+  "companyOverview": "Dominant AI data center networking vendor supplying high-speed Ethernet switches to hyperscalers (Microsoft, Meta). Doubled AI networking revenue target to $3.25B for 2026. VESPA campus mobility platform expanding addressable market. Q1 2026 guidance: ~$2.6B revenue, 62–63% gross margin. Stock up 40% in April driven by AI networking momentum.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$172.70", "note": "52-week range: $82.80–$179.80" },
+    { "metric": "Market Cap", "value": "~$217B", "note": "" },
+    { "metric": "Q1 2026 Revenue Guidance", "value": "~$2.6B", "note": "+39% YoY" },
+    { "metric": "Gross Margin Guidance", "value": "62–63%", "note": "Operating margin ~46%" },
+    { "metric": "2026 AI Revenue Target", "value": "$3.25B", "note": "Doubled from prior guidance" },
+    { "metric": "30-day IV", "value": "~35%", "note": "Elevated pre-earnings; watch for crush post May 5" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (17)", "note": "Avg target $196.47, high $220" }
+  ],
+  "catalysts": [
+    "Q1 2026 earnings May 5 — AI revenue update vs. $3.25B full-year target",
+    "Hyperscaler capex cycle continuing: Microsoft, Meta, Google all expanding AI data centers",
+    "Doubled AI networking revenue target shows massive demand visibility",
+    "JP Morgan raised target to $200; Susquehanna expects 25%+ YoY revenue upside",
+    "VESPA campus mobility expanding TAM beyond data centers"
+  ],
+  "risks": [
+    "Nvidia entering Ethernet switch market — direct competitive threat to core product",
+    "Customer concentration: a few large hyperscalers dominate revenue",
+    "IV crush post-earnings if guidance is in-line vs. elevated expectations",
+    "HPE (post-Juniper) and Cisco increasing competitive intensity",
+    "AI capex cycle could slow if hyperscalers hit ROI pressure"
+  ],
+  "dilution": "No significant dilution concern. Mature cash-generative business with strong buyback history.",
+  "strikeTable": [
+    { "strike": "$165", "type": "ITM", "isRecommended": false, "premium": "~$16–18", "delta": 0.65, "contracts2Cost": "~$3,200–3,600", "breakeven": "~$181", "atTarget": "+63%" },
+    { "strike": "$172", "type": "ATM", "isRecommended": false, "premium": "~$12–14", "delta": 0.53, "contracts2Cost": "~$2,400–2,800", "breakeven": "~$184–186", "atTarget": "+100%" },
+    { "strike": "$175", "type": "Slight OTM", "isRecommended": true, "premium": "~$10–12", "delta": 0.47, "contracts2Cost": "~$2,000–2,400", "breakeven": "~$185–187", "atTarget": "+118%" },
+    { "strike": "$185", "type": "OTM", "isRecommended": false, "premium": "~$6–8", "delta": 0.35, "contracts2Cost": "~$1,200–1,600", "breakeven": "~$191–193", "atTarget": "+80%" },
+    { "strike": "$200", "type": "Far OTM", "isRecommended": false, "premium": "~$3–4", "delta": 0.18, "contracts2Cost": "~$600–800", "breakeven": "~$203–204", "atTarget": "-10%" }
+  ]
+}

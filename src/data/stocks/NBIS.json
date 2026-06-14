@@ -1,0 +1,86 @@
+{
+  "ticker": "NBIS",
+  "company": "Nebius Group N.V.",
+  "sector": "AI Cloud Infrastructure",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 155.00,
+  "analystTarget": 169.00,
+  "rating": "BULLISH",
+  "strategy": "Buy $155/$185 Call Spread — Sep 2026 (post Q1 momentum, high IV mandates spread)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $155.00 — 1 CSP contract requires ~$15,500 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": "WHEEL-UNSUITABLE: Structural dilution risk — 40% of $16–20B CapEx unraised; ATM equity program active; $14.7M insider selling in 90 days. Assignment = holding diluting stock.",
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — Post Q1 Beat; NVIDIA Equity Stake Is the Strongest Bull Signal",
+    "strike": 155,
+    "expiry": "Sep 2026 (~120 days)",
+    "type": "Call Spread ($155 buy / $185 sell)",
+    "estimatedPremium": "~$10–14 net debit (spread)",
+    "contractCost": "~$1,000–1,400 (1 spread)",
+    "delta": 0.48,
+    "breakeven": "~$165–169",
+    "entryNote": "Q1 2026 reported April 30 (+4.2%) — IV crush from Q1 has passed. Next earnings likely July/August 2026 — clean entry window of 90+ days. HIGH IV (~55–70%) from volatile AI infrastructure sector mandates spread. Goldman Sachs PT $205 is the bull case. Most asymmetric setup on this list: $23 → $155 in 12 months (+567%); contracts with Microsoft ($19.4B) and Meta ($27B) total $46B in backlog; NVIDIA invested $2B equity directly — the most credible institutional validation possible. KEY RISK: $14.7M insider selling in 90 days (Director + CRO + CIO). Some are 10b5-1 plans but the volume is notable. Dilution is structural: 40% of funding still unraised, $4.6B convertible notes, ATM equity program active. Size to 1% portfolio max due to dilution. 1 spread at $1,000–1,400 is slightly over budget — enter 1 only.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $170–175 (+10–13%) on ARR milestone or new contract announcement", "optionGain": "~50–80% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $185+ (+19%) on Goldman $205 target chase or next quarterly beat", "optionGain": "~100–150% on spread cost (near max gain)" }
+    ]
+  },
+  "companyOverview": "Nebius Group N.V. is an Amsterdam-headquartered AI infrastructure company that emerged from the international (non-Russian) assets of Yandex following the sale of Yandex's Russian operations in July 2024 due to geopolitical sanctions. The remaining assets — a Finnish data centre, the Nebius AI cloud unit, and related European/Israeli tech businesses — were rebranded as Nebius Group and resumed NASDAQ trading in October 2024 under ticker NBIS. The company has since signed extraordinary contracts: a $19.4B five-year agreement with Microsoft (September 2025), subsequently expanded with Meta to a total of $27B (March 2026). NVIDIA announced a $2B direct equity investment in Nebius as a strategic partner for next-generation hyperscale AI infrastructure — the strongest possible third-party validation. 2026 revenue guidance: $3–$3.4B; 2026 CapEx: $16–$20B (spending $5+ for every $1 of revenue to build out infrastructure). The stock has delivered 567% returns from its 52-week low ($23.25) to current levels (~$155).",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$155.00", "note": "52-week range: $23.25–$168.71; +567% from 52-week low" },
+    { "metric": "52-Week High", "value": "$168.71", "note": "-8.1% from 52-week high — modest pullback post-Q1" },
+    { "metric": "Q1 2026 Earnings", "value": "+4.2% stock gain post-report", "note": "Q1 reported April 30, 2026 — beat expectations; positive market reaction" },
+    { "metric": "2026 Revenue Guidance", "value": "$3.0–$3.4B", "note": "Aggressive growth; CapEx $16–20B = massive infrastructure investment" },
+    { "metric": "Contract Backlog", "value": "$46B total", "note": "Microsoft $19.4B (5yr) + Meta expansion to $27B (March 2026)" },
+    { "metric": "NVIDIA Equity Investment", "value": "$2B direct stake", "note": "NVIDIA invested $2B directly — strategic validator of NBIS technology" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (27 buy ratings)", "note": "Avg PT: $169; Goldman Sachs PT $205; range $143–$211" },
+    { "metric": "IV Estimate", "value": "~55–70%", "note": "Elevated for a mid-cap AI infrastructure name — spread recommended" }
+  ],
+  "insiderFlow": {
+    "summary": "Net SELLING — $14.7M in 90 days across Director, CRO, CIO, and CEO (tax withholding). Mixed: some planned 10b5-1 sales, some open-market. Yellow flag but not as severe as CRWV — volume is smaller relative to company size and institutional validators (NVIDIA, Goldman) offset.",
+    "transactions": [
+      { "insider": "Director Elena Bunina", "action": "SELL", "shares": 20060, "price": "$140–161", "date": "April 10–14, 2026", "value": "$2.9M", "note": "⚠️ Open-market sales under 10b5-1 plan. Sold progressively higher prices ($140→$161) — pre-planned but notable volume for a director." },
+      { "insider": "CRO Marc Boroditsky", "action": "SELL", "shares": 4500, "price": "$160.10", "date": "April 15, 2026", "value": "$720K", "note": "10b5-1 plan. Selling at $160 = near 52-week high. Pre-planned." },
+      { "insider": "CIO Andrey Korolenko", "action": "SELL", "shares": 31357, "price": "$111.20", "date": "April 6, 2026", "value": "$3.49M", "note": "⚠️ Largest single insider sale: 31,357 shares at $111 (open market). This was before the recent run to $155 — sold at a discount to current price." },
+      { "insider": "CEO Arkadiy Volozh", "action": "TAX WITHHOLD", "shares": 33358, "price": "$103.73", "date": "2026", "value": "$3.46M", "note": "Automatic tax withholding upon RSU vesting. Not discretionary selling — most benign category." }
+    ],
+    "signal": "YELLOW — $14.7M selling in 90 days. CIO sold 31K shares open-market. Director sold progressively. BUT: CEO sales were tax withholding (not discretionary), NVIDIA's $2B equity stake from outside validates management credibility. Net: yellow flag, not red."
+  },
+  "catalysts": [
+    "NVIDIA $2B direct equity investment — the most credible external validation possible; NVIDIA doesn't invest $2B without deep diligence",
+    "Microsoft $19.4B contract + Meta $27B expansion = $46B total backlog — multi-year revenue visibility that dwarfs current valuation",
+    "Q1 2026 beat (+4.2% stock reaction April 30) — fundamental momentum confirmed; next report clean entry window",
+    "Goldman Sachs PT $205 — upgraded with 'boosted forecasts from major contracts'; 32% upside from current price",
+    "Yandex provenance = world-class AI/ML engineering team (Yandex was Russia's Google); tech DNA is genuinely differentiated",
+    "NVIDIA GB200 NVL72 rack allocation: as NVIDIA's strategic partner, NBIS likely gets preferred GPU access — competitive moat"
+  ],
+  "risks": [
+    "DILUTION IS STRUCTURAL: $16–20B CapEx in 2026 against $3–3.4B revenue means the company is spending 5x+ what it earns. 40% of this funding is UNRAISED. Expect material equity issuance in 2026.",
+    "$4.6B convertible notes already issued — conversion will dilute existing shareholders; ATM equity program further dilutes",
+    "$14.7M insider selling in 90 days: CIO's 31K open-market sale and Director's progressive sales are yellow flags",
+    "Yandex origin: despite asset separation, any geopolitical escalation or new sanctions allegations could impact stock (headline risk, not fundamental)",
+    "High IV (~55–70%): options are expensive; enter via spread to contain cost",
+    "Revenue/CapEx ratio (1:5+): company is massively pre-investing; if hyperscaler demand slows, the economics of $20B CapEx become unsustainable",
+    "52-week high $168.71 is nearby resistance — stock has made a 567% run and distribution risk exists near ATH"
+  ],
+  "dilution": {
+    "summary": "HIGH DILUTION RISK — structural and ongoing. 40% of $16–20B CapEx is unraised. Convertible notes + ATM equity program already in place. Expect share count to grow materially in 2026.",
+    "items": [
+      { "label": "$4.6B convertible notes (issued)", "detail": "Convert to equity at maturity or conversion triggers. Direct dilution built into the capital structure." },
+      { "label": "ATM equity program (active)", "detail": "Allows management to issue new shares at market price on an ongoing basis. Provides maximum dilution flexibility — and maximum dilution risk." },
+      { "label": "40% of 2026 CapEx unraised", "detail": "Of the $16–20B 2026 CapEx, only 60% is committed. The remainder needs debt, asset-backed financing, or equity. Size positions accordingly." },
+      { "label": "NVIDIA's $2B equity stake", "detail": "This is NEW equity issued to NVIDIA — already accretive to dilution count but validates the business plan." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$145", "type": "Slight ITM", "isRecommended": false, "premium": "~$22–28", "delta": 0.58, "contracts2Cost": "~$4,400–5,600", "breakeven": "~$167–173", "atTarget": "+50%" },
+    { "strike": "$155", "type": "Near ATM (spread buy-leg)", "isRecommended": true, "premium": "~$17–22 / ~$10–14 net as spread", "delta": 0.50, "contracts2Cost": "~$1,700–2,200 naked / ~$1,000–1,400 as $155/$185 spread", "breakeven": "~$165–169", "atTarget": "+100–150% (at $185)" },
+    { "strike": "$165", "type": "Slight OTM", "isRecommended": false, "premium": "~$12–16", "delta": 0.40, "contracts2Cost": "~$2,400–3,200", "breakeven": "~$177–181", "atTarget": "+55%" },
+    { "strike": "$185", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$6–9", "delta": 0.25, "contracts2Cost": "~$1,200–1,800", "breakeven": "~$191–194", "atTarget": "-4%" },
+    { "strike": "$205", "type": "Far OTM (Goldman PT)", "isRecommended": false, "premium": "~$3–5", "delta": 0.14, "contracts2Cost": "~$600–1,000", "breakeven": "~$208–210", "atTarget": "-2%" }
+  ]
+}

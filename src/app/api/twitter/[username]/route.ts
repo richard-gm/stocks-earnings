@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cacheGet, cacheSet, TTL } from "@/lib/cache";
-import { readFileCache, writeFileCache } from "@/lib/twitter/fileCache";
+import { twitterReadCache, twitterWriteCache } from "@/lib/supabase-cache";
 import type { TwitterAccountAnalysis } from "@/types";
 
 const requestCounts = new Map<string, { count: number; windowStart: number }>();
@@ -55,7 +55,7 @@ const MOCK_ANALYSES: Record<string, TwitterAccountAnalysis> = {
       },
     ],
     summary:
-      "Chamath is primarily bullish on AI infrastructure plays, especially NVDA and semiconductor names. He has turned cautious on legacy tech and social media, expressing concern about capital allocation at META.",
+      "Chamath is primarily bullish on AI infrastructure plays, especially NVDA and semiconductor names. He has turned cautious on legacy tech and social media.",
     cachedAt: new Date().toISOString(),
     dataMode: "mock",
   },
@@ -73,13 +73,6 @@ const MOCK_ANALYSES: Record<string, TwitterAccountAnalysis> = {
         keyQuotes: ["Optimus robots will be worth more than the car business", "FSD v13 is incredible"],
       },
       {
-        ticker: "DOGE",
-        sentiment: "bullish",
-        signal: "buy",
-        mentionCount: 15,
-        keyQuotes: ["The people's crypto", "DOGE to the moon"],
-      },
-      {
         ticker: "NVDA",
         sentiment: "bullish",
         signal: null,
@@ -88,7 +81,7 @@ const MOCK_ANALYSES: Record<string, TwitterAccountAnalysis> = {
       },
     ],
     summary:
-      "Elon is heavily focused on TSLA and his own ventures, consistently bullish on robotics and AI. His crypto mentions (DOGE) remain frequent and move sentiment. Limited commentary on broader market.",
+      "Elon is heavily focused on TSLA and his own ventures, consistently bullish on robotics and AI.",
     cachedAt: new Date().toISOString(),
     dataMode: "mock",
   },
@@ -113,12 +106,12 @@ export async function GET(
   const range = (req.nextUrl.searchParams.get("range") ?? "3m") as "3m" | "6m";
   const cacheKey = `twitter:${handle}:${range}`;
 
-  // Layer 1: in-memory cache (fast, survives within process lifetime)
+  // L1: in-memory cache
   const cached = cacheGet<TwitterAccountAnalysis>(cacheKey);
   if (cached) return NextResponse.json(cached);
 
-  // Layer 2: file cache — loaded here for incremental merging in live mode below
-  const fileCached = readFileCache(handle, range);
+  // L2: Supabase cache
+  const sbCached = await twitterReadCache(handle, range);
 
   // Mock mode: no cookie session configured
   if (!process.env.TWITTER_COOKIES_FILE) {
@@ -142,17 +135,17 @@ export async function GET(
     const windowStart = new Date(Date.now() - daysBack * 24 * 60 * 60 * 1000);
 
     // Incremental: if we have prior data, only fetch tweets since cachedAt
-    const since = fileCached
-      ? new Date(fileCached.analysis.cachedAt)
+    const since = sbCached
+      ? new Date(sbCached.analysis.cachedAt)
       : windowStart;
 
     const result = await fetchUserTweets(handle, since);
 
-    // API failed but we have a file — serve stale rather than error
+    // API failed but we have Supabase cache — serve stale rather than error
     if (!result) {
-      if (fileCached) {
-        cacheSet(cacheKey, fileCached.analysis, TTL.OPTIONS_FLOW);
-        return NextResponse.json(fileCached.analysis);
+      if (sbCached) {
+        cacheSet(cacheKey, sbCached.analysis, TTL.OPTIONS_FLOW);
+        return NextResponse.json(sbCached.analysis);
       }
       return NextResponse.json(
         { error: `Account @${handle} not found or has no posts` },
@@ -163,21 +156,21 @@ export async function GET(
     const { posts: newPosts, displayName } = result;
 
     // No new tweets since last fetch — existing analysis is still current
-    if (newPosts.length === 0 && fileCached) {
-      cacheSet(cacheKey, fileCached.analysis, TTL.OPTIONS_FLOW);
-      return NextResponse.json(fileCached.analysis);
+    if (newPosts.length === 0 && sbCached) {
+      cacheSet(cacheKey, sbCached.analysis, TTL.OPTIONS_FLOW);
+      return NextResponse.json(sbCached.analysis);
     }
 
     // Below threshold — not enough new content to justify a Claude re-run
     const MIN_NEW_TWEETS = 20;
-    if (newPosts.length < MIN_NEW_TWEETS && fileCached) {
-      cacheSet(cacheKey, fileCached.analysis, TTL.OPTIONS_FLOW);
-      return NextResponse.json(fileCached.analysis);
+    if (newPosts.length < MIN_NEW_TWEETS && sbCached) {
+      cacheSet(cacheKey, sbCached.analysis, TTL.OPTIONS_FLOW);
+      return NextResponse.json(sbCached.analysis);
     }
 
     // Merge new posts with stored ones, trimmed to the range window
-    const allTweets = fileCached
-      ? [...newPosts, ...fileCached.rawTweets].filter(
+    const allTweets = sbCached
+      ? [...newPosts, ...sbCached.rawTweets].filter(
           (t) => new Date(t.createdAt) >= windowStart
         )
       : newPosts;
@@ -190,7 +183,7 @@ export async function GET(
     }
 
     const effectiveDisplayName =
-      displayName !== handle ? displayName : (fileCached?.analysis.displayName ?? handle);
+      displayName !== handle ? displayName : (sbCached?.analysis.displayName ?? handle);
 
     const fromDate = windowStart.toISOString().slice(0, 10);
     const toDate = new Date().toISOString().slice(0, 10);
@@ -202,7 +195,7 @@ export async function GET(
 
     // Only persist if Claude actually produced results
     if (analysis.tickers.length > 0) {
-      writeFileCache(handle, range, analysis, allTweets);
+      await twitterWriteCache(handle, range, analysis, allTweets);
     }
     cacheSet(cacheKey, analysis, TTL.OPTIONS_FLOW);
     return NextResponse.json(analysis);

@@ -1,0 +1,97 @@
+{
+  "ticker": "IREN",
+  "company": "IREN Limited",
+  "sector": "AI Cloud Infrastructure / Bitcoin Mining (Transition)",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 46.50,
+  "analystTarget": 70.40,
+  "rating": "BULLISH",
+  "strategy": "Buy $47/$60 Call Spread — Sep 2026 (high IV mandates spread)",
+  "wheelStrategy": {
+    "eligible": true,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering new CSP positions. Current environment is not ideal for premium selling.",
+    "bollingerEntry": "Daily chart, 20-period 2σ Bollinger Bands. Lower BB estimated ~$40–44 at current volatility. Wait for price to tag or breach lower band before selling CSP — backtested 7/10 mean reversion. Current price $46.50 is mid-band; no entry signal yet.",
+    "csp": {
+      "strike": "~$38–42",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$1.50–2.50/share (~$150–250 per contract)",
+      "annualisedYield": "~35–55% annualised on capital at risk (high IV benefit)",
+      "exitRule": "Close at 50% premium captured OR close 5 days before next quarterly earnings report (~May/June 2026 for Q3 FY2026). Do not hold through earnings.",
+      "note": "⚠️ HIGH IV (~80–110%) — premium is rich but stock is volatile. Size to 1–2 contracts max (capital at risk: $3,800–$8,400). If assigned at $38–42, cost basis is well below current price $46.50 — assignment is acceptable but plan CC immediately."
+    },
+    "coveredCall": {
+      "strike": "~$50–55",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$2.00–3.50/share (~$200–350 per contract)",
+      "exitRule": "Close CC at 50% premium captured. Re-sell if stock stagnates. Close before earnings.",
+      "note": "If assigned on CSP (cost basis ~$38–42), sell CC at $50–55 to collect additional premium while stock recovers. High IV makes CC premium very attractive at this level."
+    }
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — High IV (~110%) Mandates Spread; Execution Risk High",
+    "strike": 47,
+    "expiry": "Sep 2026 (~120–130 days)",
+    "type": "Call Spread ($47 buy / $60 sell)",
+    "estimatedPremium": "~$4–7 net debit (spread)",
+    "contractCost": "~$400–700 (1 spread), ~$800–1,400 (2 spreads)",
+    "delta": 0.48,
+    "breakeven": "~$51–54",
+    "entryNote": "HIGH IV ENVIRONMENT (~80–110% IV rank 52.9) — spread is mandatory, naked calls would be extremely expensive. Stock is at $46.50, down 40% from 52-week high of $76.87. The Microsoft $9.7B deal and NVIDIA GB300 infrastructure pivot give legitimacy, but this is a SHOW-ME story. Target: $3.4B ARR by end-2026 — ambitious. Watch for next quarterly update (IREN is Australian company, fiscal year ends June 30; Q3 FY2026 results expected ~May/June 2026). Do NOT enter immediately before any earnings report. Bernstein top pick with $100 PT, but trimmed from $125 on execution risk. Size to 1% portfolio max — capital-intensive pivot with GPU supply and financing risk. 2 spreads = $800–1,400 is within budget; adjust to 1 spread if IV is at the higher end of range.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $55–58 (+18–25%) on ARR milestone update or NVIDIA GB300 delivery confirmation", "optionGain": "~80–130% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $60+ (+29%) on sustained GPU capacity ramp or new hyperscaler contract", "optionGain": "~150–200% on spread cost (near max gain)" }
+    ]
+  },
+  "companyOverview": "IREN Limited (formerly Iris Energy) was a Bitcoin mining company that has executed one of the most aggressive pivots in the AI infrastructure space. Originally listed on NASDAQ as a vertically integrated data centre operator that mined Bitcoin using low-cost renewable energy in Canada and Australia, the company signed a $9.7 billion, multi-year agreement with Microsoft in November 2025 to deliver NVIDIA GB300-powered AI cloud infrastructure. This is not an LOI — it is a binding commercial agreement. The company targets $3.4B in Annual Recurring Revenue by end-2026 and currently operates 150,000 GPUs, targeting 275,000 by 2030. Bernstein analysts made IREN their top AI infrastructure pick (ahead of CRWV and NBIS) while trimming their price target from $125 to $100, citing execution risk, GPU supply delays, and higher-than-expected financing costs. The stock skyrocketed 285% in 2025 and has pulled back 40% from its 52-week high — a classic high-beta AI infrastructure pattern.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$46.50", "note": "52-week range: $6.01–$76.87; -40% from 52-week high" },
+    { "metric": "52-Week High / Low", "value": "$76.87 / $6.01", "note": "Extreme volatility — 1,178% range. High beta stock." },
+    { "metric": "ARR Target 2026", "value": "$3.4B", "note": "Ambitious target; Q-by-Q execution updates are the key monitor" },
+    { "metric": "GPU Fleet (Now)", "value": "150,000 GPUs (NVIDIA GB300)", "note": "Targeting 275,000 by 2030; each GPU shipment is a catalyst" },
+    { "metric": "Microsoft Deal", "value": "$9.7B binding agreement", "note": "Signed Nov 2025; multi-year AI cloud infrastructure delivery" },
+    { "metric": "Analyst Consensus", "value": "Buy (11B / 2S)", "note": "Bernstein PT $100 (trimmed from $125). Avg: $70.40 — 51% upside" },
+    { "metric": "IV / IV Rank", "value": "~80–110% / IV Rank 52.9", "note": "HIGH IV — spread is mandatory. Naked calls would be extremely expensive." },
+    { "metric": "Next Reporting", "value": "~May–June 2026", "note": "FY ends June 30; Q3 FY2026 results expected. WAIT for report before entering." }
+  ],
+  "insiderFlow": {
+    "summary": "Limited Form 4 data — IREN is an Australian company (ASX + NASDAQ dual-listed); insider reporting follows Australian ASX rules primarily. Monitoring via Fintel/OpenInsider shows no significant recent Form 4 open-market activity filed in 2026.",
+    "transactions": [
+      { "insider": "Various directors", "action": "N/A", "shares": 0, "price": "N/A", "date": "2026", "value": "N/A", "note": "Australian primary listing — insider activity tracked via ASX announcements more than SEC Form 4. No significant open-market Form 4 purchases or sales found in recent 90-day window." }
+    ],
+    "signal": "UNKNOWN/NEUTRAL — incomplete US insider data due to Australian company structure. Monitor ASX director notices directly."
+  },
+  "catalysts": [
+    "$9.7B Microsoft binding agreement — not an LOI; this is contracted multi-year revenue with the world's largest company",
+    "NVIDIA GB300 GPU deliveries — each shipment confirmation is a re-rating catalyst; 150,000 → 275,000 GPU trajectory",
+    "$3.4B ARR target by end-2026 — quarterly updates will either confirm or pressure the thesis",
+    "AI cloud demand structural tailwind: hyperscalers cannot build fast enough; alternative GPU cloud providers fill the gap",
+    "40% pullback from 52-week high $76.87 — asymmetric risk/reward if Microsoft deal executes as contracted",
+    "Bernstein top pick: institutional research coverage with $100 price target provides floor support"
+  ],
+  "risks": [
+    "HIGH IV (~80–110%) — naked calls cost 20–30% of stock price; spread is mandatory per options rules",
+    "Execution risk: GPU supply delays, higher financing costs, slower-than-expected AI adoption all pressure the $3.4B ARR target",
+    "Bitcoin mining revenue declining: transition to AI cloud is underway but Bitcoin still contributes — Bitcoin price swings add noise",
+    "Capital-intensive pivot: building AI data centres at scale requires constant debt/equity raises; dilution is structural",
+    "Quarterly earnings from Australian company — timing and format differ from US companies; harder to trade around",
+    "Australian company = ASX + NASDAQ dual listing; currency risk (AUD/USD), ADR mechanics, potential delisting risk if pivot fails",
+    "Bernstein trimmed target $125 → $100: even the bull case is walking back initial optimism on execution pace"
+  ],
+  "dilution": {
+    "summary": "ACTIVE dilution risk. Pivoting from capital-light Bitcoin mining to capital-heavy AI cloud requires significant and ongoing capital raises.",
+    "items": [
+      { "label": "GPU infrastructure capex", "detail": "Each GB300 server rack costs $10M+. Delivering on the Microsoft contract requires billions in hardware. Must be financed via debt, equity, or asset-backed financing." },
+      { "label": "Ongoing equity raises likely", "detail": "IREN has a history of equity offerings to fund growth. Post-Microsoft deal, expect further capital raises to fund GPU fleet expansion." },
+      { "label": "Debt structure", "detail": "Higher-than-expected financing costs cited by Bernstein as a risk. Rising rates on data centre debt directly compresses economics." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$43", "type": "Slight ITM", "isRecommended": false, "premium": "~$10–14", "delta": 0.58, "contracts2Cost": "~$2,000–2,800", "breakeven": "~$53–57", "atTarget": "+55%" },
+    { "strike": "$46", "type": "Near ATM", "isRecommended": false, "premium": "~$8–12", "delta": 0.50, "contracts2Cost": "~$1,600–2,400", "breakeven": "~$54–58", "atTarget": "+40%" },
+    { "strike": "$47", "type": "Slight OTM (spread buy-leg)", "isRecommended": true, "premium": "~$7–11 / ~$4–7 net as spread", "delta": 0.46, "contracts2Cost": "~$700–1,100 naked / ~$400–700 as $47/$60 spread", "breakeven": "~$51–54", "atTarget": "+100–180% (at $60)" },
+    { "strike": "$55", "type": "OTM", "isRecommended": false, "premium": "~$4–7", "delta": 0.31, "contracts2Cost": "~$800–1,400", "breakeven": "~$59–62", "atTarget": "+50%" },
+    { "strike": "$60", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$3–5", "delta": 0.23, "contracts2Cost": "~$600–1,000", "breakeven": "~$63–65", "atTarget": "-4%" }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "ticker": "SOFI",
+  "company": "SoFi Technologies",
+  "sector": "Fintech / Digital Banking",
+  "analysisDate": "2026-05-08",
+  "priceAtAnalysis": 16.20,
+  "analystTarget": 21.00,
+  "rating": "NEUTRAL",
+  "strategy": "Bull Call Spread $17/$22 Aug 2026 — limited-risk recovery play while thesis rebuilds post-earnings selloff",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": null,
+    "vixNote": "VIX elevated ~20+; premiums adequate for wheel entry at $16 level. Conditions support CSP if stock pulls back to Bollinger support.",
+    "bollingerEntry": "Lower Bollinger Band estimated ~$14.50–$15.00. Stock trading above lower band at $16.20 — wait for a further pullback before initiating CSP.",
+    "csp": {
+      "strike": "$15",
+      "delta": "0.22",
+      "dte": "21–30 days",
+      "estimatedPremium": "$0.60–0.70 per contract",
+      "annualisedYield": "~16–17% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured (target $0.30–0.35). No roll into earnings.",
+      "note": "CEO Anthony Noto bought 28,900 shares at $17.28 in March 2026 — $15 strike has strong fundamental support. Earnings hard stop: close by July 24 (5 days before est. July 29 earnings)."
+    },
+    "coveredCall": {
+      "strike": "$17",
+      "delta": "0.25",
+      "dte": "21–30 days",
+      "estimatedPremium": "$0.55–0.65 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through earnings.",
+      "note": "If assigned on the $15 CSP, sell $17 CC to reduce cost basis to ~$13.70–$13.90."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 17,
+    "underlyingPrice": 16.20,
+    "iv": "~45% (post-earnings IV crush from ~65% pre-earnings)",
+    "earningsDate": "~July 29, 2026 (unconfirmed — Q2 reporting window)",
+    "closeDeadline": "July 24, 2026 (5 days before est. earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter after confirming $15.50 support holds on a closing basis. Post-earnings IV has settled — current 45% is the entry window.",
+      "profitExit": "Close Contract 1 at 50% gain ($0.65 net debit → close at $0.98+). Let Contract 2 ride to $21 analyst target.",
+      "timeStop": "If stock has not moved above $17.50 by June 15 (50% of DTE elapsed), close the position. Theta accelerates sharply in the final 30 days.",
+      "lossStop": "Close at 40–50% loss on net debit (close at $0.65–0.80 loss on $1.30 net paid). Do not average down.",
+      "earningsHardStop": "Close ALL positions by July 24, 2026 — 5 days before estimated July 29 earnings. No exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 98,
+        "daysLeftAtClose": 77,
+        "premiumEst": "~$1.65 ($17 call) / ~$0.40 ($22 call) → $1.25 net",
+        "flatScenario": "Stock stays at $16.20 — spread expires worthless. Loss: $125.",
+        "atTarget": "Stock at $21.00 — spread worth ~$3.45 at expiry (if held). Gain: +$220 (net, $500 max − $125 spread cost)... but we close by July 24.",
+        "bestFor": "Optimal: captures maximum pre-earnings decay runway with lowest premium outlay.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 133,
+        "daysLeftAtClose": 77,
+        "premiumEst": "~$1.95 ($17 call) / ~$0.55 ($22 call) → $1.40 net",
+        "flatScenario": "Same close deadline; paying $0.15 extra per spread for time you cannot use.",
+        "atTarget": "Same outcome at close — marginal upside doesn't justify +$15/spread extra cost.",
+        "bestFor": "Only if July 29 earnings date is pushed into August — then Sept expiry avoids post-earnings IV risk.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 196,
+        "daysLeftAtClose": 77,
+        "premiumEst": "~$2.30 ($17 call) / ~$0.70 ($22 call) → $1.60 net",
+        "flatScenario": "Paying $0.35 extra vs Aug for time that must be closed pre-earnings. Pure waste.",
+        "atTarget": "Identical close outcome — $0.35 additional cost with zero benefit.",
+        "bestFor": "Not recommended — closes before expiry regardless. Aug is strictly cheaper.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Bull Call Spread — $17/$22 Aug 15, 2026",
+    "strike": 17,
+    "expiry": "Aug 15, 2026",
+    "type": "Bull Call Spread (IV ~45% — short $22 leg saves ~$0.40 vs. single call; spread preferred)",
+    "estimatedPremium": "~$1.25 net debit per spread",
+    "contractCost": "~$125 per spread (2 spreads = $250)",
+    "delta": 0.43,
+    "breakeven": "$18.25",
+    "entryNote": "Post-earnings IV at ~45% after falling from ~65% pre-event. The $22 short leg saves $0.40 vs buying the $17 call outright — meaningful at this premium level. CEO Noto's March open-market buy at $17.28 confirms fundamental support. Enter after stock holds $15.50 on a closing basis. Max gain $375 per spread if stock reaches $22 by close deadline.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock reaches $19.00 (+17%)", "optionGain": "~$85–100 on spread (~70% gain on cost)" },
+      { "label": "Contract 2", "trigger": "Stock reaches $21.00 — analyst consensus target", "optionGain": "~$200–220 on spread (~160% gain)" }
+    ]
+  },
+
+  "companyOverview": "SoFi Technologies is a next-generation digital bank and fintech platform. Founded in 2011, it operates across three segments: Lending (personal, student, home loans), Technology Platform (Galileo/Technisys B2B fintech infrastructure), and Financial Services (checking, savings, investing, crypto). Q1 2026 was a record quarter: $1.09B adjusted net revenue (+41% YoY), $166.7M GAAP net income, and 22.2M total products (+39% YoY). Despite record results, the stock sold off on Technology Platform slowdown concerns and cautious macro guidance — creating a potential opportunity at $16 vs. the $17.28 CEO open-market buy in March.",
+
+  "financials": [
+    { "metric": "Stock Price (May 8)", "value": "$16.20", "note": "52-week range: $12.74–$32.73" },
+    { "metric": "Market Cap", "value": "~$17.8B", "note": "~16x forward revenue" },
+    { "metric": "Q1 2026 Adj. Revenue", "value": "$1.09B", "note": "+41% YoY — record quarter" },
+    { "metric": "Q1 2026 Net Income", "value": "$166.7M", "note": "GAAP profitable for multiple quarters" },
+    { "metric": "Q1 2026 Adj. EBITDA", "value": "$339.9M", "note": "31% margin (+62% YoY)" },
+    { "metric": "Total Products", "value": "22.2M", "note": "+39% YoY; members growing 34%" },
+    { "metric": "Net Interest Margin", "value": "5.94%", "note": "Dependent on rates staying elevated" },
+    { "metric": "Q2 2026 Guidance", "value": "~$1.115B adj. rev.", "note": "~30% YoY growth; $0.10–0.11 adj. EPS" },
+    { "metric": "Analyst Consensus", "value": "Hold (15 analysts)", "note": "Range: $12 (MS Underweight) to $31 (Needham Buy)" }
+  ],
+
+  "insiderFlow": {
+    "summary": "CEO Noto made a significant open-market purchase in March 2026 at prices near current levels — a strong conviction signal.",
+    "transactions": [
+      { "insider": "Anthony Noto (CEO)", "action": "Buy", "shares": 28900, "price": "$17.28 avg", "date": "2026-03-17", "value": "~$499K", "note": "Open-market purchase — not a grant or ESPP. Filed Form 4. Executed at $17.255–$17.340." },
+      { "insider": "William A. Borden (Director)", "action": "Deferred Stock Units", "shares": 1191, "price": "$15.23", "date": "2026-03-17", "value": "~$18K", "note": "Quarterly pay deferral — routine comp, not a discretionary buy." }
+    ],
+    "signal": "BULLISH — CEO made a discretionary open-market purchase of $499K at $17.28 on March 17, just 8% above current price of $16.20. Strong alignment signal."
+  },
+
+  "catalysts": [
+    "CEO Noto bought 28,900 shares open-market at $17.28 in March 2026 — skin in the game at current levels",
+    "Financial Services segment turning highly profitable: $429M revenue (+41% YoY), up from a loss-maker in 2022",
+    "SoFi Crypto launch — first nationally chartered bank to offer crypto trading; early-mover advantage",
+    "Q2 2026 guidance: ~30% adj. revenue growth to ~$1.115B with $0.10–0.11 adj. EPS",
+    "Big Business Banking launch (Q1 2026) opens new B2B revenue vertical",
+    "Post-earnings selloff may be overdone — $1.09B revenue beat ignored by market; creates asymmetric entry"
+  ],
+
+  "risks": [
+    "Technology Platform segment slowdown — primary reason for post-earnings stock decline despite record Q1",
+    "Morgan Stanley Underweight with $16 target; Deutsche Bank cut to $18 Hold — near-term analyst headwind",
+    "Net interest margin (5.94%) exposed to rate cuts — any Fed pivot compresses NII faster than origination growth offsets",
+    "Competition from traditional banks (Chase, Wells Fargo) and fintechs (Robinhood, Chime) intensifying",
+    "Stock down >50% from 52-week high of $32.73 despite strong fundamentals — momentum traders exiting"
+  ],
+
+  "dilution": "SoFi has ~1.1B shares outstanding. SBC (stock-based compensation) remains elevated but has moderated as the company scales. GAAP profitability reduces the need for equity issuance. Ongoing options/RSU grants are a dilution factor but well-understood by the market.",
+
+  "strikeTable": [
+    { "strike": "$15 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$0.65", "delta": 0.22, "contracts2Cost": "$2,870 cash secured (2 contracts)", "breakeven": "$14.35", "atTarget": "N/A (income strategy)" },
+    { "strike": "$17", "type": "Call (OTM)", "isRecommended": false, "premium": "~$1.65", "delta": 0.43, "contracts2Cost": "~$330 (2 contracts)", "breakeven": "$18.65", "atTarget": "+$460 at $21" },
+    { "strike": "$17/$22 Spread", "type": "Bull Call Spread", "isRecommended": true, "premium": "~$1.25 net", "delta": 0.43, "contracts2Cost": "~$250 (2 spreads)", "breakeven": "$18.25", "atTarget": "+$750 max at $22+" },
+    { "strike": "$20", "type": "Call (OTM)", "isRecommended": false, "premium": "~$0.80", "delta": 0.24, "contracts2Cost": "~$160 (2 contracts)", "breakeven": "$20.80", "atTarget": "+$42 at $21 — poor risk/reward" }
+  ]
+}

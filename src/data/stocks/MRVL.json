@@ -1,0 +1,76 @@
+{
+  "ticker": "MRVL",
+  "company": "Marvell Technology, Inc.",
+  "sector": "Semiconductors / AI Infrastructure",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 164.74,
+  "analystTarget": 120.28,
+  "rating": "BULLISH",
+  "strategy": "Buy $165/$185 Call Spread — Sep 2026 (enter AFTER May 28 earnings)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $164.74 — 1 CSP contract requires ~$16,474 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — Enter POST-Earnings, Stock Has Surpassed Most Analyst Targets",
+    "strike": 165,
+    "expiry": "Sep 2026 (~118 days from May 28)",
+    "type": "Call Spread ($165 buy / $185 sell)",
+    "estimatedPremium": "~$7–9 net debit (spread)",
+    "contractCost": "~$700–900 (1 spread)",
+    "delta": 0.48,
+    "breakeven": "~$172–174",
+    "entryNote": "⚠️ EARNINGS MAY 28 — mandatory wait. IV will inflate into the print and crush post-announcement. Stock is at $164.74, already trading ABOVE the average analyst price target of $120 — the April surge (+67%) has outrun most sell-side models. The spread contains cost in a high-IV environment (~55–65% estimated). If earnings confirm the AI ASIC thesis and analysts raise targets to $170–200 range, stock has room to $185+. If earnings disappoint, expect a sharp pullback to $130–145; that would be the better entry. Size: 1% portfolio max — stock is near ATH, above consensus. Insider selling is notable: CEO sold $2.96M at $98.70 in March, CFO sold $4M at $134 in April. All below current price, but pattern of selling into strength.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $175–180 (+6–9% from $165 strike) on earnings beat + target upgrades", "optionGain": "~60–100% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $185+ (+12%) on sustained AI ASIC revenue acceleration", "optionGain": "~140–170% on spread cost (max gain)" }
+    ]
+  },
+  "companyOverview": "Marvell Technology is a fabless semiconductor company specializing in data infrastructure — custom AI ASICs, 5G, networking, and storage silicon. It surged 67% in April 2026 on strong AI data-centre revenue and confirmation that custom ASIC production (for hyperscaler co-design programs) is scaling. Its 1.6T optical DSP and custom compute chips for AI training/inference workloads position it alongside Broadcom as a key beneficiary of the shift away from general-purpose NVIDIA GPUs toward custom silicon. The stock hit a new NASDAQ ATH of $170.84 on April 24, 2026 and is now at $164.74 — but has significantly outrun analyst consensus price targets ($120 average), meaning targets need to be revised upward for the current price to be justified.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$164.74", "note": "52-week range: $53.78–$170.84; ATH $170.84 reached April 24, 2026" },
+    { "metric": "All-Time High", "value": "$170.84", "note": "-3% from ATH — stock is near peak, not a discount setup" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (32 analysts)", "note": "Avg target: $120.28 — STOCK IS ABOVE ALL BUT HIGHEST TARGETS ($156 high). Targets lagging surge." },
+    { "metric": "Next Earnings", "value": "May 28, 2026", "note": "Q1 FY2027 — mandatory wait before any options entry" },
+    { "metric": "Q Est EPS", "value": "$0.79/share", "note": "Range: $0.76–$0.83; any miss could unwind the April rally" },
+    { "metric": "Market Cap", "value": "~$140B+", "note": "Post-surge valuation; meaningful premium to semicon peers" },
+    { "metric": "IV Estimate", "value": "~55–65%", "note": "Elevated pre-earnings; use spread, not naked call" },
+    { "metric": "Short Interest", "value": "~2–3% of float", "note": "Low short — no squeeze setup" }
+  ],
+  "insiderFlow": {
+    "summary": "Net SELLING — $9.7M in 90 days. All major insiders sold into the April price surge. Yellow flag: selling happened at much lower prices than today, suggesting insiders did not anticipate the full rally.",
+    "transactions": [
+      { "insider": "CEO Matthew Murphy", "action": "SELL", "shares": 30000, "price": "$98.70", "date": "March 26, 2026", "value": "$2.96M", "note": "Open market sale at $98.70 — stock has since surged 67%. Likely planned diversification." },
+      { "insider": "CFO Willem Meintjes", "action": "SELL", "shares": 30000, "price": "$134.01", "date": "April 15, 2026", "value": "$4.02M", "note": "Sold into the surge. Significant CEO-level sale." },
+      { "insider": "EVP Sandeep Bharathi", "action": "SELL", "shares": 66892, "price": "$130.35", "date": "April 16, 2026", "value": "$8.72M", "note": "Stated as tax-withholding for RSU vesting." },
+      { "insider": "EVP Mark Casper", "action": "SELL", "shares": 7000, "price": "$105.11", "date": "April 1, 2026", "value": "$735K", "note": "Smaller exec sale." }
+    ],
+    "signal": "YELLOW — no open-market buying. All insiders own only 0.19% of stock — limited skin in the game."
+  },
+  "catalysts": [
+    "May 28 Q1 FY2027 earnings — critical: must confirm AI ASIC revenue is sustaining the $165+ valuation and trigger analyst target upgrades to $170–200 range",
+    "Custom ASIC co-design wins with hyperscalers (AWS, Google, Meta, Microsoft) — multi-year revenue visibility if 1–2 new programs confirmed",
+    "1.6T optical DSP chip ramp — next-gen data-centre interconnect demand driven by AI model scale-up",
+    "Bank of America bull thesis: 16x 2027 earnings vs. pricier AI chip peers — relatively undemanding if earnings delivery holds",
+    "Fabless model + TSMC N2/N3 process access — competitive advantage in power/performance per watt vs. Intel IDM"
+  ],
+  "risks": [
+    "Stock is ABOVE average analyst price target ($120) — the April 67% surge has outrun consensus; if May 28 earnings do not justify $165+, sharp reversion likely",
+    "May 28 earnings — IV crush guaranteed post-announcement; enter AFTER to avoid losing 30–40% of option premium to IV collapse",
+    "CEO and CFO both sold into strength at much lower prices — pattern of insider distribution, not accumulation",
+    "Custom ASIC dependency: Broadcom is the dominant custom ASIC player; MRVL's program wins are less disclosed and harder to verify",
+    "Any NVIDIA guidance change or hyperscaler capex pullback would reprice the entire AI chip sector",
+    "Only 0.19% insider ownership — executives treat this as salary, not investment conviction"
+  ],
+  "dilution": "Standard large-cap equity structure. No meaningful dilution risk. Share buyback program in place. Capital returns via dividends and buybacks.",
+  "strikeTable": [
+    { "strike": "$155", "type": "Slight ITM", "isRecommended": false, "premium": "~$16–19", "delta": 0.60, "contracts2Cost": "~$3,200–3,800", "breakeven": "~$171–174", "atTarget": "+55%" },
+    { "strike": "$160", "type": "Near ATM", "isRecommended": false, "premium": "~$12–15", "delta": 0.53, "contracts2Cost": "~$2,400–3,000", "breakeven": "~$172–175", "atTarget": "+65%" },
+    { "strike": "$165", "type": "Slight OTM (spread buy-leg)", "isRecommended": true, "premium": "~$9–11 / ~$7–9 net as spread", "delta": 0.45, "contracts2Cost": "~$900–1,100 naked / ~$700–900 as $165/$185 spread", "breakeven": "~$172–174", "atTarget": "+100–170% (at $185)" },
+    { "strike": "$175", "type": "OTM", "isRecommended": false, "premium": "~$6–8", "delta": 0.33, "contracts2Cost": "~$1,200–1,600", "breakeven": "~$181–183", "atTarget": "+40%" },
+    { "strike": "$185", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$3–4", "delta": 0.21, "contracts2Cost": "~$600–800", "breakeven": "~$188–189", "atTarget": "-5%" }
+  ]
+}

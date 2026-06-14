@@ -1,0 +1,68 @@
+{
+  "ticker": "ZS",
+  "company": "Zscaler",
+  "sector": "Technology / Zero Trust Security",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 135.14,
+  "analystTarget": 233.00,
+  "rating": "NEUTRAL",
+  "strategy": "NEUTRAL — Monitor analyst revisions; multiple recent downgrades offset high upside target",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $135.14 — 1 CSP contract requires ~$13,500 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "recommendation": {
+    "title": "High Upside / High Risk — Conflicting Analyst Signals",
+    "strike": 140,
+    "expiry": "Nov 2026 (~180 days)",
+    "type": "Call (LEAPS — speculative only)",
+    "estimatedPremium": "~$20–26/share",
+    "contractCost": "~$2,000–2,600 (1 contract)",
+    "delta": 0.46,
+    "breakeven": "$160–166",
+    "entryNote": "PROCEED WITH CAUTION. Stock near 52-week low with 95%+ paper upside to high analyst target, but multiple significant downgrades in April/May 2026: BTIG cut to Neutral (removed from top picks), Morgan Stanley downgraded to Equalweight ($155 PT), Zacks cut to Strong Sell. Core concern: ZIA/ZPA growth moderating to mid-teens vs. historical 20%+ expectations, and Cloudflare/Netskope competition intensifying. Only enter if you have conviction on the Zero Trust secular trend.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $165 (+22%)", "optionGain": "~50–70% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $200 (+48%)", "optionGain": "~180–220% on premium" }
+    ]
+  },
+  "companyOverview": "Zero Trust network security platform (ZIA, ZPA, ZDX). Q2 FY2026: revenue $815.8M (+26% YoY, beat), EPS $1.01 (+$0.12 beat), ARR $3.36B (+25%), FCF margin 36%. FY2026 guidance raised to $3.31–3.32B (23.8–24.3% growth). OpenAI TAC program partnership and AI Security Suite launched January 2026. Red Canary MDR acquisition adding security operations capability. Stock down 60% from $337 52-week high on competitive concerns and multiple analyst downgrades.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$135.14", "note": "52-week range: $114.63–$336.99 (-60% from peak)" },
+    { "metric": "Market Cap", "value": "~$21–23B", "note": "" },
+    { "metric": "Q2 FY2026 Revenue", "value": "$815.8M", "note": "+26% YoY (beat)" },
+    { "metric": "ARR", "value": "$3.36B", "note": "+25% YoY" },
+    { "metric": "FY2026 Revenue Guidance", "value": "$3.31–3.32B", "note": "+23.8–24.3% YoY (raised)" },
+    { "metric": "FCF Margin", "value": "36%", "note": "Strong cash generation" },
+    { "metric": "30-day IV", "value": "~60%", "note": "Elevated near 52-week low" },
+    { "metric": "Analyst Consensus", "value": "Hold/Buy Mix", "note": "Recent downgrades offset high avg target" }
+  ],
+  "catalysts": [
+    "ARR growing 25% YoY — solid subscription momentum despite headwinds",
+    "AI Security Suite launch (Jan 2026) for enterprise AI governance market",
+    "OpenAI TAC partnership — positioning as trusted access layer for AI",
+    "Red Canary MDR + ZDX combined offering for security operations",
+    "FCF margin 36% — strong cash flow even at depressed valuation",
+    "Stock -60% from peak at ~3.5x ARR — historically attractive if growth holds"
+  ],
+  "risks": [
+    "BTIG downgraded to Neutral (April 2026) — removed from H1 2026 top picks",
+    "Morgan Stanley downgraded to Equalweight with only $155 PT (near current price!)",
+    "Zacks cut to Strong Sell (May 1) — bearish momentum in analyst community",
+    "ZIA/ZPA core product growth moderating to mid-teens vs. 20%+ historical rate",
+    "Cloudflare and Netskope intensifying competition in Zero Trust market",
+    "Red Canary integration risk — inorganic revenue growth masking organic slowdown",
+    "GAAP losses persist — not yet profitable on reported basis"
+  ],
+  "dilution": "Elevated SBC relative to revenue for a company this size. Red Canary acquisition partially equity-funded. Watch for potential share count growth if FCF is insufficient to fund operations.",
+  "strikeTable": [
+    { "strike": "$125", "type": "ITM", "isRecommended": false, "premium": "~$24–30", "delta": 0.60, "contracts2Cost": "~$4,800–6,000", "breakeven": "~$149–155", "atTarget": "+230%" },
+    { "strike": "$135", "type": "ATM", "isRecommended": false, "premium": "~$20–26", "delta": 0.51, "contracts2Cost": "~$4,000–5,200", "breakeven": "~$155–161", "atTarget": "+290%" },
+    { "strike": "$140", "type": "Slight OTM", "isRecommended": true, "premium": "~$20–26", "delta": 0.46, "contracts2Cost": "~$4,000–5,200", "breakeven": "~$160–166", "atTarget": "+280%" },
+    { "strike": "$160", "type": "OTM", "isRecommended": false, "premium": "~$13–17", "delta": 0.33, "contracts2Cost": "~$2,600–3,400", "breakeven": "~$173–177", "atTarget": "+335%" },
+    { "strike": "$200", "type": "Far OTM", "isRecommended": false, "premium": "~$6–9", "delta": 0.17, "contracts2Cost": "~$1,200–1,800", "breakeven": "~$206–209", "atTarget": "+170%" }
+  ]
+}

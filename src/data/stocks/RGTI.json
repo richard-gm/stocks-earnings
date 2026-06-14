@@ -1,0 +1,174 @@
+{
+  "ticker": "RGTI",
+  "company": "Rigetti Computing",
+  "sector": "Quantum Computing",
+  "analysisDate": "2026-05-14",
+  "priceAtAnalysis": 19.61,
+  "analystTarget": 29.00,
+  "rating": "BULLISH",
+  "strategy": "Pure LEAPS Long Call — $15 Jan 2028. Q1 2026 just delivered $4.4M revenue (+199% YoY), the largest quarter in company history, driven by the C-DAC $8.4M hardware order, 108-qubit GA, and UK expansion. IV at 90% makes premium selling unattractive from a buyer's perspective, so a $15 ITM LEAPS (delta ~0.81) is the right vehicle: acts like leveraged stock ownership with defined downside, captures the breakout thesis without a hard earnings close deadline, and provides 20 months of runway through the Lyra 336-qubit inflection (H2 2026) and beyond. Breakeven $25.50 sits squarely within analyst target range ($27–$31). Stock is forming a critical breakout pattern above $19 — enter on confirmation above $20.",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": "IV AT 90% — LEAPS PREFERRED OVER CSP. At 90% IV, the wheel strategy is technically available but structurally disadvantaged for the current thesis. CSP premiums are rich for sellers — but this is a directional breakout setup, not an income play. Selling CSPs at 90% IV caps your upside and means you participate in a 50% gap-up only via assignment. The $15 ITM LEAPS (delta 0.81) gives you 81-cents-on-the-dollar participation in any breakout while limiting downside to the premium paid. Use the wheel only if LEAPS premium feels too large — a $15/$25 bull call spread for ~$4.00 net debit is the income-player alternative.",
+    "vixNote": "VIX ~14–16 (market level). RGTI-specific IV at 90% — 97th percentile for this stock. Q1 2026 earnings (May 11) have passed — IV typically remains elevated 5–10 days post-earnings before compressing. At 90% IV, LEAPS extrinsic premium is expensive, but the $15 strike has $4.61 of intrinsic value (stock at $19.61), limiting the pure extrinsic exposure to ~$5.89 for the Jan 2028 contract. For a 20-month hold, this is acceptable.",
+    "bollingerEntry": "Stock at $19.61 — above the estimated 20-day SMA (~$15.50) and pressing into the $19–$21 resistance band. FXEmpire identified a 'critical breakout level' on May 13. Upper Bollinger estimated $22–$24. The lower BB is ~$12–$14. A confirmed close above $21 on volume would be the technical breakout trigger. Current price is above mid-band — do not wait for a lower-band dip for LEAPS entry; the breakout thesis requires buying the break, not the dip.",
+    "csp": {
+      "strike": "~$16–17",
+      "delta": "0.30–0.40",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$1.80–2.20/share (~$180–220 per contract) at 90% IV",
+      "annualisedYield": "~110–130% annualised on capital at risk (use only if you want stock assigned at $14–15)",
+      "exitRule": "Close at 50% premium captured. This is secondary to the LEAPS recommendation — only use if capital is limited or you want the stock assigned at a discount to begin a covered call cycle.",
+      "note": "CSP at $16-17 makes sense only if your goal is stock ownership at $14–15 breakeven. At 90% IV the premium is exceptional ($180+/contract), but you forgo all upside above assignment price. The LEAPS is strictly superior for a directional breakout thesis."
+    },
+    "coveredCall": {
+      "strike": "~$22–24",
+      "delta": "0.25–0.35",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$1.50–2.00/share (~$150–200 per contract)",
+      "exitRule": "Close at 50% premium. Roll up if stock clears $24 on strong volume — Lyra delivery would make $30+ a realistic target.",
+      "note": "If already holding RGTI shares (e.g., from prior assignment), sell $22–24 CCs to reduce cost basis. The $24 strike gives enough room for a breakout rally while still collecting premium. Do NOT sell CCs against your LEAPS position — that creates a spread, not income."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 15,
+    "underlyingPrice": 19.61,
+    "iv": "~90% (97th percentile; Q1 earnings just passed; IV will slowly compress over 4–6 weeks but remains elevated)",
+    "earningsDate": "~Early August 2026 (Q2 2026; Q1 reported May 11, 2026)",
+    "closeDeadline": "N/A for LEAPS — hold through Q2 earnings (IV crush is much smaller for 1–2 year options). Monitor but do not mandatory-close.",
+    "exitRules": {
+      "entryTrigger": "Enter LEAPS on a close above $20 with volume. The $19–$21 range is critical resistance — buying the breakout confirmation is superior to buying in the current range. If the stock pulls back to $16–$17 (lower Bollinger) before breaking out, that is an even better LEAPS entry.",
+      "profitExit": "Target 1: Sell 50% of LEAPS position when premium doubles (stock ~$27–$29, matching analyst consensus). Target 2: Close remaining 50% at $35–$40 if Lyra 336-qubit delivers on schedule (H2 2026) and analyst upgrades follow. Do NOT hold LEAPS to expiration — sell 60–90 days before expiry when theta begins to bite.",
+      "timeStop": "If stock has not broken above $21 by August 31, 2026 (Q2 earnings) and LEAPS has lost 40% of value, reduce position by half. The thesis requires a breakout — a non-breakout at 3 months is a signal the timing is wrong.",
+      "lossStop": "Close ALL LEAPS if stock closes below $14.00 (below the $15 strike, meaning the LEAPS go deeply underwater). At this level, the position has lost ~60% and the breakout thesis has failed. Maximum acceptable loss: 50% of premium paid.",
+      "earningsHardStop": "N/A — LEAPS are designed to hold through earnings. The Q2 2026 earnings (early August 2026) are a CATALYST, not a risk for LEAPS holders. Expect ±15–25% moves on earnings — the LEAPS position stays open. Only risk: if a catastrophic earnings miss (below $3M revenue) signals the Q1 beat was one-time, reduce by 50% post-earnings."
+    },
+    "options": [
+      {
+        "expiry": "Jan 16, 2027",
+        "daysTotal": 247,
+        "daysLeftAtClose": 247,
+        "premiumEst": "~$7.84 per share ($784 per 100-share contract) at 90% IV — $4.61 intrinsic + $3.23 extrinsic",
+        "flatScenario": "Stock stays at $19.61 — LEAPS worth ~$5.80 at expiry (intrinsic $4.61 + minimal time). Loss of ~$2.04 per share (26% of premium). Theta cost over 247 days.",
+        "atTarget": "Stock reaches $29 (avg analyst target) by Jan 2027 — LEAPS worth ~$14.00. Profit ~$6.16 per share (+79%). Stock reaches $31 (Needham target) — LEAPS worth ~$16, profit +$8.16 (+104%).",
+        "bestFor": "Best for: traders wanting the soonest catalyst capture (Lyra H2 2026 + Q2 earnings). The 247-day window captures the maximum expected near-term catalyst with lowest total premium cost. Risk: if Lyra delays past January 2027, the thesis has no time left.",
+        "recommended": false
+      },
+      {
+        "expiry": "Jan 15, 2028",
+        "daysTotal": 611,
+        "daysLeftAtClose": 611,
+        "premiumEst": "~$10.50 per share ($1,050 per 100-share contract) at 90% IV — $4.61 intrinsic + $5.89 extrinsic",
+        "flatScenario": "Stock stays at $19.61 — LEAPS worth ~$5.50 at expiry after 20 months of theta decay. Loss ~$5.00 per share (48%). Acceptable risk for a $19.61 stock: maximum loss equals ~27% of stock price.",
+        "atTarget": "Stock reaches $29 (avg target) — LEAPS worth ~$14.00. Profit ~$3.50 per share (+33%). Stock reaches $40 (Benchmark bull target) — LEAPS worth ~$25, profit +$14.50 (+138%). Lyra delivers + commercial ramp to $50 — LEAPS worth ~$35, profit +$24.50 (+233%).",
+        "bestFor": "RECOMMENDED. 20 months of time to be right on the Lyra 336-qubit delivery, multiple earnings cycles, and commercial ramp. Jan 2028 LEAPS survive a 6-month delay in any catalyst. The extra $2.66 in premium over Jan 2027 buys ~12 more months of runway — worth it for this thesis.",
+        "recommended": true
+      },
+      {
+        "expiry": "Jun 18, 2027",
+        "daysTotal": 400,
+        "daysLeftAtClose": 400,
+        "premiumEst": "~$9.25 per share ($925 per 100-share contract) at 90% IV — estimated; $4.61 intrinsic + $4.64 extrinsic",
+        "flatScenario": "Stock stays at $19.61 — LEAPS worth ~$5.30 at expiry. Loss ~$3.95 per share (43%). Middle ground between Jan 2027 and Jan 2028.",
+        "atTarget": "Stock reaches $29 by Jun 2027 — LEAPS worth ~$14. Profit ~$4.75 (+51%). Good balance of cost and time.",
+        "bestFor": "If Jun 2027 is listed: a middle option between Jan 2027 and Jan 2028. Provides 13 months to capture the Lyra catalyst without paying the full Jan 2028 premium. Check your broker for availability.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Pure LEAPS Long Call — $15 Jan 15, 2028",
+    "strike": 15,
+    "expiry": "Jan 15, 2028",
+    "type": "Long Call LEAPS (ITM — delta ~0.81; acts like 81%-leveraged stock ownership with defined max loss)",
+    "estimatedPremium": "~$10.50 per share ($1,050 per 100-share contract)",
+    "contractCost": "~$2,100 for 2 contracts (100% of premium is the maximum loss — no additional capital at risk)",
+    "delta": 0.81,
+    "breakeven": "~$25.50 at expiry (strike $15 + $10.50 premium)",
+    "entryNote": "LEAPS is the correct instrument here for three reasons: (1) IV at 90% makes CSP premium-selling uncompetitive for a directional bull — you'd cap your upside at $21–22 while the analyst targets are $27–$40; (2) The $15 ITM strike has $4.61 intrinsic value, meaning only $5.89 of the $10.50 is pure time-value — less exposure to IV crush than an ATM call; (3) 20 months of time allows you to be right on timing without being wiped out by a quarterly delay. The Q1 2026 results (+199% YoY to $4.4M) confirm the revenue inflection: C-DAC India has ordered an $8.4M full quantum computer system, the UK is receiving a $100M investment for a 1,000+ qubit system, and Cepheus-1-108Q is live on AWS Braket and Rigetti QCS. The next major catalyst is Lyra (336 qubits) in H2 2026 — if it delivers at spec, current analyst targets ($27–$31) will be revised upward toward $40+. Breakeven of $25.50 sits inside the post-Lyra range; at the Benchmark bull target of $40, the Jan 2028 LEAPS would be worth ~$25 (profit: +138%). The only alternative for capital-constrained investors: a $15/$25 bull call spread at ~$4.50 net debit — same directional bet, capped at +$5.50 max profit per spread, but half the cost.",
+    "exitPlan": [
+      { "label": "Target 1: LEAPS doubles (~stock $28–30)", "trigger": "LEAPS premium reaches ~$21 (stock at analyst consensus $27–$29). Sell 50% of position.", "optionGain": "~+100% on sold portion ($1,050 → $2,100 per contract; +$1,050 per contract profit)" },
+      { "label": "Target 2: Lyra delivery rally (stock $35–40)", "trigger": "Lyra 336-qubit delivers H2 2026; analyst upgrades to $35–$40. Sell remaining 50% of position.", "optionGain": "~+138–233% on remaining portion if stock reaches $40–$50" },
+      { "label": "Loss stop: stock closes below $14", "trigger": "Stock closes below $15 strike on a weekly basis — thesis failed. Close all LEAPS.", "optionGain": "~-50 to -60% loss on premium. Max loss: $1,050 per contract (100% of cost)." },
+      { "label": "Time stop: Sept 30, 2026", "trigger": "If stock has NOT broken above $22 by Sept 30 AND LEAPS has lost 40% of value: cut 50% of position. Re-evaluate after Q2 earnings.", "optionGain": "Risk management — preserves capital if thesis is delayed" }
+    ]
+  },
+
+  "companyOverview": "Rigetti Computing designs and builds superconducting quantum processors using a proprietary modular chiplet architecture designed to scale more predictably than monolithic designs (IBM, Google). The company delivered its most significant quarter ever in Q1 2026: $4.4M revenue (+199% YoY), driven by the first major international hardware deployment — an $8.4M order from India's C-DAC for a 108-qubit quantum computer, the first purchase order of a full Rigetti system outside the US. This revenue profile (NRE + hardware sales + cloud) represents the beginning of a multi-year commercialisation ramp, not a one-off event.\n\nThe 108-qubit Cepheus-1-108Q became generally available on April 7, 2026, and is accessible via Rigetti Quantum Cloud Services and AWS Braket. The Cepheus system validates Rigetti's chiplet-based scaling architecture: multiple smaller QPU chiplets are connected to build larger systems, avoiding the yield problems that plague monolithic quantum chip designs at high qubit counts. This approach is Rigetti's core technical differentiation vs. IBM (monolithic) and IonQ (trapped-ion). The Novera 9-qubit on-premises QPU — designed for labs and research institutions — is generating early academic sales: University of Saskatchewan (March 2026) is the latest deployment, with Montana State University also live.\n\nThe most significant long-term commitment came in March 2026: Rigetti announced a $100M UK investment to deploy a quantum computing system with over 1,000 qubits in the next 3–4 years. This is the company's first major investment outside the US and signals management confidence in the chiplet scaling roadmap to reach 1,000+ qubit scale — a threshold where quantum advantage over classical supercomputers becomes achievable for some problem classes.\n\nThe next major technical milestone is Lyra, the 336-qubit system targeting H2 2026 delivery. Achieving 99.5%+ two-qubit gate fidelity at 336 qubits using the chiplet architecture would be a genuine technological proof point — it would demonstrate that Rigetti's modular approach scales to 3× the qubit count of Cepheus without disproportionate error rates. In Q4 2025 earnings (March 4, 2026), management disclosed achieving 99.9% two-qubit gate fidelity at 28ns gate speed on a prototype platform — a significant fidelity milestone that underpins the Lyra delivery confidence. If Lyra ships on schedule and at spec, it would likely trigger analyst upgrades, institutional attention, and a re-rating of the stock toward the $30–$40 range.\n\nFinancially, Rigetti remains pre-profitability: TTM revenue of $10.02M against a $6.52B market cap represents an extreme 651× P/S multiple. However, the cash position is robust (approximately $450–$500M estimated, with ~$50M annual burn), providing 9–10 years of runway at current burn rates — eliminating dilution risk through at least 2032. With FY2026 analyst consensus at $23M (+225% from 2025), the revenue trajectory has turned decisively positive for the first time since 2024.",
+
+  "technicalSetup": {
+    "pattern": "Ascending base with critical breakout level forming above $19–$21",
+    "description": "RGTI has traded from a 52-week low of $10.18 to the current $19.61, building a multi-month base. FXEmpire on May 13 identified a 'critical breakout level' forming — the $19–$21 zone represents consolidated resistance from prior failed rallies. A confirmed close above $21 on above-average volume would signal the beginning of the next leg toward the $25–$30 analyst target zone. The stock is up 6.38% on May 14 in an ongoing session, suggesting post-earnings momentum is building. The prior ATH of $58.15 (Oct 2025) represents the eventual upside target if the quantum computing narrative fully re-accelerates. Key risk: if the stock fails to break $21 and rolls back below $17, the breakout thesis is in question and LEAPS should be managed accordingly.",
+    "keyLevels": [
+      { "level": "$14.00–$15.00", "type": "Support", "note": "LEAPS loss stop level. Also the $15 LEAPS strike — stock closing below this on a weekly basis signals thesis failure." },
+      { "level": "$17.00", "type": "Support", "note": "Post-earnings consolidation support. Preferred secondary LEAPS entry on any pullback here before the confirmed breakout." },
+      { "level": "$19.61", "type": "Current Price", "note": "Analysis baseline, May 14, 2026. Stock up +6.38% on the day." },
+      { "level": "$21.00", "type": "Resistance / Breakout Line", "note": "Critical breakout level per FXEmpire. Confirmed close above this on volume = enter LEAPS / add to position." },
+      { "level": "$25.50", "type": "Target — Breakeven", "note": "Jan 2028 LEAPS breakeven at expiry. Stock at this level = ~30% gain from current; LEAPS breaks even." },
+      { "level": "$29.00", "type": "Target — Analyst Consensus", "note": "Average analyst price target (9 analysts, Strong Buy consensus). Post-Lyra delivery range. LEAPS worth ~$14 at this level (+33%)." },
+      { "level": "$40.00", "type": "Target — Benchmark Bull", "note": "Benchmark (David Williams, Strong Buy) prior top target. Post-commercial ramp scenario. LEAPS worth ~$25 (+138%)." },
+      { "level": "$58.15", "type": "ATH / Long-term Target", "note": "All-time high (Oct 2025, quantum hype peak). Recovery to prior ATH would make Jan 2028 LEAPS worth ~$43 (+310%)." }
+    ]
+  },
+
+  "financials": [
+    { "metric": "Stock Price (May 14)", "value": "$19.61", "note": "+6.38% on the day. 52-week range: $10.18–$58.15. ATH $58.15 (Oct 2025, -66% from ATH)" },
+    { "metric": "Market Cap", "value": "$6.52B", "note": "651× TTM revenue — extreme premium reflecting long-dated quantum optionality, not current earnings power" },
+    { "metric": "Shares Outstanding", "value": "332.40M", "note": "Fully diluted. Low near-term dilution risk given $450-500M+ estimated cash position" },
+    { "metric": "Q1 2026 Revenue (reported May 11)", "value": "$4.4M (+199% YoY)", "note": "Largest quarter in company history. Q1 2025 was $1.47M; Q4 2025 was $1.87M. Revenue inflection confirmed." },
+    { "metric": "FY2026 Revenue Consensus", "value": "$23.04M (+225% from 2025)", "note": "9 analyst consensus — majority driven by hardware sales (C-DAC model) and QCaaS growth on AWS Braket" },
+    { "metric": "FY2027 Revenue Consensus", "value": "$45.98M (+100% from 2026)", "note": "Assumes Lyra commercial deployments begin generating revenue in FY2027 and cloud ARR grows" },
+    { "metric": "EPS (Q1 2026 consensus)", "value": "-$0.05 per share", "note": "Company still unprofitable but losses narrowing as revenue scales. Not the investment case — this is a multiple-expansion / revenue-growth story" },
+    { "metric": "Cash Position (estimated)", "value": "~$450–500M", "note": "Estimated from Q4 2025 ~$590M minus ~$50M Q1 burn + $8.4M C-DAC receipt. Zero debt. 9–10 year runway." },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (9 analysts)", "note": "Mizuho: Buy, $27 (post-earnings, $33→$27). Needham: Strong Buy, $31 (reiterated post-earnings). Benchmark: Strong Buy, $25 (prior). Avg target: $29. Range: $15–$40." },
+    { "metric": "Implied Volatility", "value": "~90% (97th percentile)", "note": "Elevated post-earnings. IV crush will slow compress over 4–6 weeks. Favours ITM LEAPS over ATM calls." },
+    { "metric": "Beta", "value": "1.80", "note": "High-beta quantum stock. Expect 2–3× S&P moves on any macro risk-off event" }
+  ],
+
+  "catalysts": [
+    "Q1 2026 Revenue $4.4M (+199% YoY) — confirms the hardware commercialisation thesis; revenue trajectory now clearly inflecting upward for the first time since IPO",
+    "C-DAC India $8.4M hardware order — first full quantum computer sale outside the US; blueprint for international government/lab hardware sales across EU, Canada, Australia",
+    "UK $100M investment commitment (March 25, 2026) — deploy 1,000+ qubit system in 3–4 years; largest public capex commitment in Rigetti history",
+    "Lyra 336-qubit system (H2 2026 target) — the primary technical inflection; 99.9% gate fidelity demonstrated on prototype (Q4 2025); successful delivery would trigger analyst upgrades toward $35–$40",
+    "AWS Braket and QCS commercial ramp — 108-qubit now accessible to all AWS customers globally; cloud ARR should scale as enterprise quantum experimentation expands",
+    "Novera QPU on-premises sales — University of Saskatchewan (March 2026), Montana State (prior); academic/lab installation base compounds as researchers publish results validating the platform",
+    "DARPA QBI contract + Air Force $5.8M — government revenue reducing commercial burn pressure; defence credibility opens Pentagon supply chain",
+    "UK NQCC and EU government partnerships — growing international government relationships validate platform beyond the US market",
+    "Q2 2026 earnings (early August 2026) — next quarterly proof point; consensus expects $5–6M (continuing the ramp); a beat would extend the breakout and validate the LEAPS thesis mid-hold"
+  ],
+
+  "risks": [
+    "Lyra 336-qubit timing risk — Cepheus was delayed multiple times before GA; quantum hardware engineering surprises are the norm; a 6–12 month Lyra delay would cause a -20–40% stock reaction",
+    "P/S ratio 651× on $10M TTM revenue — any macro risk-off (Fed hawkishness, AI bubble concern) compresses quantum-sector multiples by 30–50%; RGTI is among the most multiple-sensitive stocks in the market",
+    "IV at 90% makes LEAPS expensive — $5.89 extrinsic value in the Jan 2028 $15 call; if IV compresses to 60% over 12 months, a portion of this value evaporates even if the stock rises",
+    "Insider selling pattern persists — 22 sales, 0 buys over prior 6 months; insiders hold options and RSUs, not open-market shares; this is a stock where insiders consistently reduce exposure on recovery rallies",
+    "Revenue quality: Q1 beat was hardware (NRE/one-time sale) not recurring ARR — a second consecutive large quarter is needed to confirm the revenue inflection is structural, not lumpy",
+    "C-DAC delivery execution — $8.4M order must be delivered to spec and on time; a failed or delayed deployment in India would damage international sales credibility",
+    "Jensen Huang '20 years away' narrative — despite recent catalysts, the general public and institutional perception of quantum computing timelines remains sceptical; any Nvidia/CEO-level statement reiterating this view could reprice the sector -20%",
+    "Competition: IBM Heron (133-qubit, gate fidelity >99.9%), Google Willow, and IonQ all advancing; Rigetti needs Lyra to maintain its fidelity-per-qubit narrative",
+    "No hyperscaler backer — IonQ has Amazon partnership; IBM has Fortune 500 enterprise relationships; Rigetti relies on AWS Braket distribution which could be deprioritised by Amazon at any time",
+    "Dilution risk (low near-term, moderate long-term) — $450-500M cash with $50M/year burn = 9-10 year runway; no dilution risk before 2030, but the company will need to raise capital before achieving profitability if revenue ramp slows"
+  ],
+
+  "dilution": {
+    "summary": "Low near-term dilution risk. ~$450–500M estimated cash (Q4 2025 was $589.8M minus ~$50M/quarter burn + C-DAC receipt) with ~$50M/year non-GAAP burn = 9–10 year runway. No dilution before at least 2030 under current burn assumptions. Insider equity compensation (RSUs, options) creates ~1–2% annual dilution from grants — standard for a NASDAQ-listed company. The key risk: if the commercial ramp slows and cash burn accelerates (e.g., Lyra development costs), management may elect to raise equity capital opportunistically. At $19.61, a 10% ATM offering would raise ~$600M+ — they don't need to, but they could.",
+    "items": [
+      { "label": "CEO options grant (March 11, 2026)", "detail": "Subodh Kulkarni granted 600K options at $16.99 exercise price, vesting monthly over 36 months. Aligned with recovery but small relative to existing insider selling pattern." },
+      { "label": "Insider selling pattern: 22 sales, 0 buys (trailing 12 months)", "detail": "CFO, CTO, multiple directors sold throughout the 2024–2026 period. All sales, no discretionary buying even at post-crash lows ($10–$14). Insiders view the stock as compensation liquidation, not investment. Not a deal-breaker but a consistent signal." },
+      { "label": "Cash runway: 9–10 years at current burn", "detail": "~$450–500M estimated cash ÷ ~$50M annual burn = 9–10 years. The C-DAC hardware sale ($8.4M receipt) and future hardware orders will extend the runway further. Capital raise risk: very low before 2030." },
+      { "label": "Equity raises (historical)", "detail": "No major equity raise in 2025 or 2026 to date. The existing cash position was built through pre-2024 SPAC proceeds and prior ATM offerings. Management shows no urgency to raise at current levels." }
+    ]
+  },
+
+  "strikeTable": [
+    { "strike": "$12 Call", "type": "Deep ITM LEAPS (Jan 2028)", "isRecommended": false, "premium": "~$11.50", "delta": 0.86, "contracts2Cost": "~$2,300 (2 contracts)", "breakeven": "$23.50", "atTarget": "At $29 (+$17 above strike): LEAPS worth ~$16.50, profit +$5.00 (+43%). Less leverage but more intrinsic protection — good if worried about IV crush." },
+    { "strike": "$15 Call", "type": "ITM LEAPS (Jan 2028) — Recommended", "isRecommended": true, "premium": "~$10.50", "delta": 0.81, "contracts2Cost": "~$2,100 (2 contracts)", "breakeven": "$25.50", "atTarget": "At $29 analyst target: LEAPS worth ~$14, profit +$3.50 (+33%). At $40 (Benchmark bull): LEAPS worth ~$25, profit +$14.50 (+138%). Optimal ITM balance." },
+    { "strike": "$17 Call", "type": "Near ATM LEAPS (Jan 2028)", "isRecommended": false, "premium": "~$9.50", "delta": 0.75, "contracts2Cost": "~$1,900 (2 contracts)", "breakeven": "$26.50", "atTarget": "At $29: LEAPS worth ~$12.50, profit +$3.00 (+32%). Similar payout to $15, slightly less intrinsic protection — lower outlay but higher extrinsic exposure." },
+    { "strike": "$20 Call", "type": "OTM LEAPS (Jan 2028)", "isRecommended": false, "premium": "~$8.50", "delta": 0.70, "contracts2Cost": "~$1,700 (2 contracts)", "breakeven": "$28.50", "atTarget": "At $29: LEAPS worth ~$9.50, profit +$1.00 (+12%). At $40: LEAPS worth ~$20, profit +$11.50 (+135%). More leverage but breakeven above current analyst consensus — requires Lyra rally to profit." },
+    { "strike": "$25 Call", "type": "Far OTM LEAPS (Jan 2028)", "isRecommended": false, "premium": "~$6.50", "delta": 0.58, "contracts2Cost": "~$1,300 (2 contracts)", "breakeven": "$31.50", "atTarget": "At $29: worth ~$4.50, still at a loss (-31%). At $40: worth ~$15, profit +$8.50 (+131%). High leverage but requires a full Lyra + commercial ramp rally to break even — highest risk/reward." }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "ticker": "CL",
+  "company": "Colgate-Palmolive Company",
+  "sector": "Consumer Staples / Defensive",
+  "analysisDate": "2026-05-05",
+  "priceAtAnalysis": 85.37,
+  "analystTarget": 96.00,
+  "rating": "BULLISH",
+  "strategy": "Buy $87 Call — Aug 2026 (post-Q1 beat, clean 87-day window to next earnings)",
+  "wheelStrategy": {
+    "eligible": true,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. However, CL's defensive profile and post-earnings clarity make this one of the safer wheel entries at current VIX. Low IV (~26%) means premiums are modest but assignment risk is low on a 63-year dividend grower. Can enter with reduced size now; add on VIX > 20.",
+    "bollingerEntry": "Daily chart: stock pulled back from 52-week high of $99.33 to $85.37 (-14%). Lower Bollinger Band estimated ~$80–83. Post-earnings (Q1 beat May 1) the stock is in a clean recovery phase. Current price is mid-to-lower band — a Bollinger Band entry signal is approaching. CSP entry at $78–82 is at or below lower band, ideal for mean-reversion thesis.",
+    "csp": {
+      "strike": "~$78–82",
+      "delta": "0.20–0.28",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.80–1.50/share (~$80–150 per contract)",
+      "annualisedYield": "~15–25% annualised on capital at risk (lower IV but ultra-stable underlying)",
+      "exitRule": "Close at 50% premium captured. CRITICAL: Close before July 31 earnings (Q2 2026). Re-enter after. Dividend ex-date watch: quarterly $0.53 dividend — factor into CSP timing to capture dividend if assigned.",
+      "note": "⭐ IDEAL DEFENSIVE WHEEL STOCK — 63 years of consecutive dividend increases, #1 global toothpaste brand, $20.5B annual revenue. IV ~26% means premiums are modest but assignment at $78–82 gives excellent cost basis vs. analyst targets ($96 avg). Capital at risk: $7,800–$8,200/contract (fits a standard retail portfolio at 1 contract). If assigned, you own a dividend-paying Dividend Aristocrat at a 9–14% discount to current price."
+    },
+    "coveredCall": {
+      "strike": "~$87–90",
+      "delta": "0.22–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.80–1.50/share (~$80–150 per contract)",
+      "exitRule": "Close at 50% premium. Re-sell monthly. Collect dividend while holding shares. Close before July 31 earnings.",
+      "note": "If assigned on CSP (cost basis ~$78–82), sell CC at $87–90 — just above current market price. Low IV keeps premiums modest but the dividend (2.47% yield) supplements the wheel return. Total return: CSP premium + dividend + CC premium = solid defensive income."
+    }
+  },
+  "expiryComparison": {
+    "strike": 87,
+    "underlyingPrice": 85.37,
+    "iv": "~26%",
+    "earningsDate": "July 31, 2026",
+    "closeDeadline": "July 26, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter after Q1 earnings IV crush has settled (already reported May 1). Enter now or on any dip toward $83–84.",
+      "profitExit": "Close at 60–90% gain OR when stock hits $92–94 (first target). Let 1 contract ride to $96–99 for 130–180% gain.",
+      "timeStop": "If stock has not reached $89+ by ~June 20 (50% of time elapsed from entry), close the position. Do not fight accelerating theta in the final 30 days.",
+      "lossStop": "Close at 40–50% loss on premium paid (~$1.75–2.25 loss per share). Do not hold a decaying position hoping for a reversal.",
+      "earningsHardStop": "Close by July 26 (5 days before July 31 Q2 earnings) — no exceptions for long premium positions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 102,
+        "daysLeftAtClose": 21,
+        "premiumEst": "~$4.50",
+        "flatScenario": "~-60%",
+        "atTarget": "~+120%",
+        "bestFor": "Only if stock moves strongly within 4 weeks. Theta brutal at 21 days left on exit.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 137,
+        "daysLeftAtClose": 56,
+        "premiumEst": "~$5.40",
+        "flatScenario": "~-35%",
+        "atTarget": "~+110%",
+        "bestFor": "Sweet spot — 56 days of time value at exit, can hold through earnings if Q2 looks clean.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 200,
+        "daysLeftAtClose": 119,
+        "premiumEst": "~$6.75",
+        "flatScenario": "~-22%",
+        "atTarget": "~+90%",
+        "bestFor": "Holding through two earnings cycles. Overkill for 12% upside target — overpaying for unused time.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Single-Leg Call — Post-Q1 Beat, Low IV Means No Spread Needed, Clean Entry Window",
+    "strike": 87,
+    "expiry": "Aug 2026 (~87 days)",
+    "type": "Call (single leg — IV ~26% is below 40% spread threshold; naked call is appropriate)",
+    "estimatedPremium": "~$3.50–5.00/share",
+    "contractCost": "~$350–500 (1 contract) / ~$700–1,000 (2 contracts)",
+    "delta": 0.46,
+    "breakeven": "~$90.50–92.00",
+    "entryNote": "POST-EARNINGS CLEAN ENTRY: Q1 2026 reported May 1 — beat on EPS ($0.97 vs $0.94 est) and revenue ($5.32B vs $5.22B est). Full-year guidance reaffirmed. IV crush has already happened — premiums are now fair. Next earnings July 31 (~87 days away), so Aug expiry captures the full pre-earnings recovery window. LOW IV (~26%) means a single-leg call is appropriate — NO spread required per the IV rule (spreads are for IV > 60%). 2 contracts = $700–1,000 — within a typical ~$700/position budget. Bull thesis: stock has pulled back 14% from $99 52-week high on tariff/margin fears; Q1 beat shows those fears are partially priced in; analyst average target $96 implies 12% upside from here. JPMorgan raised to $96 and Rothschild upgraded to Buy on May 4. Increasing options volume post-earnings signals institutional positioning ahead of recovery.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $92–94 (+8–10%) on continued defensive rotation or analyst upgrades", "optionGain": "~60–90% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $96–99 (+12–16%) on analyst target convergence or margin recovery signal", "optionGain": "~130–180% on premium" }
+    ]
+  },
+  "companyOverview": "Colgate-Palmolive is the world's largest oral care company and a quintessential Dividend Aristocrat — 63 consecutive years of dividend increases, uninterrupted payments since 1895. Its four business pillars are Oral Care (toothpaste, toothbrushes, mouthwash — ~41.5% global toothpaste market share), Personal Care, Home Care, and Hill's Pet Nutrition (premium pet food, high margin). 70% of revenue is generated outside the US, with ~45% from emerging markets where Colgate has dominant local brand positions (e.g., >70% toothpaste share in Brazil). The stock pulled back from $99 to $85 on tariff headwinds and margin compression fears — then Q1 2026 (reported May 1) beat expectations on both EPS and revenue with full-year guidance reaffirmed, and increasing options volume signals the market is positioning for recovery. The Strategic Growth & Productivity Program (expanded April 30) targets $200–300M in annual savings once fully implemented, with the tariff burden ($300M incremental headwind) expected to peak in 2026 before moderating.",
+  "financials": [
+    { "metric": "Stock Price (May 5)", "value": "$85.37", "note": "52-week range: $74.55–$99.33; -14% from 52-week high" },
+    { "metric": "Q1 2026 EPS", "value": "$0.97 (beat $0.94 est)", "note": "+3.2% beat; reported May 1, 2026 — clean entry now, no earnings until July 31" },
+    { "metric": "Q1 2026 Revenue", "value": "$5.32B (beat $5.22B est)", "note": "+8.4% YoY; +1.1% volume, +2.2% pricing, +5.1% FX tailwind" },
+    { "metric": "FY2026 Guidance", "value": "+2–6% net sales, +1–4% organic", "note": "REAFFIRMED post-Q1. Gross margin guidance revised lower (tariff/raw material headwind ~$300M)" },
+    { "metric": "Operating Margin", "value": "18.1% (Q1 2026)", "note": "Compressed from 21.9% in Q1 2025 — tariffs + raw materials. Strategic Growth Program targets recovery" },
+    { "metric": "Dividend", "value": "$0.53/quarter ($2.08/yr), yield ~2.47%", "note": "63 consecutive years of increases — Dividend Aristocrat. Uninterrupted since 1895." },
+    { "metric": "Next Earnings", "value": "July 31, 2026", "note": "Q2 2026 — 87 days away; Aug expiry options clear earnings" },
+    { "metric": "Analyst Consensus", "value": "13 Buy / 6 Hold / 1 Sell", "note": "Avg target: ~$96; Rothschild upgraded to Buy ($100 PT) April 21; JPMorgan raised to $96 May 4" },
+    { "metric": "IV Estimate", "value": "~25–27%", "note": "Low IV for consumer staples — single-leg call appropriate (no spread needed). Good for wheel premium." },
+    { "metric": "Market Cap / Debt", "value": "~$72B market cap; D/E 147.9", "note": "Elevated leverage (typical for consumer staples with predictable cash flows). Not acute risk given FCF." }
+  ],
+  "insiderFlow": {
+    "summary": "Net SELLING by top executives in February at higher prices ($93–94). Not alarming — pre-planned and stock has since dropped 9%. RSU vesting activity and deferred comp grants dominate recent filings. No open-market buying. Neutral-to-slightly-negative signal but not a red flag at current depressed price.",
+    "transactions": [
+      { "insider": "CEO Noel R. Wallace", "action": "SELL", "shares": 45568, "price": "$93.91", "date": "February 4, 2026", "value": "$4.28M", "note": "Sold at $93.91 — stock now $85.37, so CEO sold 9% higher than current price. Pre-planned. Not a current negative signal." },
+      { "insider": "CFO Stanley J. Sutila III", "action": "SELL", "shares": 97843, "price": "$94.27", "date": "February 4, 2026", "value": "$9.22M", "note": "Coordinated same-day sale with CEO. Both under 10b5-1 plans. Sold at near 52-week high — good timing but pre-planned." },
+      { "insider": "Chief Growth Officer John Hazlin", "action": "RSU VEST", "shares": 12803, "price": "grant", "date": "2026", "value": "PBRSU vesting", "note": "Performance-based RSU vesting — compensation, not discretionary activity." },
+      { "insider": "Director John P. Bilbrey", "action": "GRANT", "shares": 266, "price": "deferred", "date": "2026", "value": "Deferred stock units", "note": "Standard director deferred compensation." }
+    ],
+    "signal": "NEUTRAL — CEO and CFO sold at $93–94 in February under 10b5-1 plans (stock is now lower, so they exited near the top pre-crash). No open-market buying at current depressed prices. Insider ownership is low (~0.3%) which is typical for large-cap consumer staples."
+  },
+  "catalysts": [
+    "Q1 2026 beat (EPS +3.2%, revenue +1.9%) with guidance reaffirmed — market overshoot on tariff fears is reversing",
+    "Increasing options volume post-earnings signals institutional positioning ahead of recovery",
+    "Rothschild Buy upgrade ($100 PT) April 21 + JPMorgan raised to $96 May 4 — analyst upgrade cycle beginning",
+    "Dividend Aristocrat premium: 63-year dividend growth streak attracts institutional income mandates at depressed prices",
+    "Strategic Growth & Productivity Program expanded (April 30): $200–300M annual savings target — margin recovery catalyst for 2027",
+    "Emerging markets resilience: 45% of sales in high-growth markets; Latin America a particularly strong moat",
+    "S&P 500 component with high institutional ownership — defensive rotation demand in volatile market environment",
+    "14% pullback from 52-week high to $85 creates attractive entry vs. $96 analyst consensus — 12% upside built-in"
+  ],
+  "risks": [
+    "Tariff headwind: ~$300M incremental raw material/packaging/logistics cost in 2026 — gross margin guidance revised lower after Q1",
+    "Operating margin compression: 18.1% vs 21.9% prior year — full recovery depends on productivity program and tariff moderation",
+    "High leverage: D/E ratio 147.9 — elevated but manageable given predictable FCF from essential consumer products",
+    "FX sensitivity: 70% non-US revenue — strong USD creates translation headwind; Q1 had a +5.1% FX tailwind but this can reverse",
+    "Slow growth: organic sales guidance +1–4% — this is not a high-growth name; upside is multiple re-rating, not explosive earnings growth",
+    "July 31 earnings: do NOT hold calls through Q2 report — if tariff impact worsens or margin compression accelerates, stock could re-test lows",
+    "Microsoft Power Automate... (n/a — wrong stock) — main risk is commodity/raw material cost continuation into H2 2026"
+  ],
+  "dilution": "NO DILUTION RISK — mature consumer staples company. Share buyback program ongoing. Dividend growth is funded by operating cash flow. High D/E ratio (147.9) is structural for the business model but not an acute near-term concern.",
+  "strikeTable": [
+    { "strike": "$83", "type": "Slight ITM", "isRecommended": false, "premium": "~$5.00–6.50", "delta": 0.58, "contracts2Cost": "~$1,000–1,300", "breakeven": "~$88–89.50", "atTarget": "+85%" },
+    { "strike": "$85", "type": "Near ATM", "isRecommended": false, "premium": "~$4.00–5.50", "delta": 0.51, "contracts2Cost": "~$800–1,100", "breakeven": "~$89–90.50", "atTarget": "+90%" },
+    { "strike": "$87", "type": "Slight OTM (recommended)", "isRecommended": true, "premium": "~$3.50–5.00", "delta": 0.45, "contracts2Cost": "~$350–500 (1 contract) / ~$700–1,000 (2 contracts)", "breakeven": "~$90.50–92.00", "atTarget": "+130–180% (at $96)" },
+    { "strike": "$90", "type": "OTM", "isRecommended": false, "premium": "~$2.00–3.00", "delta": 0.34, "contracts2Cost": "~$400–600", "breakeven": "~$92–93", "atTarget": "+100%" },
+    { "strike": "$96", "type": "OTM (analyst target)", "isRecommended": false, "premium": "~$0.80–1.30", "delta": 0.18, "contracts2Cost": "~$160–260", "breakeven": "~$96.80–97.30", "atTarget": "+10%" }
+  ]
+}

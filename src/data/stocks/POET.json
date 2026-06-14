@@ -1,0 +1,97 @@
+{
+  "ticker": "POET",
+  "company": "POET Technologies Inc.",
+  "sector": "Photonics / Semiconductor",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 7.35,
+  "analystTarget": 10.51,
+  "rating": "BULLISH",
+  "strategy": "Buy $8/$12 Call Spread — Sep 2026 (enter AFTER May 13 earnings)",
+  "wheelStrategy": {
+    "eligible": true,
+    "wheelFlag": "WHEEL-UNSUITABLE: Marvell cancelled all purchase orders April 27 after CFO NDA breach via Stocktwits (disclosed confidential Celestial AI shipping details). 4 securities law firms filed class action investigations. Management credibility damaged. Assignment = holding stock under active litigation cloud.",
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "Daily chart, 20-period 2σ Bollinger Bands. Lower BB estimated ~$5.50–7.00 post-crash volatility. Stock is still finding support after -53% crash from $15.50 ATH. Bollinger bands are wide and unreliable in crash recovery phase — wait for consolidation before using BB entry signal.",
+    "csp": {
+      "strike": "~$5.50–6.50",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.30–0.70/share (~$30–70 per contract)",
+      "annualisedYield": "~50–100% annualised on capital at risk (extreme post-crash IV)",
+      "exitRule": "Close at 50% premium captured. CRITICAL: Close before May 13 earnings AND before June 26 redomicile vote. Both events are IV-inflating binary risks.",
+      "note": "⚠️ WHEEL-UNSUITABLE FLAG ACTIVE — See wheelFlag above. If entering despite flag: low capital at risk ($550–$650/contract), size to 1–2 contracts max. $463M cash gives fundamental floor. Assignment at $5.50–6.50 is below current price but you'd be holding stock under active securities litigation."
+    },
+    "coveredCall": {
+      "strike": "~$8.00–9.00",
+      "delta": "0.20–0.28",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.40–0.80/share (~$40–80 per contract)",
+      "exitRule": "Close at 50% premium. Close before May 13 earnings and June 26 vote.",
+      "note": "If assigned, sell CC at $8–9 above assignment price. IV remains elevated post-crash — CC premium is attractive. Wait for litigation overhang to clear before sizing up."
+    }
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — Enter POST-Earnings AND POST-Redomicile Vote",
+    "strike": 8,
+    "expiry": "Sep 2026 (~130 days)",
+    "type": "Call Spread ($8 buy / $12 sell)",
+    "estimatedPremium": "~$1.40 net debit (spread)",
+    "contractCost": "~$280 (2 spreads)",
+    "delta": 0.42,
+    "breakeven": "~$9.40",
+    "entryNote": "TWO events to wait out: (1) May 13 Q1 earnings — IV crush incoming; (2) June 26 redomicile vote — PFIC status overhang clears if shareholders approve U.S. redomicile. Enter after BOTH for cleanest entry. Use spread not naked call: IV at 71–95% makes naked calls expensive. Size very small (1% portfolio max) — CFO's Stocktwits NDA breach damaged management credibility and 4 law firms are circling. The $463M cash is the thesis anchor: zero dilution risk, 25+ year runway, and Semtech/LITEON/Sivers partnerships remain intact after Marvell exit.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $9.50–10 (+29–36%) on Marvell replacement customer", "optionGain": "~70–100% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $11–12 (+50–63%) on production order confirmation", "optionGain": "~140–200% on spread cost" }
+    ]
+  },
+  "companyOverview": "POET Technologies has developed the Optical Interposer — a patented semiconductor platform that monolithically integrates lasers, modulators, detectors, and electronics onto a single chip using standard wafer-level fab processes. The commercial payoff: photonic modules built from semiconductor economics rather than artisanal manual assembly, enabling dramatically lower cost and higher yield for 400G/800G/1.6T/3.2T optical interconnects that AI data centers require. Partners include Semtech (1.6T receivers), LITEON (AI module co-development), Sivers Semiconductors (light engines), and Quantum Computing Inc. (3.2 Tbps CPO engines). The stock peaked at a NASDAQ ATH of $15.50 on April 24, 2026 on AI photonics enthusiasm and the initial production orders — then crashed 50% in days. The cause: CFO Thomas Mika posted on Stocktwits revealing confidential shipping details about customer Celestial AI (acquired by Marvell for up to $5.5B), breaching their NDA. Marvell cancelled all purchase orders on April 27. Four law firms immediately filed securities class action investigations. Despite the commercial setback, the fundamental position is unusual: $463M cash against $1.3M/month burn rate = 25+ year runway with zero dilution needed. The technology is real (demonstrated Blazar platform at OFC 2026), and most partnerships remain active.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$7.35", "note": "52-week range: $3.87–$15.50; ATH April 24, 2026 (9 days ago)" },
+    { "metric": "All-Time High (NASDAQ)", "value": "$15.50", "note": "-53% from ATH in 9 days on NDA breach + securities litigation" },
+    { "metric": "FY2025 Revenue", "value": "$1.07M", "note": "Q1: $167K / Q2: $268K / Q3: $298K / Q4: $341K" },
+    { "metric": "FY2025 Net Loss", "value": "$(63.0)M", "note": "Q4 inflated by $30.6M non-cash warrant fair value adjustment" },
+    { "metric": "Cash Position", "value": "~$463M", "note": "$430M (Q4 2025) + $150M direct offering (Jan 2026)" },
+    { "metric": "Monthly Cash Burn", "value": "~$1.3M/month", "note": "Core operating; $15.6M/year — extraordinary runway" },
+    { "metric": "Cash Runway", "value": "25+ years", "note": "At current burn rate; zero dilution risk near-term" },
+    { "metric": "Short Interest", "value": "8–14% of float", "note": "~12.4M shares; 0.21 days to cover — no squeeze setup" },
+    { "metric": "Next Earnings", "value": "May 13, 2026", "note": "Call May 14 at 7:00 AM ET — wait to enter" },
+    { "metric": "Analyst Consensus", "value": "Buy (3 analysts)", "note": "Avg target $7.80–$8.40; 24/7 Wall St: $10.51 — thin coverage" }
+  ],
+  "catalysts": [
+    "May 13 Q1 2026 earnings — first post-Marvell update; market needs to see a replacement customer pipeline or confirmation that other orders are accelerating",
+    "June 26 redomicile vote — shareholder approval of U.S. redomicile eliminates PFIC tax status overhang for U.S. shareholders (major structural positive)",
+    "$463M cash with $1.3M/month burn — 25+ year runway eliminates dilution fear; POET can outlast competitors and wait for market timing without capital constraints",
+    "Semtech 1.6T receiver and LITEON AI module partnerships remain intact after Marvell exit — the Marvell/Celestial AI order was ONE customer in a multi-partner pipeline",
+    "Lessengers 1.6T 2xDR4 transceiver samples (Q2 2026) — next near-term commercial milestone",
+    "OFC 2026 Blazar platform demonstration — industry validation of next-gen technology at the sector's leading conference",
+    "800G optical engine production ramp (Q3 2026) — revenue inflection point if manufacturing scales as guided",
+    "AI/data center structural demand: 400G → 800G → 1.6T → 3.2T upgrade cycle drives 35.9% CAGR for CPO/NPO modules through 2031; POET's ELS technology addresses the hardest integration challenge (laser integration)"
+  ],
+  "risks": [
+    "May 13 earnings: enter AFTER — IV at 71–95% will crush post-announcement; Q1 revenue will be minimal",
+    "CFO NDA breach (Stocktwits disclosure) — severe management credibility impairment; CFO status post-breach unknown; may require leadership change",
+    "Securities class action: 4 law firms filed investigations; lead plaintiff deadline June 29, 2026; PFIC misrepresentation claims are the core allegation — legal settlement costs possible",
+    "PFIC status — until June 26 redomicile vote passes, U.S. shareholders face adverse tax treatment on gains; creates selling pressure",
+    "No near-term revenue catalyst: Marvell cancellation removed the only disclosed major production order; $1.07M FY2025 revenue shows the commercial ramp is still very early",
+    "P/S ratio 1,044x on FY2025 revenue — even reaching $10M revenue in 2026 would leave valuation at 112x trailing sales",
+    "Competition: Broadcom has 50,000+ CPO switches shipped; Marvell/Celestial AI is now building directly what POET was supplying; Ayar Labs (backed by AMD, Intel, NVIDIA) is a credible alternative",
+    "High retail-dominated options flow (near-zero put/call ratio) — speculative crowd without fundamental backing; any narrative shift causes outsized sell-off"
+  ],
+  "dilution": {
+    "summary": "Dilution is NOT the risk here. $463M cash with $1.3M/month burn = 25+ year runway. Main risks are litigation and management credibility.",
+    "items": [
+      { "label": "Jan 2026 $150M direct offering (done)", "detail": "Oversubscribed follow-on raised cash to ~$463M. The largest capital event that strengthened the balance sheet. Priced and absorbed — no ongoing overhang." },
+      { "label": "Q4 2025 $225M equity raise (done)", "detail": "Series of offerings in late 2025 funded the current cash position. Significant dilution occurred then but is now fully absorbed into the share count." },
+      { "label": "Warrants: 37.36M shares + 5.79M options", "detail": "~43M total potential new shares = ~28% dilution overhang above current share count. Exercise depends on stock price recovery; at $7.35 current price many warrants are likely underwater or at-the-money. Monitor strike prices." },
+      { "label": "Future raises: very low probability", "detail": "At $1.3M/month burn and $463M cash, POET does not need to raise capital for 25+ years at current burn. The cash is the primary fundamental argument for the stock floor." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$6", "type": "ITM", "isRecommended": false, "premium": "~$2.00–2.20", "delta": 0.66, "contracts2Cost": "~$430", "breakeven": "~$8.10–8.20", "atTarget": "+109%" },
+    { "strike": "$7.50", "type": "Near ATM", "isRecommended": false, "premium": "~$1.60–1.70", "delta": 0.53, "contracts2Cost": "~$330", "breakeven": "~$9.20", "atTarget": "+88%" },
+    { "strike": "$8", "type": "Slight OTM (spread buy-leg)", "isRecommended": true, "premium": "~$1.40–1.50 / ~$1.40 net as spread", "delta": 0.46, "contracts2Cost": "~$300 naked / ~$280 as $8/$12 spread", "breakeven": "~$9.40–9.50", "atTarget": "+73%" },
+    { "strike": "$12", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$0.50–0.60", "delta": 0.20, "contracts2Cost": "~$110", "breakeven": "~$12.55", "atTarget": "-9%" },
+    { "strike": "$15", "type": "Far OTM", "isRecommended": false, "premium": "~$0.20–0.25", "delta": 0.09, "contracts2Cost": "~$45", "breakeven": "~$15.25", "atTarget": "-20%" }
+  ]
+}

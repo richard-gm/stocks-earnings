@@ -1,0 +1,148 @@
+{
+  "ticker": "CDE",
+  "company": "Coeur Mining Inc.",
+  "sector": "Materials / Precious Metals Mining (Gold & Silver)",
+  "analysisDate": "2026-05-08",
+  "priceAtAnalysis": 18.75,
+  "analystTarget": 25.00,
+  "rating": "BULLISH",
+  "strategy": "Bull Call Spread $19/$25 Aug 2026 — precious metals bull market + New Gold acquisition transforms earnings power; IV >60% mandates spread",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": null,
+    "vixNote": "VIX elevated ~20+; gold/silver miners carry significant commodity-linked IV — CDE options premiums are strong. Conditions support wheel entry at current price levels.",
+    "bollingerEntry": "Lower Bollinger Band estimated ~$16.00–$16.50 post-Q1 surge. Stock closed $18.75 after an 8.2% post-earnings move — above the lower band. Enter CSP on any pullback toward $16.50.",
+    "csp": {
+      "strike": "$16",
+      "delta": "0.22",
+      "dte": "21–30 days",
+      "estimatedPremium": "$0.85–1.00 per contract",
+      "annualisedYield": "~20–23% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured. Hard stop before ~August 1 (5 days before est. Q2 2026 earnings in early August).",
+      "note": "The $16 CSP is 14.7% below current price — substantial buffer. New Gold acquisition and >$2B projected FCF for FY2026 provide strong fundamental support at these levels."
+    },
+    "coveredCall": {
+      "strike": "$20",
+      "delta": "0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "$1.20–1.50 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through earnings.",
+      "note": "If assigned at $16 CSP, sell $20 CC to reduce cost basis to ~$14.80. Significant premium at elevated gold/silver IV."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 19,
+    "underlyingPrice": 18.75,
+    "iv": "~60% (precious metals miner; elevated by gold/silver bull market and recent acquisition)",
+    "earningsDate": "~August 6, 2026 (Q2 2026, estimated)",
+    "closeDeadline": "August 1, 2026 (5 days before est. earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter on any pullback below $18.50 or after stock consolidates above $18.00 on a closing basis. Post-Q1 earnings IV settling — this is the entry window.",
+      "profitExit": "Close Contract 1 when spread reaches 50% of max gain (~$210 on $19/$25). Let Contract 2 ride to $25 analyst target. Take partial profits as gold/silver price rallies create momentum.",
+      "timeStop": "If stock has not moved above $20.50 by July 1 (50% of DTE), close position. Precious metals can consolidate for extended periods — don't overpay for decaying theta.",
+      "lossStop": "Close at 40–50% loss on net debit paid (close at ~$0.90–$1.00 loss on $1.80 net paid). Metal price reversal could be sudden.",
+      "earningsHardStop": "Close ALL positions by August 1, 2026 — 5 days before estimated Q2 2026 earnings. Miner stocks move violently on production updates. No exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 98,
+        "daysLeftAtClose": 85,
+        "premiumEst": "~$2.90 ($19 call) / ~$1.10 ($25 call) → $1.80 net spread",
+        "flatScenario": "Stock stays at $18.75 — spread expires near worthless. Loss: ~$180 per spread.",
+        "atTarget": "Stock at $25.00 by August 1 — spread worth ~$5.50–6.00. Gain: ~$370–420 per spread (~205–230% return).",
+        "bestFor": "Optimal: 85 days working time before earnings, cheapest premium for the same close window.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 133,
+        "daysLeftAtClose": 85,
+        "premiumEst": "~$3.30 ($19 call) / ~$1.40 ($25 call) → $1.90 net spread",
+        "flatScenario": "Same earnings close deadline — paying $0.10 extra per spread for unusable post-earnings time.",
+        "atTarget": "Identical outcome at August 1 close. Extra cost with no benefit over the Aug expiry.",
+        "bestFor": "Only if Q2 earnings are pushed past August — provides date slippage protection.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 196,
+        "daysLeftAtClose": 85,
+        "premiumEst": "~$4.00 ($19 call) / ~$1.80 ($25 call) → $2.20 net spread",
+        "flatScenario": "Paying $0.40 extra vs Aug for time that is cut off by the hard stop. Waste.",
+        "atTarget": "Same close outcome — Aug is strictly optimal.",
+        "bestFor": "Not recommended. Thesis resolves at Q2 earnings — use Aug expiry.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Bull Call Spread — $19/$25 Aug 15, 2026",
+    "strike": 19,
+    "expiry": "Aug 15, 2026",
+    "type": "Bull Call Spread (IV ~60% — at the upper threshold; spread saves $1.10 vs single call and mandatory at this IV per methodology)",
+    "estimatedPremium": "~$1.80 net debit per spread",
+    "contractCost": "~$180 per spread (2 spreads = $360)",
+    "delta": 0.47,
+    "breakeven": "$20.80",
+    "entryNote": "IV at ~60% hits the spread threshold — the $25 short leg saves $1.10 per contract vs single call. Stock surged 8.2% post-Q1 on record earnings: revenue +138% YoY (New Gold acquisition added Rainy River and New Afton mines), net income +640% YoY, net cash position ($843M cash vs $761M debt). Management projects >$3B EBITDA and >$2B FCF for full-year 2026 at current metal prices. $750M share buyback shows board conviction. $4,383/oz gold and $82.85/oz silver provide powerful earnings leverage — each $100 move in gold adds ~$40M+ quarterly to earnings at current production.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock reaches $22.00 (+17%)", "optionGain": "~$160–180 per spread (~90% gain)" },
+      { "label": "Contract 2", "trigger": "Stock reaches $25.00 — analyst target", "optionGain": "~$400–420 per spread (~230% gain)" }
+    ]
+  },
+
+  "companyOverview": "Coeur Mining is a US-headquartered gold and silver producer with operations across North America. The company underwent a major transformation in March 2026, closing the acquisition of New Gold Inc. — adding the New Afton copper-gold mine (British Columbia) and Rainy River gold mine (Ontario) to its existing portfolio of Palmarejo (Mexico), Rochester (Nevada), Kensington (Alaska), and Wharf (South Dakota). The result: Q1 2026 revenue nearly tripled to $856.2M, adj. EBITDA hit $474.9M, and the company swung to a net cash position ($843M cash, $761M debt). With gold at $4,383/oz and silver at $82.85/oz, Coeur is generating historic cash flows. Management projects >$3B EBITDA and >$2B free cash flow for FY2026. The $750M share repurchase programme represents ~5% of market cap — a strong capital return signal.",
+
+  "financials": [
+    { "metric": "Stock Price (May 8)", "value": "$18.75", "note": "52-week range: $5.55–$27.77; up 8.2% post-Q1 earnings" },
+    { "metric": "Market Cap", "value": "~$13B", "note": "~4.3x projected FY2026 EBITDA — cheap for a gold major" },
+    { "metric": "Q1 2026 Revenue", "value": "$856.2M", "note": "+137.8% YoY — New Gold acquisition nearly tripled scale" },
+    { "metric": "Q1 2026 Net Income", "value": "$246.8M", "note": "+639.9% YoY; EPS $0.35 (missed $0.50 estimate)" },
+    { "metric": "Q1 2026 Adj. EBITDA", "value": "$474.9M", "note": "Record quarter; strong margin expansion post-acquisition" },
+    { "metric": "Q1 2026 Operating Cash Flow", "value": "$340.8M", "note": "+403.9% YoY — cash generative at current metal prices" },
+    { "metric": "Balance Sheet", "value": "Net Cash: $82M+", "note": "$843.2M cash vs $761M total debt — strongest balance sheet in years" },
+    { "metric": "FY2026 Projected EBITDA", "value": ">$3B", "note": "At budget gold/silver prices; upside if metals hold current levels" },
+    { "metric": "FY2026 Projected FCF", "value": ">$2B", "note": "Supports $750M buyback + $0.02/share semiannual dividend" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (6 analysts)", "note": "Avg target $24.67–$27.55; range $22–$28" }
+  ],
+
+  "insiderFlow": {
+    "summary": "Minimal insider activity — only one directional sale in six months, and at a lower price than current levels.",
+    "transactions": [
+      { "insider": "Kenneth J. Watkinson (VP Corporate Controller & CAO)", "action": "Sell", "shares": 22001, "price": "~$15.05", "date": "2026-02-01", "value": "~$331,115", "note": "Sold below current $18.75 price — likely pre-Q1 earnings, routine position management. Small sale (VP level, not C-suite). No offsetting sales from CEO, CFO, or board since the New Gold close." }
+    ],
+    "signal": "BULLISH — single small VP-level sale at $15.05, well below current price. Zero insider sales from CEO, CFO, or board members. Expanded $750M buyback programme is the strongest possible insider-equivalent signal — the board is buying aggressively at these prices."
+  },
+
+  "catalysts": [
+    "New Gold acquisition (closed March 20, 2026): New Afton and Rainy River add two Tier-1 Canadian mines — revenue nearly tripled in Q1 alone",
+    "$750M share repurchase programme (~5.8% of market cap) at current prices — board conviction at its most direct",
+    "FY2026 projected >$3B EBITDA and >$2B FCF at current metal prices ($4,383 gold, $82.85 silver)",
+    "Gold and silver bull market: gold up ~60% in the past 12 months; silver a further leverage play",
+    "Largest exploration investment in company history planned for 2026: Silvertip silver project in BC could define next production growth leg",
+    "Net cash position achieved in Q1 — balance sheet transformation opens door to further M&A or accelerated buybacks"
+  ],
+
+  "risks": [
+    "EPS miss in Q1 ($0.35 vs $0.50 estimate) — likely purchase price allocation adjustments from New Gold deal, but management credibility needs Q2 follow-through",
+    "Metal price exposure: a reversal in gold ($4,383/oz) or silver ($82.85/oz) directly compresses all EBITDA/FCF projections",
+    "New Gold integration risk: two new mines (Rainy River, New Afton) added operational complexity; early quarters post-acquisition often carry surprises",
+    "Dilution from New Gold acquisition: share count increased significantly; diluted EPS will lag revenue growth",
+    "Exploration investment risk: 2026 is the 'largest exploration investment in company history' — capital is deployed ahead of discovery"
+  ],
+
+  "dilution": "Significant share issuance occurred to fund and close the New Gold acquisition (March 2026). Diluted share count increased materially. However, the $750M buyback programme directly offsets dilution — the company is buying back more shares than typical SBC-level grants. Net dilution impact for ongoing shareholders is being actively managed.",
+
+  "strikeTable": [
+    { "strike": "$16 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$0.92", "delta": 0.22, "contracts2Cost": "$3,016 cash secured (2 contracts)", "breakeven": "$15.08", "atTarget": "N/A (income strategy)" },
+    { "strike": "$18", "type": "Call (near ATM)", "isRecommended": false, "premium": "~$3.10", "delta": 0.50, "contracts2Cost": "~$620 (2 contracts)", "breakeven": "$21.10", "atTarget": "+$780 at $25 — overpays for ATM premium" },
+    { "strike": "$19/$25 Spread", "type": "Bull Call Spread", "isRecommended": true, "premium": "~$1.80 net", "delta": 0.47, "contracts2Cost": "~$360 (2 spreads)", "breakeven": "$20.80", "atTarget": "+$840 max at $25+ (per 2 spreads)" },
+    { "strike": "$22", "type": "Call (OTM)", "isRecommended": false, "premium": "~$1.80", "delta": 0.31, "contracts2Cost": "~$360 (2 contracts)", "breakeven": "$23.80", "atTarget": "+$240 at $25 — poor leverage near target" },
+    { "strike": "$25", "type": "Call (at target)", "isRecommended": false, "premium": "~$1.10", "delta": 0.21, "contracts2Cost": "~$220 (2 contracts)", "breakeven": "$26.10", "atTarget": "Above analyst target — very low probability" }
+  ]
+}

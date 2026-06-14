@@ -54,5 +54,10 @@ jobs:
             --set-secrets "TASTYTRADE_USERNAME=tastytrade-username:latest" \
             --set-secrets "TASTYTRADE_PASSWORD=tastytrade-password:latest" \
             --set-secrets "ANTHROPIC_API_KEY=anthropic-api-key:latest" \
+            --set-secrets "SUPABASE_URL=supabase-url:latest" \
+            --set-secrets "SUPABASE_ANON_KEY=supabase-anon-key:latest" \
+            --set-secrets "FMP_API_KEY=fmp-api-key:latest" \
+            --set-secrets "KRONOS_API_URL=kronos-api-url:latest" \
+            --set-secrets "KRONOS_API_KEY=kronos-api-key:latest" \
             --update-secrets "/secrets/twitter-cookies.json=twitter-cookies:latest" \
             --set-env-vars "NODE_ENV=production,TWITTER_COOKIES_FILE=/secrets/twitter-cookies.json"

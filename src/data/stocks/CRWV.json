@@ -1,0 +1,129 @@
+{
+  "ticker": "CRWV",
+  "company": "CoreWeave, Inc.",
+  "sector": "AI Cloud / GPU Infrastructure",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 119.00,
+  "analystTarget": 124.59,
+  "rating": "BULLISH",
+  "strategy": "⚠️ OBSERVE — Heavy Insider Selling; Enter Only Post-Earnings Stabilization",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $119.00 — 1 CSP contract requires ~$11,900 cash. Marginally above $10,000 threshold, and heavy insider selling (Magnetar distribution) makes assignment risk unacceptable. Use Calls/Spreads only.",
+    "wheelFlag": "WHEEL-UNSUITABLE: Heavy institutional selling — Magnetar sold 209K shares + covered calls capping upside at $150. CEO-linked entities sold $124M+.",
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "expiryComparison": {
+    "strike": 120,
+    "underlyingPrice": 113.80,
+    "iv": "~80%",
+    "earningsDate": "August 18, 2026",
+    "closeDeadline": "August 13, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter post-Q1 2026 earnings stabilization. Stock at $113.80 — $6.20 below $120 buy leg. Enter small (1 spread max, 1% portfolio). Wait for insider selling pressure to ease before sizing up.",
+      "profitExit": "Close spread at 70–80% of max gain. First target: stock at $135–140 for ~$15 spread value (+70% on debit). Second target: $145+ for full $25 max gain (~140% on Nov debit).",
+      "timeStop": "If stock has not cleared $125 by ~July 1 (60% of time elapsed), close. Heavy insider selling creates overhead resistance.",
+      "lossStop": "Close at 50% loss on net debit. CRWV has heavy institutional selling — do not average down.",
+      "earningsHardStop": "Close by August 13 (5 days before August 18 Q2 earnings). IV at 80% means massive IV crush risk — exit well before earnings."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 2,
+        "premiumEst": "~$7–10 net debit",
+        "flatScenario": "~-95%",
+        "atTarget": "~+150%",
+        "bestFor": "Unusable — Aug 15 expiry is only 2 days after the Aug 13 mandatory close. You must exit before the option expires, leaving essentially zero remaining time value.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 37,
+        "premiumEst": "~$10–14 net debit",
+        "flatScenario": "~-80%",
+        "atTarget": "~+100%",
+        "bestFor": "Amber zone — 37 days at close is workable but suboptimal. Time value is meaningful but IV crush risk is high. Better than Aug 15, but Nov 21 is preferred for this earnings-driven stock.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 100,
+        "premiumEst": "~$15–20 net debit",
+        "flatScenario": "~-60%",
+        "atTarget": "~+80%",
+        "bestFor": "Recommended — 100 days of time value at the August 13 close deadline. Gives CRWV time to recover from insider selling pressure and re-rate on Anthropic/Microsoft contract news. Spread structure keeps debit manageable despite 80% IV.",
+        "recommended": true
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — But HEAVY INSIDER SELLING is a Red Flag; Small Size Only",
+    "strike": 120,
+    "expiry": "Sep 2026 (~120 days)",
+    "type": "Call Spread ($120 buy / $145 sell)",
+    "estimatedPremium": "~$8–12 net debit (spread)",
+    "contractCost": "~$800–1,200 (1 spread)",
+    "delta": 0.47,
+    "breakeven": "~$128–132",
+    "entryNote": "⚠️ RED FLAG — INSTITUTIONAL INSIDER SELLING: Magnetar funds (major pre-IPO investor) sold 209,157 shares at $119–121 AND sold calls on 1,000,000 and 2,000,000 shares at $150–160 strikes (Dec 2026 expiry) — they are CAPPING UPSIDE while selling stock. CEO-linked entities (Venturo Family Trust + West Clay Capital) sold 1,125,000 shares at $110–118. COO also sold. This is major institutional distribution. HIGH IV (~75–100%) mandates spread. Stock at $119, 52-week range $49–$187 (-36% from ATH). Revenue is explosive (+168% to $5.13B in 2025) but company is still unprofitable (-$1.2B). Citi PT $155 is the bull case. Q1 2026 earnings likely just reported (May 2026) — if not yet, wait. Enter 1 spread ONLY, 1% portfolio max. This is not a high-conviction entry.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $135–140 (+13–17%) on Anthropic or Meta contract expansion news", "optionGain": "~70–100% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $145+ (+22%) on path-to-profitability clarity or new hyperscaler deal", "optionGain": "~130–175% on spread cost (near max gain)" }
+    ]
+  },
+  "companyOverview": "CoreWeave is the largest independent AI-native GPU cloud provider, IPO'd in early 2025 on NASDAQ. It rents out NVIDIA GPU compute (primarily H100/H200/GB200 clusters) to AI companies that need burst capacity without owning hardware. Revenue surged 168% YoY to $5.13B in 2025 as AI training and inference demand exploded — but the company remains deeply unprofitable (-$1.2B net loss). Key partnerships: multi-year agreement with Anthropic to power Claude AI models, expanded partnership with Meta Platforms for AI compute. The stock hit ATH of $187 in late 2025 / early 2026 and has pulled back 36% to $119. The fundamental bull case is simple: AI labs need more compute than they can buy; CoreWeave fills that gap. The risk: Magnetar (major pre-IPO investor) is aggressively distributing shares and SELLING CALL OPTIONS to cap upside — the single most bearish insider signal on this list.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$119.00", "note": "52-week range: $49.06–$187.00; -36% from ATH" },
+    { "metric": "All-Time High", "value": "$187.00", "note": "-36% from ATH — meaningful pullback but not extreme discount" },
+    { "metric": "2025 Revenue", "value": "$5.13B", "note": "+167.9% YoY from $1.92B — explosive growth trajectory" },
+    { "metric": "2025 Net Loss", "value": "-$1.2B", "note": "+27.6% more losses than 2024 — growing faster than losses, but not profitable" },
+    { "metric": "Beta", "value": "3.27", "note": "Extremely high beta — 3x more volatile than S&P 500" },
+    { "metric": "Analyst Consensus", "value": "Buy (32 analysts)", "note": "Avg PT: $124.59; range $32–$200; Citi PT $155" },
+    { "metric": "IV Estimate", "value": "~75–100%", "note": "Recent IPO with very high beta — spread MANDATORY" },
+    { "metric": "Key Partnerships", "value": "Anthropic (Claude) + Meta (expanded)", "note": "Both are multi-year commitments; revenue visibility positive" }
+  ],
+  "insiderFlow": {
+    "summary": "🔴 HEAVY SELLING — one of the most bearish insider flow patterns on this list. Magnetar (pre-IPO investor) is both SELLING STOCK and SELLING CALL OPTIONS to cap upside. CEO-linked entities sold 1.125M shares. COO sold. This is institutional distribution.",
+    "transactions": [
+      { "insider": "Magnetar funds", "action": "SELL STOCK + SELL CALLS", "shares": 209157, "price": "$119–121", "date": "May 1, 2026", "value": "$25M+", "note": "🔴 MOST BEARISH: Sold 209K shares AND sold call options on 1M–2M shares at $150–160 strikes (Dec 2026). Selling calls = Magnetar does NOT expect stock to reach $150 by year-end. This caps upside." },
+      { "insider": "Venturo Family Trust + West Clay Capital LLC (CEO-linked)", "action": "SELL", "shares": 1125000, "price": "$110.80–$118.05", "date": "April 20, 2026", "value": "$124M+", "note": "🔴 CEO-linked entities converted Class B→Class A and immediately sold 1.125M shares. Massive distribution at $110–118." },
+      { "insider": "COO", "action": "SELL", "shares": 0, "price": "pre-planned", "date": "April 2026", "value": "undisclosed", "note": "Pre-planned 10b5-1 sale. Additional executive selling layer." }
+    ],
+    "signal": "🔴 RED FLAG — Do NOT ignore this. Magnetar selling covered calls at $150–160 explicitly signals they don't believe in upside above $150. CEO-linked entities selling $124M+ of stock right after IPO lock-up. Heavy distribution across multiple insiders. Bull thesis requires believing the fundamentals will override this selling pressure."
+  },
+  "catalysts": [
+    "Anthropic multi-year compute contract — powers Claude AI models; Anthropic is one of the fastest-growing AI companies",
+    "Meta expanded partnership — Meta's AI compute needs are enormous; CRWV is a key alternative to internal infra",
+    "Revenue +168% YoY growth — if this rate sustains even at 80% in 2026, revenue hits $9B+",
+    "Citi raised PT to $155 — institutional conviction despite insider selling; suggests sell-side sees path to profitability",
+    "AI compute structural shortage — demand for GPU cloud exceeds supply; CRWV benefits from this scarcity premium"
+  ],
+  "risks": [
+    "🔴 MAGNETAR SELLING COVERED CALLS at $150–160: this explicitly signals pre-IPO investors do NOT expect >$150 in 2026. Treat as a hard ceiling unless fundamentals dramatically improve.",
+    "🔴 CEO-linked entities sold $124M+ of stock: this is not tax withholding — it is portfolio liquidation at post-IPO unlock",
+    "Still unprofitable (-$1.2B in 2025); path to profitability unclear; high debt from GPU leasing agreements",
+    "High IV (~75–100%): spreads are expensive; max gain is capped; premium decay is fast if stock doesn't move",
+    "Beta 3.27: any broad market selloff hits CRWV 3x harder; not defensive at all",
+    "NVIDIA dependency: entire business depends on NVIDIA GPU supply; any allocation shift or price increase directly impacts margins",
+    "Lock-up expirations: post-IPO lock-ups create ongoing selling overhang as more pre-IPO investors become eligible to sell"
+  ],
+  "dilution": {
+    "summary": "HIGH DILUTION RISK. Recent IPO means multiple rounds of lock-up expirations are still ahead. Debt financing for GPU infrastructure is capital-intensive.",
+    "items": [
+      { "label": "Post-IPO lock-up expirations", "detail": "Multiple insider/pre-IPO lock-up tranches expire throughout 2026. Each expiration creates fresh selling supply." },
+      { "label": "GPU infrastructure debt", "detail": "CoreWeave finances GPU fleets through debt. As fleets age, refresh cycles require new capital raises." },
+      { "label": "Ongoing equity offerings", "detail": "At -$1.2B annual net loss, CoreWeave likely needs additional capital. Secondary offerings are probable in 2026–2027." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$115", "type": "Slight ITM", "isRecommended": false, "premium": "~$18–24", "delta": 0.56, "contracts2Cost": "~$3,600–4,800", "breakeven": "~$133–139", "atTarget": "+45%" },
+    { "strike": "$119", "type": "Near ATM", "isRecommended": false, "premium": "~$14–19", "delta": 0.50, "contracts2Cost": "~$2,800–3,800", "breakeven": "~$133–138", "atTarget": "+35%" },
+    { "strike": "$120", "type": "Slight OTM (spread buy-leg)", "isRecommended": true, "premium": "~$13–17 / ~$8–12 net as spread", "delta": 0.47, "contracts2Cost": "~$1,300–1,700 naked / ~$800–1,200 as $120/$145 spread", "breakeven": "~$128–132", "atTarget": "+100–150% (at $145)" },
+    { "strike": "$135", "type": "OTM", "isRecommended": false, "premium": "~$8–12", "delta": 0.34, "contracts2Cost": "~$1,600–2,400", "breakeven": "~$143–147", "atTarget": "+35%" },
+    { "strike": "$145", "type": "OTM (spread sell-leg / Magnetar ceiling)", "isRecommended": false, "premium": "~$5–8", "delta": 0.24, "contracts2Cost": "~$1,000–1,600", "breakeven": "~$150–153", "atTarget": "-4%" }
+  ]
+}

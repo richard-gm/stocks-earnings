@@ -1,0 +1,148 @@
+{
+  "ticker": "ONDS",
+  "company": "Ondas Inc.",
+  "sector": "Defense / Autonomous Systems",
+  "analysisDate": "2026-05-02",
+  "priceAtAnalysis": 10.59,
+  "analystTarget": 20.14,
+  "rating": "BULLISH",
+  "strategy": "Buy $11 Call — May 2027 (360-day LEAPS)",
+  "wheelStrategy": {
+    "eligible": true,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering new CSP positions.",
+    "bollingerEntry": "Daily chart, 20-period 2σ Bollinger Bands. Lower BB estimated ~$8.50–9.50 given high volatility. Wait for price to tag or breach lower band before selling CSP. Current price $10.59 is mid-band.",
+    "csp": {
+      "strike": "~$8.00–9.50",
+      "delta": "0.20–0.35",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.40–0.80/share (~$40–80 per contract)",
+      "annualisedYield": "~45–80% annualised on capital at risk (small cap, high IV benefit)",
+      "exitRule": "Close at 50% premium captured OR close 5 days before earnings. Do not hold through earnings.",
+      "note": "Small cap defense/railway tech. IV likely ~80–120%. Very low capital at risk per contract ($800–$950). Size to 3–5 contracts given low individual contract cost. If assigned, cost basis $8–9.50 is ~10–25% below current price."
+    },
+    "coveredCall": {
+      "strike": "~$11.00–12.00",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.40–0.80/share (~$40–80 per contract)",
+      "exitRule": "Close at 50% premium. Re-sell monthly to accumulate premium. Close before earnings.",
+      "note": "If assigned, sell CC slightly above cost basis for additional yield. High IV makes CC premium attractive relative to stock price."
+    }
+  },
+  "expiryComparison": {
+    "strike": 11,
+    "underlyingPrice": 9.06,
+    "iv": "~85%",
+    "earningsDate": "August 2026 (est.)",
+    "closeDeadline": "~August 10, 2026",
+    "exitRules": {
+      "entryTrigger": "Stock at $9.06 — below analysis price ($10.59), now 14% cheaper entry. Wait for post-May-earnings dip to $8.00–9.00 (lower Bollinger Band ~$8.50–9.50) before adding LEAPS.",
+      "profitExit": "Close LEAPS at 50–60% gain on premium. First target: stock at $14–15 (+55–65%) for ~$3–4 intrinsic. Let half ride to $20 analyst target for $9+ intrinsic.",
+      "timeStop": "Review LEAPS position if stock has not cleared $12 by November 2026. Roll out to May 2028 if thesis remains intact but stock is slow to move.",
+      "lossStop": "Close at 40% loss on LEAPS premium. Do not let a LEAPS decay to zero — roll or close if stock breaks below $7.50.",
+      "earningsHardStop": "Close or roll before ~August 10 (5 days before August earnings). IV at 85% means IV crush is severe post-earnings. Roll to new LEAPS post-earnings at lower IV."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 5,
+        "premiumEst": "~$2.50–3.50",
+        "flatScenario": "~-90%",
+        "atTarget": "~+205%",
+        "bestFor": "Avoid — only 5 days at close before August earnings. Almost no time value remains at the mandatory exit point.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 40,
+        "premiumEst": "~$3.00–4.00",
+        "flatScenario": "~-80%",
+        "atTarget": "~+165%",
+        "bestFor": "Borderline amber — 40 days at close is workable for a short-term trade. But ONDS needs multiple quarters to realize its defense contract thesis. Too short for the LEAPS story.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 103,
+        "premiumEst": "~$3.50–5.00",
+        "flatScenario": "~-65%",
+        "atTarget": "~+120%",
+        "bestFor": "Better — covers Q3 earnings and gives until late 2026 for the autonomous systems thesis. Still short relative to the 360-day LEAPS thesis. Consider only if LEAPS are illiquid.",
+        "recommended": false
+      },
+      {
+        "expiry": "May 2027 (LEAPS)",
+        "daysTotal": 369,
+        "daysLeftAtClose": 278,
+        "premiumEst": "~$4.50–6.50",
+        "flatScenario": "~-40%",
+        "atTarget": "~+70%",
+        "bestFor": "Recommended — matches the original 360-day LEAPS thesis. 278 days of time value at close. Only vehicle that gives Ondas Holdings enough time to execute its autonomous railway and drone defense contracts.",
+        "recommended": true
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "360-Day LEAPS — ATM Call",
+    "strike": 11,
+    "expiry": "May 2027 (~360 days)",
+    "type": "Call (LEAPS)",
+    "estimatedPremium": "~$3.50/share",
+    "contractCost": "~$700 (2 contracts)",
+    "delta": 0.55,
+    "breakeven": "~$14.50",
+    "entryNote": "High IV (~80–100%). In high-IV environments ATM delivers better returns than deep OTM for a 90% expected move. Do NOT buy the $20 call despite open interest — you'd be closing it barely ATM at your exit target.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $14–15 (+33–42%)", "optionGain": "~80–100% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $18–20 (+70–89%)", "optionGain": "~150–186% on premium" }
+    ]
+  },
+  "companyOverview": "Transformed from small drone startup to US defense prime contractor via 5 acquisitions. Operates Ondas Autonomous Systems (AI drones for ISR/border security) and Mistral Inc. (acquired April 24 2026 — prime contractor with Army/SOCOM IDIQ access). Palantir AI partnership integrated across all platforms.",
+  "financials": [
+    { "metric": "Stock Price (May 2)", "value": "$10.59", "note": "52-week high: $15.28" },
+    { "metric": "Market Cap", "value": "~$5.03B", "note": "487.5M shares outstanding" },
+    { "metric": "2025 Full-Year Revenue", "value": "$50.7M", "note": "+605% YoY" },
+    { "metric": "2026 Revenue Guidance", "value": "≥$375M", "note": "+640% from 2025 — very aggressive" },
+    { "metric": "Q1 2026 Revenue Target", "value": "$38–40M", "note": "" },
+    { "metric": "Cash Position", "value": "$1.5B+", "note": "Post Jan 2026 $1B offering" },
+    { "metric": "Debt-to-Equity", "value": "0.04", "note": "Minimal debt" },
+    { "metric": "Pro-Forma Backlog", "value": "$457M", "note": "9x 2025 revenue — post Mistral" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (7/7)", "note": "Avg target $20.14, high $25" }
+  ],
+  "catalysts": [
+    "Mistral acquisition (Apr 24) — prime contractor status, Army/SOCOM IDIQ access, +$264M backlog",
+    "Palantir AI partnership — credibility and government customer access",
+    "Israel $1.7B border security program — $10M entry order, gateway to hundreds of millions more",
+    "$1.5B cash — 3+ years runway, no forced dilution needed",
+    "605% revenue growth in 2025 — proven execution",
+    "7/7 analyst Buy ratings, targets $16–$25"
+  ],
+  "risks": [
+    "$375M 2026 guidance requires 640% growth — very aggressive ramp (Q2–Q4 needs avg $112M/quarter)",
+    "Not yet profitable — targeting EBITDA positive H2 2026",
+    "P/S 13.4x on FORWARD guidance; 99x on trailing revenue",
+    "5 acquisitions in 12 months — integration risk",
+    "121.58M warrants at $28 strike — dilutive if stock exceeds $28 (above all analyst targets)",
+    "Institutional buyer from Jan offering underwater at $16.45 — potential selling pressure on recovery",
+    "High IV (~80–100%) makes options expensive"
+  ],
+  "dilution": {
+    "summary": "Most dilution already happened. Monitor warrants at $28.",
+    "items": [
+      { "label": "Jan 2026 $1B offering (done)", "detail": "60.79M new shares issued at $16.45 (+14% dilution). Priced at premium — institutional buyer currently underwater at $10.59." },
+      { "label": "$28 warrants (121.58M shares)", "detail": "Only dilutive above $28. Stock needs 164% gain from current price. Above all analyst targets. Low near-term risk." },
+      { "label": "Mistral resale shares (2.35M)", "detail": "Less than 0.5% of float. Negligible." },
+      { "label": "Future acquisitions", "detail": "$1.5B cash means less need for stock-based acquisitions. Lower risk than feared." }
+    ]
+  },
+  "strikeTable": [
+    { "strike": "$8", "type": "Deep ITM", "isRecommended": false, "premium": "~$5.00", "delta": 0.80, "contracts2Cost": "~$1,000", "breakeven": "~$13", "atTarget": "+150%" },
+    { "strike": "$11", "type": "ATM", "isRecommended": true, "premium": "~$3.50", "delta": 0.55, "contracts2Cost": "~$700", "breakeven": "~$14.50", "atTarget": "+186%" },
+    { "strike": "$12", "type": "Slight OTM", "isRecommended": false, "premium": "~$3.00", "delta": 0.50, "contracts2Cost": "~$600", "breakeven": "~$15", "atTarget": "+172%" },
+    { "strike": "$15", "type": "OTM", "isRecommended": false, "premium": "~$2.35", "delta": 0.38, "contracts2Cost": "~$470", "breakeven": "~$17.35", "atTarget": "+134%" },
+    { "strike": "$20", "type": "Far OTM", "isRecommended": false, "premium": "~$1.65", "delta": 0.22, "contracts2Cost": "~$330", "breakeven": "~$21.65", "atTarget": "+39%" }
+  ]
+}

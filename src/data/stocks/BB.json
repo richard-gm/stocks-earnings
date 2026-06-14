@@ -1,0 +1,174 @@
+{
+  "ticker": "BB",
+  "company": "BlackBerry Limited",
+  "sector": "Enterprise Software / IoT Embedded Systems & Cybersecurity",
+  "analysisDate": "2026-05-11",
+  "priceAtAnalysis": 6.20,
+  "analystTarget": 4.85,
+  "rating": "NEUTRAL",
+  "strategy": "Wheel / Cash-Secured Put $5.50 Aug 15, 2026 — QNX +20% YoY and first GAAP profitability fuel genuine turnaround; stock +64% YTD and trading 27% above analyst consensus ($4.85 avg target); IV ~72% mandates premium selling over directional bets; CSP at $5.50 captures 11% buffer with breakeven exactly at analyst fair value",
+
+  "wheelStrategy": {
+    "eligible": true,
+    "ineligibleReason": null,
+    "wheelFlag": "OVERBOUGHT WARNING: BB surged +64% YTD from $3.79 to $6.20, hitting a 52-week high of $6.61 intraday. RSI sits at 79+ — firmly overbought territory. Stock trades 27% above the analyst consensus target of $4.85. The wheel is the preferred strategy precisely because it monetizes elevated IV while setting up a potential stock acquisition at analyst fair value if assigned.",
+    "vixNote": "VIX elevated ~20+; BB carries ~72% 30-day implied volatility — well above its historical norm — driven by the meme-era momentum surge, near-term earnings risk (Q1 FY2027 ~June 25), and retail enthusiasm around the NVIDIA/QNX partnership. At 72% IV, option premiums are exceptional for a ~$3.6B market-cap software company. Selling premium at these levels is structurally advantaged.",
+    "bollingerEntry": "Upper Bollinger Band estimated ~$6.40–$6.60 post-surge — stock is pressing against or through the upper band after the +64% YTD run. The lower Bollinger Band is estimated at ~$4.80–$5.10. This is NOT a Bollinger lower-band entry; it is the opposite. The CSP at $5.50 positions you to be assigned near the lower band if the post-earnings mean reversion materialises.",
+    "csp": {
+      "strike": "$5.50",
+      "delta": "0.28",
+      "dte": "21–40 days (target June 20 close, the last safe date before June 25 earnings)",
+      "estimatedPremium": "$0.45–0.60 per contract (21-30 DTE) / $0.60–0.75 per contract (Aug 15 longer-dated closed early)",
+      "annualisedYield": "~25–30% annualised on cash secured",
+      "exitRule": "Close at 50% premium captured. HARD STOP: Close all positions by June 20, 2026 — 5 days before estimated Q1 FY2027 earnings on June 25. Do not hold a naked CSP through earnings at this IV.",
+      "note": "The $5.50 CSP places breakeven at ~$4.85–4.90 — almost exactly the analyst consensus fair value. If assigned, you own BB at a price reflecting institutional targets, not retail momentum. Post-earnings (after June 25), reassess and restart the wheel at lower IV if the stock pulls back."
+    },
+    "coveredCall": {
+      "strike": "$6.50",
+      "delta": "0.35",
+      "dte": "21–30 days",
+      "estimatedPremium": "$0.45–0.55 per contract",
+      "exitRule": "Close at 50% premium captured. Do not hold through the next earnings date (est. September 2026).",
+      "note": "If assigned at $5.50 via the CSP, sell $6.50 CC to reduce cost basis to ~$4.95–5.05. At 72% IV, covered call premium is generous. This sets up a full wheel cycle with effective purchase at analyst fair value."
+    }
+  },
+
+  "expiryComparison": {
+    "strike": 5.5,
+    "underlyingPrice": 6.20,
+    "iv": "~72% (elevated meme-momentum + near-term Q1 FY2027 earnings risk on June 25; 30-day IV mean 71.64% per AlphaQuery; calls running higher IV than puts at 75.9% vs 67.4% — unusual upside skew)",
+    "earningsDate": "~June 25, 2026 (Q1 FY2027 — estimated; Q4 FY2026 reported April 9, 2026)",
+    "closeDeadline": "June 20, 2026 (5 days before est. earnings)",
+    "exitRules": {
+      "entryTrigger": "Enter CSP only if stock shows intraday stability above $6.00. At RSI 79+ and near the $6.61 52-week high, do NOT chase momentum. The ideal entry is on a 5–10% pullback toward $5.70–$6.00. If stock breaks below $5.80 on a closing basis before entry, reassess — the pullback may deepen to $5.00 support.",
+      "profitExit": "Close the CSP when 50% of premium is captured. With ~$0.60 collected, close when value falls to $0.30 buy-to-close. For the Aug 15 longer-dated CSP closed early on June 20, target ~$0.25–0.30 profit on $0.65 premium (40 days of theta / 96 total days ≈ 42% decay, discounted by IV crush post-earnings).",
+      "timeStop": "If the stock has not declined toward $5.50 by June 1 (21 days before hard stop), and the put still has <20% of premium remaining, close and do not re-enter pre-earnings. The risk/reward of holding into the June 20 deadline narrows quickly in the final two weeks.",
+      "lossStop": "Close at 200% of premium received (i.e., if put doubles in value, close the position). Example: sold at $0.65, buy back at $1.30. This implies stock has fallen to ~$5.00 or below. A move of that magnitude near earnings suggests the thesis is at risk.",
+      "earningsHardStop": "Close ALL positions by June 20, 2026 — 5 days before estimated Q1 FY2027 earnings on June 25. At 72% IV, earnings-week options are explosive. BlackBerry moved 15% on the NVIDIA announcement and 10%+ on Q4 FY2026 earnings. Holding a naked put into earnings at this IV is unacceptable risk. No exceptions."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15, 2026",
+        "daysTotal": 96,
+        "daysLeftAtClose": 40,
+        "premiumEst": "~$0.60–0.75 ($5.50 put) — but must close by June 20; expect to capture ~$0.25–0.30 of the premium (40 of 96 days theta, with IV crush benefit on close)",
+        "flatScenario": "Stock stays at $6.20 — $5.50 put expires deep OTM at June 20 close. Residual put value ~$0.35–0.40. Net gain ~$0.25–0.30 per contract. Not the ideal theta capture but meaningful at these IV levels.",
+        "atTarget": "Stock pulls back to analyst target $4.85 by June 20 — put is $0.65 in the money; buy-to-close at ~$0.85–1.00. Net loss ~$0.20–0.35 per contract. Effective assignment basis if converted: $5.50 – $0.65 premium = $4.85 (analyst fair value entry).",
+        "bestFor": "Optimal: cheapest per-unit premium for the same 40-day working window. Holding Aug 15 open past June 20 is prohibited — but the lower time value decay before the close date makes this the most cost-effective expiry.",
+        "recommended": true
+      },
+      {
+        "expiry": "Sep 19, 2026",
+        "daysTotal": 131,
+        "daysLeftAtClose": 40,
+        "premiumEst": "~$0.75–0.88 ($5.50 put) — same June 20 close deadline; paying extra for 35 days of unused post-earnings time value",
+        "flatScenario": "Identical close deadline — paying $0.10–0.15 extra per contract for post-earnings time that is inaccessible.",
+        "atTarget": "Same outcome at June 20 close. Extra premium collected but extra residual value to buy back — net improvement marginal or zero.",
+        "bestFor": "Only if earnings slip past August — provides a small buffer if the June 25 earnings date gets pushed two weeks later. Not needed under the base case.",
+        "recommended": false
+      },
+      {
+        "expiry": "Nov 21, 2026",
+        "daysTotal": 194,
+        "daysLeftAtClose": 40,
+        "premiumEst": "~$0.88–1.05 ($5.50 put) — paying for 154 days of post-close time value that cannot be utilised",
+        "flatScenario": "Large residual value at June 20 close makes buyback expensive — theta captured as a % of premium paid is lowest of the three expirations.",
+        "atTarget": "Same close outcome — Aug 15 is strictly superior on a premium-capture efficiency basis.",
+        "bestFor": "Not recommended. Thesis must close before June 25 earnings. The Aug 15 expiry is unambiguously optimal.",
+        "recommended": false
+      }
+    ]
+  },
+
+  "recommendation": {
+    "title": "Cash-Secured Put — $5.50 Aug 15, 2026 (close by June 20)",
+    "strike": 5.5,
+    "expiry": "Aug 15, 2026",
+    "type": "Cash-Secured Put (IV ~72% — above 60% threshold; premium selling is mandated; CSP at $5.50 is 11.3% OTM with a breakeven at analyst consensus fair value of ~$4.85; defined max risk if assigned)",
+    "estimatedPremium": "~$0.65 per contract collected",
+    "contractCost": "$550 cash secured per contract ($1,100 for 2 contracts); max loss if stock goes to zero = $4.85 per share after premium offset",
+    "delta": 0.28,
+    "breakeven": "~$4.85 (strike $5.50 minus $0.65 premium)",
+    "entryNote": "IV at 72% places BB firmly in the mandatory premium-selling zone. Buying directional calls at this IV is expensive and the thesis is backward — the stock has already moved +64% YTD and sits 27% above the analyst consensus target of $4.85. Selling the $5.50 CSP does three things simultaneously: (1) it captures the elevated IV premium while the meme rally runs, (2) it sets up a stock acquisition at analyst fair value ($4.85 breakeven) if the mean reversion occurs, and (3) it imposes a June 20 hard stop that avoids binary earnings risk. The NVIDIA/QNX partnership (April 2026) is real and strategic — QNX powers 275M+ vehicles, royalty backlog is $950M, and FY2027 guidance of $584-$611M beat consensus. But these fundamentals justify ~$5.50-6.00, not indefinite multiple expansion from a $3.79 start-of-year price. Sell premium into the euphoria, not calls.",
+    "exitPlan": [
+      { "label": "50% profit target", "trigger": "Put value falls to ~$0.33 (50% of $0.65 premium captured)", "optionGain": "~$32–33 per contract gain on $550 cash secured (~6% return in <40 days; ~55–65% annualised)" },
+      { "label": "Hard stop — earnings rule", "trigger": "June 20, 2026 (5 days before Q1 FY2027 earnings)", "optionGain": "Close regardless of P&L. Expected residual: $0.35–0.40 buy-to-close → ~$0.25 net gain per contract if stock flat" }
+    ]
+  },
+
+  "companyOverview": "BlackBerry Limited has completed a decade-long pivot from consumer smartphones to enterprise software, now operating in two distinct divisions. The IoT segment (QNX) is the company's strategic crown jewel: BlackBerry's real-time operating system is embedded in over 275 million vehicles globally, certified to ISO 26262 ASIL-D — the highest automotive functional safety standard — and holds a dominant position in safety-critical automotive systems (digital cockpits, ADAS, domain controllers). QNX clients include Mercedes-Benz, BMW, Volvo, Toyota, Ford, and Leapmotor, among many others. In April 2026, BlackBerry expanded its QNX partnership with NVIDIA to integrate QNX OS for Safety 8.0 with the NVIDIA IGX Thor and Halos Safety Stack, targeting safety-critical edge AI across robotics, medical devices, and industrial systems — a significant expansion beyond automotive. The QNX royalty backlog stands at ~$950 million, representing 3.5+ years of QNX annual revenue already locked in, with additional design wins converting to royalties over 3–5 year production cycles. The Secure Communications segment (Cylance AI endpoint security, unified endpoint management, encrypted government messaging) returned to growth in Q4 FY2026 (+8% YoY), supported by government demand for sovereign security tools and naval-defense wins (TKMS). FY2026 was BlackBerry's first full year of GAAP profitability since the smartphone era: GAAP net income swung from -$79.0M (FY2025) to +$53.2M (FY2026). FY2027 guidance of $584–$611M revenue (beating consensus ~$576M) and ~$100M operating cash flow positions BB as a legitimate — if slowly growing — software business. The stock's 64% YTD surge, however, has moved the price well above institutional targets.",
+
+  "technicalSetup": {
+    "pattern": "Parabolic surge to 52-week high — overbought / mean-reversion risk",
+    "description": "BB surged from $3.79 at the start of 2026 to $6.20 (+64% YTD) and hit an intraday 52-week high of $6.61, driven by the NVIDIA/QNX partnership announcement (+15% on April 20), Q4 earnings beat (+10% on earnings day), and share buyback renewal (May 8). The RSI printed 79.96 as of May 8-11 — firmly overbought. The stock is trading at or through its upper Bollinger Band (~$6.40–6.60). The volume-weighted support cluster sits at $5.27, and the prior breakout level is ~$4.50–5.00. Analyst price targets (range $4.40–$6.00, median $5.00) cluster well below current price. The technical picture is bullish in trend but dangerous for new long entries — mean reversion toward $5.00–5.50 is the base case before the next sustainable leg higher.",
+    "keyLevels": [
+      { "level": "$5.00–5.27", "type": "Support", "note": "Volume accumulation zone and first major support. The $5.00 level is roughly where strong hands accumulated during the base build. A post-earnings pullback would likely find buyers here." },
+      { "level": "$5.50", "type": "CSP Strike / Fair Value", "note": "Recommended CSP strike. Corresponds to just above analyst consensus territory — a stock acquisition at this level would be at institutional-grade entry, not meme-premium." },
+      { "level": "$6.50–6.61", "type": "Resistance / 52-week High", "note": "The intraday 52-week high and current resistance zone. Overhead supply expected from momentum sellers. A confirmed close above $6.61 on high volume would be a meaningful technical breakout." }
+    ]
+  },
+
+  "financials": [
+    { "metric": "Stock Price (May 11)", "value": "$6.20", "note": "52-week range: $3.12–$6.61; +64% YTD from $3.79; stock 27% above analyst consensus target" },
+    { "metric": "Market Cap", "value": "~$3.63B", "note": "~6.1x FY2027E revenue guidance midpoint ($597M); premium for a slow-growing software business" },
+    { "metric": "Shares Outstanding", "value": "~586M", "note": "As of April 30, 2026; public float ~584.8M shares" },
+    { "metric": "Q4 FY2026 Revenue", "value": "$156.0M", "note": "+10.1% YoY; beat $144.6M consensus estimate" },
+    { "metric": "QNX (IoT) Q4 Revenue", "value": "$78.7M", "note": "+20% YoY; gross margin 84%; adj. EBITDA $21.4M (27% margin); royalty backlog ~$950M" },
+    { "metric": "Secure Communications Q4 Revenue", "value": "$72.5M", "note": "+8% YoY; returned to growth driven by government sovereign security demand" },
+    { "metric": "Q4 FY2026 Adj. EPS", "value": "$0.06", "note": "Beat $0.04 consensus; GAAP EPS $0.04; gross margin 76.2%; fourth consecutive beat" },
+    { "metric": "FY2026 Full Year Revenue", "value": "$549.1M", "note": "+3% YoY; first full year of GAAP profitability in the post-smartphone era" },
+    { "metric": "FY2026 GAAP Net Income", "value": "+$53.2M", "note": "vs -$79.0M in FY2025 — $132M swing; adj. net income $97.3M" },
+    { "metric": "FY2026 Free Cash Flow", "value": "~$44–47M", "note": "Positive FCF for full year; management targets ~$100M operating cash flow in FY2027" },
+    { "metric": "FY2027 Revenue Guidance", "value": "$584–611M", "note": "+6–11% growth; beat consensus ~$576M; Q1 FY2027 guided $132–140M vs $129.8M consensus" },
+    { "metric": "QNX Royalty Backlog", "value": "~$950M", "note": "~3.5x annual QNX revenue; design-win royalties convert to revenue as OEM vehicles enter production (3–5 year lag)" },
+    { "metric": "Analyst Consensus", "value": "Hold (4–8 analysts)", "note": "Avg target $4.85; range $4.40 (Canaccord) to $6.00 (CIBC); stock 27% above consensus — unusual valuation gap" }
+  ],
+
+  "insiderFlow": {
+    "summary": "No discretionary open-market buying or selling at current elevated prices. All Form 4 activity in 2026 reflects routine RSU compensation grants and mandatory tax-withholding sales at vesting — neither category signals conviction about the current $6.20 price level. The renewed NCIB buyback (26.8M shares, starting May 12, 2026) is the strongest signal: management believes the stock is undervalued enough to warrant systematic repurchase.",
+    "transactions": [
+      { "insider": "John J. Giamatteo (CEO, President — Secure Communications)", "action": "Grant (RSU)", "shares": 732984, "price": "N/A (grant, not purchase)", "date": "2026-04-09", "value": "~$4.0M at grant date price (~$5.50)", "note": "Award vests quarterly over 3 years (April 2026–April 2029). Compensation grant, not a discretionary buy signal. Aligns long-term CEO interests with the stock price, but no cash was deployed." },
+      { "insider": "Jennifer Armstrong-Owen (SVP & Chief People Officer)", "action": "Grant (RSU + Performance RSU)", "shares": 123374, "price": "N/A (grant)", "date": "2026-04-09", "value": "~$680K at grant date price", "note": "91,623 time-based RSUs + 31,751 performance RSUs (vest April 2027 on continued employment). Standard annual equity compensation. Not a buy signal." },
+      { "insider": "Philip S. Kurtz (CLO & Corporate Secretary)", "action": "Sell (tax withholding at RSU vesting)", "shares": 4079, "price": "~$3.56", "date": "2026-01-02", "value": "~$14,521", "note": "Mandatory tax-withholding sale at RSU vesting — not discretionary. Price $3.56 is well below current $6.20, indicating the vesting was from a prior grant period. Irrelevant to current price thesis." }
+    ],
+    "signal": "NEUTRAL — zero discretionary insider buying or selling at the current $6.20 price level. Tax-withholding sales at $3.56 (January) are mechanically required and carry no signal. The renewed NCIB buyback starting May 12, 2026 (up to 26.8M shares, ~4.58% of float) is the most substantive insider-equivalent action: management believes current prices support systematic repurchase. Previously, 18.1M shares were bought back at a $3.85 average under the prior program — all at lower prices than today. Cautiously positive, but the absence of open-market CEO/board purchases at $6+ is notable."
+  },
+
+  "catalysts": [
+    "QNX royalty backlog $950M — as design-win vehicles enter mass production, royalties convert mechanically to revenue without new sales effort; the backlog represents 3.5+ years of visibility",
+    "NVIDIA partnership (April 20, 2026) — QNX OS for Safety 8.0 integrated with NVIDIA IGX Thor and Halos Safety Stack; opens robotics, medical device, and industrial AI verticals beyond automotive",
+    "New OEM design wins: Mercedes-Benz, BMW, Volvo, Leapmotor, and naval-defense firm TKMS — geographic and vertical diversification accelerating",
+    "Secure Communications return to growth (+8% YoY Q4) — government demand for sovereign encrypted communications tools is a structural tailwind post-geopolitical uncertainty",
+    "GAAP profitability achieved FY2026 — unlocks institutional investors (many funds cannot hold pre-profit companies); first full profitable year since smartphone exit",
+    "FY2027 guidance $584-$611M revenue + ~$100M operating cash flow — transition from turnaround story to established FCF-generating software business",
+    "Buyback renewal: 26.8M shares (~4.58% of float) to be repurchased over FY2027 — directly returns value to shareholders and offsets RSU dilution"
+  ],
+
+  "risks": [
+    "Stock 27% above analyst consensus target ($6.20 vs $4.85 avg) — institutional skepticism is significant; 6 Hold ratings, 1 Sell, 1 Buy; limited upside from analyst community",
+    "RSI 79+ and stock pressing 52-week high $6.61 — technically overbought; mean reversion toward $5.00–$5.50 is the most likely near-term outcome",
+    "Earnings risk: Q1 FY2027 guidance ($132–140M) implies a sequential revenue decline from Q4's $156M — potential negative surprise if QNX royalty seasonality disappoints",
+    "QNX revenue realization lag: royalty backlog converts slowly as automotive OEM production ramps; growth can be lumpy and delayed 3–5 years from design-win to volume production",
+    "Secure Communications secular headwinds: competing against CrowdStrike, Palo Alto, and Microsoft in endpoint and UEM markets dominated by vendors with 10x the R&D budget",
+    "Revenue growth modest: +3% FY2026, +6–11% guided FY2027 — not a high-growth story despite NVIDIA halo; P/S ~6x on slow growth is a valuation stretch",
+    "FY2027 adj. EBITDA guidance $110–130M → at $3.63B market cap, stock trades at ~28–33x forward EBITDA — premium multiple requires sustained execution",
+    "Meme stock dynamics: retail enthusiasm drove 64% YTD gain; institutional ownership limited; stock could reverse sharply if retail sentiment shifts or earnings underwhelm"
+  ],
+
+  "dilution": {
+    "summary": "BlackBerry's ~586M shares outstanding reflect a moderate equity compensation program. Annual RSU grants to senior management create dilution, but the renewed NCIB buyback programme (26.8M shares over FY2027) is sized to offset and slightly exceed typical RSU issuance. Net dilution impact for FY2027 is expected to be near-neutral to slightly positive for existing shareholders.",
+    "items": [
+      { "label": "RSU Annual Issuance", "detail": "Approximately 2–4M shares equivalent per quarter from equity compensation to executives, VPs, and directors. April 2026 grants: 732,984 RSUs (CEO), 123,374 RSUs (CPO). Total annual run-rate ~8–12M shares." },
+      { "label": "NCIB Buyback FY2027", "detail": "Up to 26.8M shares to be repurchased May 12, 2026 – May 11, 2027, representing ~4.58% of the public float. Prior program retired 18.1M shares at $3.85 average. New program at higher prices ($6.20) is more expensive per share but demonstrates management conviction." },
+      { "label": "Net Dilution Outlook", "detail": "Buyback (26.8M shares) is expected to significantly outpace annual RSU dilution (~10–12M shares equivalent). Net result: shares outstanding should decline modestly over FY2027, providing a per-share earnings tailwind without requiring revenue growth." }
+    ]
+  },
+
+  "strikeTable": [
+    { "strike": "$5.00 CSP", "type": "Cash-Secured Put", "isRecommended": false, "premium": "~$0.40", "delta": 0.20, "contracts2Cost": "$1,000 cash secured (2 contracts)", "breakeven": "$4.60", "atTarget": "N/A (income strategy; conservative 19% OTM buffer)" },
+    { "strike": "$5.50 CSP", "type": "Cash-Secured Put", "isRecommended": true, "premium": "~$0.65", "delta": 0.28, "contracts2Cost": "$1,100 cash secured (2 contracts)", "breakeven": "$4.85", "atTarget": "N/A (income; breakeven = analyst consensus fair value — ideal assignment price)" },
+    { "strike": "$6.00 CSP", "type": "Cash-Secured Put (near ATM)", "isRecommended": false, "premium": "~$0.90", "delta": 0.40, "contracts2Cost": "$1,200 cash secured (2 contracts)", "breakeven": "$5.10", "atTarget": "N/A (income; high delta — significant assignment risk near current price)" },
+    { "strike": "$6.50/$8.00 Spread", "type": "Bull Call Spread", "isRecommended": false, "premium": "~$0.42 net debit", "delta": 0.30, "contracts2Cost": "~$84 (2 spreads)", "breakeven": "$6.92", "atTarget": "+$216 max at $8.00+ per 2 spreads (257% return) — thesis requires stock to rise further from already-overbought level" },
+    { "strike": "$7.00 Call", "type": "Call (OTM)", "isRecommended": false, "premium": "~$0.45", "delta": 0.22, "contracts2Cost": "~$90 (2 contracts)", "breakeven": "$7.45", "atTarget": "Above analyst consensus; meaningful probability only if NVIDIA partnership accelerates monetisation faster than expected" }
+  ]
+}

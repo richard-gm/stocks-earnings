@@ -1,0 +1,118 @@
+{
+  "ticker": "CEG",
+  "company": "Constellation Energy",
+  "sector": "Utilities / Nuclear",
+  "analysisDate": "2026-05-03",
+  "priceAtAnalysis": 307.81,
+  "analystTarget": 363.86,
+  "rating": "BULLISH",
+  "strategy": "Buy $315 Call — Aug 2026 (enter post May 11 earnings)",
+  "wheelStrategy": {
+    "eligible": false,
+    "ineligibleReason": "Stock price $307.81 — 1 CSP contract requires ~$30,781 cash. Exceeds $10,000 per-contract threshold for a standard retail portfolio. Use Calls/Spreads strategy only.",
+    "wheelFlag": null,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Wait for VIX > 20 before entering premium-selling positions.",
+    "bollingerEntry": "N/A — Wheel not applicable for this stock"
+  },
+  "expiryComparison": {
+    "strike": 315,
+    "underlyingPrice": 303.63,
+    "iv": "~55%",
+    "earningsDate": "July 30, 2026",
+    "closeDeadline": "July 25, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter after May 11 Q1 earnings IV crush settles. Stock at $303.63 — $11.37 below $315 strike. Wait for post-earnings consolidation, then enter on any dip toward $298–302.",
+      "profitExit": "Close at 60–80% gain on premium. First target: stock at $345 (+14%) for ~80–100% gain. Second target: $380 (+25%) for ~200% gain.",
+      "timeStop": "If stock has not cleared $325+ by ~June 20 (45% of time elapsed on Sep position), close. Theta accelerates sharply in the 30 days before the July 25 close.",
+      "lossStop": "Close at 40–50% loss on premium paid. High-IV nuclear name can gap — protect capital.",
+      "earningsHardStop": "Close by July 25 (5 days before July 30 Q2 earnings) — no exceptions. Nuclear stocks move sharply on EPS guidance updates."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 96,
+        "daysLeftAtClose": 21,
+        "premiumEst": "~$18–22",
+        "flatScenario": "~-85%",
+        "atTarget": "~+140%",
+        "bestFor": "Too short — only 21 days remain at the mandatory July 25 close. Paying for 96 days of time but forced to exit before 75 have elapsed.",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 131,
+        "daysLeftAtClose": 56,
+        "premiumEst": "~$24–29",
+        "flatScenario": "~-70%",
+        "atTarget": "~+100%",
+        "bestFor": "Sweet spot — 56 days of time value at the July 25 exit. Post-May-earnings entry gives a clean pre-earnings window to Q2. IV at 55% is manageable for a single-leg call.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 194,
+        "daysLeftAtClose": 119,
+        "premiumEst": "~$33–40",
+        "flatScenario": "~-50%",
+        "atTarget": "~+55%",
+        "bestFor": "Excessive time premium for a catalyst-driven name. Two earnings cycles with nuclear regulatory headline risk. Sep 19 provides better risk/reward.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Single-Leg Call — Slight OTM, Enter Post-Earnings",
+    "strike": 315,
+    "expiry": "Aug 2026 (~90 days)",
+    "type": "Call",
+    "estimatedPremium": "~$15–18/share",
+    "contractCost": "~$1,500–1,800 (1 contract)",
+    "delta": 0.47,
+    "breakeven": "$330–333",
+    "entryNote": "⚠️ Q1 earnings May 11 — enter AFTER to avoid IV crush. Stock is 34% off its October 2025 peak ($412). Nuclear power premium story (AI data center demand) remains intact despite regulatory headwinds. EPS guidance $11–12 for 2026.",
+    "exitPlan": [
+      { "label": "Contract 1", "trigger": "Stock at $345 (+12%)", "optionGain": "~80–100% on premium" },
+      { "label": "Contract 2", "trigger": "Stock at $380 (+23%)", "optionGain": "~200–240% on premium" }
+    ]
+  },
+  "companyOverview": "Largest US electricity producer post-Calpine acquisition. Operates 21 nuclear plants providing carbon-free baseload power — the preferred energy source for AI data center co-location agreements. $1B DOE loan for Crane Clean Energy Center restart. Long-term power agreements tied to AI data center buildout. Stock down 34% from $412 peak on regulatory headwinds from FERC tightening behind-the-meter rules.",
+  "financials": [
+    { "metric": "Stock Price (May 3)", "value": "$307.81", "note": "52-week range: $241–$412" },
+    { "metric": "Market Cap", "value": "~$107–111B", "note": "" },
+    { "metric": "2026 EPS Guidance", "value": "$11–12", "note": "Base growth 20%+ through 2029" },
+    { "metric": "Q1 2026 EPS Consensus", "value": "$2.56", "note": "+19.6% YoY, earnings May 11" },
+    { "metric": "Dividend", "value": "$0.4265/qtr", "note": "Declared April 28" },
+    { "metric": "Analyst Consensus", "value": "Strong Buy (16B/3H/1S)", "note": "Avg target $363–$380, high $441" }
+  ],
+  "insiderFlow": {
+    "summary": "Minimal recent activity — standard utility executive RSU vesting sales. No open-market buying. Neutral signal for a large-cap utility.",
+    "transactions": [
+      { "insider": "Various executives", "action": "RSU VESTING SELLS", "shares": 0, "price": "various", "date": "2026", "value": "routine", "note": "Standard RSU vesting tax withholding by executives. No discretionary open-market buying or selling flagged. Utility executives rarely make open-market trades — RSU programs dominate." }
+    ],
+    "signal": "NEUTRAL — no notable Form 4 activity. Utility companies have low insider ownership and minimal open-market trading. No bullish or bearish signal from insiders."
+  },
+  "catalysts": [
+    "Largest US nuclear operator — premium positioning for AI data center power deals",
+    "$1B DOE loan guarantee for Crane Clean Energy Center restart (new nuclear capacity)",
+    "Stock 34% off peak — asymmetric risk/reward vs. underlying earnings growth",
+    "20%+ EPS CAGR guidance through 2029",
+    "AI infrastructure buildout requiring reliable carbon-free baseload power"
+  ],
+  "risks": [
+    "⚠️ Three Mile Island reconnection DELAYED TO 2031 — PJM grid operator confirmed TMI cannot connect to grid until 2031, four years later than the originally planned 2027. This removes a key near-term revenue catalyst.",
+    "FERC tightening behind-the-meter co-location rules — core revenue model under regulatory threat",
+    "Grid interconnection delays already impacting 2026 guidance; TMI delay is the most concrete example",
+    "Aging nuclear fleet: decommissioning costs, compliance complexity",
+    "Scotiabank cut target from $481 to $441; Morgan Stanley cut from $385 to $360",
+    "Q1 EPS guidance shortfall ($11–12 vs. analyst expectations of $11.60+)",
+    "Earnings May 11 — IV crush risk if guidance disappoints again; TMI delay news may already be partially priced in"
+  ],
+  "dilution": "Standard utility capital structure. $1B DOE loan is debt-financed, not dilutive. No significant equity dilution risk.",
+  "strikeTable": [
+    { "strike": "$300", "type": "ITM", "isRecommended": false, "premium": "~$22–25", "delta": 0.60, "contracts2Cost": "~$4,400–5,000", "breakeven": "~$322–325", "atTarget": "+125%" },
+    { "strike": "$308", "type": "ATM", "isRecommended": false, "premium": "~$18–21", "delta": 0.51, "contracts2Cost": "~$3,600–4,200", "breakeven": "~$326–329", "atTarget": "+155%" },
+    { "strike": "$315", "type": "Slight OTM", "isRecommended": true, "premium": "~$15–18", "delta": 0.47, "contracts2Cost": "~$3,000–3,600", "breakeven": "~$330–333", "atTarget": "+190%" },
+    { "strike": "$330", "type": "OTM", "isRecommended": false, "premium": "~$10–13", "delta": 0.36, "contracts2Cost": "~$2,000–2,600", "breakeven": "~$340–343", "atTarget": "+185%" },
+    { "strike": "$380", "type": "Far OTM", "isRecommended": false, "premium": "~$3–5", "delta": 0.14, "contracts2Cost": "~$600–1,000", "breakeven": "~$383–385", "atTarget": "-8%" }
+  ]
+}

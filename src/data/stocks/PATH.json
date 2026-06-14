@@ -1,0 +1,154 @@
+{
+  "ticker": "PATH",
+  "company": "UiPath, Inc.",
+  "sector": "Enterprise Automation / Agentic AI",
+  "analysisDate": "2026-05-05",
+  "priceAtAnalysis": 10.59,
+  "analystTarget": 13.80,
+  "rating": "BULLISH",
+  "strategy": "Wheel Primary (CSP post-earnings) + $11/$15 Bull Call Spread — Aug 2026",
+  "wheelStrategy": {
+    "eligible": true,
+    "vixNote": "VIX at 16.89 — BELOW 20 threshold. Ideal entry: wait for VIX > 20 AND post-May 28 earnings IV crush. High IV (73.8% 30-day IV, IVR 39) makes this one of the better Wheel candidates at current prices.",
+    "bollingerEntry": "Daily chart shows downtrend broken from Feb highs (~$18) and stock is now retesting breakout ~$10.50–11.00. Lower Bollinger Band estimated ~$9.00–9.50. Do NOT enter CSP now — wait for May 28 earnings, then sell CSP on any post-earnings dip toward $9.50–10.00. The retest of the broken downtrend line is the technical entry signal.",
+    "csp": {
+      "strike": "~$8.50–9.50",
+      "delta": "0.20–0.30",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.40–0.80/share (~$40–80 per contract)",
+      "annualisedYield": "~40–75% annualised on capital at risk (high IV benefit)",
+      "exitRule": "Close at 50% premium captured. CRITICAL: Do NOT enter before May 28 earnings — IV crush risk. Enter AFTER earnings. Close any open CSP 5 days before next quarterly earnings (~August 2026).",
+      "note": "⭐ HIGH CONVICTION WHEEL CANDIDATE — IV 73.8%, debt-free balance sheet ($871M cash), first-ever GAAP profit FY2026, ARR $1.85B growing 11% YoY. If assigned at $8.50–9.50, cost basis is well below analyst targets ($13.80 avg). 1–3 contracts manageable ($850–$950/contract capital at risk). Technical: broken downtrend + retest = classic wheel entry setup."
+    },
+    "coveredCall": {
+      "strike": "~$11.00–12.00",
+      "delta": "0.20–0.28",
+      "dte": "21–30 days",
+      "estimatedPremium": "~$0.40–0.70/share (~$40–70 per contract)",
+      "exitRule": "Close at 50% premium. Re-sell monthly targeting $11.97 resistance level. Close before earnings.",
+      "note": "If assigned on CSP (cost basis ~$8.50–9.50), sell CC at $11–12 — just below the $11.97 key resistance level. This allows stock to recover while collecting premium. Once stock clears $11.97 resistance, raise CC strike to $13–14."
+    }
+  },
+  "expiryComparison": {
+    "strike": 11,
+    "underlyingPrice": 10.59,
+    "iv": "~74%",
+    "earningsDate": "May 28, 2026",
+    "closeDeadline": "May 23, 2026",
+    "exitRules": {
+      "entryTrigger": "Enter AFTER May 28 earnings IV crush has settled (wait 1–2 days post-report). Stock is retesting broken downtrend at $10.50–11.00 — enter on any dip back to that level.",
+      "profitExit": "Close at 60–90% gain OR when stock hits $12.00–12.50 (break through $11.97 resistance). Let 1 contract ride to $14–15 for 150–220% gain.",
+      "timeStop": "For Aug expiry: if stock has not moved toward $11.50+ by ~July 10 (50% of time elapsed), close the position. For Sep/Nov: time stop applies after 50% of DTE consumed.",
+      "lossStop": "Close at 40–50% loss on premium paid. Do not hold a position that has halved in value — theta and IV contraction both work against you at that point.",
+      "earningsHardStop": "Close by May 23 (5 days before May 28 earnings) — no exceptions. Re-enter AFTER the report once IV crush settles."
+    },
+    "options": [
+      {
+        "expiry": "Aug 15",
+        "daysTotal": 102,
+        "daysLeftAtClose": 79,
+        "premiumEst": "~$1.40",
+        "flatScenario": "~-45%",
+        "atTarget": "~+170%",
+        "bestFor": "Good option here — 79 days of buffer at close since earnings are nearby. Low cost ($140/contract).",
+        "recommended": false
+      },
+      {
+        "expiry": "Sep 19",
+        "daysTotal": 137,
+        "daysLeftAtClose": 114,
+        "premiumEst": "~$1.80",
+        "flatScenario": "~-30%",
+        "atTarget": "~+150%",
+        "bestFor": "Sweet spot — 114 days remaining at close, can hold through earnings and still have runway. Only $40 more than Aug.",
+        "recommended": true
+      },
+      {
+        "expiry": "Nov 21",
+        "daysTotal": 200,
+        "daysLeftAtClose": 177,
+        "premiumEst": "~$2.40",
+        "flatScenario": "~-20%",
+        "atTarget": "~+120%",
+        "bestFor": "Overkill for PATH — thesis should play out in 60–90 days. Overpaying by $100/contract for unneeded time.",
+        "recommended": false
+      }
+    ]
+  },
+  "recommendation": {
+    "title": "Bull Call Spread — Downtrend Broken, Retesting; Enter Post-May 28 Earnings",
+    "strike": 11,
+    "expiry": "Aug 2026 (~85 days)",
+    "type": "Call Spread ($11 buy / $15 sell)",
+    "estimatedPremium": "~$1.00–1.50 net debit (spread)",
+    "contractCost": "~$100–150 (1 spread) — very low cost, can do 3–4 spreads",
+    "delta": 0.45,
+    "breakeven": "~$12.00–12.50",
+    "entryNote": "⚠️ EARNINGS MAY 28 — enter AFTER to avoid IV crush. Technical setup is compelling: the multi-month downtrend from $18+ has been broken and the stock is retesting the breakout level (~$10.50–11.00). The $11.97 level (red horizontal line on chart) is the first key target — it was prior support and is now resistance. A clean hold above $10.50 and break through $11.97 would confirm the reversal. Fundamentals support the thesis: first-ever GAAP profitability in FY2026, debt-free, $871M cash, ARR $1.85B, 107% net revenue retention. The 33% gap to analyst average target ($13.80) provides meaningful upside. LOW COST TRADE: 1 spread is only $100–150, so 3–4 spreads = $300–600 total within budget. Needham upgraded to Buy in March citing enterprise agentic AI adoption.",
+    "exitPlan": [
+      { "label": "Spread 1", "trigger": "Stock at $12.00–12.50 (+13–18%) on clean break through $11.97 resistance", "optionGain": "~60–90% on spread cost" },
+      { "label": "Spread 2", "trigger": "Stock at $14.00–15.00 (+32–42%) on analyst target convergence or positive Q1 FY2027 report", "optionGain": "~150–220% on spread cost (near max gain)" }
+    ]
+  },
+  "companyOverview": "UiPath is the enterprise automation leader — its platform combines Robotic Process Automation (RPA), process mining, and agentic AI to automate complex workflows across large enterprises. The company pivoted from per-robot pricing to consumption-based and per-agent SaaS licensing, which has stabilised ARR growth. FY2026 (ended Jan 31, 2026) was a landmark year: first-ever GAAP net profit ($282.3M), revenue $1.611B (+13% YoY), and ARR $1.853B (+11% YoY). The balance sheet is fortress-grade: $871M+ cash, zero long-term debt. Added to the S&P MidCap 400 in April 2026 — institutional forced buying signal. The bull thesis: enterprise AI agents need orchestration infrastructure, and UiPath's Orchestrator platform is the incumbent layer where AI agents get deployed and monitored at scale. The bear thesis: Microsoft Power Automate bundles automation near-free with M365, and hyperscalers are building their own agent orchestration layers. Stock is down 33% YTD from ~$16+ to $10.59, creating the current technical and fundamental setup.",
+  "technicalSetup": {
+    "pattern": "Downtrend break + retest",
+    "description": "Multi-month downtrend from February highs (~$18) was broken in late April/early May 2026. Stock is now retesting the broken downtrend line at ~$10.50–11.00. This is a classic technical entry: old resistance (the downtrend line) becomes support on the retest.",
+    "keyLevels": [
+      { "level": "$9.28", "type": "Support", "note": "52-week low — hard floor" },
+      { "level": "$9.00–9.50", "type": "Support / CSP target zone", "note": "Lower Bollinger Band zone; ideal CSP strike if stock pulls back post-earnings" },
+      { "level": "$10.50–11.00", "type": "Key support (breakout retest)", "note": "Broken downtrend line now acting as support — must hold for bull thesis" },
+      { "level": "$11.97", "type": "Resistance (chart red line)", "note": "Prior support turned resistance — key target for the breakout. Break above = confirmation of trend reversal" },
+      { "level": "$13.80", "type": "Analyst average target", "note": "Consensus PT; 30% upside from current price" },
+      { "level": "$15.00–16.00", "type": "Resistance / spread sell-leg", "note": "Prior consolidation range; spread sell-leg captures move to this zone" }
+    ]
+  },
+  "financials": [
+    { "metric": "Stock Price (May 5)", "value": "$10.59", "note": "52-week range: $9.28–$19.84; down ~33% YTD from ~$16" },
+    { "metric": "52-Week Low", "value": "$9.28", "note": "Recent low; ~12% below current — limited downside if fundamentals hold" },
+    { "metric": "FY2026 Revenue", "value": "$1.611B", "note": "+13% YoY; Q4 FY2026 beat: $481.1M vs. $464.8M est (+3.5%)" },
+    { "metric": "FY2026 GAAP Net Income", "value": "$282.3M", "note": "First-ever GAAP profitability — structural inflection point" },
+    { "metric": "ARR", "value": "$1.853B", "note": "+11% YoY; Dollar-Based Net Retention Rate: 107% — customers expanding" },
+    { "metric": "Cash / Debt", "value": "$871M cash / $0 debt", "note": "Fortress balance sheet; zero dilution risk from debt" },
+    { "metric": "Next Earnings", "value": "May 28, 2026", "note": "Q1 FY2027 — do NOT hold options through this; enter after" },
+    { "metric": "Analyst Consensus", "value": "3 Buy / 17 Hold / 1 Sell", "note": "Avg PT: $13.80 (+30%); Needham upgraded to Buy March 2026" },
+    { "metric": "IV / IVR", "value": "73.8% / IVR 39", "note": "High IV — Wheel premium is attractive; spread cost is low" },
+    { "metric": "S&P MidCap 400", "value": "Added April 2026", "note": "Index inclusion = forced institutional buying; demand support" }
+  ],
+  "insiderFlow": {
+    "summary": "Net selling under 10b5-1 plans — CEO sold at $16.61 in January (stock now at $10.59, so selling was at a higher price). Recent executive activity is predominantly RSU grants and tax withholdings. No open-market buying. Neutral signal.",
+    "transactions": [
+      { "insider": "CEO Daniel Dines", "action": "SELL", "shares": 45000, "price": "$16.61", "date": "January 12, 2026", "value": "$748K", "note": "10b5-1 pre-planned sale at $16.61 — stock now 36% lower. Not discretionary; not a current negative signal. Sold before the YTD decline." },
+      { "insider": "COO/CFO Ashim Gupta", "action": "RSU GRANT + TAX WITHHOLD", "shares": 306748, "price": "grant", "date": "2026", "value": "RSU grant", "note": "Received 306,748 RSUs; 79,589 withheld for taxes. Standard executive compensation." },
+      { "insider": "CPO/CTO Raghavendra Malpani", "action": "RSU GRANT", "shares": 159125, "price": "grant", "date": "April 1, 2026", "value": "RSU grant (3yr vest)", "note": "Long-term incentive — aligns exec interests with stock recovery. Not open-market activity." }
+    ],
+    "signal": "NEUTRAL — CEO sold at $16.61 under 10b5-1 (pre-planned, now stock is lower). No discretionary open-market selling at current depressed prices. RSU grants show execs are compensated in stock — their new grants vest at current low prices, creating natural alignment with recovery."
+  },
+  "catalysts": [
+    "Downtrend broken (technical): multi-month downtrend from $18+ broken in late April — classic retest entry at $10.50–11.00",
+    "First-ever GAAP profitability (FY2026): $282.3M net income signals business model maturation — multiple re-rating catalyst",
+    "S&P MidCap 400 inclusion (April 2026): index funds must buy; creates mechanical demand floor",
+    "Needham Buy upgrade (March 2026): enterprise agentic AI adoption cited; PATH's Orchestrator is the incumbnt deployment layer for AI agents",
+    "107% Net Revenue Retention: existing customers spending more — not churning to Microsoft Power Automate despite competitive pressure",
+    "Agentic AI pivot: IXP on Google Cloud, Databricks integration, Deloitte partnership — platform expanding into the agentic workflow market",
+    "Zero debt + $871M cash: eliminates dilution risk entirely; can fund growth and buybacks",
+    "33% gap to analyst average target ($13.80): even a mean-reversion trade has 30% upside built in"
+  ],
+  "risks": [
+    "Microsoft Power Automate competition: bundled near-free with M365 for mid-market; most dangerous long-term structural threat",
+    "Growth deceleration: FY2027 Q1 guidance of $397.5M revenue is cautious; analysts stay on Hold fearing growth plateau",
+    "Earnings May 28 — IV crush: do NOT hold options through this date; enter after for clean exposure",
+    "AI orchestration commoditisation: hyperscalers (AWS Bedrock, Google Vertex, Azure AI) building native agent orchestration could bypass UiPath's layer",
+    "Hold-heavy analyst consensus (17 Hold / 3 Buy): market is not in buy mode yet; needs a catalyst to shift sentiment",
+    "Stock still below all key moving averages (MA-50: $10.93, MA-200: $13.10): technically in repair mode, not confirmed uptrend yet",
+    "Low options cost = low conviction signal: $11/$15 spread costs only $100–150, which is appropriate but reflects market's low conviction on the move"
+  ],
+  "dilution": "NO DILUTION RISK — debt-free balance sheet, $871M cash, positive GAAP FCF. RSU-based exec comp adds modest share count creep but no acute dilution concern. This is one of the cleaner balance sheets on the watchlist.",
+  "strikeTable": [
+    { "strike": "$10", "type": "Slight ITM", "isRecommended": false, "premium": "~$1.80–2.20", "delta": 0.58, "contracts2Cost": "~$360–440", "breakeven": "~$11.80–12.20", "atTarget": "+50%" },
+    { "strike": "$11", "type": "Slight OTM (spread buy-leg)", "isRecommended": true, "premium": "~$1.20–1.60 / ~$1.00–1.50 net as spread", "delta": 0.44, "contracts2Cost": "~$120–160 naked / ~$100–150 as $11/$15 spread", "breakeven": "~$12.00–12.50", "atTarget": "+150–220% (at $15)" },
+    { "strike": "$12", "type": "OTM", "isRecommended": false, "premium": "~$0.80–1.10", "delta": 0.34, "contracts2Cost": "~$160–220", "breakeven": "~$12.80–13.10", "atTarget": "+80%" },
+    { "strike": "$13", "type": "OTM (near analyst target)", "isRecommended": false, "premium": "~$0.50–0.75", "delta": 0.24, "contracts2Cost": "~$100–150", "breakeven": "~$13.50–13.75", "atTarget": "+50%" },
+    { "strike": "$15", "type": "OTM (spread sell-leg)", "isRecommended": false, "premium": "~$0.20–0.35", "delta": 0.12, "contracts2Cost": "~$40–70", "breakeven": "~$15.20–15.35", "atTarget": "-2%" }
+  ]
+}
