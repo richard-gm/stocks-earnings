@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { FlowTable } from "@/components/FlowTable";
 import type { FlowSummary } from "@/lib/calculations/unusualFlow";
@@ -36,7 +36,7 @@ function StatCard({ label, value }: { label: string; value: string }) {
   );
 }
 
-export default function FlowPage() {
+function FlowPageInner() {
   const searchParams = useSearchParams();
   const [input, setInput] = useState(searchParams.get("ticker") ?? "");
   const [data, setData] = useState<FlowApiResponse | null>(null);
@@ -76,7 +76,6 @@ export default function FlowPage() {
         </p>
       </div>
 
-      {/* Search */}
       <form
         onSubmit={(e) => { e.preventDefault(); search(input); }}
         className="flex gap-2"
@@ -105,14 +104,12 @@ export default function FlowPage() {
 
       {data && (
         <div className="space-y-6">
-          {/* Header */}
           <div className="flex items-center gap-3">
             <h2 className="text-lg font-bold text-gray-900">{data.ticker}</h2>
             <PutCallBadge ratio={data.putCallRatio} />
             <span className="text-xs text-gray-400">EOD · {data.dataAsOf}</span>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <StatCard label="Put/Call Ratio" value={data.putCallRatio.toFixed(2)} />
             <StatCard label="Total Call Volume" value={data.totalCallVolume.toLocaleString()} />
@@ -120,7 +117,6 @@ export default function FlowPage() {
             <StatCard label="Unusual Contracts" value={String(data.unusualContracts.length)} />
           </div>
 
-          {/* Table */}
           <div className="bg-white border border-gray-200 rounded-lg p-4">
             <h3 className="text-sm font-semibold text-gray-700 mb-4">
               Flagged Contracts ({data.unusualContracts.length})
@@ -130,5 +126,13 @@ export default function FlowPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function FlowPage() {
+  return (
+    <Suspense fallback={<div className="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-500">Loading…</div>}>
+      <FlowPageInner />
+    </Suspense>
   );
 }
