@@ -3,8 +3,12 @@ import path from "path";
 import type { TweetPost } from "@/types";
 import { logger } from "@/lib/logger";
 
-// Public web bearer token embedded in x.com's JS bundle (same for all web sessions)
-const BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I4xL1g38=";
+// Bearer token embedded in x.com's JS bundle. Set TWITTER_BEARER_TOKEN in env to override
+// when the hardcoded one stops working (X rotates these periodically).
+// To get yours: x.com → DevTools → Network → any api.twitter.com request → Authorization header
+const BEARER =
+  process.env.TWITTER_BEARER_TOKEN ??
+  "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I4xL1g38=";
 
 interface BrowserCookie {
   name: string;
