@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CURATED_ACCOUNTS } from "@/data/twitter-accounts";
 import type { TwitterAccountAnalysis, TickerMention, TickerInfo } from "@/types";
 
@@ -235,16 +235,35 @@ export function TwitterDashboard() {
   const [range, setRange] = useState<Range>("3m");
   const [activeTab, setActiveTab] = useState<Tab>("account");
   const [selectedTicker, setSelectedTicker] = useState("");
-  const [customAccounts, setCustomAccounts] = useState<string[]>([]);
+  const [customAccounts, setCustomAccounts] = useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
+    try { return JSON.parse(localStorage.getItem("twitter:custom") ?? "[]") as string[]; }
+    catch { return []; }
+  });
+  const [hiddenAccounts, setHiddenAccounts] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set();
+    try { return new Set(JSON.parse(localStorage.getItem("twitter:hidden") ?? "[]") as string[]); }
+    catch { return new Set(); }
+  });
   const [addInput, setAddInput] = useState("");
   const [analyses, setAnalyses] = useState<Record<string, TwitterAccountAnalysis>>({});
   const [loading, setLoading] = useState<Record<string, boolean>>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [tickerInfo, setTickerInfo] = useState<Record<string, TickerInfo>>({});
 
+  useEffect(() => {
+    localStorage.setItem("twitter:custom", JSON.stringify(customAccounts));
+  }, [customAccounts]);
+
+  useEffect(() => {
+    localStorage.setItem("twitter:hidden", JSON.stringify([...hiddenAccounts]));
+  }, [hiddenAccounts]);
+
   const allAccounts = [
-    ...CURATED_ACCOUNTS,
-    ...customAccounts.map((u) => ({ username: u, displayName: `@${u}`, description: "Custom" })),
+    ...CURATED_ACCOUNTS.filter((a) => !hiddenAccounts.has(a.username)),
+    ...customAccounts
+      .filter((u) => !hiddenAccounts.has(u))
+      .map((u) => ({ username: u, displayName: `@${u}`, description: "Custom" })),
   ];
 
   async function loadAccount(username: string) {
@@ -297,8 +316,15 @@ export function TwitterDashboard() {
       return;
     }
     setCustomAccounts((c) => [...c, handle]);
+    setHiddenAccounts((h) => { const next = new Set(h); next.delete(handle); return next; });
     setAddInput("");
     selectAccount(handle);
+  }
+
+  function handleRemoveAccount(username: string) {
+    setCustomAccounts((c) => c.filter((u) => u !== username));
+    setHiddenAccounts((h) => new Set([...h, username]));
+    if (selectedUsername === username) setSelectedUsername(null);
   }
 
   const currentKey = selectedUsername ? `${selectedUsername}:${range}` : null;
@@ -350,23 +376,33 @@ export function TwitterDashboard() {
               const isSelected = selectedUsername === a.username;
               const isLoaded = !!analyses[key];
               return (
-                <button
-                  key={a.username}
-                  onClick={() => selectAccount(a.username)}
-                  className={`w-full text-left px-2 py-1.5 rounded text-xs flex items-center gap-1.5 transition-colors ${
-                    isSelected
-                      ? "bg-gray-800 text-white"
-                      : "text-gray-700 hover:bg-gray-100"
-                  }`}
-                  title={a.description}
-                >
-                  <span
-                    className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
-                      isLoaded ? "bg-green-500" : isSelected ? "bg-white/50" : "bg-gray-300"
+                <div key={a.username} className="group relative flex items-center">
+                  <button
+                    onClick={() => selectAccount(a.username)}
+                    className={`flex-1 text-left px-2 py-1.5 rounded text-xs flex items-center gap-1.5 transition-colors ${
+                      isSelected
+                        ? "bg-gray-800 text-white"
+                        : "text-gray-700 hover:bg-gray-100"
                     }`}
-                  />
-                  <span className="truncate">@{a.username}</span>
-                </button>
+                    title={a.description}
+                  >
+                    <span
+                      className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                        isLoaded ? "bg-green-500" : isSelected ? "bg-white/50" : "bg-gray-300"
+                      }`}
+                    />
+                    <span className="truncate">@{a.username}</span>
+                  </button>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); handleRemoveAccount(a.username); }}
+                    className={`absolute right-1 opacity-0 group-hover:opacity-100 transition-opacity text-xs px-1 leading-none ${
+                      isSelected ? "text-white/60 hover:text-white" : "text-gray-400 hover:text-red-500"
+                    }`}
+                    title="Remove"
+                  >
+                    ×
+                  </button>
+                </div>
               );
             })}
           </div>
