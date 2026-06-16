@@ -31,11 +31,16 @@ function loadSession(): { cookieHeader: string; csrfToken: string } {
   const raw = fs.readFileSync(cookiePath, "utf-8");
   const cookies = JSON.parse(raw) as BrowserCookie[];
 
-  const cookieHeader = cookies.map((c) => `${c.name}=${c.value}`).join("; ");
+  const names = cookies.map((c) => c.name);
+  logger.info(`[twitter] loaded ${cookies.length} cookies: ${names.join(", ")}`);
+
   const csrfToken = cookies.find((c) => c.name === "ct0")?.value ?? "";
+  const authToken = cookies.find((c) => c.name === "auth_token");
 
-  if (!csrfToken) logger.warn("[twitter] ct0 cookie missing — requests may be rejected");
+  if (!csrfToken) logger.warn("[twitter] ct0 missing — export cookies from x.com while logged in");
+  if (!authToken) logger.warn("[twitter] auth_token missing — try exporting from twitter.com instead of x.com");
 
+  const cookieHeader = cookies.map((c) => `${c.name}=${c.value}`).join("; ");
   return { cookieHeader, csrfToken };
 }
 
@@ -80,7 +85,9 @@ export async function fetchUserTweets(
     );
 
     if (res.status === 401 || res.status === 403) {
-      throw new Error("Twitter session expired — export fresh cookies from your browser and redeploy");
+      const body = await res.text().catch(() => "(unreadable)");
+      logger.error(`[twitter] ${res.status} for @${username} — body: ${body}`);
+      throw new Error(`Twitter rejected the session (${res.status}) — check /logs/logs.txt for details`);
     }
     if (res.status === 429) {
       throw new Error("Twitter rate limit — try again later");
