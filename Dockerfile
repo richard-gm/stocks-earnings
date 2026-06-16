@@ -7,7 +7,7 @@ RUN npm ci --omit=dev
 # Stage 2 — build
 FROM node:20-alpine AS builder
 WORKDIR /app
-COPY package*.json tsconfig.json next.config.ts tailwind.config.ts ./
+COPY package*.json tsconfig.json next.config.ts postcss.config.mjs ./
 RUN npm ci
 COPY src/ ./src/
 COPY public/ ./public/
