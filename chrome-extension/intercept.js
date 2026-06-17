@@ -6,13 +6,6 @@
 
   const originalFetch = window.fetch;
 
-  const isTweetEndpoint = (url) =>
-    (url.includes("api.twitter.com") || url.includes("api.x.com") || url.includes("/i/api/")) &&
-    (url.includes("UserTweets") || url.includes("UserTweetsAndReplies") || url.includes("UserMedia"));
-
-  const isApiCall = (url) =>
-    url.includes("api.twitter.com") || url.includes("api.x.com") || url.includes("/i/api/graphql");
-
   window.fetch = async function (...args) {
     const response = await originalFetch.apply(this, args);
 
@@ -20,28 +13,29 @@
       const url =
         typeof args[0] === "string" ? args[0] : args[0]?.url ?? "";
 
-      // Debug: log all X API calls so we can see what endpoints are being used
-      if (isApiCall(url)) {
-        console.log("[XCollector] API call:", url.split("?")[0]);
+      // Log every single fetch so we can see what X calls when you scroll
+      if (url.includes("x.com") || url.includes("twitter.com")) {
+        console.log("[XCollector] fetch:", url.split("?")[0]);
       }
 
-      if (isTweetEndpoint(url)) {
+      // Try to capture tweets from any JSON response on X's API domains
+      if (
+        (url.includes("api.x.com") || url.includes("api.twitter.com") || url.includes("/i/api/")) &&
+        !url.includes("live_pipeline") &&
+        !url.includes("jot") &&
+        !url.includes("log")
+      ) {
         response
           .clone()
           .json()
           .then((data) => {
             const tweets = extractTweets(data);
             if (tweets.length > 0) {
-              console.log(`[XCollector] captured ${tweets.length} tweets`);
-              window.postMessage(
-                { type: "XTWEETS_CAPTURED", tweets },
-                "*"
-              );
-            } else {
-              console.log("[XCollector] tweet endpoint hit but 0 tweets parsed — response:", JSON.stringify(data).slice(0, 300));
+              console.log(`[XCollector] captured ${tweets.length} tweets from ${url.split("?")[0]}`);
+              window.postMessage({ type: "XTWEETS_CAPTURED", tweets }, "*");
             }
           })
-          .catch((e) => console.log("[XCollector] parse error:", e.message));
+          .catch(() => {});
       }
     } catch {
       // never break the original fetch
