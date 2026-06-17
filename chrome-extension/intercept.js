@@ -6,6 +6,13 @@
 
   const originalFetch = window.fetch;
 
+  const isTweetEndpoint = (url) =>
+    (url.includes("api.twitter.com") || url.includes("api.x.com") || url.includes("/i/api/")) &&
+    (url.includes("UserTweets") || url.includes("UserTweetsAndReplies") || url.includes("UserMedia"));
+
+  const isApiCall = (url) =>
+    url.includes("api.twitter.com") || url.includes("api.x.com") || url.includes("/i/api/graphql");
+
   window.fetch = async function (...args) {
     const response = await originalFetch.apply(this, args);
 
@@ -13,12 +20,12 @@
       const url =
         typeof args[0] === "string" ? args[0] : args[0]?.url ?? "";
 
-      if (
-        url.includes("api.twitter.com") &&
-        (url.includes("UserTweets") ||
-          url.includes("UserTweetsAndReplies") ||
-          url.includes("UserMedia"))
-      ) {
+      // Debug: log all X API calls so we can see what endpoints are being used
+      if (isApiCall(url)) {
+        console.log("[XCollector] API call:", url.split("?")[0]);
+      }
+
+      if (isTweetEndpoint(url)) {
         response
           .clone()
           .json()
@@ -30,9 +37,11 @@
                 { type: "XTWEETS_CAPTURED", tweets },
                 "*"
               );
+            } else {
+              console.log("[XCollector] tweet endpoint hit but 0 tweets parsed — response:", JSON.stringify(data).slice(0, 300));
             }
           })
-          .catch(() => {});
+          .catch((e) => console.log("[XCollector] parse error:", e.message));
       }
     } catch {
       // never break the original fetch
